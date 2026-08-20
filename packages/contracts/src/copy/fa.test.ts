@@ -56,4 +56,10 @@ describe('copy deck', () => {
     expect(copy.actionBrief.feeTitle.length).toBeGreaterThan(0);
     expect(copy.actionBrief.limitNote.length).toBeGreaterThan(0);
   });
+
+  it('names the locked baseline and lab samples', () => {
+    expect(copy.version.one).toContain('۱');
+    expect(copy.lab.title.length).toBeGreaterThan(0);
+    expect(copy.lab.aTitle.length).toBeGreaterThan(0);
+  });
 });

@@ -11,6 +11,7 @@
     "packages/*"
   ],
   "scripts": {
+    "restore:v1": "node scripts/restore-zarinpulse-1.mjs",
     "dev": "npm run dev --workspace=@zarinpulse/web",
     "build": "npm run build --workspace=@zarinpulse/web",
     "start": "npm run start --workspace=@zarinpulse/web",

@@ -1437,3 +1437,295 @@ html[data-nav='hidden'] .nav-side {
     filter: none;
   }
 }
+
+/* —— Motion lab (samples only; product charts unchanged) —— */
+.lab-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.lab-lede {
+  margin: 0;
+}
+
+.lab-reduced {
+  margin: 0 0 0.5rem;
+}
+
+.lab-card {
+  overflow: hidden;
+}
+
+.lab-card-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.lab-svg {
+  display: block;
+  width: 100%;
+  height: 7.5rem;
+  margin-top: 0.75rem;
+}
+
+.lab-draw-line {
+  fill: none;
+  stroke: var(--zp-text);
+  stroke-width: 2.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: lab-draw 1.6s cubic-bezier(0.22, 1, 0.36, 1) 0.15s forwards;
+}
+
+.lab-pulse-dot {
+  fill: var(--zp-accent);
+  opacity: 0;
+  animation:
+    lab-fade 0.4s ease 1.5s forwards,
+    lab-pulse 1.8s ease-in-out 1.9s infinite;
+}
+
+.lab-cols {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 0.45rem;
+  height: 9rem;
+  margin: 0.85rem 0 0;
+  padding: 0;
+  list-style: none;
+  align-items: end;
+}
+
+.lab-cols li {
+  display: flex;
+  height: 100%;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.lab-col {
+  width: 1.1rem;
+  border-radius: 999px;
+  background: #a68b77;
+  transform-origin: bottom center;
+  transform: scaleY(0);
+  animation: lab-rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: calc(0.08s * var(--i));
+}
+
+.lab-col-peak {
+  background: #2d2d2d;
+}
+
+.lab-funnel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  margin: 0.85rem 0 0;
+  padding: 0;
+  list-style: none;
+  align-items: center;
+}
+
+.lab-funnel li {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: lab-cascade 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: calc(0.18s * var(--i));
+}
+
+.lab-trap {
+  height: 2.6rem;
+  border-radius: 0.85rem;
+  background: linear-gradient(180deg, #e5d8cf, #a68b77);
+}
+
+.lab-funnel li:last-child .lab-trap {
+  background: #2d2d2d;
+}
+
+.lab-drop {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 999px;
+  background: #c17b6a;
+  animation: lab-blink 1.4s ease-in-out infinite;
+}
+
+.lab-ring {
+  width: 5.5rem;
+  height: 5.5rem;
+  flex-shrink: 0;
+}
+
+.lab-ring-track,
+.lab-ring-value {
+  fill: none;
+  stroke-width: 7;
+  stroke-linecap: round;
+}
+
+.lab-ring-track {
+  stroke: #e5d8cf;
+}
+
+.lab-ring-value {
+  stroke: #2d2d2d;
+  animation: lab-sweep 1.25s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
+}
+
+.lab-flow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin: 0.85rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lab-flow li {
+  height: 1.35rem;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e5d8cf;
+}
+
+.lab-flow-fill {
+  display: block;
+  height: 100%;
+  width: 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #a68b77, #2d2d2d);
+  animation: lab-fill 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: calc(0.2s * var(--i));
+}
+
+.lab-flow li:nth-child(1) .lab-flow-fill {
+  max-width: 100%;
+  width: 100%;
+  animation-name: lab-fill-1;
+}
+
+.lab-flow li:nth-child(2) .lab-flow-fill {
+  animation-name: lab-fill-2;
+}
+
+.lab-flow li:nth-child(3) .lab-flow-fill {
+  animation-name: lab-fill-3;
+}
+
+@keyframes lab-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes lab-fade {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes lab-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.35);
+  }
+}
+
+@keyframes lab-rise {
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes lab-cascade {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes lab-blink {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes lab-sweep {
+  from {
+    stroke-dashoffset: 226.08;
+  }
+}
+
+@keyframes lab-fill-1 {
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes lab-fill-2 {
+  to {
+    width: 87%;
+  }
+}
+
+@keyframes lab-fill-3 {
+  to {
+    width: 50%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lab-draw-line,
+  .lab-pulse-dot,
+  .lab-col,
+  .lab-funnel li,
+  .lab-drop,
+  .lab-ring-value,
+  .lab-flow-fill {
+    animation: none !important;
+  }
+
+  .lab-draw-line {
+    stroke-dashoffset: 0;
+  }
+
+  .lab-pulse-dot,
+  .lab-funnel li {
+    opacity: 1;
+    transform: none;
+  }
+
+  .lab-col {
+    transform: scaleY(1);
+  }
+
+  .lab-flow li:nth-child(1) .lab-flow-fill {
+    width: 100%;
+  }
+
+  .lab-flow li:nth-child(2) .lab-flow-fill {
+    width: 87%;
+  }
+
+  .lab-flow li:nth-child(3) .lab-flow-fill {
+    width: 50%;
+  }
+}

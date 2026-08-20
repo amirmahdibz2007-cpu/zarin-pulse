@@ -1,0 +1,22 @@
+---
+description: زرین پالس ۱ is the locked liked baseline; restore it when the user asks
+alwaysApply: true
+---
+
+# زرین پالس ۱ (locked baseline)
+
+When the user says **زرین پالس ۱**, **برگرد به زرین پالس ۱**, **ZarinPulse 1**, or **restore zarinpulse-1**:
+
+1. Do **not** ask them to run git manually.
+2. Restore the working tree to tag `zarinpulse-1` (commit message starts with `Snapshot ZarinPulse baseline`).
+3. Preferred commands (never update git config):
+
+```bash
+git reset --hard zarinpulse-1
+# if uncommitted junk blocks, stash or clean only after confirming with user for untracked files they care about
+```
+
+4. Confirm with `git rev-parse HEAD` and `git describe --tags --exact-match` → should be `zarinpulse-1`.
+5. Do not delete the tag. Do not rebase or force-push unless the user explicitly asks.
+
+This baseline includes: sand atelier UI, merchant action briefs, challenge_data.csv.gz pipeline, and golden platform numbers.
