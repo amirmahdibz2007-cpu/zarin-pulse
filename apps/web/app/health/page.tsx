@@ -1,6 +1,7 @@
 import { copy, formatBillionsRial, formatCount, count, formatRatioAsPercent } from '@zarinpulse/contracts';
 import Link from 'next/link';
 import { MiniRing } from '../../components/Charts';
+import { GatewayFlipPlate } from '../../components/DepthMotifs';
 import { PageShell } from '../../components/PageShell';
 import { StatusPill } from '../../components/StatusPill';
 import { readArtifact, type MerchantIndexRow } from '../../lib/artifacts';
@@ -17,11 +18,14 @@ export default function HealthPage() {
       <header className="dash-hero reveal">
         <p className="page-kicker">{copy.nav.health}</p>
         <p className="stat-label">{copy.dash.unhealthy}</p>
-        <p className="hero-value">{formatCount(count(broken.length))}</p>
+        <div className="stat-card-row items-end justify-between gap-4">
+          <p className="hero-value">{formatCount(count(broken.length))}</p>
+          <GatewayFlipPlate unhealthy />
+        </div>
       </header>
       <ul className="case-grid">
         {broken.map((m) => (
-          <li key={m.key} className="chart-card">
+          <li key={m.key} className="chart-card health-card-depth">
             <div className="stat-card-row">
               <div>
                 <Link href={`/m/${m.key}`} className="link-quiet block min-h-11 font-medium">

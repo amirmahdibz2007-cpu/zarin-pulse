@@ -18,6 +18,7 @@ export default function JudgePage() {
   return (
     <PageShell width="wide">
       <PageHeader kicker={copy.product.name} title={copy.nav.judge} lede={copy.judgeIntro} />
+      <p className="surface-panel mb-4 text-sm leading-7">{copy.judgeDemoPath}</p>
       <ul className="case-grid">
         {featured.map((key) => {
           const m = byKey[key];

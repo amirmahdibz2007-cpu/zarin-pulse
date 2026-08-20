@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { count } from '../brands';
 import {
+  formatBillionsFigure,
   formatBillionsRial,
   formatCount,
   formatPercentPoints,
@@ -29,6 +30,7 @@ describe('percent', () => {
 
 describe('billions', () => {
   it('divides by 1e9', () => {
+    expect(formatBillionsFigure(88_920_000_000)).toBe('۸۸٫۹۲');
     expect(formatBillionsRial(88_920_000_000)).toBe('۸۸٫۹۲ میلیارد ریال');
   });
 });

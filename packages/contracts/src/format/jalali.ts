@@ -25,6 +25,8 @@ const WEEKDAYS_FA = [
   'جمعه',
 ] as const;
 
+const WEEKDAYS_FA_SHORT = ['ش', 'ی', 'د', 'س', 'چ', 'پ', 'ج'] as const;
+
 export interface JalaliDate {
   year: number;
   month: number;
@@ -125,4 +127,4 @@ export function jalaliWeekdayName(iso: string): string {
   return name;
 }
 
-export { MONTHS_FA, WEEKDAYS_FA };
+export { MONTHS_FA, WEEKDAYS_FA, WEEKDAYS_FA_SHORT };

@@ -47,14 +47,23 @@ export default function ReconciliationPage() {
   return (
     <PageShell width="wide">
       <PageHeader kicker={copy.product.name} title={copy.nav.reconciliation} />
-      <article className="stat-card stat-card-row">
-        <div>
-          <p className="stat-label">{copy.nav.reconciliation}</p>
-          <p className="stat-value">
-            {formatCount(count(passed))} / {formatCount(count(checks.length))}
-          </p>
+      <article className="stat-card space-y-4">
+        <div className="stat-card-row">
+          <div>
+            <p className="stat-label">{copy.nav.reconciliation}</p>
+            <p className="stat-value">
+              {formatCount(count(passed))} / {formatCount(count(checks.length))}
+            </p>
+          </div>
+          <MiniRing ratio={passed / checks.length} ticks size="m" />
         </div>
-        <MiniRing ratio={passed / checks.length} ticks size="m" />
+        <ol className="check-rail">
+          {checks.map((c, i) => (
+            <li key={c.label} data-ok={c.ok ? '1' : '0'} title={c.label}>
+              <span>{formatCount(count(i + 1))}</span>
+            </li>
+          ))}
+        </ol>
       </article>
       <ul className="case-grid">
         {checks.map((c) => (

@@ -1,5 +1,5 @@
-import { copy, formatRatioAsPercent } from '@zarinpulse/contracts';
-import { MiniRing, RowBar } from '../../components/Charts';
+import { copy, count, formatCount, formatRatioAsPercent } from '@zarinpulse/contracts';
+import { RowBar } from '../../components/Charts';
 import { PageHeader, PageShell } from '../../components/PageShell';
 import { readArtifact } from '../../lib/artifacts';
 
@@ -10,22 +10,31 @@ export default function PspPage() {
   );
   const simpson = cross.filter((r) => r.psp === 'PSP-05' && r.n >= 1000);
   const nMax = Math.max(1, ...rows.map((r) => r.n));
+  const sorted = [...rows].sort((a, b) => b.rate - a.rate);
   return (
     <PageShell width="wide">
       <PageHeader kicker={copy.product.name} title={copy.nav.psp} lede={copy.simpsonNote} />
-      <ul className="case-grid">
-        {rows.map((r) => (
-          <li key={r.psp} className="chart-card stat-card-row">
-            <div>
-              <p className="stat-label">{r.psp}</p>
-              <p className="stat-value">{formatRatioAsPercent(r.rate)}</p>
-              <RowBar value={r.n} max={nMax} />
-            </div>
-            <MiniRing ratio={r.rate} ticks size="m" />
-          </li>
-        ))}
-      </ul>
-      <div className="table-recess surface-table overflow-hidden">
+      <section className="chart-card space-y-4">
+        <ul className="space-y-3">
+          {sorted.map((r) => (
+            <li key={r.psp} className="rate-row">
+              <div className="rate-row-meta">
+                <span className="font-medium">{r.psp}</span>
+                <span className="stat-hint">
+                  {formatRatioAsPercent(r.rate)} · n={formatCount(count(r.n))}
+                </span>
+              </div>
+              <div className="rate-row-bars">
+                <div className="rate-track" aria-hidden="true">
+                  <span className="rate-fill" style={{ width: `${String(Math.round(r.rate * 100))}%` }} />
+                </div>
+                <RowBar value={r.n} max={nMax} />
+              </div>
+            </li>
+          ))}
+        </ul>
+      </section>
+      <div className="table-recess surface-table hidden overflow-hidden lg:block">
         <table className="w-full text-sm">
           <thead>
             <tr className="text-right">
@@ -43,6 +52,14 @@ export default function PspPage() {
           </tbody>
         </table>
       </div>
+      <ul className="divide-y divide-[color:var(--zp-border)] rounded-[1.25rem] border border-[color:var(--zp-border)] lg:hidden">
+        {simpson.map((r) => (
+          <li key={`${r.category}-${r.psp}`} className="flex items-baseline justify-between gap-3 p-3">
+            <span className="min-w-0 text-sm leading-6">{r.category}</span>
+            <span className="shrink-0 text-sm font-medium">{formatRatioAsPercent(r.rate)}</span>
+          </li>
+        ))}
+      </ul>
       <p className="text-sm leading-7 text-[color:var(--zp-muted)]">{copy.simulatorNote}</p>
     </PageShell>
   );

@@ -13,7 +13,11 @@ export default function FeesPage() {
     .filter((f) => f.actual !== null)
     .sort((a, b) => (b.actual ?? 0) - (a.actual ?? 0))
     .slice(0, 7)
-    .map((f) => ({ label: f.key, value: f.actual ?? 0 }));
+    .map((f) => ({
+      label: f.key,
+      value: f.actual ?? 0,
+      detail: formatRatioAsPercent(f.actual ?? 0),
+    }));
   return (
     <PageShell width="wide">
       <PageHeader kicker={copy.product.name} title={copy.nav.fees} />
@@ -36,7 +40,7 @@ export default function FeesPage() {
       <section className="dash-pair">
         <article className="chart-card">
           <h2 className="chart-title">{copy.dash.merchant}</h2>
-          <Columns bars={bars} />
+          <Columns bars={bars} variant="depth" />
         </article>
         <article className="chart-card">
           <FeeCalculator defaultBasket={100_000} />

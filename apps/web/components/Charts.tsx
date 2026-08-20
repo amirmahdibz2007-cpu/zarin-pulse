@@ -3,6 +3,7 @@
 import { formatRatioAsPercent } from '@zarinpulse/contracts';
 import { useId } from 'react';
 import { insetBarPercents } from '../lib/chart-scale';
+import { useInViewOnce } from '../lib/use-in-view';
 
 function niceMax(n: number): number {
   if (n <= 0) return 1;
@@ -15,17 +16,22 @@ export function Sparkline(props: {
   tone?: 'accent' | 'positive';
   className?: string;
   stretch?: boolean;
+  /** Extra room below the series min (0–1 of span) so the line can rise from lower. */
+  padBottom?: number;
 }) {
   if (props.values.length < 2) return null;
   const uid = useId().replace(/:/g, '');
   const min = Math.min(...props.values);
   const max = Math.max(...props.values);
   const span = Math.max(1, max - min);
+  const pad = Math.min(2, Math.max(0, props.padBottom ?? 0));
+  const floor = min - span * pad;
+  const viewSpan = Math.max(1, max - floor);
   const w = 120;
   const h = 36;
   const pts = props.values.map((v, i) => {
     const x = (i / (props.values.length - 1)) * w;
-    const y = h - ((v - min) / span) * (h - 8) - 4;
+    const y = h - ((v - floor) / viewSpan) * (h - 6) - 2;
     return { x, y };
   });
   const line = pts.map((p) => `${String(p.x)},${String(p.y)}`).join(' ');
@@ -100,12 +106,15 @@ export function MiniRing(props: { ratio: number; ticks?: boolean; size?: 's' | '
 export function AreaLine(props: {
   points: readonly { label: string; value: number }[];
   marker?: string;
+  caption?: string;
   grid?: boolean;
+  pace?: 'default' | 'slow';
 }) {
   const uid = useId().replace(/:/g, '');
+  const { ref, active } = useInViewOnce<HTMLDivElement>(0.08);
   const w = 640;
   const h = 248;
-  const pad = { l: 8, r: 12, t: 28, b: 32 };
+  const pad = { l: 8, r: 36, t: 36, b: 32 };
   const innerW = w - pad.l - pad.r;
   const innerH = h - pad.t - pad.b;
   if (props.points.length < 2) return null;
@@ -123,80 +132,125 @@ export function AreaLine(props: {
   area += ` L ${String(last?.x ?? 0)} ${String(pad.t + innerH)} Z`;
   const line = coords.map((c) => `${String(c.x)},${String(c.y)}`).join(' ');
   const ticks = [coords[0], coords[Math.floor(coords.length / 2)], last].filter(Boolean);
+  const liveClass =
+    props.pace === 'slow' ? 'area-line-wrap area-line-live area-line-live-slow' : 'area-line-wrap area-line-live';
   return (
-    <svg className="area-line" viewBox={`0 0 ${String(w)} ${String(h)}`} aria-hidden="true">
-      <defs>
-        <linearGradient id={`ag-${uid}`} x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="var(--zp-accent-soft)" stopOpacity="0.42" />
-          <stop offset="100%" stopColor="var(--zp-accent-soft)" stopOpacity="0" />
-        </linearGradient>
-        <filter id={`glow-${uid}`} x="-20%" y="-20%" width="140%" height="140%">
-          <feGaussianBlur stdDeviation="3.4" result="b" />
-          <feMerge>
-            <feMergeNode in="b" />
-            <feMergeNode in="SourceGraphic" />
-          </feMerge>
-        </filter>
-      </defs>
-      {props.grid
-        ? [0, 0.5, 1].map((t) => {
-            const y = pad.t + innerH * (1 - t);
-            return (
-              <line
-                key={String(t)}
-                className="area-grid"
-                x1={pad.l}
-                x2={w - pad.r}
-                y1={y}
-                y2={y}
-              />
-            );
-          })
-        : null}
-      <path d={area} fill={`url(#ag-${uid})`} />
-      <polyline
-        className="area-stroke"
-        fill="none"
-        points={line}
-        filter={`url(#glow-${uid})`}
-      />
-      {last ? (
-        <g>
-          <circle className="area-dot" cx={last.x} cy={last.y} r="4.5" />
-          {props.marker ? (
-            <text className="area-mark" x={last.x - 8} y={last.y - 12} textAnchor="end">
-              {props.marker}
+    <div ref={ref} className={active ? liveClass : 'area-line-wrap'}>
+      <svg className="area-line" viewBox={`0 0 ${String(w)} ${String(h)}`} aria-hidden="true">
+        <defs>
+          <linearGradient id={`ag-${uid}`} x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="var(--zp-accent-soft)" stopOpacity="0.42" />
+            <stop offset="100%" stopColor="var(--zp-accent-soft)" stopOpacity="0" />
+          </linearGradient>
+          <filter id={`glow-${uid}`} x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3.4" result="b" />
+            <feMerge>
+              <feMergeNode in="b" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+        {props.grid
+          ? [0, 0.5, 1].map((t) => {
+              const y = pad.t + innerH * (1 - t);
+              return (
+                <line
+                  key={String(t)}
+                  className="area-grid"
+                  x1={pad.l}
+                  x2={w - pad.r}
+                  y1={y}
+                  y2={y}
+                />
+              );
+            })
+          : null}
+        <path d={area} fill={`url(#ag-${uid})`} />
+        <polyline
+          className="area-stroke"
+          fill="none"
+          points={line}
+          filter={`url(#glow-${uid})`}
+        />
+        {last ? (
+          <g>
+            <circle className="area-dot" cx={last.x} cy={last.y} r="4.5" />
+            {props.marker ? (
+              <text className="area-mark" x={last.x - 10} y={last.y - 14} textAnchor="end">
+                {props.marker}
+              </text>
+            ) : null}
+          </g>
+        ) : null}
+        {ticks.map((c) =>
+          c ? (
+            <text key={c.label} className="area-tick" x={c.x} y={h - 8} textAnchor="middle">
+              {c.label}
             </text>
-          ) : null}
-        </g>
-      ) : null}
-      {ticks.map((c) =>
-        c ? (
-          <text key={c.label} className="area-tick" x={c.x} y={h - 8} textAnchor="middle">
-            {c.label}
-          </text>
-        ) : null,
-      )}
-    </svg>
+          ) : null,
+        )}
+      </svg>
+      {props.caption ? <p className="area-caption">{props.caption}</p> : null}
+    </div>
   );
 }
 
-export function Columns(props: { bars: readonly { label: string; value: number }[] }) {
+export function Columns(props: {
+  bars: readonly {
+    label: string;
+    shortLabel?: string;
+    value: number;
+    detail?: string;
+    meta?: string;
+    badge?: string;
+  }[];
+  variant?: 'default' | 'depth';
+}) {
   const percents = insetBarPercents(props.bars.map((b) => b.value));
   const peak = Math.max(1, ...props.bars.map((b) => b.value));
+  const { ref, active } = useInViewOnce<HTMLUListElement>(0.12);
+  const depth = props.variant === 'depth';
   return (
-    <ul className="col-chart">
-      {props.bars.map((b, i) => (
-        <li key={b.label} className="col-item">
-          <div className="col-track">
-            <span
-              className={b.value === peak ? 'col-fill col-fill-peak' : 'col-fill'}
-              style={{ height: `${String(percents[i] ?? 0)}%` }}
-            />
-          </div>
-          <span className="col-label">{b.label}</span>
-        </li>
-      ))}
+    <ul
+      ref={ref}
+      className={[
+        'col-chart',
+        active ? 'col-chart-live' : '',
+        depth ? 'col-chart-depth' : '',
+      ]
+        .filter(Boolean)
+        .join(' ')}
+    >
+      {props.bars.map((b, i) => {
+        const tip = b.detail || b.meta || b.badge;
+        return (
+          <li
+            key={`${b.label}-${String(i)}`}
+            className={b.value === peak ? 'col-item col-item-peak' : 'col-item'}
+            tabIndex={tip ? 0 : undefined}
+          >
+            {tip ? (
+              <div className="col-tip" role="tooltip">
+                <p className="col-tip-title">{b.label}</p>
+                {b.detail ? <p className="col-tip-detail">{b.detail}</p> : null}
+                {b.meta ? <p className="col-tip-meta">{b.meta}</p> : null}
+                {b.badge ? <p className="col-tip-badge">{b.badge}</p> : null}
+              </div>
+            ) : null}
+            <div className="col-track">
+              <span
+                className={b.value === peak ? 'col-fill col-fill-peak' : 'col-fill'}
+                style={{
+                  ['--h' as string]: `${String(percents[i] ?? 0)}%`,
+                  ['--i' as string]: String(i),
+                }}
+              />
+            </div>
+            <span className="col-label col-label-full">{b.label}</span>
+            <span className="col-label col-label-short">{b.shortLabel ?? b.label}</span>
+          </li>
+        );
+      })}
     </ul>
   );
 }
@@ -206,29 +260,53 @@ export function FunnelStack(props: {
   drops?: boolean;
 }) {
   return (
-    <ul className="funnel-stack">
-      {props.stages.map((s, i) => {
-        const top = Math.max(0.28, Math.min(1, s.ratio));
-        const next = props.stages[i + 1];
-        const bot = Math.max(0.2, Math.min(top, next ? next.ratio : s.ratio * 0.78));
-        const drop = next && s.ratio > 0 ? Math.max(0, (s.ratio - next.ratio) / s.ratio) : 0;
-        return (
-          <li key={s.label} className="funnel-row">
-            <div
-              className="funnel-trap"
-              style={{
-                ['--top' as string]: String(top),
-                ['--bot' as string]: String(bot),
-              }}
+    <div className="funnel-root">
+      <ul className="funnel-stack">
+        {props.stages.map((s, i) => {
+          const top = Math.max(0.28, Math.min(1, s.ratio));
+          const next = props.stages[i + 1];
+          const bot = Math.max(0.2, Math.min(top, next ? next.ratio : s.ratio * 0.78));
+          const drop = next && s.ratio > 0 ? Math.max(0, (s.ratio - next.ratio) / s.ratio) : 0;
+          return (
+            <li
+              key={s.label}
+              className="funnel-row"
+              style={{ ['--i' as string]: String(i) }}
             >
+              <div
+                className="funnel-trap"
+                style={{
+                  ['--top' as string]: String(top),
+                  ['--bot' as string]: String(bot),
+                }}
+              >
+                <span>{s.caption}</span>
+              </div>
+              <p className="funnel-label">{s.label}</p>
+              {props.drops && next ? (
+                <p className="funnel-drop">{formatRatioAsPercent(drop)}</p>
+              ) : null}
+            </li>
+          );
+        })}
+      </ul>
+      <ul className="funnel-flow" aria-hidden="true">
+        {props.stages.map((s, i) => (
+          <li key={s.label} style={{ ['--i' as string]: String(i) }}>
+            <div className="funnel-flow-meta">
+              <span>{s.label}</span>
               <span>{s.caption}</span>
             </div>
-            <p className="funnel-label">{s.label}</p>
-            {props.drops && next ? <p className="funnel-drop">{formatRatioAsPercent(drop)}</p> : null}
+            <div className="funnel-flow-track">
+              <span
+                className="funnel-flow-fill"
+                style={{ ['--r' as string]: String(Math.max(0, Math.min(1, s.ratio))) }}
+              />
+            </div>
           </li>
-        );
-      })}
-    </ul>
+        ))}
+      </ul>
+    </div>
   );
 }
 

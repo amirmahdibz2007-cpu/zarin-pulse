@@ -1,11 +1,13 @@
 import {
   copy,
   count,
+  formatBillionsFigure,
   formatBillionsRial,
   formatCount,
   formatRatioAsPercent,
   MONTHS_FA,
   WEEKDAYS_FA,
+  WEEKDAYS_FA_SHORT,
 } from '@zarinpulse/contracts';
 import Link from 'next/link';
 import { AreaLine, Columns, FunnelStack, MiniRing, RowBar, Sparkline } from './Charts';
@@ -37,6 +39,23 @@ function monthLabel(key: string): string {
   return MONTHS_FA[idx] ?? key;
 }
 
+/** Dense polyline through real monthly points (linear interp — same shape, watermark-readable). */
+function densifySeries(values: readonly number[], points: number): number[] {
+  if (values.length === 0) return [];
+  if (values.length === 1 || points <= values.length) return [...values];
+  const out: number[] = [];
+  for (let i = 0; i < points; i++) {
+    const t = (i / (points - 1)) * (values.length - 1);
+    const i0 = Math.floor(t);
+    const i1 = Math.min(values.length - 1, i0 + 1);
+    const f = t - i0;
+    const a = values[i0] ?? 0;
+    const b = values[i1] ?? a;
+    out.push(a * (1 - f) + b * f);
+  }
+  return out;
+}
+
 export function HomeDash() {
   const platform = tryReadArtifact<PlatformArtifact>('platform.json');
   const index = tryReadArtifact<MerchantIndexRow[]>('merchants-index.json') ?? [];
@@ -57,17 +76,27 @@ export function HomeDash() {
   const days = Math.max(1, platform.daily.length);
   const dailyAvg = Math.round(platform.sessions_total / days);
   const spark = platform.daily.slice(-40).map((d) => d.sessions);
-  const monthSpark = platform.jalali_months.map((m) => m.per_day_revenue);
+  const heroSpark = densifySeries(
+    platform.jalali_months.map((m) => m.per_day_revenue),
+    36,
+  );
   const top = index.slice(0, 6);
   const recMax = Math.max(1, ...top.map((m) => m.recoverable_rial));
   const lastMonth = platform.jalali_months.at(-1);
-  const weekBars = (platform.weekdays ?? [])
-    .slice()
-    .sort((a, b) => a.weekday - b.weekday)
-    .map((w) => ({
+  const weekRows = (platform.weekdays ?? []).slice().sort((a, b) => a.weekday - b.weekday);
+  const weekSessions = weekRows.reduce((sum, w) => sum + w.sessions, 0);
+  const weekPeak = Math.max(1, ...weekRows.map((w) => w.sessions));
+  const weekBars = weekRows.map((w) => {
+    const share = weekSessions > 0 ? w.sessions / weekSessions : 0;
+    return {
       label: WEEKDAYS_FA[w.weekday] ?? String(w.weekday),
+      shortLabel: WEEKDAYS_FA_SHORT[w.weekday] ?? String(w.weekday),
       value: w.sessions,
-    }));
+      detail: formatCount(count(w.sessions)),
+      meta: `${formatRatioAsPercent(share)} ${copy.dash.weekShare} · ${formatBillionsRial(w.revenue_rial)} · ${formatCount(count(w.orders))} ${copy.dash.weekOrders}`,
+      badge: w.sessions === weekPeak ? copy.dash.weekPeak : undefined,
+    };
+  });
 
   return (
     <PageShell width="wide">
@@ -75,7 +104,24 @@ export function HomeDash() {
         <p className="page-kicker">{copy.product.name}</p>
         <p className="stat-label">{copy.currency.recoverable_sales}</p>
         <div className="hero-value-wrap">
-          <Sparkline values={spark} className="spark-watermark" stretch />
+          <Sparkline
+            values={heroSpark}
+            className="spark-watermark spark-watermark-edge"
+            stretch
+            padBottom={1.35}
+          />
+          <Sparkline
+            values={heroSpark}
+            className="spark-watermark spark-watermark-mid"
+            stretch
+            padBottom={1.35}
+          />
+          <Sparkline
+            values={heroSpark}
+            className="spark-watermark spark-watermark-core"
+            stretch
+            padBottom={1.35}
+          />
           <p className="hero-value">{formatBillionsRial(platform.recoverable_expected_rial)}</p>
         </div>
         <p className="page-lede">{copy.product.tagline}</p>
@@ -98,13 +144,12 @@ export function HomeDash() {
           <p className="stat-label">{copy.dash.pending}</p>
           <p className="stat-value">{formatBillionsRial(platform.paid_pending_rial)}</p>
         </article>
-        <article className="stat-card stat-card-floor">
+        <article className="stat-card">
           <p className="stat-label">{copy.dash.revenue}</p>
           <p className="stat-value">{formatBillionsRial(platform.revenue_rial)}</p>
           <p className="stat-hint">
             {copy.dash.dailyAvg} {formatCount(count(dailyAvg))}
           </p>
-          <Sparkline values={monthSpark} className="spark-floor" stretch />
         </article>
       </section>
 
@@ -134,13 +179,19 @@ export function HomeDash() {
         </article>
         <article className="chart-card">
           <h2 className="chart-title">{copy.nav.growth}</h2>
+          <p className="stat-hint">{copy.dash.trendUnit}</p>
           <AreaLine
             grid
             points={platform.jalali_months.map((m) => ({
               label: monthLabel(m.key),
               value: m.per_day_revenue,
             }))}
-            marker={lastMonth ? formatBillionsRial(lastMonth.per_day_revenue) : undefined}
+            marker={lastMonth ? formatBillionsFigure(lastMonth.per_day_revenue) : undefined}
+            caption={
+              lastMonth
+                ? `${monthLabel(lastMonth.key)} · ${formatBillionsRial(lastMonth.per_day_revenue)}`
+                : undefined
+            }
           />
         </article>
       </section>

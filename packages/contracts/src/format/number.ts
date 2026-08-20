@@ -40,7 +40,15 @@ export function formatBillionsRial(n: number): string {
   if (!Number.isFinite(n)) {
     throw new RangeError(`Billion format requires a finite number: ${n}`);
   }
+  return `${formatBillionsFigure(n)} میلیارد ریال`;
+}
+
+/** Persian billions figure only (no unit) — safe for tight SVG markers. */
+export function formatBillionsFigure(n: number): string {
+  if (!Number.isFinite(n)) {
+    throw new RangeError(`Billion figure requires a finite number: ${n}`);
+  }
   const billions = n / 1_000_000_000;
   const rounded = (Math.round(billions * 100) / 100).toFixed(2);
-  return `${toFaDigits(rounded).replace('.', '٫')} میلیارد ریال`;
+  return toFaDigits(rounded).replace('.', '٫');
 }

@@ -35,7 +35,7 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-const PALETTE_BOOT = `(function(){try{if(location.pathname==='/preview'){document.documentElement.setAttribute('data-palette',${JSON.stringify(PREVIEW_PALETTE)});return;}var k=${JSON.stringify(PALETTE_STORAGE_KEY)};var v=localStorage.getItem(k);if(v==='emerald')v='pearl';if(v==='steel')v='ice';if(v==='wealth')v='sand';if(v==='sand'||v==='pearl'||v==='aurum'||v==='ice')document.documentElement.setAttribute('data-palette',v);}catch(e){}})();`;
+const PALETTE_BOOT = `(function(){try{if(location.pathname==='/preview'){document.documentElement.setAttribute('data-palette',${JSON.stringify(PREVIEW_PALETTE)});return;}var k=${JSON.stringify(PALETTE_STORAGE_KEY)};var v=localStorage.getItem(k);if(v==='noir'||v==='dark')document.documentElement.setAttribute('data-palette','noir');else document.documentElement.setAttribute('data-palette','sand');}catch(e){}})();`;
 const NAV_BOOT = `(function(){try{var k=${JSON.stringify(NAV_STORAGE_KEY)};if(localStorage.getItem(k)==='hidden')document.documentElement.setAttribute('data-nav','hidden');}catch(e){}})();`;
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -55,7 +55,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <RegisterSw />
           <div className="lg:flex">
             <SidebarNav />
-            <div className="min-h-dvh flex-1 pb-20 lg:pb-0">
+            <div className="min-h-dvh flex-1 pb-28 lg:pb-0">
               <header className="flex items-center justify-between gap-3 px-4 py-3 lg:px-8">
                 <p className="page-kicker">{copy.installHint}</p>
                 <div className="flex items-center gap-2">

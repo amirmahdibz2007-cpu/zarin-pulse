@@ -27,11 +27,11 @@ describe('copy deck', () => {
     expect(Object.keys(copy.hypothesisDetail)).toHaveLength(13);
   });
 
-  it('names three chrome palettes', () => {
-    expect(copy.palette.pearl.length).toBeGreaterThan(0);
-    expect(copy.palette.aurum.length).toBeGreaterThan(0);
-    expect(copy.palette.ice.length).toBeGreaterThan(0);
+  it('names day and night themes', () => {
     expect(copy.palette.sand.length).toBeGreaterThan(0);
+    expect(copy.palette.noir.length).toBeGreaterThan(0);
+    expect(copy.palette.toDark.length).toBeGreaterThan(0);
+    expect(copy.palette.toLight.length).toBeGreaterThan(0);
     expect(copy.preview.hint.length).toBeGreaterThan(0);
   });
 

@@ -1,4 +1,4 @@
-import { copy, formatBillionsRial, MONTHS_FA } from '@zarinpulse/contracts';
+import { copy, formatBillionsFigure, formatBillionsRial, MONTHS_FA } from '@zarinpulse/contracts';
 import { AreaLine } from '../../components/Charts';
 import { PageHeader, PageShell } from '../../components/PageShell';
 import { readArtifact, type PlatformArtifact } from '../../lib/artifacts';
@@ -17,13 +17,18 @@ export default function GrowthPage() {
       <PageHeader kicker={copy.product.name} title={copy.nav.growth} />
       <article className="chart-card">
         <h2 className="chart-title">{copy.dash.revenue}</h2>
+        <p className="stat-hint">{copy.dash.trendUnit}</p>
         <AreaLine
           grid
+          pace="slow"
           points={platform.jalali_months.map((m) => ({
             label: monthLabel(m.key),
             value: m.per_day_revenue,
           }))}
-          marker={last ? formatBillionsRial(last.per_day_revenue) : undefined}
+          marker={last ? formatBillionsFigure(last.per_day_revenue) : undefined}
+          caption={
+            last ? `${monthLabel(last.key)} · ${formatBillionsRial(last.per_day_revenue)}` : undefined
+          }
         />
       </article>
       <ul className="case-grid">

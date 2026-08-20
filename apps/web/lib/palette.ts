@@ -1,22 +1,26 @@
-export const PALETTE_STORAGE_KEY = 'zarinpulse-palette-v3';
+export const PALETTE_STORAGE_KEY = 'zarinpulse-palette-v4';
 
-export const PALETTES = ['sand', 'pearl', 'aurum', 'ice'] as const;
+/** Light = sand atelier, dark = noir atelier. */
+export const PALETTES = ['sand', 'noir'] as const;
 
 export type PaletteId = (typeof PALETTES)[number];
 
 export const DEFAULT_PALETTE: PaletteId = 'sand';
+export const LIGHT_PALETTE: PaletteId = 'sand';
+export const DARK_PALETTE: PaletteId = 'noir';
 
-/** Same as the product default; /preview still locks it so localStorage cannot override. */
-export const PREVIEW_PALETTE = 'sand';
+/** Preview route stays locked to light. */
+export const PREVIEW_PALETTE = LIGHT_PALETTE;
 
 export function isPaletteId(value: string | null | undefined): value is PaletteId {
-  return value === 'sand' || value === 'pearl' || value === 'aurum' || value === 'ice';
+  return value === 'sand' || value === 'noir';
 }
 
 export function coercePalette(value: string | null | undefined): PaletteId {
-  if (isPaletteId(value)) return value;
-  if (value === 'emerald') return 'pearl';
-  if (value === 'steel') return 'ice';
-  if (value === 'wealth') return 'sand';
-  return DEFAULT_PALETTE;
+  if (value === 'noir' || value === 'dark') return DARK_PALETTE;
+  return LIGHT_PALETTE;
+}
+
+export function togglePalette(current: PaletteId): PaletteId {
+  return current === DARK_PALETTE ? LIGHT_PALETTE : DARK_PALETTE;
 }
