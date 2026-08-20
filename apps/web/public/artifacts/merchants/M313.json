@@ -1,0 +1,44 @@
+{
+  "key": "M313",
+  "category": "مراکز آموزشی مجازی",
+  "sessions": 181,
+  "verified": 35,
+  "no_attempt": 81,
+  "in_bank": 37,
+  "failed": 14,
+  "paid_pending": 14,
+  "revenue_rial": 158903770,
+  "paid_amount_rial": 28000000,
+  "attempted_amount_rial": 1805851410,
+  "median_amount": 4602000,
+  "unique_prices": 18,
+  "success_rate": 0.193370165746,
+  "aov": 4540107.714285715,
+  "health": "healthy",
+  "fee_actual": 0.009611005453,
+  "fee_expected": 0.004513682109,
+  "tariff_effect": 0.005097323344,
+  "fee_realized": 1527225,
+  "fee_potential": 9807556,
+  "customers": 22,
+  "repeat_customers": 6,
+  "repeat_order_share": 0.542857142857,
+  "business_model": null,
+  "peers": {
+    "n": 20,
+    "p75": 0.514925373134,
+    "gap": 0.321555207388
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 132120523,
+    "conservative": 79272314,
+    "optimistic": 184968732,
+    "basis": "own"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 28000000
+  },
+  "case_family": "no_attempt"
+}

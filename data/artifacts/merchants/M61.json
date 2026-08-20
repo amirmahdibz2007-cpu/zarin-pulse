@@ -1,0 +1,44 @@
+{
+  "key": "M61",
+  "category": "مراکز آموزشی مجازی",
+  "sessions": 263,
+  "verified": 113,
+  "no_attempt": 82,
+  "in_bank": 59,
+  "failed": 5,
+  "paid_pending": 4,
+  "revenue_rial": 1498862910,
+  "paid_amount_rial": 57370000,
+  "attempted_amount_rial": 3999428574,
+  "median_amount": 9670000,
+  "unique_prices": 45,
+  "success_rate": 0.429657794677,
+  "aov": 13264273.539823007,
+  "health": "healthy",
+  "fee_actual": 0.008685144527,
+  "fee_expected": 0.004637924944,
+  "tariff_effect": 0.004047219584,
+  "fee_realized": 13017841,
+  "fee_potential": 17919278,
+  "customers": 105,
+  "repeat_customers": 8,
+  "repeat_order_share": 0.141592920354,
+  "business_model": null,
+  "peers": {
+    "n": 20,
+    "p75": 0.566854990584,
+    "gap": 0.137197195907
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 239306479,
+    "conservative": 143583888,
+    "optimistic": 335029071,
+    "basis": "own"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 57370000
+  },
+  "case_family": "residual"
+}

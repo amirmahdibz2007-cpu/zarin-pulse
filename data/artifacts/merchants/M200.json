@@ -1,0 +1,38 @@
+{
+  "key": "M200",
+  "category": "خدمات شبکه‌های کامپیوتری و اینترنت",
+  "sessions": 11850,
+  "verified": 8092,
+  "no_attempt": 243,
+  "in_bank": 3230,
+  "failed": 198,
+  "paid_pending": 87,
+  "revenue_rial": 3081000000,
+  "paid_amount_rial": 34210000,
+  "attempted_amount_rial": 4602590001,
+  "median_amount": 410000,
+  "unique_prices": 29,
+  "success_rate": 0.682869198312,
+  "aov": 380746.41621354426,
+  "health": "healthy",
+  "fee_actual": 0.023480038948,
+  "fee_expected": 0.01273114386,
+  "tariff_effect": 0.010748895088,
+  "fee_realized": 72342000,
+  "fee_potential": 34983680,
+  "customers": 7650,
+  "repeat_customers": 397,
+  "repeat_order_share": 0.10368264953,
+  "business_model": "one_shot",
+  "peers": {
+    "n": 12,
+    "p75": 0.625,
+    "gap": -0.057869198312
+  },
+  "impact": null,
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 34210000
+  },
+  "case_family": null
+}

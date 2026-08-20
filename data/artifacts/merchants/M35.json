@@ -1,0 +1,38 @@
+{
+  "key": "M35",
+  "category": "ارائه دهنده خدمات اینترنت",
+  "sessions": 1342,
+  "verified": 993,
+  "no_attempt": 142,
+  "in_bank": 174,
+  "failed": 12,
+  "paid_pending": 21,
+  "revenue_rial": 834430000,
+  "paid_amount_rial": 12310000,
+  "attempted_amount_rial": 1116245680,
+  "median_amount": 690000,
+  "unique_prices": 38,
+  "success_rate": 0.739940387481,
+  "aov": 840312.1852970795,
+  "health": "healthy",
+  "fee_actual": 0.015978620136,
+  "fee_expected": 0.008465690856,
+  "tariff_effect": 0.00751292928,
+  "fee_realized": 13333040,
+  "fee_potential": 4658765,
+  "customers": 415,
+  "repeat_customers": 172,
+  "repeat_order_share": 0.755287009063,
+  "business_model": "repeat_like",
+  "peers": {
+    "n": 7,
+    "p75": 0.477029010046,
+    "gap": -0.262911377435
+  },
+  "impact": null,
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 12310000
+  },
+  "case_family": null
+}

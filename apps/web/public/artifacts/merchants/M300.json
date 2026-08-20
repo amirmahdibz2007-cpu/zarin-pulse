@@ -1,0 +1,44 @@
+{
+  "key": "M300",
+  "category": "ارائه دهنده خدمات اینترنت",
+  "sessions": 2050,
+  "verified": 339,
+  "no_attempt": 290,
+  "in_bank": 1258,
+  "failed": 154,
+  "paid_pending": 9,
+  "revenue_rial": 1415445120,
+  "paid_amount_rial": 24650000,
+  "attempted_amount_rial": 12964419972,
+  "median_amount": 2500000,
+  "unique_prices": 40,
+  "success_rate": 0.165365853659,
+  "aov": 4175354.336283186,
+  "health": "healthy",
+  "fee_actual": 0.006805253601,
+  "fee_expected": 0.004381766643,
+  "tariff_effect": 0.002423486958,
+  "fee_realized": 9632463,
+  "fee_potential": 49163003,
+  "customers": 281,
+  "repeat_customers": 23,
+  "repeat_order_share": 0.238938053097,
+  "business_model": null,
+  "peers": {
+    "n": 8,
+    "p75": 0.765765765766,
+    "gap": 0.600399912107
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 2569554436,
+    "conservative": 1541732662,
+    "optimistic": 3597376210,
+    "basis": "own"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 24650000
+  },
+  "case_family": "in_bank"
+}

@@ -1,0 +1,44 @@
+{
+  "key": "M192",
+  "category": "خدمات شبکه‌های کامپیوتری و اینترنت",
+  "sessions": 11906,
+  "verified": 6844,
+  "no_attempt": 3706,
+  "in_bank": 1130,
+  "failed": 130,
+  "paid_pending": 96,
+  "revenue_rial": 22973720000,
+  "paid_amount_rial": 292650000,
+  "attempted_amount_rial": 39178350002,
+  "median_amount": 1980000,
+  "unique_prices": 53,
+  "success_rate": 0.574836217033,
+  "aov": 3356767.97194623,
+  "health": "healthy",
+  "fee_actual": 0.010318966193,
+  "fee_expected": 0.004589770786,
+  "tariff_effect": 0.005729195406,
+  "fee_realized": 237065040,
+  "fee_potential": 165560560,
+  "customers": 2766,
+  "repeat_customers": 1337,
+  "repeat_order_share": 0.791203974284,
+  "business_model": "repeat_like",
+  "peers": {
+    "n": 15,
+    "p75": 0.722295064772,
+    "gap": 0.147458847739
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 2946646522,
+    "conservative": 1767987913,
+    "optimistic": 4125305131,
+    "basis": "own"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 292650000
+  },
+  "case_family": "residual"
+}

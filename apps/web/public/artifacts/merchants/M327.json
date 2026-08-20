@@ -1,0 +1,44 @@
+{
+  "key": "M327",
+  "category": "مراکز آموزشی مجازی",
+  "sessions": 126,
+  "verified": 0,
+  "no_attempt": 24,
+  "in_bank": 31,
+  "failed": 1,
+  "paid_pending": 70,
+  "revenue_rial": 0,
+  "paid_amount_rial": 882800000,
+  "attempted_amount_rial": 1907800000,
+  "median_amount": 7500000,
+  "unique_prices": 0,
+  "success_rate": 0,
+  "aov": null,
+  "health": "pattern_2_verify_broken",
+  "fee_actual": null,
+  "fee_expected": null,
+  "tariff_effect": null,
+  "fee_realized": 0,
+  "fee_potential": 14075200,
+  "customers": 0,
+  "repeat_customers": 0,
+  "repeat_order_share": null,
+  "business_model": null,
+  "peers": {
+    "n": 20,
+    "p75": 0.566854990584,
+    "gap": 0.566854990584
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 267838983,
+    "conservative": 160703390,
+    "optimistic": 374974576,
+    "basis": "median_attempted"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 882800000
+  },
+  "case_family": "gateway_broken"
+}

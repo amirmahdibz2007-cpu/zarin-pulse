@@ -1,0 +1,38 @@
+{
+  "key": "M25",
+  "category": "خدمات شبکه‌های کامپیوتری و اینترنت",
+  "sessions": 463,
+  "verified": 338,
+  "no_attempt": 16,
+  "in_bank": 88,
+  "failed": 21,
+  "paid_pending": 0,
+  "revenue_rial": 825637700,
+  "paid_amount_rial": 0,
+  "attempted_amount_rial": 1430731240,
+  "median_amount": 2015100,
+  "unique_prices": 6,
+  "success_rate": 0.730021598272,
+  "aov": 2442715.0887573967,
+  "health": "healthy",
+  "fee_actual": 0.011274724979,
+  "fee_expected": 0.00514684272,
+  "tariff_effect": 0.006127882259,
+  "fee_realized": 9308838,
+  "fee_potential": 5837301,
+  "customers": 315,
+  "repeat_customers": 23,
+  "repeat_order_share": 0.136094674556,
+  "business_model": null,
+  "peers": {
+    "n": 16,
+    "p75": 0.722295064772,
+    "gap": -0.0077265335
+  },
+  "impact": null,
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 0
+  },
+  "case_family": null
+}

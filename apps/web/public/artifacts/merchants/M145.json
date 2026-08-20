@@ -1,0 +1,44 @@
+{
+  "key": "M145",
+  "category": "ارائه دهنده خدمات اینترنت",
+  "sessions": 959,
+  "verified": 636,
+  "no_attempt": 60,
+  "in_bank": 215,
+  "failed": 24,
+  "paid_pending": 24,
+  "revenue_rial": 8517509890,
+  "paid_amount_rial": 237028000,
+  "attempted_amount_rial": 12697634351,
+  "median_amount": 8490000,
+  "unique_prices": 123,
+  "success_rate": 0.663190823775,
+  "aov": 13392311.147798741,
+  "health": "healthy",
+  "fee_actual": 0.008068629316,
+  "fee_expected": 0.00482212906,
+  "tariff_effect": 0.003246500256,
+  "fee_realized": 68724630,
+  "fee_potential": 34130440,
+  "customers": 563,
+  "repeat_customers": 64,
+  "repeat_order_share": 0.215408805031,
+  "business_model": "one_shot",
+  "peers": {
+    "n": 8,
+    "p75": 0.765765765766,
+    "gap": 0.102574941991
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 658696601,
+    "conservative": 395217961,
+    "optimistic": 922175241,
+    "basis": "own"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 237028000
+  },
+  "case_family": "residual"
+}

@@ -1,0 +1,44 @@
+{
+  "key": "M86",
+  "category": "فروشگاه لوازم آرایشی و بهداشتی",
+  "sessions": 2204,
+  "verified": 1308,
+  "no_attempt": 129,
+  "in_bank": 703,
+  "failed": 36,
+  "paid_pending": 28,
+  "revenue_rial": 16300112260,
+  "paid_amount_rial": 274227080,
+  "attempted_amount_rial": 29185090950,
+  "median_amount": 8880000,
+  "unique_prices": 892,
+  "success_rate": 0.593466424682,
+  "aov": 12461859.525993884,
+  "health": "healthy",
+  "fee_actual": 0.007702925109,
+  "fee_expected": 0.004521333338,
+  "tariff_effect": 0.003181591771,
+  "fee_realized": 125558544,
+  "fee_potential": 86595818,
+  "customers": 1244,
+  "repeat_customers": 59,
+  "repeat_order_share": 0.094036697248,
+  "business_model": "one_shot",
+  "peers": {
+    "n": 8,
+    "p75": 0.67585446527,
+    "gap": 0.082388040588
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 1131432424,
+    "conservative": 678859454,
+    "optimistic": 1584005393,
+    "basis": "own"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 274227080
+  },
+  "case_family": "in_bank"
+}

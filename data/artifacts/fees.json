@@ -1,0 +1,2746 @@
+[
+  {
+    "key": "M1",
+    "actual": 0.081142857143,
+    "expected": 0.028026975926,
+    "tariff_effect": 0.053115881216,
+    "realized": 56800,
+    "potential": 81280
+  },
+  {
+    "key": "M10",
+    "actual": 0.006222222222,
+    "expected": 0.004966380591,
+    "tariff_effect": 0.001255841631,
+    "realized": 392000,
+    "potential": 436000
+  },
+  {
+    "key": "M100",
+    "actual": 0.009185854352,
+    "expected": 0.004782832218,
+    "tariff_effect": 0.004403022134,
+    "realized": 45812088,
+    "potential": 10875578
+  },
+  {
+    "key": "M101",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 1703600
+  },
+  {
+    "key": "M102",
+    "actual": 0.002949291747,
+    "expected": 0.004821512913,
+    "tariff_effect": -0.001872221165,
+    "realized": 24362536,
+    "potential": 18839397
+  },
+  {
+    "key": "M103",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 1064840
+  },
+  {
+    "key": "M104",
+    "actual": 0.032316109422,
+    "expected": 0.007674384938,
+    "tariff_effect": 0.024641724484,
+    "realized": 10632,
+    "potential": 1101432
+  },
+  {
+    "key": "M105",
+    "actual": 0.012869565217,
+    "expected": 0.009558884624,
+    "tariff_effect": 0.003310680593,
+    "realized": 74000,
+    "potential": 205040
+  },
+  {
+    "key": "M106",
+    "actual": 0.081135862913,
+    "expected": 0.05940582433,
+    "tariff_effect": 0.021730038584,
+    "realized": 19901600,
+    "potential": 8585120
+  },
+  {
+    "key": "M107",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 3197931
+  },
+  {
+    "key": "M108",
+    "actual": 0.007943690084,
+    "expected": 0.005171978451,
+    "tariff_effect": 0.002771711633,
+    "realized": 308042400,
+    "potential": 202735200
+  },
+  {
+    "key": "M109",
+    "actual": 0.011649122807,
+    "expected": 0.004236351701,
+    "tariff_effect": 0.007412771107,
+    "realized": 99600,
+    "potential": 0
+  },
+  {
+    "key": "M11",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 15112
+  },
+  {
+    "key": "M110",
+    "actual": 0.039698113208,
+    "expected": 0.034848031692,
+    "tariff_effect": 0.004850081516,
+    "realized": 21040,
+    "potential": 98880
+  },
+  {
+    "key": "M111",
+    "actual": 0.003638075065,
+    "expected": 0.004555883452,
+    "tariff_effect": -0.000917808387,
+    "realized": 27224207,
+    "potential": 4168280
+  },
+  {
+    "key": "M112",
+    "actual": 0.004045977011,
+    "expected": 0.003195388305,
+    "tariff_effect": 0.000850588706,
+    "realized": 1056000,
+    "potential": 2112000
+  },
+  {
+    "key": "M113",
+    "actual": 0.009718518519,
+    "expected": 0.004434839039,
+    "tariff_effect": 0.00528367948,
+    "realized": 262400,
+    "potential": 1920000
+  },
+  {
+    "key": "M114",
+    "actual": 0.013619834711,
+    "expected": 0.006813201234,
+    "tariff_effect": 0.006806633477,
+    "realized": 32960,
+    "potential": 770000
+  },
+  {
+    "key": "M115",
+    "actual": 0.011250522499,
+    "expected": 0.005833841188,
+    "tariff_effect": 0.00541668131,
+    "realized": 227547784,
+    "potential": 139627995
+  },
+  {
+    "key": "M116",
+    "actual": 0.009898305085,
+    "expected": 0.004104305376,
+    "tariff_effect": 0.005793999708,
+    "realized": 321200,
+    "potential": 2139682
+  },
+  {
+    "key": "M117",
+    "actual": 0.008245204667,
+    "expected": 0.004799600419,
+    "tariff_effect": 0.003445604248,
+    "realized": 245172480,
+    "potential": 84418880
+  },
+  {
+    "key": "M118",
+    "actual": 0.008541509058,
+    "expected": 0.005024227103,
+    "tariff_effect": 0.003517281955,
+    "realized": 1501640,
+    "potential": 1606640
+  },
+  {
+    "key": "M119",
+    "actual": 0.033270157938,
+    "expected": 0.024823099484,
+    "tariff_effect": 0.008447058455,
+    "realized": 400240,
+    "potential": 160720
+  },
+  {
+    "key": "M12",
+    "actual": 0.005591818535,
+    "expected": 0.003940340343,
+    "tariff_effect": 0.001651478192,
+    "realized": 3887600,
+    "potential": 6341285
+  },
+  {
+    "key": "M120",
+    "actual": 0.007410671422,
+    "expected": 0.004326337032,
+    "tariff_effect": 0.00308433439,
+    "realized": 15386358,
+    "potential": 23466076
+  },
+  {
+    "key": "M121",
+    "actual": 0.017403610035,
+    "expected": 0.007499052903,
+    "tariff_effect": 0.009904557132,
+    "realized": 3977983,
+    "potential": 3138184
+  },
+  {
+    "key": "M122",
+    "actual": 0.017257231634,
+    "expected": 0.007765157082,
+    "tariff_effect": 0.009492074552,
+    "realized": 51351930,
+    "potential": 34222576
+  },
+  {
+    "key": "M123",
+    "actual": 0.008866666667,
+    "expected": 0.004996782368,
+    "tariff_effect": 0.003869884298,
+    "realized": 1064000,
+    "potential": 22049920
+  },
+  {
+    "key": "M124",
+    "actual": 0.022405517007,
+    "expected": 0.006768668133,
+    "tariff_effect": 0.015636848874,
+    "realized": 21053120,
+    "potential": 4339440
+  },
+  {
+    "key": "M125",
+    "actual": 0.010051282051,
+    "expected": 0.003524749613,
+    "tariff_effect": 0.006526532439,
+    "realized": 39200,
+    "potential": 32640
+  },
+  {
+    "key": "M126",
+    "actual": 0.011221160911,
+    "expected": 0.005291576002,
+    "tariff_effect": 0.005929584909,
+    "realized": 763600,
+    "potential": 3125952
+  },
+  {
+    "key": "M127",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 930240
+  },
+  {
+    "key": "M128",
+    "actual": 0.0345,
+    "expected": 0.016560043374,
+    "tariff_effect": 0.017939956626,
+    "realized": 60720,
+    "potential": 366720
+  },
+  {
+    "key": "M129",
+    "actual": 0.00329161672,
+    "expected": 0.002927556056,
+    "tariff_effect": 0.000364060664,
+    "realized": 7202640,
+    "potential": 5559384
+  },
+  {
+    "key": "M13",
+    "actual": 0.007969233978,
+    "expected": 0.005087957121,
+    "tariff_effect": 0.002881276857,
+    "realized": 86349280,
+    "potential": 41258640
+  },
+  {
+    "key": "M130",
+    "actual": 0.003904194589,
+    "expected": 0.002693729,
+    "tariff_effect": 0.001210465589,
+    "realized": 1917600,
+    "potential": 1256800
+  },
+  {
+    "key": "M131",
+    "actual": 0.00878447136,
+    "expected": 0.00437596976,
+    "tariff_effect": 0.0044085016,
+    "realized": 16608800,
+    "potential": 16175760
+  },
+  {
+    "key": "M132",
+    "actual": 0.008887681159,
+    "expected": 0.003896864099,
+    "tariff_effect": 0.00499081706,
+    "realized": 784960,
+    "potential": 3009040
+  },
+  {
+    "key": "M133",
+    "actual": 0.007331121216,
+    "expected": 0.004986213383,
+    "tariff_effect": 0.002344907833,
+    "realized": 1174950,
+    "potential": 2137776
+  },
+  {
+    "key": "M134",
+    "actual": 0.012177777778,
+    "expected": 0.00658746819,
+    "tariff_effect": 0.005590309588,
+    "realized": 109600,
+    "potential": 648000
+  },
+  {
+    "key": "M135",
+    "actual": 0.001589818023,
+    "expected": 0.001348774966,
+    "tariff_effect": 0.000241043057,
+    "realized": 1544416,
+    "potential": 1334048
+  },
+  {
+    "key": "M136",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 18792800
+  },
+  {
+    "key": "M137",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 1179114
+  },
+  {
+    "key": "M138",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 13192640
+  },
+  {
+    "key": "M139",
+    "actual": 0.010140102215,
+    "expected": 0.004349490029,
+    "tariff_effect": 0.005790612186,
+    "realized": 23193760,
+    "potential": 49899200
+  },
+  {
+    "key": "M14",
+    "actual": 0.011172804533,
+    "expected": 0.005344066961,
+    "tariff_effect": 0.005828737571,
+    "realized": 78880,
+    "potential": 370570
+  },
+  {
+    "key": "M140",
+    "actual": 0.00878221474,
+    "expected": 0.003934232006,
+    "tariff_effect": 0.004847982734,
+    "realized": 108922560,
+    "potential": 53732960
+  },
+  {
+    "key": "M141",
+    "actual": 0.008863209189,
+    "expected": 0.003897982675,
+    "tariff_effect": 0.004965226514,
+    "realized": 254640,
+    "potential": 974000
+  },
+  {
+    "key": "M142",
+    "actual": 0.01010459005,
+    "expected": 0.004985174994,
+    "tariff_effect": 0.005119415055,
+    "realized": 6952059,
+    "potential": 5948328
+  },
+  {
+    "key": "M143",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 809613
+  },
+  {
+    "key": "M144",
+    "actual": 0.009400642412,
+    "expected": 0.005185164203,
+    "tariff_effect": 0.004215478208,
+    "realized": 2268536,
+    "potential": 29797184
+  },
+  {
+    "key": "M145",
+    "actual": 0.008068629316,
+    "expected": 0.00482212906,
+    "tariff_effect": 0.003246500256,
+    "realized": 68724630,
+    "potential": 34130440
+  },
+  {
+    "key": "M146",
+    "actual": 0.008259926761,
+    "expected": 0.005055635945,
+    "tariff_effect": 0.003204290817,
+    "realized": 10617219,
+    "potential": 12943817
+  },
+  {
+    "key": "M147",
+    "actual": 0.003812578986,
+    "expected": 0.003097990644,
+    "tariff_effect": 0.000714588342,
+    "realized": 607648,
+    "potential": 4294666
+  },
+  {
+    "key": "M148",
+    "actual": 0.009632653061,
+    "expected": 0.003524749613,
+    "tariff_effect": 0.006107903449,
+    "realized": 188800,
+    "potential": 209600
+  },
+  {
+    "key": "M149",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 11680
+  },
+  {
+    "key": "M15",
+    "actual": 0.007849268841,
+    "expected": 0.004962841516,
+    "tariff_effect": 0.002886427325,
+    "realized": 558240,
+    "potential": 197600
+  },
+  {
+    "key": "M150",
+    "actual": 0.009974086855,
+    "expected": 0.005317342843,
+    "tariff_effect": 0.004656744012,
+    "realized": 1531920,
+    "potential": 651600
+  },
+  {
+    "key": "M151",
+    "actual": 0.016657648283,
+    "expected": 0.010737960622,
+    "tariff_effect": 0.005919687661,
+    "realized": 320160,
+    "potential": 2458096
+  },
+  {
+    "key": "M152",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 264000
+  },
+  {
+    "key": "M153",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 72000
+  },
+  {
+    "key": "M154",
+    "actual": 0.007830357143,
+    "expected": 0.004448409516,
+    "tariff_effect": 0.003381947627,
+    "realized": 701600,
+    "potential": 176880
+  },
+  {
+    "key": "M155",
+    "actual": 0.006424698505,
+    "expected": 0.004236668841,
+    "tariff_effect": 0.002188029664,
+    "realized": 1331840,
+    "potential": 772480
+  },
+  {
+    "key": "M156",
+    "actual": 0.003429864802,
+    "expected": 0.002977561768,
+    "tariff_effect": 0.000452303035,
+    "realized": 6507086192,
+    "potential": 5418506434
+  },
+  {
+    "key": "M157",
+    "actual": 0.00331669199,
+    "expected": 0.002727193239,
+    "tariff_effect": 0.000589498751,
+    "realized": 3056000,
+    "potential": 13896800
+  },
+  {
+    "key": "M158",
+    "actual": 0.008402154119,
+    "expected": 0.004543368257,
+    "tariff_effect": 0.003858785862,
+    "realized": 539830,
+    "potential": 1535248
+  },
+  {
+    "key": "M159",
+    "actual": 0.006216512527,
+    "expected": 0.004809355478,
+    "tariff_effect": 0.001407157049,
+    "realized": 3399848,
+    "potential": 4489264
+  },
+  {
+    "key": "M16",
+    "actual": 0.020572888528,
+    "expected": 0.006569819846,
+    "tariff_effect": 0.014003068683,
+    "realized": 30920640,
+    "potential": 35861920
+  },
+  {
+    "key": "M160",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 46400
+  },
+  {
+    "key": "M161",
+    "actual": 0.050882325431,
+    "expected": 0.047806769009,
+    "tariff_effect": 0.003075556421,
+    "realized": 2828752,
+    "potential": 2008728
+  },
+  {
+    "key": "M162",
+    "actual": 0.194666666667,
+    "expected": 0.229084947291,
+    "tariff_effect": -0.034418280624,
+    "realized": 5840,
+    "potential": 132720
+  },
+  {
+    "key": "M163",
+    "actual": 0.008153977759,
+    "expected": 0.004568015919,
+    "tariff_effect": 0.003585961839,
+    "realized": 5719200,
+    "potential": 5750400
+  },
+  {
+    "key": "M164",
+    "actual": 0.012705882353,
+    "expected": 0.010415866411,
+    "tariff_effect": 0.002290015942,
+    "realized": 15120,
+    "potential": 0
+  },
+  {
+    "key": "M165",
+    "actual": 0.008128348165,
+    "expected": 0.004319990995,
+    "tariff_effect": 0.00380835717,
+    "realized": 12924480,
+    "potential": 3997280
+  },
+  {
+    "key": "M166",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 1952
+  },
+  {
+    "key": "M167",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 12395360
+  },
+  {
+    "key": "M168",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 82200
+  },
+  {
+    "key": "M169",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 3166400
+  },
+  {
+    "key": "M17",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 280000
+  },
+  {
+    "key": "M170",
+    "actual": 0.017369024857,
+    "expected": 0.006039114798,
+    "tariff_effect": 0.011329910059,
+    "realized": 145344,
+    "potential": 1165192
+  },
+  {
+    "key": "M171",
+    "actual": 0.006614079354,
+    "expected": 0.003570218956,
+    "tariff_effect": 0.003043860398,
+    "realized": 838824,
+    "potential": 925632
+  },
+  {
+    "key": "M172",
+    "actual": 0.007626403433,
+    "expected": 0.004808239054,
+    "tariff_effect": 0.002818164379,
+    "realized": 338207808,
+    "potential": 144833696
+  },
+  {
+    "key": "M173",
+    "actual": 0.008269589262,
+    "expected": 0.004699924484,
+    "tariff_effect": 0.003569664778,
+    "realized": 18871120,
+    "potential": 9285920
+  },
+  {
+    "key": "M174",
+    "actual": 0.014554216867,
+    "expected": 0.007909330585,
+    "tariff_effect": 0.006644886283,
+    "realized": 120800,
+    "potential": 57600
+  },
+  {
+    "key": "M175",
+    "actual": 0.004278560842,
+    "expected": 0.003595611193,
+    "tariff_effect": 0.00068294965,
+    "realized": 57344252,
+    "potential": 46061119
+  },
+  {
+    "key": "M176",
+    "actual": 0.020962919024,
+    "expected": 0.00911548945,
+    "tariff_effect": 0.011847429574,
+    "realized": 1087922,
+    "potential": 1357484
+  },
+  {
+    "key": "M177",
+    "actual": 0.019609498681,
+    "expected": 0.009550340244,
+    "tariff_effect": 0.010059158437,
+    "realized": 74320,
+    "potential": 79360
+  },
+  {
+    "key": "M178",
+    "actual": 0.001203650587,
+    "expected": 0.001211819378,
+    "tariff_effect": -0.000008168791,
+    "realized": 1384800,
+    "potential": 7220320
+  },
+  {
+    "key": "M179",
+    "actual": 0.032481203008,
+    "expected": 0.020533932269,
+    "tariff_effect": 0.011947270738,
+    "realized": 17280,
+    "potential": 19840
+  },
+  {
+    "key": "M18",
+    "actual": 0.00071388082,
+    "expected": 0.004405535986,
+    "tariff_effect": -0.003691655166,
+    "realized": 691182452,
+    "potential": 462972991
+  },
+  {
+    "key": "M180",
+    "actual": 0.011094777563,
+    "expected": 0.004596662655,
+    "tariff_effect": 0.006498114908,
+    "realized": 527712,
+    "potential": 2012776
+  },
+  {
+    "key": "M181",
+    "actual": 0.010195306586,
+    "expected": 0.004617449899,
+    "tariff_effect": 0.005577856686,
+    "realized": 538720,
+    "potential": 593048
+  },
+  {
+    "key": "M182",
+    "actual": 0.007560768127,
+    "expected": 0.00460475779,
+    "tariff_effect": 0.002956010337,
+    "realized": 43514743,
+    "potential": 34282671
+  },
+  {
+    "key": "M183",
+    "actual": 0.006425653207,
+    "expected": 0.004992525766,
+    "tariff_effect": 0.00143312744,
+    "realized": 5410400,
+    "potential": 4161840
+  },
+  {
+    "key": "M184",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 269363
+  },
+  {
+    "key": "M185",
+    "actual": 0.007712877841,
+    "expected": 0.005105283314,
+    "tariff_effect": 0.002607594527,
+    "realized": 5243600,
+    "potential": 2764400
+  },
+  {
+    "key": "M186",
+    "actual": 0.042749770852,
+    "expected": 0.021003003246,
+    "tariff_effect": 0.021746767607,
+    "realized": 93280,
+    "potential": 298400
+  },
+  {
+    "key": "M187",
+    "actual": 0.009108910891,
+    "expected": 0.003742776847,
+    "tariff_effect": 0.005366134044,
+    "realized": 92000,
+    "potential": 117600
+  },
+  {
+    "key": "M188",
+    "actual": 0.008285714286,
+    "expected": 0.005964003857,
+    "tariff_effect": 0.002321710429,
+    "realized": 3410400,
+    "potential": 2713600
+  },
+  {
+    "key": "M189",
+    "actual": 0.006844613304,
+    "expected": 0.005538698604,
+    "tariff_effect": 0.001305914699,
+    "realized": 4523646,
+    "potential": 1609240
+  },
+  {
+    "key": "M19",
+    "actual": 0.009420249047,
+    "expected": 0.004384402514,
+    "tariff_effect": 0.005035846533,
+    "realized": 2435563,
+    "potential": 571749
+  },
+  {
+    "key": "M190",
+    "actual": 0.192,
+    "expected": 0.20876337935,
+    "tariff_effect": -0.01676337935,
+    "realized": 1920,
+    "potential": 2669760
+  },
+  {
+    "key": "M191",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 234320
+  },
+  {
+    "key": "M192",
+    "actual": 0.010318966193,
+    "expected": 0.004589770786,
+    "tariff_effect": 0.005729195406,
+    "realized": 237065040,
+    "potential": 165560560
+  },
+  {
+    "key": "M193",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 2094680
+  },
+  {
+    "key": "M194",
+    "actual": 0.008845665962,
+    "expected": 0.005268090231,
+    "tariff_effect": 0.00357757573,
+    "realized": 836800,
+    "potential": 695680
+  },
+  {
+    "key": "M195",
+    "actual": 0.062060525881,
+    "expected": 0.048327483639,
+    "tariff_effect": 0.013733042242,
+    "realized": 37528,
+    "potential": 404272
+  },
+  {
+    "key": "M196",
+    "actual": 0.005194285714,
+    "expected": 0.004561401729,
+    "tariff_effect": 0.000632883985,
+    "realized": 2545200,
+    "potential": 2493200
+  },
+  {
+    "key": "M197",
+    "actual": 0.006149122028,
+    "expected": 0.004897466941,
+    "tariff_effect": 0.001251655087,
+    "realized": 1800672,
+    "potential": 5943680
+  },
+  {
+    "key": "M198",
+    "actual": 0.010230766068,
+    "expected": 0.004699858617,
+    "tariff_effect": 0.005530907451,
+    "realized": 513605,
+    "potential": 1098465
+  },
+  {
+    "key": "M199",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 3239080
+  },
+  {
+    "key": "M2",
+    "actual": 0.016689655172,
+    "expected": 0.009693683611,
+    "tariff_effect": 0.006995971562,
+    "realized": 968000,
+    "potential": 2991920
+  },
+  {
+    "key": "M20",
+    "actual": 0.00855522645,
+    "expected": 0.004620372464,
+    "tariff_effect": 0.003934853986,
+    "realized": 54272560,
+    "potential": 54836640
+  },
+  {
+    "key": "M200",
+    "actual": 0.023480038948,
+    "expected": 0.01273114386,
+    "tariff_effect": 0.010748895088,
+    "realized": 72342000,
+    "potential": 34983680
+  },
+  {
+    "key": "M201",
+    "actual": 0.014245847176,
+    "expected": 0.006957587586,
+    "tariff_effect": 0.00728825959,
+    "realized": 85760,
+    "potential": 259040
+  },
+  {
+    "key": "M202",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 12800
+  },
+  {
+    "key": "M203",
+    "actual": 0.014015201629,
+    "expected": 0.008278649101,
+    "tariff_effect": 0.005736552528,
+    "realized": 976718,
+    "potential": 2510638
+  },
+  {
+    "key": "M204",
+    "actual": 0.007610981361,
+    "expected": 0.005222793405,
+    "tariff_effect": 0.002388187956,
+    "realized": 36305232,
+    "potential": 24889184
+  },
+  {
+    "key": "M205",
+    "actual": 0.015852760736,
+    "expected": 0.005951537972,
+    "tariff_effect": 0.009901222764,
+    "realized": 206720,
+    "potential": 111720
+  },
+  {
+    "key": "M206",
+    "actual": 0.007077038514,
+    "expected": 0.004429216095,
+    "tariff_effect": 0.002647822419,
+    "realized": 6602240,
+    "potential": 3688880
+  },
+  {
+    "key": "M207",
+    "actual": 0.007853150074,
+    "expected": 0.004473606457,
+    "tariff_effect": 0.003379543618,
+    "realized": 16231456,
+    "potential": 17496560
+  },
+  {
+    "key": "M208",
+    "actual": 0.012993167603,
+    "expected": 0.007367695312,
+    "tariff_effect": 0.005625472291,
+    "realized": 73281998,
+    "potential": 120241582
+  },
+  {
+    "key": "M209",
+    "actual": 0.007254077453,
+    "expected": 0.004634503043,
+    "tariff_effect": 0.00261957441,
+    "realized": 45815520,
+    "potential": 36135040
+  },
+  {
+    "key": "M21",
+    "actual": 0.005888314251,
+    "expected": 0.003851796574,
+    "tariff_effect": 0.002036517677,
+    "realized": 25753569,
+    "potential": 76541114
+  },
+  {
+    "key": "M210",
+    "actual": 0.011914056552,
+    "expected": 0.007491785129,
+    "tariff_effect": 0.004422271424,
+    "realized": 51586360,
+    "potential": 30772560
+  },
+  {
+    "key": "M211",
+    "actual": 0.008480111404,
+    "expected": 0.004536581838,
+    "tariff_effect": 0.003943529566,
+    "realized": 43601680,
+    "potential": 30443600
+  },
+  {
+    "key": "M212",
+    "actual": 0.013942857143,
+    "expected": 0.008558344326,
+    "tariff_effect": 0.005384512817,
+    "realized": 97600,
+    "potential": 60800
+  },
+  {
+    "key": "M213",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 5704800
+  },
+  {
+    "key": "M214",
+    "actual": 0.011015521064,
+    "expected": 0.004887702655,
+    "tariff_effect": 0.00612781841,
+    "realized": 49680,
+    "potential": 343440
+  },
+  {
+    "key": "M215",
+    "actual": 0.001771815571,
+    "expected": 0.001694711051,
+    "tariff_effect": 0.00007710452,
+    "realized": 67967760,
+    "potential": 108024640
+  },
+  {
+    "key": "M216",
+    "actual": 0.023539777731,
+    "expected": 0.01398306438,
+    "tariff_effect": 0.009556713351,
+    "realized": 38122260,
+    "potential": 63784771
+  },
+  {
+    "key": "M217",
+    "actual": 0.005628164519,
+    "expected": 0.004474180117,
+    "tariff_effect": 0.001153984402,
+    "realized": 129339408,
+    "potential": 58100032
+  },
+  {
+    "key": "M218",
+    "actual": 0.008622222222,
+    "expected": 0.003897982675,
+    "tariff_effect": 0.004724239547,
+    "realized": 232800,
+    "potential": 3402000
+  },
+  {
+    "key": "M219",
+    "actual": 0.003502315998,
+    "expected": 0.002969717528,
+    "tariff_effect": 0.00053259847,
+    "realized": 3432000,
+    "potential": 4420000
+  },
+  {
+    "key": "M22",
+    "actual": 0.010784108408,
+    "expected": 0.004128422739,
+    "tariff_effect": 0.006655685669,
+    "realized": 350160,
+    "potential": 558160
+  },
+  {
+    "key": "M220",
+    "actual": 0.013644268775,
+    "expected": 0.005214804571,
+    "tariff_effect": 0.008429464203,
+    "realized": 2071200,
+    "potential": 3417600
+  },
+  {
+    "key": "M221",
+    "actual": 0.011555555556,
+    "expected": 0.005214804571,
+    "tariff_effect": 0.006340750984,
+    "realized": 26000,
+    "potential": 994560
+  },
+  {
+    "key": "M222",
+    "actual": 0.008361012799,
+    "expected": 0.005397872802,
+    "tariff_effect": 0.002963139997,
+    "realized": 1533184,
+    "potential": 2482400
+  },
+  {
+    "key": "M223",
+    "actual": 0.008425526755,
+    "expected": 0.004480808451,
+    "tariff_effect": 0.003944718304,
+    "realized": 61141520,
+    "potential": 24169200
+  },
+  {
+    "key": "M224",
+    "actual": 0.008859060403,
+    "expected": 0.004513171624,
+    "tariff_effect": 0.004345888779,
+    "realized": 132000,
+    "potential": 58400
+  },
+  {
+    "key": "M225",
+    "actual": 0.013075054459,
+    "expected": 0.006428158327,
+    "tariff_effect": 0.006646896132,
+    "realized": 244501992,
+    "potential": 198442580
+  },
+  {
+    "key": "M226",
+    "actual": 0.008938626671,
+    "expected": 0.004215422185,
+    "tariff_effect": 0.004723204486,
+    "realized": 3470976,
+    "potential": 2814496
+  },
+  {
+    "key": "M227",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 11048800
+  },
+  {
+    "key": "M228",
+    "actual": 0.020305298979,
+    "expected": 0.008762347437,
+    "tariff_effect": 0.011542951542,
+    "realized": 1670720,
+    "potential": 399920
+  },
+  {
+    "key": "M229",
+    "actual": 0.007822282675,
+    "expected": 0.004734562165,
+    "tariff_effect": 0.003087720509,
+    "realized": 9109408,
+    "potential": 7697947
+  },
+  {
+    "key": "M23",
+    "actual": 0.027495920208,
+    "expected": 0.012478240998,
+    "tariff_effect": 0.01501767921,
+    "realized": 10365412,
+    "potential": 8016798
+  },
+  {
+    "key": "M230",
+    "actual": 0.021753088505,
+    "expected": 0.013444056058,
+    "tariff_effect": 0.008309032448,
+    "realized": 3637840,
+    "potential": 11610917
+  },
+  {
+    "key": "M231",
+    "actual": 0.008201659548,
+    "expected": 0.004895957584,
+    "tariff_effect": 0.003305701964,
+    "realized": 115892320,
+    "potential": 121912755
+  },
+  {
+    "key": "M232",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 311200
+  },
+  {
+    "key": "M233",
+    "actual": 0.014664668864,
+    "expected": 0.007826511683,
+    "tariff_effect": 0.006838157181,
+    "realized": 978720,
+    "potential": 837440
+  },
+  {
+    "key": "M234",
+    "actual": 0.2399639964,
+    "expected": 0.20876337935,
+    "tariff_effect": 0.03120061705,
+    "realized": 2666,
+    "potential": 15360
+  },
+  {
+    "key": "M235",
+    "actual": 0.039218378144,
+    "expected": 0.05318298872,
+    "tariff_effect": -0.013964610576,
+    "realized": 1283232,
+    "potential": 787874
+  },
+  {
+    "key": "M236",
+    "actual": 0.008935739684,
+    "expected": 0.004158630644,
+    "tariff_effect": 0.00477710904,
+    "realized": 229191,
+    "potential": 8638114
+  },
+  {
+    "key": "M237",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 815632
+  },
+  {
+    "key": "M238",
+    "actual": 0.026944,
+    "expected": 0.012537320171,
+    "tariff_effect": 0.014406679829,
+    "realized": 252600,
+    "potential": 622864
+  },
+  {
+    "key": "M239",
+    "actual": 0.007664150839,
+    "expected": 0.004664280005,
+    "tariff_effect": 0.002999870834,
+    "realized": 8593667,
+    "potential": 4444029
+  },
+  {
+    "key": "M24",
+    "actual": 0.006582650676,
+    "expected": 0.004974307579,
+    "tariff_effect": 0.001608343098,
+    "realized": 1783376,
+    "potential": 16131120
+  },
+  {
+    "key": "M240",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 505040
+  },
+  {
+    "key": "M241",
+    "actual": 0.010737331232,
+    "expected": 0.004983797497,
+    "tariff_effect": 0.005753533735,
+    "realized": 6608720,
+    "potential": 1713280
+  },
+  {
+    "key": "M242",
+    "actual": 0.006814770159,
+    "expected": 0.004903721281,
+    "tariff_effect": 0.001911048877,
+    "realized": 1474741,
+    "potential": 782216
+  },
+  {
+    "key": "M243",
+    "actual": 0.009462700425,
+    "expected": 0.004513548716,
+    "tariff_effect": 0.004949151709,
+    "realized": 1324920,
+    "potential": 1519400
+  },
+  {
+    "key": "M244",
+    "actual": 0.011688760807,
+    "expected": 0.003524749613,
+    "tariff_effect": 0.008164011194,
+    "realized": 40560,
+    "potential": 0
+  },
+  {
+    "key": "M245",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 2923264
+  },
+  {
+    "key": "M246",
+    "actual": 0.009303582581,
+    "expected": 0.004138401818,
+    "tariff_effect": 0.005165180763,
+    "realized": 1638640,
+    "potential": 1369760
+  },
+  {
+    "key": "M247",
+    "actual": 0.003334646853,
+    "expected": 0.003461963851,
+    "tariff_effect": -0.000127316998,
+    "realized": 998560,
+    "potential": 1784800
+  },
+  {
+    "key": "M248",
+    "actual": 0.0089884579,
+    "expected": 0.003978109017,
+    "tariff_effect": 0.005010348883,
+    "realized": 23752000,
+    "potential": 9235013
+  },
+  {
+    "key": "M249",
+    "actual": 0.007052037618,
+    "expected": 0.005341985126,
+    "tariff_effect": 0.001710052491,
+    "realized": 2249600,
+    "potential": 920000
+  },
+  {
+    "key": "M25",
+    "actual": 0.011274724979,
+    "expected": 0.00514684272,
+    "tariff_effect": 0.006127882259,
+    "realized": 9308838,
+    "potential": 5837301
+  },
+  {
+    "key": "M250",
+    "actual": 0.003835141552,
+    "expected": 0.006135560858,
+    "tariff_effect": -0.002300419306,
+    "realized": 1628964686,
+    "potential": 1649227474
+  },
+  {
+    "key": "M251",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 349776
+  },
+  {
+    "key": "M252",
+    "actual": 0.006448877718,
+    "expected": 0.00469626352,
+    "tariff_effect": 0.001752614198,
+    "realized": 36100624,
+    "potential": 29978976
+  },
+  {
+    "key": "M253",
+    "actual": 0.009975308642,
+    "expected": 0.003524749613,
+    "tariff_effect": 0.006450559029,
+    "realized": 80800,
+    "potential": 56000
+  },
+  {
+    "key": "M254",
+    "actual": 0.007782486388,
+    "expected": 0.004493583278,
+    "tariff_effect": 0.00328890311,
+    "realized": 13794805,
+    "potential": 4008160
+  },
+  {
+    "key": "M255",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 1891986
+  },
+  {
+    "key": "M256",
+    "actual": 0.009244466761,
+    "expected": 0.004259777918,
+    "tariff_effect": 0.004984688843,
+    "realized": 172328,
+    "potential": 1939330
+  },
+  {
+    "key": "M257",
+    "actual": 0.017591497841,
+    "expected": 0.006049671039,
+    "tariff_effect": 0.011541826802,
+    "realized": 1059360,
+    "potential": 701120
+  },
+  {
+    "key": "M258",
+    "actual": 0.005859943978,
+    "expected": 0.00482373958,
+    "tariff_effect": 0.001036204398,
+    "realized": 418400,
+    "potential": 653600
+  },
+  {
+    "key": "M259",
+    "actual": 0.003817737998,
+    "expected": 0.00353266747,
+    "tariff_effect": 0.000285070529,
+    "realized": 938400,
+    "potential": 2487200
+  },
+  {
+    "key": "M26",
+    "actual": 0.008187949878,
+    "expected": 0.004754783686,
+    "tariff_effect": 0.003433166191,
+    "realized": 84051680,
+    "potential": 33527760
+  },
+  {
+    "key": "M260",
+    "actual": 0.006212479913,
+    "expected": 0.004669051965,
+    "tariff_effect": 0.001543427948,
+    "realized": 21108640,
+    "potential": 109406400
+  },
+  {
+    "key": "M261",
+    "actual": 0.002822857143,
+    "expected": 0.003559696893,
+    "tariff_effect": -0.00073683975,
+    "realized": 592800,
+    "potential": 19366400
+  },
+  {
+    "key": "M262",
+    "actual": 0.003594659106,
+    "expected": 0.004825708651,
+    "tariff_effect": -0.001231049546,
+    "realized": 70993216,
+    "potential": 69480129
+  },
+  {
+    "key": "M263",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 153200
+  },
+  {
+    "key": "M264",
+    "actual": 0.004937473416,
+    "expected": 0.003756158046,
+    "tariff_effect": 0.00118131537,
+    "realized": 1160800,
+    "potential": 371200
+  },
+  {
+    "key": "M265",
+    "actual": 0.005708685609,
+    "expected": 0.004361208151,
+    "tariff_effect": 0.001347477458,
+    "realized": 24861440,
+    "potential": 1281024240
+  },
+  {
+    "key": "M266",
+    "actual": 0.014784739237,
+    "expected": 0.009338400032,
+    "tariff_effect": 0.005446339205,
+    "realized": 422400,
+    "potential": 2059040
+  },
+  {
+    "key": "M267",
+    "actual": 0.008595047845,
+    "expected": 0.004837306348,
+    "tariff_effect": 0.003757741497,
+    "realized": 3485120,
+    "potential": 2220320
+  },
+  {
+    "key": "M268",
+    "actual": 0.008296814299,
+    "expected": 0.004940058816,
+    "tariff_effect": 0.003356755483,
+    "realized": 251544579,
+    "potential": 122861968
+  },
+  {
+    "key": "M269",
+    "actual": 0.006320902955,
+    "expected": 0.004986076016,
+    "tariff_effect": 0.001334826939,
+    "realized": 2284880,
+    "potential": 8558960
+  },
+  {
+    "key": "M27",
+    "actual": 0.006715544633,
+    "expected": 0.003883518226,
+    "tariff_effect": 0.002832026408,
+    "realized": 1422689520,
+    "potential": 375150896
+  },
+  {
+    "key": "M270",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 614400
+  },
+  {
+    "key": "M271",
+    "actual": 0.008422744755,
+    "expected": 0.004352237458,
+    "tariff_effect": 0.004070507297,
+    "realized": 12937616,
+    "potential": 6596618
+  },
+  {
+    "key": "M272",
+    "actual": 0.006253932584,
+    "expected": 0.005240983938,
+    "tariff_effect": 0.001012948647,
+    "realized": 2226400,
+    "potential": 3923200
+  },
+  {
+    "key": "M273",
+    "actual": 0.012161376689,
+    "expected": 0.009332726587,
+    "tariff_effect": 0.002828650102,
+    "realized": 15582451,
+    "potential": 6771600
+  },
+  {
+    "key": "M274",
+    "actual": 0.007219605765,
+    "expected": 0.005423998698,
+    "tariff_effect": 0.001795607067,
+    "realized": 14302400,
+    "potential": 17248720
+  },
+  {
+    "key": "M275",
+    "actual": 0.008665198477,
+    "expected": 0.004150682711,
+    "tariff_effect": 0.004514515765,
+    "realized": 409202560,
+    "potential": 348323440
+  },
+  {
+    "key": "M276",
+    "actual": 0.0108,
+    "expected": 0.005214804571,
+    "tariff_effect": 0.005585195429,
+    "realized": 21600,
+    "potential": 0
+  },
+  {
+    "key": "M277",
+    "actual": 0.008633093525,
+    "expected": 0.00471942926,
+    "tariff_effect": 0.003913664266,
+    "realized": 600000,
+    "potential": 253600
+  },
+  {
+    "key": "M278",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 197600
+  },
+  {
+    "key": "M279",
+    "actual": 0.005091417252,
+    "expected": 0.003441065743,
+    "tariff_effect": 0.001650351509,
+    "realized": 7505360,
+    "potential": 8579600
+  },
+  {
+    "key": "M28",
+    "actual": 0.007944113829,
+    "expected": 0.004933293515,
+    "tariff_effect": 0.003010820314,
+    "realized": 14601568,
+    "potential": 13942288
+  },
+  {
+    "key": "M280",
+    "actual": 0.00805151187,
+    "expected": 0.004903055504,
+    "tariff_effect": 0.003148456366,
+    "realized": 16645752,
+    "potential": 11624600
+  },
+  {
+    "key": "M281",
+    "actual": 0.013119221411,
+    "expected": 0.007879423422,
+    "tariff_effect": 0.005239797989,
+    "realized": 539200,
+    "potential": 528800
+  },
+  {
+    "key": "M282",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 23568000
+  },
+  {
+    "key": "M283",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 119990
+  },
+  {
+    "key": "M284",
+    "actual": 0.007491094148,
+    "expected": 0.005122608986,
+    "tariff_effect": 0.002368485162,
+    "realized": 2060800,
+    "potential": 1812800
+  },
+  {
+    "key": "M285",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 52000
+  },
+  {
+    "key": "M286",
+    "actual": 0.008009000134,
+    "expected": 0.005182911853,
+    "tariff_effect": 0.00282608828,
+    "realized": 229017760,
+    "potential": 159877200
+  },
+  {
+    "key": "M287",
+    "actual": 0.005764743059,
+    "expected": 0.004950458522,
+    "tariff_effect": 0.000814284537,
+    "realized": 19154800,
+    "potential": 15323200
+  },
+  {
+    "key": "M288",
+    "actual": 0.024,
+    "expected": 0.007674384938,
+    "tariff_effect": 0.016325615062,
+    "realized": 12000,
+    "potential": 884560
+  },
+  {
+    "key": "M289",
+    "actual": 0.000917120721,
+    "expected": 0.005034336522,
+    "tariff_effect": -0.004117215801,
+    "realized": 113051261,
+    "potential": 78752919
+  },
+  {
+    "key": "M29",
+    "actual": 0.007723744849,
+    "expected": 0.005273638248,
+    "tariff_effect": 0.002450106602,
+    "realized": 219477040,
+    "potential": 143444312
+  },
+  {
+    "key": "M290",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 34400
+  },
+  {
+    "key": "M291",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 450880
+  },
+  {
+    "key": "M292",
+    "actual": 0.010962962963,
+    "expected": 0.005214804571,
+    "tariff_effect": 0.005748158392,
+    "realized": 20720,
+    "potential": 183760
+  },
+  {
+    "key": "M293",
+    "actual": 0.004375158924,
+    "expected": 0.005184984818,
+    "tariff_effect": -0.000809825894,
+    "realized": 357888,
+    "potential": 4865440
+  },
+  {
+    "key": "M294",
+    "actual": 0.004029217391,
+    "expected": 0.003778060548,
+    "tariff_effect": 0.000251156843,
+    "realized": 2316800,
+    "potential": 1580800
+  },
+  {
+    "key": "M295",
+    "actual": 0.015543611504,
+    "expected": 0.007210866585,
+    "tariff_effect": 0.008332744919,
+    "realized": 329680,
+    "potential": 1889760
+  },
+  {
+    "key": "M296",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 3809014
+  },
+  {
+    "key": "M297",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 5840
+  },
+  {
+    "key": "M298",
+    "actual": 0.011917525773,
+    "expected": 0.005834754032,
+    "tariff_effect": 0.006082771741,
+    "realized": 138720,
+    "potential": 1022168
+  },
+  {
+    "key": "M299",
+    "actual": 0.004509655591,
+    "expected": 0.004254238925,
+    "tariff_effect": 0.000255416666,
+    "realized": 2169920,
+    "potential": 1703840
+  },
+  {
+    "key": "M3",
+    "actual": 0.002415519399,
+    "expected": 0.002245922878,
+    "tariff_effect": 0.000169596522,
+    "realized": 772000,
+    "potential": 1727120
+  },
+  {
+    "key": "M30",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 19699200
+  },
+  {
+    "key": "M300",
+    "actual": 0.006805253601,
+    "expected": 0.004381766643,
+    "tariff_effect": 0.002423486958,
+    "realized": 9632463,
+    "potential": 49163003
+  },
+  {
+    "key": "M301",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 5950736
+  },
+  {
+    "key": "M302",
+    "actual": 0.007090234858,
+    "expected": 0.005111836687,
+    "tariff_effect": 0.001978398171,
+    "realized": 573600,
+    "potential": 1163120
+  },
+  {
+    "key": "M303",
+    "actual": 0.017985508436,
+    "expected": 0.011906420723,
+    "tariff_effect": 0.006079087713,
+    "realized": 701724,
+    "potential": 1847222
+  },
+  {
+    "key": "M304",
+    "actual": 0.00959903089,
+    "expected": 0.003572562328,
+    "tariff_effect": 0.006026468563,
+    "realized": 633920,
+    "potential": 425040
+  },
+  {
+    "key": "M305",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 1511712
+  },
+  {
+    "key": "M306",
+    "actual": 0.016,
+    "expected": 0.010415866411,
+    "tariff_effect": 0.005584133589,
+    "realized": 32000,
+    "potential": 0
+  },
+  {
+    "key": "M307",
+    "actual": 0.026666666667,
+    "expected": 0.022797167859,
+    "tariff_effect": 0.003869498807,
+    "realized": 40000,
+    "potential": 3368000
+  },
+  {
+    "key": "M308",
+    "actual": 0.007652173913,
+    "expected": 0.005108008393,
+    "tariff_effect": 0.00254416552,
+    "realized": 264000,
+    "potential": 3115200
+  },
+  {
+    "key": "M309",
+    "actual": 0.010319647414,
+    "expected": 0.004383705853,
+    "tariff_effect": 0.00593594156,
+    "realized": 177952,
+    "potential": 1103696
+  },
+  {
+    "key": "M31",
+    "actual": 0.002927648982,
+    "expected": 0.004718868013,
+    "tariff_effect": -0.00179121903,
+    "realized": 335149409,
+    "potential": 1781532883
+  },
+  {
+    "key": "M310",
+    "actual": 0.011620689655,
+    "expected": 0.007718059492,
+    "tariff_effect": 0.003902630164,
+    "realized": 539200,
+    "potential": 335200
+  },
+  {
+    "key": "M311",
+    "actual": 0.008803809652,
+    "expected": 0.004349241777,
+    "tariff_effect": 0.004454567876,
+    "realized": 1042688,
+    "potential": 4864880
+  },
+  {
+    "key": "M312",
+    "actual": 0.04449543116,
+    "expected": 0.011823021607,
+    "tariff_effect": 0.032672409553,
+    "realized": 5794640,
+    "potential": 3579368
+  },
+  {
+    "key": "M313",
+    "actual": 0.009611005453,
+    "expected": 0.004513682109,
+    "tariff_effect": 0.005097323344,
+    "realized": 1527225,
+    "potential": 9807556
+  },
+  {
+    "key": "M314",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 3123201
+  },
+  {
+    "key": "M315",
+    "actual": 0.011776540919,
+    "expected": 0.006187391778,
+    "tariff_effect": 0.005589149141,
+    "realized": 571280,
+    "potential": 1588080
+  },
+  {
+    "key": "M316",
+    "actual": 0.008403383482,
+    "expected": 0.004683747978,
+    "tariff_effect": 0.003719635504,
+    "realized": 524088184,
+    "potential": 370771192
+  },
+  {
+    "key": "M317",
+    "actual": 0.008551664794,
+    "expected": 0.004294524845,
+    "tariff_effect": 0.004257139949,
+    "realized": 83878320,
+    "potential": 45519200
+  },
+  {
+    "key": "M318",
+    "actual": 0.018181818182,
+    "expected": 0.014869498949,
+    "tariff_effect": 0.003312319233,
+    "realized": 40000,
+    "potential": 157600
+  },
+  {
+    "key": "M319",
+    "actual": 0.011228128576,
+    "expected": 0.008460175461,
+    "tariff_effect": 0.002767953115,
+    "realized": 8634880,
+    "potential": 79441280
+  },
+  {
+    "key": "M32",
+    "actual": 0.003937225239,
+    "expected": 0.002891628751,
+    "tariff_effect": 0.001045596488,
+    "realized": 11701088,
+    "potential": 6283307
+  },
+  {
+    "key": "M320",
+    "actual": 0.009439805911,
+    "expected": 0.004254743309,
+    "tariff_effect": 0.005185062602,
+    "realized": 4955091,
+    "potential": 3866134
+  },
+  {
+    "key": "M321",
+    "actual": 0.023466666667,
+    "expected": 0.032189181042,
+    "tariff_effect": -0.008722514375,
+    "realized": 42240,
+    "potential": 394560
+  },
+  {
+    "key": "M322",
+    "actual": 0.008571428571,
+    "expected": 0.005445849488,
+    "tariff_effect": 0.003125579084,
+    "realized": 720000,
+    "potential": 2573680
+  },
+  {
+    "key": "M323",
+    "actual": 0.004595073145,
+    "expected": 0.004055376854,
+    "tariff_effect": 0.000539696292,
+    "realized": 582352,
+    "potential": 12725360
+  },
+  {
+    "key": "M324",
+    "actual": 0.008903579793,
+    "expected": 0.004788509372,
+    "tariff_effect": 0.004115070421,
+    "realized": 6653200,
+    "potential": 5272560
+  },
+  {
+    "key": "M325",
+    "actual": 0.024326530612,
+    "expected": 0.007674384938,
+    "tariff_effect": 0.016652145674,
+    "realized": 23840,
+    "potential": 47840
+  },
+  {
+    "key": "M326",
+    "actual": 0.008961790982,
+    "expected": 0.004459273042,
+    "tariff_effect": 0.00450251794,
+    "realized": 45016976,
+    "potential": 25501600
+  },
+  {
+    "key": "M327",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 14075200
+  },
+  {
+    "key": "M328",
+    "actual": 0.24,
+    "expected": 0.229084947291,
+    "tariff_effect": 0.010915052709,
+    "realized": 4800,
+    "potential": 1891440
+  },
+  {
+    "key": "M329",
+    "actual": 0.008558872125,
+    "expected": 0.004500862052,
+    "tariff_effect": 0.004058010073,
+    "realized": 42580560,
+    "potential": 39164000
+  },
+  {
+    "key": "M33",
+    "actual": 0.007406871938,
+    "expected": 0.004709457735,
+    "tariff_effect": 0.002697414203,
+    "realized": 1205337760,
+    "potential": 2009726839
+  },
+  {
+    "key": "M330",
+    "actual": 0.064,
+    "expected": 0.05940582433,
+    "tariff_effect": 0.00459417567,
+    "realized": 38400,
+    "potential": 194400
+  },
+  {
+    "key": "M331",
+    "actual": 0.004433556321,
+    "expected": 0.00323878308,
+    "tariff_effect": 0.001194773242,
+    "realized": 6316000,
+    "potential": 2922320
+  },
+  {
+    "key": "M332",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 12868360
+  },
+  {
+    "key": "M333",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 12404864
+  },
+  {
+    "key": "M334",
+    "actual": 0.010432666164,
+    "expected": 0.00392122144,
+    "tariff_effect": 0.006511444723,
+    "realized": 133795,
+    "potential": 500480
+  },
+  {
+    "key": "M335",
+    "actual": 0.008106036475,
+    "expected": 0.00429294212,
+    "tariff_effect": 0.003813094355,
+    "realized": 28204202,
+    "potential": 14409560
+  },
+  {
+    "key": "M336",
+    "actual": 0.003853088481,
+    "expected": 0.004071872803,
+    "tariff_effect": -0.000218784322,
+    "realized": 461600,
+    "potential": 0
+  },
+  {
+    "key": "M337",
+    "actual": 0.008557003705,
+    "expected": 0.004570980764,
+    "tariff_effect": 0.003986022941,
+    "realized": 15372648,
+    "potential": 17775284
+  },
+  {
+    "key": "M338",
+    "actual": 0.006901076371,
+    "expected": 0.00458332706,
+    "tariff_effect": 0.002317749311,
+    "realized": 1346400,
+    "potential": 2712800
+  },
+  {
+    "key": "M339",
+    "actual": 0.006958841894,
+    "expected": 0.00534966177,
+    "tariff_effect": 0.001609180124,
+    "realized": 79306720,
+    "potential": 111916000
+  },
+  {
+    "key": "M34",
+    "actual": 0.009555555556,
+    "expected": 0.003524749613,
+    "tariff_effect": 0.006030805943,
+    "realized": 68800,
+    "potential": 0
+  },
+  {
+    "key": "M340",
+    "actual": 0.011943977591,
+    "expected": 0.006512914614,
+    "tariff_effect": 0.005431062977,
+    "realized": 1066000,
+    "potential": 8098233
+  },
+  {
+    "key": "M341",
+    "actual": 0.007792723264,
+    "expected": 0.005216343116,
+    "tariff_effect": 0.002576380147,
+    "realized": 15549600,
+    "potential": 4380000
+  },
+  {
+    "key": "M342",
+    "actual": 0.009695664331,
+    "expected": 0.004442183256,
+    "tariff_effect": 0.005253481074,
+    "realized": 1074968,
+    "potential": 1409480
+  },
+  {
+    "key": "M343",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 828656
+  },
+  {
+    "key": "M35",
+    "actual": 0.015978620136,
+    "expected": 0.008465690856,
+    "tariff_effect": 0.00751292928,
+    "realized": 13333040,
+    "potential": 4658765
+  },
+  {
+    "key": "M36",
+    "actual": 0.001066392177,
+    "expected": 0.001062910518,
+    "tariff_effect": 0.000003481659,
+    "realized": 207200,
+    "potential": 54400
+  },
+  {
+    "key": "M37",
+    "actual": 0.008948386607,
+    "expected": 0.004525398169,
+    "tariff_effect": 0.004422988438,
+    "realized": 449021360,
+    "potential": 348475680
+  },
+  {
+    "key": "M38",
+    "actual": 0.007614478137,
+    "expected": 0.004944283371,
+    "tariff_effect": 0.002670194766,
+    "realized": 115662400,
+    "potential": 197504880
+  },
+  {
+    "key": "M39",
+    "actual": 0.008174539091,
+    "expected": 0.004685346616,
+    "tariff_effect": 0.003489192475,
+    "realized": 47460720,
+    "potential": 32515040
+  },
+  {
+    "key": "M4",
+    "actual": 0.020444444444,
+    "expected": 0.011386827409,
+    "tariff_effect": 0.009057617036,
+    "realized": 27600,
+    "potential": 460275
+  },
+  {
+    "key": "M40",
+    "actual": 0.0138097313,
+    "expected": 0.006331642696,
+    "tariff_effect": 0.007478088604,
+    "realized": 950800,
+    "potential": 656800
+  },
+  {
+    "key": "M41",
+    "actual": 0.011241678726,
+    "expected": 0.006671252424,
+    "tariff_effect": 0.004570426303,
+    "realized": 466080,
+    "potential": 5759760
+  },
+  {
+    "key": "M42",
+    "actual": 0.008246215448,
+    "expected": 0.004275448744,
+    "tariff_effect": 0.003970766704,
+    "realized": 20659415,
+    "potential": 8796782
+  },
+  {
+    "key": "M43",
+    "actual": 0.012749474634,
+    "expected": 0.006846327197,
+    "tariff_effect": 0.005903147438,
+    "realized": 383704894,
+    "potential": 200493594
+  },
+  {
+    "key": "M44",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 966640
+  },
+  {
+    "key": "M45",
+    "actual": 0.00836538228,
+    "expected": 0.004459101951,
+    "tariff_effect": 0.003906280329,
+    "realized": 110219600,
+    "potential": 75873760
+  },
+  {
+    "key": "M46",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 257920
+  },
+  {
+    "key": "M47",
+    "actual": 0.017695364238,
+    "expected": 0.0117294261,
+    "tariff_effect": 0.005965938139,
+    "realized": 26720,
+    "potential": 2483840
+  },
+  {
+    "key": "M48",
+    "actual": 0.037714285714,
+    "expected": 0.013075378839,
+    "tariff_effect": 0.024638906876,
+    "realized": 52800,
+    "potential": 97790400
+  },
+  {
+    "key": "M49",
+    "actual": 0.008296654085,
+    "expected": 0.004773151401,
+    "tariff_effect": 0.003523502684,
+    "realized": 65546720,
+    "potential": 32367760
+  },
+  {
+    "key": "M5",
+    "actual": 0.020457844779,
+    "expected": 0.008591911533,
+    "tariff_effect": 0.011865933247,
+    "realized": 221760,
+    "potential": 887600
+  },
+  {
+    "key": "M50",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 88000
+  },
+  {
+    "key": "M51",
+    "actual": 0.192,
+    "expected": 0.20876337935,
+    "tariff_effect": -0.01676337935,
+    "realized": 5760,
+    "potential": 2416480
+  },
+  {
+    "key": "M52",
+    "actual": 0.004302554621,
+    "expected": 0.003360638718,
+    "tariff_effect": 0.000941915904,
+    "realized": 14800960,
+    "potential": 6707680
+  },
+  {
+    "key": "M53",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 1853840
+  },
+  {
+    "key": "M54",
+    "actual": 0.007057142857,
+    "expected": 0.005964003857,
+    "tariff_effect": 0.001093139001,
+    "realized": 197600,
+    "potential": 581040
+  },
+  {
+    "key": "M55",
+    "actual": 0.020162021718,
+    "expected": 0.008375699924,
+    "tariff_effect": 0.011786321794,
+    "realized": 7263328,
+    "potential": 4293104
+  },
+  {
+    "key": "M56",
+    "actual": 0.012361733222,
+    "expected": 0.006485502557,
+    "tariff_effect": 0.005876230665,
+    "realized": 4502824,
+    "potential": 3626856
+  },
+  {
+    "key": "M57",
+    "actual": 0.002096738926,
+    "expected": 0.001883997342,
+    "tariff_effect": 0.000212741583,
+    "realized": 27808000,
+    "potential": 24155200
+  },
+  {
+    "key": "M58",
+    "actual": 0.009146757679,
+    "expected": 0.004448286882,
+    "tariff_effect": 0.004698470797,
+    "realized": 134000,
+    "potential": 548880
+  },
+  {
+    "key": "M59",
+    "actual": 0.055659100823,
+    "expected": 0.047500951222,
+    "tariff_effect": 0.008158149601,
+    "realized": 7400768,
+    "potential": 5394048
+  },
+  {
+    "key": "M6",
+    "actual": 0.00504655423,
+    "expected": 0.004183596248,
+    "tariff_effect": 0.000862957983,
+    "realized": 125344800,
+    "potential": 50914400
+  },
+  {
+    "key": "M60",
+    "actual": 0.007522287398,
+    "expected": 0.004895128329,
+    "tariff_effect": 0.002627159068,
+    "realized": 4739105,
+    "potential": 7764320
+  },
+  {
+    "key": "M61",
+    "actual": 0.008685144527,
+    "expected": 0.004637924944,
+    "tariff_effect": 0.004047219584,
+    "realized": 13017841,
+    "potential": 17919278
+  },
+  {
+    "key": "M62",
+    "actual": 0.014991061337,
+    "expected": 0.010144963493,
+    "tariff_effect": 0.004846097844,
+    "realized": 721921666,
+    "potential": 344114346
+  },
+  {
+    "key": "M63",
+    "actual": 0.008567627494,
+    "expected": 0.005964003857,
+    "tariff_effect": 0.002603623638,
+    "realized": 193200,
+    "potential": 1434240
+  },
+  {
+    "key": "M64",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 36596184
+  },
+  {
+    "key": "M65",
+    "actual": 0.168,
+    "expected": 0.143685339574,
+    "tariff_effect": 0.024314660426,
+    "realized": 8400,
+    "potential": 0
+  },
+  {
+    "key": "M66",
+    "actual": 0.008682949964,
+    "expected": 0.004926298179,
+    "tariff_effect": 0.003756651786,
+    "realized": 1830800,
+    "potential": 308960
+  },
+  {
+    "key": "M67",
+    "actual": 0.021368888889,
+    "expected": 0.005438446942,
+    "tariff_effect": 0.015930441946,
+    "realized": 1442400,
+    "potential": 12233600
+  },
+  {
+    "key": "M68",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 96000
+  },
+  {
+    "key": "M69",
+    "actual": 0.008404053007,
+    "expected": 0.004386137056,
+    "tariff_effect": 0.004017915951,
+    "realized": 16704400,
+    "potential": 11892400
+  },
+  {
+    "key": "M7",
+    "actual": 0.009658596804,
+    "expected": 0.004984861926,
+    "tariff_effect": 0.004673734878,
+    "realized": 1408320,
+    "potential": 6323200
+  },
+  {
+    "key": "M70",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 80400
+  },
+  {
+    "key": "M71",
+    "actual": 0.124666666667,
+    "expected": 0.143685339574,
+    "tariff_effect": -0.019018672907,
+    "realized": 5984,
+    "potential": 535200
+  },
+  {
+    "key": "M72",
+    "actual": 0.006999190231,
+    "expected": 0.003637587694,
+    "tariff_effect": 0.003361602538,
+    "realized": 6525800,
+    "potential": 9747960
+  },
+  {
+    "key": "M73",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 2236059
+  },
+  {
+    "key": "M74",
+    "actual": 0.012614894666,
+    "expected": 0.007407268989,
+    "tariff_effect": 0.005207625677,
+    "realized": 2565230,
+    "potential": 3792574
+  },
+  {
+    "key": "M75",
+    "actual": 0.004217261382,
+    "expected": 0.003713437451,
+    "tariff_effect": 0.000503823931,
+    "realized": 479840,
+    "potential": 578320
+  },
+  {
+    "key": "M76",
+    "actual": 0.006529032258,
+    "expected": 0.005508393368,
+    "tariff_effect": 0.00102063889,
+    "realized": 404800,
+    "potential": 3702400
+  },
+  {
+    "key": "M77",
+    "actual": 0.005813046473,
+    "expected": 0.0042054409,
+    "tariff_effect": 0.001607605573,
+    "realized": 40979638,
+    "potential": 43232960
+  },
+  {
+    "key": "M78",
+    "actual": 0.009037152878,
+    "expected": 0.005254200649,
+    "tariff_effect": 0.003782952228,
+    "realized": 334592,
+    "potential": 1128327
+  },
+  {
+    "key": "M79",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 632000
+  },
+  {
+    "key": "M8",
+    "actual": 0.008726314584,
+    "expected": 0.00433879448,
+    "tariff_effect": 0.004387520104,
+    "realized": 3046880,
+    "potential": 878240
+  },
+  {
+    "key": "M80",
+    "actual": 0.014166776794,
+    "expected": 0.005438446942,
+    "tariff_effect": 0.008728329852,
+    "realized": 12864,
+    "potential": 7189920
+  },
+  {
+    "key": "M81",
+    "actual": 0.008689331036,
+    "expected": 0.004954496586,
+    "tariff_effect": 0.003734834449,
+    "realized": 554640,
+    "potential": 776160
+  },
+  {
+    "key": "M82",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 91200
+  },
+  {
+    "key": "M83",
+    "actual": 0.019530648928,
+    "expected": 0.013070990166,
+    "tariff_effect": 0.006459658762,
+    "realized": 13364784,
+    "potential": 29784348
+  },
+  {
+    "key": "M84",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 5840
+  },
+  {
+    "key": "M85",
+    "actual": 0.01416,
+    "expected": 0.005214804571,
+    "tariff_effect": 0.008945195429,
+    "realized": 141600,
+    "potential": 165600
+  },
+  {
+    "key": "M86",
+    "actual": 0.007702925109,
+    "expected": 0.004521333338,
+    "tariff_effect": 0.003181591771,
+    "realized": 125558544,
+    "potential": 86595818
+  },
+  {
+    "key": "M87",
+    "actual": 0.007453683618,
+    "expected": 0.004756204022,
+    "tariff_effect": 0.002697479596,
+    "realized": 16700411,
+    "potential": 18478550
+  },
+  {
+    "key": "M88",
+    "actual": 0.005151681454,
+    "expected": 0.003325374243,
+    "tariff_effect": 0.001826307211,
+    "realized": 1102920,
+    "potential": 605623
+  },
+  {
+    "key": "M89",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 10643831
+  },
+  {
+    "key": "M9",
+    "actual": 0.007388296926,
+    "expected": 0.004716080784,
+    "tariff_effect": 0.002672216142,
+    "realized": 12038624,
+    "potential": 11753920
+  },
+  {
+    "key": "M90",
+    "actual": 0.022690783807,
+    "expected": 0.006358028345,
+    "tariff_effect": 0.016332755462,
+    "realized": 658600,
+    "potential": 1169248
+  },
+  {
+    "key": "M91",
+    "actual": null,
+    "expected": null,
+    "tariff_effect": null,
+    "realized": 0,
+    "potential": 306640493
+  },
+  {
+    "key": "M92",
+    "actual": 0.009643887986,
+    "expected": 0.004367977669,
+    "tariff_effect": 0.005275910318,
+    "realized": 1009040,
+    "potential": 1185360
+  },
+  {
+    "key": "M93",
+    "actual": 0.008786627335,
+    "expected": 0.005171943429,
+    "tariff_effect": 0.003614683907,
+    "realized": 536160,
+    "potential": 1876880
+  },
+  {
+    "key": "M94",
+    "actual": 0.008949152542,
+    "expected": 0.003897982675,
+    "tariff_effect": 0.005051169868,
+    "realized": 52800,
+    "potential": 536000
+  },
+  {
+    "key": "M95",
+    "actual": 0.008525252525,
+    "expected": 0.005964003857,
+    "tariff_effect": 0.002561248669,
+    "realized": 337600,
+    "potential": 0
+  },
+  {
+    "key": "M96",
+    "actual": 0.007944459926,
+    "expected": 0.005134718485,
+    "tariff_effect": 0.002809741441,
+    "realized": 228635360,
+    "potential": 277275840
+  },
+  {
+    "key": "M97",
+    "actual": 0.004203093724,
+    "expected": 0.003660084691,
+    "tariff_effect": 0.000543009033,
+    "realized": 736533375,
+    "potential": 214884959
+  },
+  {
+    "key": "M98",
+    "actual": 0.005164993752,
+    "expected": 0.004253161124,
+    "tariff_effect": 0.000911832628,
+    "realized": 12812800,
+    "potential": 7072000
+  },
+  {
+    "key": "M99",
+    "actual": 0.008749824973,
+    "expected": 0.004799109658,
+    "tariff_effect": 0.003950715315,
+    "realized": 979832,
+    "potential": 3496444
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "key": "M12",
+  "category": "مراکز آموزشی مجازی",
+  "sessions": 166,
+  "verified": 42,
+  "no_attempt": 70,
+  "in_bank": 23,
+  "failed": 5,
+  "paid_pending": 26,
+  "revenue_rial": 695230000,
+  "paid_amount_rial": 57800000,
+  "attempted_amount_rial": 2670520660,
+  "median_amount": 2200000,
+  "unique_prices": 20,
+  "success_rate": 0.253012048193,
+  "aov": 16553095.238095239,
+  "health": "healthy",
+  "fee_actual": 0.005591818535,
+  "fee_expected": 0.003940340343,
+  "tariff_effect": 0.001651478192,
+  "fee_realized": 3887600,
+  "fee_potential": 6341285,
+  "customers": 24,
+  "repeat_customers": 9,
+  "repeat_order_share": 0.642857142857,
+  "business_model": null,
+  "peers": {
+    "n": 20,
+    "p75": 0.530244530245,
+    "gap": 0.277232482052
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 380891621,
+    "conservative": 228534973,
+    "optimistic": 533248270,
+    "basis": "own"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 57800000
+  },
+  "case_family": "no_attempt"
+}

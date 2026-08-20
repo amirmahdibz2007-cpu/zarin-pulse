@@ -1,0 +1,102 @@
+[
+  {
+    "id": "nowruz_1405",
+    "titleFa": "نوروز ۱۴۰۵",
+    "kind": "national",
+    "startIso": "2026-03-21",
+    "endIso": "2026-04-02",
+    "approximate": false,
+    "inDataWindow": true,
+    "noteFa": "امضای داده: بیشترین سفارش روزانه و افت ۴۸٫۶٪ سبد نسبت به بهمن."
+  },
+  {
+    "id": "chaharshanbe_suri_1404",
+    "titleFa": "چهارشنبه‌سوری ۱۴۰۴",
+    "kind": "national",
+    "startIso": "2026-03-17",
+    "endIso": "2026-03-17",
+    "approximate": false,
+    "inDataWindow": true,
+    "noteFa": "یک روز، داخل پنجره داده."
+  },
+  {
+    "id": "sizdah_bedar_1405",
+    "titleFa": "سیزده‌به‌در ۱۴۰۵",
+    "kind": "national",
+    "startIso": "2026-04-02",
+    "endIso": "2026-04-02",
+    "approximate": false,
+    "inDataWindow": true,
+    "noteFa": "آخرین روز بازه نوروز در این تقویم."
+  },
+  {
+    "id": "ramadan_1447",
+    "titleFa": "رمضان ۱۴۴۷",
+    "kind": "religious",
+    "startIso": "2026-02-18",
+    "endIso": "2026-03-19",
+    "approximate": true,
+    "inDataWindow": true,
+    "noteFa": "تاریخ قمری تقریبی است."
+  },
+  {
+    "id": "eid_fitr_1447",
+    "titleFa": "عید فطر ۱۴۴۷",
+    "kind": "religious",
+    "startIso": "2026-03-20",
+    "endIso": "2026-03-20",
+    "approximate": true,
+    "inDataWindow": true,
+    "noteFa": "هم‌پوشان با نوروز و از آن جداناشدنی."
+  },
+  {
+    "id": "exam_season_khordad",
+    "titleFa": "فصل امتحانات خرداد",
+    "kind": "seasonal",
+    "startIso": "2026-05-22",
+    "endIso": "2026-06-21",
+    "approximate": false,
+    "inDataWindow": true,
+    "noteFa": "بازه تحصیلی، نه یک مناسبت تقویمی واحد."
+  },
+  {
+    "id": "summer_start",
+    "titleFa": "شروع تابستان",
+    "kind": "seasonal",
+    "startIso": "2026-06-22",
+    "endIso": "2026-06-22",
+    "approximate": false,
+    "inDataWindow": true,
+    "noteFa": "اول تیر ۱۴۰۵."
+  },
+  {
+    "id": "yalda_1404",
+    "titleFa": "یلدا ۱۴۰۴",
+    "kind": "national",
+    "startIso": "2025-12-21",
+    "endIso": "2025-12-21",
+    "approximate": false,
+    "inDataWindow": false,
+    "noteFa": "خارج از پنجره داده؛ برچسب فصلی روی این مناسبت ممنوع است."
+  },
+  {
+    "id": "black_friday_2025",
+    "titleFa": "بلک‌فرایدی ۲۰۲۵",
+    "kind": "commercial",
+    "startIso": "2025-11-28",
+    "endIso": "2025-11-28",
+    "approximate": false,
+    "inDataWindow": false,
+    "noteFa": "خارج از پنجره داده."
+  },
+  {
+    "id": "school_open_mehr",
+    "titleFa": "شروع مهر",
+    "kind": "seasonal",
+    "startIso": "2026-09-23",
+    "endIso": "2026-09-23",
+    "approximate": false,
+    "inDataWindow": false,
+    "noteFa": "خارج از پنجره داده."
+  }
+]

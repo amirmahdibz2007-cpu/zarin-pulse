@@ -1,0 +1,38 @@
+{
+  "key": "M49",
+  "category": "فروشگاه لوازم آرایشی و بهداشتی",
+  "sessions": 907,
+  "verified": 613,
+  "no_attempt": 40,
+  "in_bank": 235,
+  "failed": 11,
+  "paid_pending": 8,
+  "revenue_rial": 7900380000,
+  "paid_amount_rial": 134300000,
+  "attempted_amount_rial": 12230080000,
+  "median_amount": 10620000,
+  "unique_prices": 224,
+  "success_rate": 0.67585446527,
+  "aov": 12888058.72756933,
+  "health": "healthy",
+  "fee_actual": 0.008296654085,
+  "fee_expected": 0.004773151401,
+  "tariff_effect": 0.003523502684,
+  "fee_realized": 65546720,
+  "fee_potential": 32367760,
+  "customers": 602,
+  "repeat_customers": 10,
+  "repeat_order_share": 0.034257748777,
+  "business_model": "one_shot",
+  "peers": {
+    "n": 8,
+    "p75": 0.593466424682,
+    "gap": -0.082388040588
+  },
+  "impact": null,
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 134300000
+  },
+  "case_family": null
+}

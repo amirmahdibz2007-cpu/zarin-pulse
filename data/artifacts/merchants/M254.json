@@ -1,0 +1,38 @@
+{
+  "key": "M254",
+  "category": "مراکز آموزشی مجازی",
+  "sessions": 236,
+  "verified": 178,
+  "no_attempt": 5,
+  "in_bank": 43,
+  "failed": 6,
+  "paid_pending": 4,
+  "revenue_rial": 1772544700,
+  "paid_amount_rial": 15020000,
+  "attempted_amount_rial": 2232714703,
+  "median_amount": 6200000,
+  "unique_prices": 128,
+  "success_rate": 0.754237288136,
+  "aov": 9958116.29213483,
+  "health": "healthy",
+  "fee_actual": 0.007782486388,
+  "fee_expected": 0.004493583278,
+  "tariff_effect": 0.00328890311,
+  "fee_realized": 13794805,
+  "fee_potential": 4008160,
+  "customers": 165,
+  "repeat_customers": 11,
+  "repeat_order_share": 0.134831460674,
+  "business_model": null,
+  "peers": {
+    "n": 20,
+    "p75": 0.5,
+    "gap": -0.254237288136
+  },
+  "impact": null,
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 15020000
+  },
+  "case_family": null
+}

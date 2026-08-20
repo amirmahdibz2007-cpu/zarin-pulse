@@ -1,0 +1,38 @@
+{
+  "key": "M206",
+  "category": "فروشگاه لوازم آرایشی و بهداشتی",
+  "sessions": 118,
+  "verified": 77,
+  "no_attempt": 2,
+  "in_bank": 39,
+  "failed": 0,
+  "paid_pending": 0,
+  "revenue_rial": 932910000,
+  "paid_amount_rial": 0,
+  "attempted_amount_rial": 1374360000,
+  "median_amount": 7250000,
+  "unique_prices": 38,
+  "success_rate": 0.652542372881,
+  "aov": 12115714.285714285,
+  "health": "healthy",
+  "fee_actual": 0.007077038514,
+  "fee_expected": 0.004429216095,
+  "tariff_effect": 0.002647822419,
+  "fee_realized": 6602240,
+  "fee_potential": 3688880,
+  "customers": 77,
+  "repeat_customers": 0,
+  "repeat_order_share": null,
+  "business_model": null,
+  "peers": {
+    "n": 6,
+    "p75": 0.593466424682,
+    "gap": -0.059075948199
+  },
+  "impact": null,
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 0
+  },
+  "case_family": null
+}

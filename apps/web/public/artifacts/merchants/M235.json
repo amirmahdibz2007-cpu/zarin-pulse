@@ -1,0 +1,44 @@
+{
+  "key": "M235",
+  "category": "مراکز آموزشی مجازی",
+  "sessions": 289,
+  "verified": 179,
+  "no_attempt": 5,
+  "in_bank": 100,
+  "failed": 2,
+  "paid_pending": 3,
+  "revenue_rial": 32720170,
+  "paid_amount_rial": 520089,
+  "attempted_amount_rial": 52114217,
+  "median_amount": 172351,
+  "unique_prices": 13,
+  "success_rate": 0.61937716263,
+  "aov": 182794.24581005587,
+  "health": "healthy",
+  "fee_actual": 0.039218378144,
+  "fee_expected": 0.05318298872,
+  "tariff_effect": -0.013964610576,
+  "fee_realized": 1283232,
+  "fee_potential": 787874,
+  "customers": 174,
+  "repeat_customers": 5,
+  "repeat_order_share": 0.055865921788,
+  "business_model": null,
+  "peers": {
+    "n": 11,
+    "p75": 0.640038498556,
+    "gap": 0.020661335926
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 545744,
+    "conservative": 327446,
+    "optimistic": 764041,
+    "basis": "own"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 520089
+  },
+  "case_family": "in_bank"
+}

@@ -1,0 +1,44 @@
+{
+  "key": "M56",
+  "category": "خدمات شبکه‌های کامپیوتری و اینترنت",
+  "sessions": 375,
+  "verified": 218,
+  "no_attempt": 40,
+  "in_bank": 99,
+  "failed": 17,
+  "paid_pending": 1,
+  "revenue_rial": 364255070,
+  "paid_amount_rial": 250800,
+  "attempted_amount_rial": 676613270,
+  "median_amount": 500000,
+  "unique_prices": 81,
+  "success_rate": 0.581333333333,
+  "aov": 1670894.8165137616,
+  "health": "healthy",
+  "fee_actual": 0.012361733222,
+  "fee_expected": 0.006485502557,
+  "tariff_effect": 0.005876230665,
+  "fee_realized": 4502824,
+  "fee_potential": 3626856,
+  "customers": 157,
+  "repeat_customers": 37,
+  "repeat_order_share": 0.449541284404,
+  "business_model": null,
+  "peers": {
+    "n": 15,
+    "p75": 0.682869198312,
+    "gap": 0.101535864979
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 31810453,
+    "conservative": 19086272,
+    "optimistic": 44534635,
+    "basis": "own"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 250800
+  },
+  "case_family": "in_bank"
+}

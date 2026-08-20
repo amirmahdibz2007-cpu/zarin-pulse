@@ -1,0 +1,38 @@
+{
+  "key": "M55",
+  "category": "مراکز آموزشی مجازی",
+  "sessions": 1039,
+  "verified": 665,
+  "no_attempt": 94,
+  "in_bank": 208,
+  "failed": 48,
+  "paid_pending": 24,
+  "revenue_rial": 360248000,
+  "paid_amount_rial": 13520001,
+  "attempted_amount_rial": 580692006,
+  "median_amount": 480000,
+  "unique_prices": 89,
+  "success_rate": 0.640038498556,
+  "aov": 541726.3157894737,
+  "health": "healthy",
+  "fee_actual": 0.020162021718,
+  "fee_expected": 0.008375699924,
+  "tariff_effect": 0.011786321794,
+  "fee_realized": 7263328,
+  "fee_potential": 4293104,
+  "customers": 592,
+  "repeat_customers": 62,
+  "repeat_order_share": 0.203007518797,
+  "business_model": "one_shot",
+  "peers": {
+    "n": 19,
+    "p75": 0.587786259542,
+    "gap": -0.052252239014
+  },
+  "impact": null,
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 13520001
+  },
+  "case_family": null
+}

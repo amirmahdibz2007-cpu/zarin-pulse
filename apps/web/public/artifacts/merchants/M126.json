@@ -1,0 +1,44 @@
+{
+  "key": "M126",
+  "category": "ارائه دهنده خدمات اینترنت",
+  "sessions": 129,
+  "verified": 28,
+  "no_attempt": 47,
+  "in_bank": 32,
+  "failed": 17,
+  "paid_pending": 5,
+  "revenue_rial": 68050000,
+  "paid_amount_rial": 17750000,
+  "attempted_amount_rial": 362294001,
+  "median_amount": 2000000,
+  "unique_prices": 10,
+  "success_rate": 0.217054263566,
+  "aov": 2430357.1428571427,
+  "health": "healthy",
+  "fee_actual": 0.011221160911,
+  "fee_expected": 0.005291576002,
+  "tariff_effect": 0.005929584909,
+  "fee_realized": 763600,
+  "fee_potential": 3125952,
+  "customers": 21,
+  "repeat_customers": 7,
+  "repeat_order_share": 0.5,
+  "business_model": null,
+  "peers": {
+    "n": 9,
+    "p75": 0.699152542373,
+    "gap": 0.482098278807
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 75572779,
+    "conservative": 45343668,
+    "optimistic": 105801891,
+    "basis": "own"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 17750000
+  },
+  "case_family": "residual"
+}

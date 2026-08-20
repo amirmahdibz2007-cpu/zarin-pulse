@@ -1,0 +1,38 @@
+{
+  "key": "M124",
+  "category": "کیف و کفش فروشی",
+  "sessions": 1453,
+  "verified": 1149,
+  "no_attempt": 32,
+  "in_bank": 232,
+  "failed": 28,
+  "paid_pending": 12,
+  "revenue_rial": 939640000,
+  "paid_amount_rial": 7300000,
+  "attempted_amount_rial": 1213470000,
+  "median_amount": 570000,
+  "unique_prices": 176,
+  "success_rate": 0.790777701308,
+  "aov": 817789.3820713664,
+  "health": "healthy",
+  "fee_actual": 0.022405517007,
+  "fee_expected": 0.006768668133,
+  "tariff_effect": 0.015636848874,
+  "fee_realized": 21053120,
+  "fee_potential": 4339440,
+  "customers": 794,
+  "repeat_customers": 197,
+  "repeat_order_share": 0.480417754569,
+  "business_model": "one_shot",
+  "peers": {
+    "n": 14,
+    "p75": 0.64,
+    "gap": -0.150777701308
+  },
+  "impact": null,
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 7300000
+  },
+  "case_family": null
+}

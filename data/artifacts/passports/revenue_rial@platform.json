@@ -1,0 +1,8 @@
+{
+  "id": "revenue_rial@platform",
+  "metricId": "revenue_rial",
+  "grain": "order",
+  "sql": "SELECT SUM(amount) FROM sessions WHERE session_status='Verified'",
+  "n": 1025655,
+  "sourceSha256": "84ac8a28df48ca7baeaf0b1cec563a3f0a3516039f5f62e9bfd11124ca35b461"
+}

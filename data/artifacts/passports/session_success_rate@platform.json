@@ -1,0 +1,8 @@
+{
+  "id": "session_success_rate@platform",
+  "metricId": "session_success_rate",
+  "grain": "session",
+  "sql": "SELECT COUNT(*) FILTER (WHERE session_status='Verified')::DOUBLE / COUNT(*) FROM sessions",
+  "n": 2062839,
+  "sourceSha256": "84ac8a28df48ca7baeaf0b1cec563a3f0a3516039f5f62e9bfd11124ca35b461"
+}

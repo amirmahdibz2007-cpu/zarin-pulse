@@ -1,0 +1,44 @@
+{
+  "key": "M280",
+  "category": "خدمات شبکه‌های کامپیوتری و اینترنت",
+  "sessions": 293,
+  "verified": 172,
+  "no_attempt": 10,
+  "in_bank": 93,
+  "failed": 12,
+  "paid_pending": 6,
+  "revenue_rial": 2067407000,
+  "paid_amount_rial": 68112000,
+  "attempted_amount_rial": 3576073000,
+  "median_amount": 8700000,
+  "unique_prices": 150,
+  "success_rate": 0.587030716724,
+  "aov": 12019808.139534883,
+  "health": "healthy",
+  "fee_actual": 0.00805151187,
+  "fee_expected": 0.004903055504,
+  "tariff_effect": 0.003148456366,
+  "fee_realized": 16645752,
+  "fee_potential": 11624600,
+  "customers": 170,
+  "repeat_customers": 2,
+  "repeat_order_share": 0.023255813953,
+  "business_model": null,
+  "peers": {
+    "n": 10,
+    "p75": 0.776209519329,
+    "gap": 0.189178802605
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 333125312,
+    "conservative": 199875187,
+    "optimistic": 466375436,
+    "basis": "own"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 68112000
+  },
+  "case_family": "in_bank"
+}

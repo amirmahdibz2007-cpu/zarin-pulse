@@ -1,0 +1,44 @@
+{
+  "key": "M80",
+  "category": "مراکز آموزشی مجازی",
+  "sessions": 108,
+  "verified": 1,
+  "no_attempt": 18,
+  "in_bank": 54,
+  "failed": 2,
+  "paid_pending": 33,
+  "revenue_rial": 908040,
+  "paid_amount_rial": 165000000,
+  "attempted_amount_rial": 1270296540,
+  "median_amount": 5000000,
+  "unique_prices": 1,
+  "success_rate": 0.009259259259,
+  "aov": 908040,
+  "health": "degraded",
+  "fee_actual": 0.014166776794,
+  "fee_expected": 0.005438446942,
+  "tariff_effect": 0.008728329852,
+  "fee_realized": 12864,
+  "fee_potential": 7189920,
+  "customers": 1,
+  "repeat_customers": 0,
+  "repeat_order_share": null,
+  "business_model": null,
+  "peers": {
+    "n": 20,
+    "p75": 0.514925373134,
+    "gap": 0.505666113875
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 24794913,
+    "conservative": 14876948,
+    "optimistic": 34712878,
+    "basis": "own"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 165000000
+  },
+  "case_family": "price_point"
+}

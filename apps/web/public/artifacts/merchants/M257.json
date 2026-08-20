@@ -1,0 +1,38 @@
+{
+  "key": "M257",
+  "category": "مراکز آموزشی مجازی",
+  "sessions": 131,
+  "verified": 77,
+  "no_attempt": 9,
+  "in_bank": 41,
+  "failed": 4,
+  "paid_pending": 0,
+  "revenue_rial": 60220000,
+  "paid_amount_rial": 0,
+  "attempted_amount_rial": 103760002,
+  "median_amount": 990000,
+  "unique_prices": 3,
+  "success_rate": 0.587786259542,
+  "aov": 782077.922077922,
+  "health": "healthy",
+  "fee_actual": 0.017591497841,
+  "fee_expected": 0.006049671039,
+  "tariff_effect": 0.011541826802,
+  "fee_realized": 1059360,
+  "fee_potential": 701120,
+  "customers": 77,
+  "repeat_customers": 0,
+  "repeat_order_share": null,
+  "business_model": null,
+  "peers": {
+    "n": 20,
+    "p75": 0.530244530245,
+    "gap": -0.057541729297
+  },
+  "impact": null,
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 0
+  },
+  "case_family": null
+}

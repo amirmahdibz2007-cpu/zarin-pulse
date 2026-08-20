@@ -1,0 +1,44 @@
+{
+  "key": "M7",
+  "category": "ارائه دهنده خدمات اینترنت",
+  "sessions": 175,
+  "verified": 31,
+  "no_attempt": 42,
+  "in_bank": 84,
+  "failed": 17,
+  "paid_pending": 1,
+  "revenue_rial": 145810000,
+  "paid_amount_rial": 1500000,
+  "attempted_amount_rial": 792340001,
+  "median_amount": 1500000,
+  "unique_prices": 3,
+  "success_rate": 0.177142857143,
+  "aov": 4703548.387096774,
+  "health": "healthy",
+  "fee_actual": 0.009658596804,
+  "fee_expected": 0.004984861926,
+  "tariff_effect": 0.004673734878,
+  "fee_realized": 1408320,
+  "fee_potential": 6323200,
+  "customers": 28,
+  "repeat_customers": 3,
+  "repeat_order_share": 0.193548387097,
+  "business_model": null,
+  "peers": {
+    "n": 8,
+    "p75": 0.765765765766,
+    "gap": 0.588622908623
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 242253929,
+    "conservative": 145352357,
+    "optimistic": 339155501,
+    "basis": "own"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 1500000
+  },
+  "case_family": "price_point"
+}

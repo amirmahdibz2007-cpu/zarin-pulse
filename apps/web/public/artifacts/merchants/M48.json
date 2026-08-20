@@ -1,0 +1,44 @@
+{
+  "key": "M48",
+  "category": "ارائه دهنده خدمات اینترنت",
+  "sessions": 678,
+  "verified": 4,
+  "no_attempt": 59,
+  "in_bank": 119,
+  "failed": 5,
+  "paid_pending": 491,
+  "revenue_rial": 1400000,
+  "paid_amount_rial": 8135500000,
+  "attempted_amount_rial": 11488930001,
+  "median_amount": 20000000,
+  "unique_prices": 4,
+  "success_rate": 0.005899705015,
+  "aov": 350000,
+  "health": "degraded",
+  "fee_actual": 0.037714285714,
+  "fee_expected": 0.013075378839,
+  "tariff_effect": 0.024638906876,
+  "fee_realized": 52800,
+  "fee_potential": 97790400,
+  "customers": 1,
+  "repeat_customers": 1,
+  "repeat_order_share": 1,
+  "business_model": null,
+  "peers": {
+    "n": 5,
+    "p75": 0.699152542373,
+    "gap": 0.693252837358
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 82254449,
+    "conservative": 49352669,
+    "optimistic": 115156229,
+    "basis": "own"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 8135500000
+  },
+  "case_family": "price_point"
+}

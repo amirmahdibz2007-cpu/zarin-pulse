@@ -1,0 +1,44 @@
+{
+  "key": "M203",
+  "category": "ارائه دهنده خدمات اینترنت",
+  "sessions": 219,
+  "verified": 62,
+  "no_attempt": 109,
+  "in_bank": 27,
+  "failed": 0,
+  "paid_pending": 21,
+  "revenue_rial": 69689900,
+  "paid_amount_rial": 29890000,
+  "attempted_amount_rial": 261319892,
+  "median_amount": 500000,
+  "unique_prices": 18,
+  "success_rate": 0.283105022831,
+  "aov": 1124030.6451612904,
+  "health": "healthy",
+  "fee_actual": 0.014015201629,
+  "fee_expected": 0.008278649101,
+  "tariff_effect": 0.005736552528,
+  "fee_realized": 976718,
+  "fee_potential": 2510638,
+  "customers": 31,
+  "repeat_customers": 13,
+  "repeat_order_share": 0.709677419355,
+  "business_model": null,
+  "peers": {
+    "n": 6,
+    "p75": 0.477029010046,
+    "gap": 0.193923987215
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 23868427,
+    "conservative": 14321056,
+    "optimistic": 33415798,
+    "basis": "own"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 29890000
+  },
+  "case_family": "no_attempt"
+}

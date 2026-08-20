@@ -1,0 +1,38 @@
+{
+  "key": "M241",
+  "category": "ارائه دهنده خدمات اینترنت",
+  "sessions": 333,
+  "verified": 255,
+  "no_attempt": 3,
+  "in_bank": 66,
+  "failed": 7,
+  "paid_pending": 2,
+  "revenue_rial": 615490000,
+  "paid_amount_rial": 1910000,
+  "attempted_amount_rial": 766650000,
+  "median_amount": 1950000,
+  "unique_prices": 16,
+  "success_rate": 0.765765765766,
+  "aov": 2413686.274509804,
+  "health": "healthy",
+  "fee_actual": 0.010737331232,
+  "fee_expected": 0.004983797497,
+  "tariff_effect": 0.005753533735,
+  "fee_realized": 6608720,
+  "fee_potential": 1713280,
+  "customers": 222,
+  "repeat_customers": 20,
+  "repeat_order_share": 0.207843137255,
+  "business_model": null,
+  "peers": {
+    "n": 8,
+    "p75": 0.663190823775,
+    "gap": -0.102574941991
+  },
+  "impact": null,
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 1910000
+  },
+  "case_family": null
+}

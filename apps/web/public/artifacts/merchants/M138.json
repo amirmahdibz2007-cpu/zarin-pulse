@@ -1,0 +1,44 @@
+{
+  "key": "M138",
+  "category": "کیف و کفش فروشی",
+  "sessions": 102,
+  "verified": 0,
+  "no_attempt": 102,
+  "in_bank": 0,
+  "failed": 0,
+  "paid_pending": 0,
+  "revenue_rial": 0,
+  "paid_amount_rial": 0,
+  "attempted_amount_rial": 22629300000,
+  "median_amount": 50000000,
+  "unique_prices": 0,
+  "success_rate": 0,
+  "aov": null,
+  "health": "pattern_1_no_bank_reach",
+  "fee_actual": null,
+  "fee_expected": null,
+  "tariff_effect": null,
+  "fee_realized": 0,
+  "fee_potential": 13192640,
+  "customers": 0,
+  "repeat_customers": 0,
+  "repeat_order_share": null,
+  "business_model": null,
+  "peers": {
+    "n": 15,
+    "p75": 0.627272727273,
+    "gap": 0.627272727273
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 1599545455,
+    "conservative": 959727273,
+    "optimistic": 2239363636,
+    "basis": "median_attempted"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 0
+  },
+  "case_family": "gateway_broken"
+}

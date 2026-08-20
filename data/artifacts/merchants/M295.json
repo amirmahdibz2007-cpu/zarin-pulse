@@ -1,0 +1,44 @@
+{
+  "key": "M295",
+  "category": "ارائه دهنده خدمات اینترنت",
+  "sessions": 156,
+  "verified": 26,
+  "no_attempt": 82,
+  "in_bank": 38,
+  "failed": 3,
+  "paid_pending": 7,
+  "revenue_rial": 21210000,
+  "paid_amount_rial": 5540000,
+  "attempted_amount_rial": 156530000,
+  "median_amount": 800000,
+  "unique_prices": 5,
+  "success_rate": 0.166666666667,
+  "aov": 815769.2307692308,
+  "health": "healthy",
+  "fee_actual": 0.015543611504,
+  "fee_expected": 0.007210866585,
+  "tariff_effect": 0.008332744919,
+  "fee_realized": 329680,
+  "fee_potential": 1889760,
+  "customers": 23,
+  "repeat_customers": 2,
+  "repeat_order_share": 0.192307692308,
+  "business_model": null,
+  "peers": {
+    "n": 9,
+    "p75": 0.477029010046,
+    "gap": 0.310362343379
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 19748356,
+    "conservative": 11849014,
+    "optimistic": 27647698,
+    "basis": "own"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 5540000
+  },
+  "case_family": "no_attempt"
+}

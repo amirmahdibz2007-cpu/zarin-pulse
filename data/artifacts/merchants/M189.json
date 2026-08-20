@@ -1,0 +1,38 @@
+{
+  "key": "M189",
+  "category": "مراکز آموزشی مجازی",
+  "sessions": 121,
+  "verified": 84,
+  "no_attempt": 4,
+  "in_bank": 22,
+  "failed": 9,
+  "paid_pending": 2,
+  "revenue_rial": 660906000,
+  "paid_amount_rial": 13315000,
+  "attempted_amount_rial": 917206002,
+  "median_amount": 290000,
+  "unique_prices": 33,
+  "success_rate": 0.694214876033,
+  "aov": 7867928.571428572,
+  "health": "healthy",
+  "fee_actual": 0.006844613304,
+  "fee_expected": 0.005538698604,
+  "tariff_effect": 0.001305914699,
+  "fee_realized": 4523646,
+  "fee_potential": 1609240,
+  "customers": 76,
+  "repeat_customers": 6,
+  "repeat_order_share": 0.166666666667,
+  "business_model": null,
+  "peers": {
+    "n": 15,
+    "p75": 0.60773480663,
+    "gap": -0.086480069403
+  },
+  "impact": null,
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 13315000
+  },
+  "case_family": null
+}

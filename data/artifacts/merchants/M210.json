@@ -1,0 +1,44 @@
+{
+  "key": "M210",
+  "category": "ارائه دهنده خدمات اینترنت",
+  "sessions": 4209,
+  "verified": 2787,
+  "no_attempt": 491,
+  "in_bank": 859,
+  "failed": 72,
+  "paid_pending": 0,
+  "revenue_rial": 4329695000,
+  "paid_amount_rial": 0,
+  "attempted_amount_rial": 7185165090,
+  "median_amount": 1000000,
+  "unique_prices": 52,
+  "success_rate": 0.662152530292,
+  "aov": 1553532.4721923214,
+  "health": "healthy",
+  "fee_actual": 0.011914056552,
+  "fee_expected": 0.007491785129,
+  "tariff_effect": 0.004422271424,
+  "fee_realized": 51586360,
+  "fee_potential": 30772560,
+  "customers": 1170,
+  "repeat_customers": 536,
+  "repeat_order_share": 0.772515249372,
+  "business_model": "repeat_like",
+  "peers": {
+    "n": 8,
+    "p75": 0.765765765766,
+    "gap": 0.103613235474
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 338754054,
+    "conservative": 203252432,
+    "optimistic": 474255675,
+    "basis": "own"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 0
+  },
+  "case_family": "residual"
+}

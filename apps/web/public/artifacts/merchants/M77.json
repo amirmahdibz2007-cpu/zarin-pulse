@@ -1,0 +1,44 @@
+{
+  "key": "M77",
+  "category": "فروشگاه لوازم آرایشی و بهداشتی",
+  "sessions": 596,
+  "verified": 288,
+  "no_attempt": 73,
+  "in_bank": 158,
+  "failed": 22,
+  "paid_pending": 55,
+  "revenue_rial": 7049597520,
+  "paid_amount_rial": 1080590000,
+  "attempted_amount_rial": 15672727520,
+  "median_amount": 15275000,
+  "unique_prices": 208,
+  "success_rate": 0.48322147651,
+  "aov": 24477769.166666664,
+  "health": "healthy",
+  "fee_actual": 0.005813046473,
+  "fee_expected": 0.0042054409,
+  "tariff_effect": 0.001607605573,
+  "fee_realized": 40979638,
+  "fee_potential": 43232960,
+  "customers": 276,
+  "repeat_customers": 10,
+  "repeat_order_share": 0.076388888889,
+  "business_model": null,
+  "peers": {
+    "n": 9,
+    "p75": 0.661016949153,
+    "gap": 0.177795472643
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 1296906888,
+    "conservative": 778144133,
+    "optimistic": 1815669644,
+    "basis": "own"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 1080590000
+  },
+  "case_family": "in_bank"
+}

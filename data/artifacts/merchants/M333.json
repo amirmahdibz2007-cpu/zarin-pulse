@@ -1,0 +1,44 @@
+{
+  "key": "M333",
+  "category": "فروشگاه لوازم آرایشی و بهداشتی",
+  "sessions": 205,
+  "verified": 0,
+  "no_attempt": 119,
+  "in_bank": 83,
+  "failed": 3,
+  "paid_pending": 0,
+  "revenue_rial": 0,
+  "paid_amount_rial": 0,
+  "attempted_amount_rial": 2962300002,
+  "median_amount": 10330000,
+  "unique_prices": 0,
+  "success_rate": 0,
+  "aov": null,
+  "health": "pattern_3_terminal_config",
+  "fee_actual": null,
+  "fee_expected": null,
+  "tariff_effect": null,
+  "fee_realized": 0,
+  "fee_potential": 12404864,
+  "customers": 0,
+  "repeat_customers": 0,
+  "repeat_order_share": null,
+  "business_model": null,
+  "peers": {
+    "n": 8,
+    "p75": 0.67585446527,
+    "gap": 0.67585446527
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 715611604,
+    "conservative": 429366963,
+    "optimistic": 1001856246,
+    "basis": "median_attempted"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 0
+  },
+  "case_family": "gateway_broken"
+}

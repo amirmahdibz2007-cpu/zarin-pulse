@@ -1,0 +1,44 @@
+{
+  "key": "M32",
+  "category": "خدمات شبکه‌های کامپیوتری و اینترنت",
+  "sessions": 207,
+  "verified": 112,
+  "no_attempt": 5,
+  "in_bank": 83,
+  "failed": 7,
+  "paid_pending": 0,
+  "revenue_rial": 3675441540,
+  "paid_amount_rial": 0,
+  "attempted_amount_rial": 6093347050,
+  "median_amount": 3737000,
+  "unique_prices": 75,
+  "success_rate": 0.541062801932,
+  "aov": 32816442.32142857,
+  "health": "healthy",
+  "fee_actual": 0.003937225239,
+  "fee_expected": 0.002891628751,
+  "tariff_effect": 0.001045596488,
+  "fee_realized": 11701088,
+  "fee_potential": 6283307,
+  "customers": 112,
+  "repeat_customers": 0,
+  "repeat_order_share": null,
+  "business_model": null,
+  "peers": {
+    "n": 13,
+    "p75": 0.730021598272,
+    "gap": 0.18895879634
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 641798888,
+    "conservative": 385079333,
+    "optimistic": 898518443,
+    "basis": "own"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 0
+  },
+  "case_family": "in_bank"
+}

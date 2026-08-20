@@ -1,0 +1,38 @@
+{
+  "key": "M225",
+  "category": "خدمات شبکه‌های کامپیوتری و اینترنت",
+  "sessions": 19067,
+  "verified": 13772,
+  "no_attempt": 1195,
+  "in_bank": 3373,
+  "failed": 708,
+  "paid_pending": 19,
+  "revenue_rial": 18699883260,
+  "paid_amount_rial": 18497300,
+  "attempted_amount_rial": 40915463810,
+  "median_amount": 981000,
+  "unique_prices": 285,
+  "success_rate": 0.722295064772,
+  "aov": 1357818.999419111,
+  "health": "healthy",
+  "fee_actual": 0.013075054459,
+  "fee_expected": 0.006428158327,
+  "tariff_effect": 0.006646896132,
+  "fee_realized": 244501992,
+  "fee_potential": 198442580,
+  "customers": 7854,
+  "repeat_customers": 2279,
+  "repeat_order_share": 0.595193145513,
+  "business_model": "repeat_like",
+  "peers": {
+    "n": 15,
+    "p75": 0.625,
+    "gap": -0.097295064772
+  },
+  "impact": null,
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 18497300
+  },
+  "case_family": null
+}

@@ -1,0 +1,44 @@
+{
+  "key": "M44",
+  "category": "مراکز آموزشی مجازی",
+  "sessions": 133,
+  "verified": 0,
+  "no_attempt": 133,
+  "in_bank": 0,
+  "failed": 0,
+  "paid_pending": 0,
+  "revenue_rial": 0,
+  "paid_amount_rial": 0,
+  "attempted_amount_rial": 21730000,
+  "median_amount": 180000,
+  "unique_prices": 0,
+  "success_rate": 0,
+  "aov": null,
+  "health": "pattern_1_no_bank_reach",
+  "fee_actual": null,
+  "fee_expected": null,
+  "tariff_effect": null,
+  "fee_realized": 0,
+  "fee_potential": 966640,
+  "customers": 0,
+  "repeat_customers": 0,
+  "repeat_order_share": null,
+  "business_model": null,
+  "peers": {
+    "n": 15,
+    "p75": 0.61937716263,
+    "gap": 0.61937716263
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 7413945,
+    "conservative": 4448367,
+    "optimistic": 10379522,
+    "basis": "median_attempted"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 0
+  },
+  "case_family": "gateway_broken"
+}

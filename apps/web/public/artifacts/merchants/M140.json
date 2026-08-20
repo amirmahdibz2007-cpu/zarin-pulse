@@ -1,0 +1,38 @@
+{
+  "key": "M140",
+  "category": "مراکز آموزشی مجازی",
+  "sessions": 1866,
+  "verified": 1247,
+  "no_attempt": 302,
+  "in_bank": 285,
+  "failed": 23,
+  "paid_pending": 9,
+  "revenue_rial": 12402630000,
+  "paid_amount_rial": 89100000,
+  "attempted_amount_rial": 18568720003,
+  "median_amount": 9900000,
+  "unique_prices": 6,
+  "success_rate": 0.668274383708,
+  "aov": 9945974.33841219,
+  "health": "healthy",
+  "fee_actual": 0.00878221474,
+  "fee_expected": 0.003934232006,
+  "tariff_effect": 0.004847982734,
+  "fee_realized": 108922560,
+  "fee_potential": 53732960,
+  "customers": 1214,
+  "repeat_customers": 32,
+  "repeat_order_share": 0.052125100241,
+  "business_model": "one_shot",
+  "peers": {
+    "n": 16,
+    "p75": 0.566854990584,
+    "gap": -0.101419393124
+  },
+  "impact": null,
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 89100000
+  },
+  "case_family": null
+}

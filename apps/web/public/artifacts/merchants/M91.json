@@ -1,0 +1,44 @@
+{
+  "key": "M91",
+  "category": "کیف و کفش فروشی",
+  "sessions": 3393,
+  "verified": 0,
+  "no_attempt": 3393,
+  "in_bank": 0,
+  "failed": 0,
+  "paid_pending": 0,
+  "revenue_rial": 0,
+  "paid_amount_rial": 0,
+  "attempted_amount_rial": 79244156450,
+  "median_amount": 12500000,
+  "unique_prices": 0,
+  "success_rate": 0,
+  "aov": null,
+  "health": "pattern_1_no_bank_reach",
+  "fee_actual": null,
+  "fee_expected": null,
+  "tariff_effect": null,
+  "fee_realized": 0,
+  "fee_potential": 306640493,
+  "customers": 0,
+  "repeat_customers": 0,
+  "repeat_order_share": null,
+  "business_model": null,
+  "peers": {
+    "n": 25,
+    "p75": 0.646428571429,
+    "gap": 0.646428571429
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 13708325893,
+    "conservative": 8224995536,
+    "optimistic": 19191656250,
+    "basis": "median_attempted"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 0
+  },
+  "case_family": "gateway_broken"
+}

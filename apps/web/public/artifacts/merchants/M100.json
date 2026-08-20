@@ -1,0 +1,38 @@
+{
+  "key": "M100",
+  "category": "خدمات شبکه‌های کامپیوتری و اینترنت",
+  "sessions": 1426,
+  "verified": 1173,
+  "no_attempt": 66,
+  "in_bank": 111,
+  "failed": 74,
+  "paid_pending": 2,
+  "revenue_rial": 4987243020,
+  "paid_amount_rial": 15290000,
+  "attempted_amount_rial": 6269775981,
+  "median_amount": 2803571.5,
+  "unique_prices": 80,
+  "success_rate": 0.822580645161,
+  "aov": 4251699.0792838875,
+  "health": "healthy",
+  "fee_actual": 0.009185854352,
+  "fee_expected": 0.004782832218,
+  "tariff_effect": 0.004403022134,
+  "fee_realized": 45812088,
+  "fee_potential": 10875578,
+  "customers": 318,
+  "repeat_customers": 156,
+  "repeat_order_share": 0.86189258312,
+  "business_model": "repeat_like",
+  "peers": {
+    "n": 16,
+    "p75": 0.722295064772,
+    "gap": -0.100285580389
+  },
+  "impact": null,
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 15290000
+  },
+  "case_family": null
+}

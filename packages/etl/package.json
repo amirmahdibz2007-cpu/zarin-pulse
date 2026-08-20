@@ -1,0 +1,16 @@
+{
+  "name": "@zarinpulse/etl",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@zarinpulse/analytics": "*",
+    "@zarinpulse/contracts": "*"
+  },
+  "optionalDependencies": {
+    "@duckdb/node-api": "1.5.5-r.4"
+  }
+}

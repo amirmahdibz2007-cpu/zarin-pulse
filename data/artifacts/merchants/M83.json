@@ -1,0 +1,44 @@
+{
+  "key": "M83",
+  "category": "خدمات شبکه‌های کامپیوتری و اینترنت",
+  "sessions": 4469,
+  "verified": 1409,
+  "no_attempt": 2420,
+  "in_bank": 586,
+  "failed": 22,
+  "paid_pending": 32,
+  "revenue_rial": 684298000,
+  "paid_amount_rial": 14870000,
+  "attempted_amount_rial": 2264141680,
+  "median_amount": 350000,
+  "unique_prices": 92,
+  "success_rate": 0.315283061087,
+  "aov": 485662.1717530163,
+  "health": "healthy",
+  "fee_actual": 0.019530648928,
+  "fee_expected": 0.013070990166,
+  "tariff_effect": 0.006459658762,
+  "fee_realized": 13364784,
+  "fee_potential": 29784348,
+  "customers": 695,
+  "repeat_customers": 392,
+  "repeat_order_share": 0.784953867991,
+  "business_model": "repeat_like",
+  "peers": {
+    "n": 12,
+    "p75": 0.682869198312,
+    "gap": 0.367586137225
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 398908932,
+    "conservative": 239345359,
+    "optimistic": 558472505,
+    "basis": "own"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 14870000
+  },
+  "case_family": "no_attempt"
+}

@@ -1,0 +1,552 @@
+[
+  {
+    "key": "M102",
+    "family": "in_bank",
+    "impactRial": 85064745
+  },
+  {
+    "key": "M107",
+    "family": "gateway_broken",
+    "impactRial": 61278187
+  },
+  {
+    "key": "M108",
+    "family": "in_bank",
+    "impactRial": 1854935404
+  },
+  {
+    "key": "M115",
+    "family": "residual",
+    "impactRial": 1146420211
+  },
+  {
+    "key": "M12",
+    "family": "no_attempt",
+    "impactRial": 380891621
+  },
+  {
+    "key": "M120",
+    "family": "in_bank",
+    "impactRial": 699991310
+  },
+  {
+    "key": "M121",
+    "family": "residual",
+    "impactRial": 16176118
+  },
+  {
+    "key": "M122",
+    "family": "residual",
+    "impactRial": 274498253
+  },
+  {
+    "key": "M123",
+    "family": "no_attempt",
+    "impactRial": 513379421
+  },
+  {
+    "key": "M126",
+    "family": "residual",
+    "impactRial": 75572779
+  },
+  {
+    "key": "M131",
+    "family": "in_bank",
+    "impactRial": 224833703
+  },
+  {
+    "key": "M136",
+    "family": "gateway_broken",
+    "impactRial": 527434368
+  },
+  {
+    "key": "M138",
+    "family": "gateway_broken",
+    "impactRial": 1599545455
+  },
+  {
+    "key": "M139",
+    "family": "no_attempt",
+    "impactRial": 611844584
+  },
+  {
+    "key": "M142",
+    "family": "in_bank",
+    "impactRial": 10234234
+  },
+  {
+    "key": "M144",
+    "family": "no_attempt",
+    "impactRial": 6023188552
+  },
+  {
+    "key": "M145",
+    "family": "residual",
+    "impactRial": 658696601
+  },
+  {
+    "key": "M146",
+    "family": "in_bank",
+    "impactRial": 216047021
+  },
+  {
+    "key": "M16",
+    "family": "in_bank",
+    "impactRial": 240620365
+  },
+  {
+    "key": "M161",
+    "family": "residual",
+    "impactRial": 2483640
+  },
+  {
+    "key": "M163",
+    "family": "in_bank",
+    "impactRial": 46892090
+  },
+  {
+    "key": "M167",
+    "family": "gateway_broken",
+    "impactRial": 325388846
+  },
+  {
+    "key": "M175",
+    "family": "in_bank",
+    "impactRial": 324769659
+  },
+  {
+    "key": "M176",
+    "family": "in_bank",
+    "impactRial": 8282291
+  },
+  {
+    "key": "M18",
+    "family": "in_bank",
+    "impactRial": 23954813426
+  },
+  {
+    "key": "M182",
+    "family": "in_bank",
+    "impactRial": 301402742
+  },
+  {
+    "key": "M192",
+    "family": "residual",
+    "impactRial": 2946646522
+  },
+  {
+    "key": "M2",
+    "family": "in_bank",
+    "impactRial": 30219219
+  },
+  {
+    "key": "M20",
+    "family": "in_bank",
+    "impactRial": 811612994
+  },
+  {
+    "key": "M203",
+    "family": "no_attempt",
+    "impactRial": 23868427
+  },
+  {
+    "key": "M204",
+    "family": "in_bank",
+    "impactRial": 433884252
+  },
+  {
+    "key": "M207",
+    "family": "in_bank",
+    "impactRial": 314424336
+  },
+  {
+    "key": "M208",
+    "family": "in_bank",
+    "impactRial": 1437765486
+  },
+  {
+    "key": "M209",
+    "family": "in_bank",
+    "impactRial": 336374582
+  },
+  {
+    "key": "M21",
+    "family": "residual",
+    "impactRial": 1496190795
+  },
+  {
+    "key": "M210",
+    "family": "residual",
+    "impactRial": 338754054
+  },
+  {
+    "key": "M211",
+    "family": "in_bank",
+    "impactRial": 121503331
+  },
+  {
+    "key": "M215",
+    "family": "residual",
+    "impactRial": 15414125457
+  },
+  {
+    "key": "M220",
+    "family": "no_attempt",
+    "impactRial": 86458040
+  },
+  {
+    "key": "M226",
+    "family": "in_bank",
+    "impactRial": 52142947
+  },
+  {
+    "key": "M229",
+    "family": "in_bank",
+    "impactRial": 144525594
+  },
+  {
+    "key": "M23",
+    "family": "in_bank",
+    "impactRial": 38883625
+  },
+  {
+    "key": "M231",
+    "family": "in_bank",
+    "impactRial": 1544613158
+  },
+  {
+    "key": "M233",
+    "family": "residual",
+    "impactRial": 3089752
+  },
+  {
+    "key": "M235",
+    "family": "in_bank",
+    "impactRial": 545744
+  },
+  {
+    "key": "M245",
+    "family": "gateway_broken",
+    "impactRial": 84627027
+  },
+  {
+    "key": "M248",
+    "family": "in_bank",
+    "impactRial": 139256012
+  },
+  {
+    "key": "M250",
+    "family": "in_bank",
+    "impactRial": 65413701597
+  },
+  {
+    "key": "M252",
+    "family": "in_bank",
+    "impactRial": 280568540
+  },
+  {
+    "key": "M255",
+    "family": "gateway_broken",
+    "impactRial": 26290464
+  },
+  {
+    "key": "M260",
+    "family": "no_attempt",
+    "impactRial": 5444539661
+  },
+  {
+    "key": "M261",
+    "family": "price_point",
+    "impactRial": 2233960343
+  },
+  {
+    "key": "M262",
+    "family": "in_bank",
+    "impactRial": 1071541642
+  },
+  {
+    "key": "M265",
+    "family": "no_attempt",
+    "impactRial": 80410937930
+  },
+  {
+    "key": "M266",
+    "family": "no_attempt",
+    "impactRial": 27449945
+  },
+  {
+    "key": "M274",
+    "family": "in_bank",
+    "impactRial": 462578078
+  },
+  {
+    "key": "M275",
+    "family": "in_bank",
+    "impactRial": 4267861279
+  },
+  {
+    "key": "M279",
+    "family": "in_bank",
+    "impactRial": 303753932
+  },
+  {
+    "key": "M28",
+    "family": "in_bank",
+    "impactRial": 345409800
+  },
+  {
+    "key": "M280",
+    "family": "in_bank",
+    "impactRial": 333125312
+  },
+  {
+    "key": "M282",
+    "family": "gateway_broken",
+    "impactRial": 157537924
+  },
+  {
+    "key": "M286",
+    "family": "in_bank",
+    "impactRial": 2190610235
+  },
+  {
+    "key": "M287",
+    "family": "in_bank",
+    "impactRial": 207671875
+  },
+  {
+    "key": "M289",
+    "family": "in_bank",
+    "impactRial": 10534542204
+  },
+  {
+    "key": "M29",
+    "family": "in_bank",
+    "impactRial": 1254292264
+  },
+  {
+    "key": "M295",
+    "family": "no_attempt",
+    "impactRial": 19748356
+  },
+  {
+    "key": "M300",
+    "family": "in_bank",
+    "impactRial": 2569554436
+  },
+  {
+    "key": "M303",
+    "family": "in_bank",
+    "impactRial": 27484333
+  },
+  {
+    "key": "M307",
+    "family": "no_attempt",
+    "impactRial": 38828201
+  },
+  {
+    "key": "M31",
+    "family": "in_bank",
+    "impactRial": 83751727401
+  },
+  {
+    "key": "M312",
+    "family": "residual",
+    "impactRial": 10945651
+  },
+  {
+    "key": "M313",
+    "family": "no_attempt",
+    "impactRial": 132120523
+  },
+  {
+    "key": "M316",
+    "family": "in_bank",
+    "impactRial": 2360257807
+  },
+  {
+    "key": "M319",
+    "family": "price_point",
+    "impactRial": 693698252
+  },
+  {
+    "key": "M32",
+    "family": "in_bank",
+    "impactRial": 641798888
+  },
+  {
+    "key": "M320",
+    "family": "in_bank",
+    "impactRial": 73812431
+  },
+  {
+    "key": "M323",
+    "family": "in_bank",
+    "impactRial": 460044926
+  },
+  {
+    "key": "M324",
+    "family": "in_bank",
+    "impactRial": 123390864
+  },
+  {
+    "key": "M327",
+    "family": "gateway_broken",
+    "impactRial": 267838983
+  },
+  {
+    "key": "M329",
+    "family": "in_bank",
+    "impactRial": 580743847
+  },
+  {
+    "key": "M33",
+    "family": "in_bank",
+    "impactRial": 53229823411
+  },
+  {
+    "key": "M333",
+    "family": "gateway_broken",
+    "impactRial": 715611604
+  },
+  {
+    "key": "M337",
+    "family": "in_bank",
+    "impactRial": 282034397
+  },
+  {
+    "key": "M339",
+    "family": "in_bank",
+    "impactRial": 2710382166
+  },
+  {
+    "key": "M340",
+    "family": "in_bank",
+    "impactRial": 42282804
+  },
+  {
+    "key": "M37",
+    "family": "in_bank",
+    "impactRial": 4964735664
+  },
+  {
+    "key": "M38",
+    "family": "in_bank",
+    "impactRial": 5045250463
+  },
+  {
+    "key": "M39",
+    "family": "in_bank",
+    "impactRial": 198979741
+  },
+  {
+    "key": "M41",
+    "family": "no_attempt",
+    "impactRial": 130564714
+  },
+  {
+    "key": "M44",
+    "family": "gateway_broken",
+    "impactRial": 7413945
+  },
+  {
+    "key": "M45",
+    "family": "in_bank",
+    "impactRial": 446970127
+  },
+  {
+    "key": "M48",
+    "family": "price_point",
+    "impactRial": 82254449
+  },
+  {
+    "key": "M56",
+    "family": "in_bank",
+    "impactRial": 31810453
+  },
+  {
+    "key": "M57",
+    "family": "in_bank",
+    "impactRial": 1039209237
+  },
+  {
+    "key": "M59",
+    "family": "in_bank",
+    "impactRial": 3533854
+  },
+  {
+    "key": "M60",
+    "family": "in_bank",
+    "impactRial": 37209457
+  },
+  {
+    "key": "M61",
+    "family": "residual",
+    "impactRial": 239306479
+  },
+  {
+    "key": "M67",
+    "family": "no_attempt",
+    "impactRial": 162237369
+  },
+  {
+    "key": "M69",
+    "family": "in_bank",
+    "impactRial": 189225232
+  },
+  {
+    "key": "M7",
+    "family": "price_point",
+    "impactRial": 242253929
+  },
+  {
+    "key": "M72",
+    "family": "in_bank",
+    "impactRial": 249833817
+  },
+  {
+    "key": "M74",
+    "family": "in_bank",
+    "impactRial": 55457504
+  },
+  {
+    "key": "M77",
+    "family": "in_bank",
+    "impactRial": 1296906888
+  },
+  {
+    "key": "M80",
+    "family": "price_point",
+    "impactRial": 24794913
+  },
+  {
+    "key": "M83",
+    "family": "no_attempt",
+    "impactRial": 398908932
+  },
+  {
+    "key": "M86",
+    "family": "in_bank",
+    "impactRial": 1131432424
+  },
+  {
+    "key": "M87",
+    "family": "in_bank",
+    "impactRial": 433202506
+  },
+  {
+    "key": "M91",
+    "family": "gateway_broken",
+    "impactRial": 13708325893
+  },
+  {
+    "key": "M96",
+    "family": "in_bank",
+    "impactRial": 6799047994
+  },
+  {
+    "key": "M98",
+    "family": "in_bank",
+    "impactRial": 76580762
+  }
+]

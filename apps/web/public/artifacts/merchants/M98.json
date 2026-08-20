@@ -1,0 +1,44 @@
+{
+  "key": "M98",
+  "category": "کیف و کفش فروشی",
+  "sessions": 110,
+  "verified": 69,
+  "no_attempt": 0,
+  "in_bank": 36,
+  "failed": 5,
+  "paid_pending": 0,
+  "revenue_rial": 2480700000,
+  "paid_amount_rial": 0,
+  "attempted_amount_rial": 3891200000,
+  "median_amount": 30100000,
+  "unique_prices": 35,
+  "success_rate": 0.627272727273,
+  "aov": 35952173.91304348,
+  "health": "healthy",
+  "fee_actual": 0.005164993752,
+  "fee_expected": 0.004253161124,
+  "tariff_effect": 0.000911832628,
+  "fee_realized": 12812800,
+  "fee_potential": 7072000,
+  "customers": 67,
+  "repeat_customers": 2,
+  "repeat_order_share": 0.057971014493,
+  "business_model": null,
+  "peers": {
+    "n": 20,
+    "p75": 0.666001330672,
+    "gap": 0.038728603399
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 76580762,
+    "conservative": 45948457,
+    "optimistic": 107213066,
+    "basis": "own"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 0
+  },
+  "case_family": "in_bank"
+}

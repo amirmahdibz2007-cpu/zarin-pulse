@@ -1,0 +1,38 @@
+{
+  "key": "M273",
+  "category": "خدمات شبکه‌های کامپیوتری و اینترنت",
+  "sessions": 1253,
+  "verified": 875,
+  "no_attempt": 256,
+  "in_bank": 112,
+  "failed": 10,
+  "paid_pending": 1,
+  "revenue_rial": 1281306500,
+  "paid_amount_rial": 1770000,
+  "attempted_amount_rial": 1832856500,
+  "median_amount": 1100000,
+  "unique_prices": 10,
+  "success_rate": 0.698324022346,
+  "aov": 1464350.2857142857,
+  "health": "healthy",
+  "fee_actual": 0.012161376689,
+  "fee_expected": 0.009332726587,
+  "tariff_effect": 0.002828650102,
+  "fee_realized": 15582451,
+  "fee_potential": 6771600,
+  "customers": 551,
+  "repeat_customers": 186,
+  "repeat_order_share": 0.582857142857,
+  "business_model": "repeat_like",
+  "peers": {
+    "n": 15,
+    "p75": 0.627220052903,
+    "gap": -0.071103969443
+  },
+  "impact": null,
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 1770000
+  },
+  "case_family": null
+}

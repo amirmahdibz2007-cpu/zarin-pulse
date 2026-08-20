@@ -1,0 +1,38 @@
+{
+  "key": "M216",
+  "category": "ارائه دهنده خدمات اینترنت",
+  "sessions": 8859,
+  "verified": 4226,
+  "no_attempt": 2784,
+  "in_bank": 1802,
+  "failed": 41,
+  "paid_pending": 6,
+  "revenue_rial": 1614732800,
+  "paid_amount_rial": 2176000,
+  "attempted_amount_rial": 20226579840,
+  "median_amount": 200000,
+  "unique_prices": 290,
+  "success_rate": 0.477029010046,
+  "aov": 382094.84145764314,
+  "health": "healthy",
+  "fee_actual": 0.023539777731,
+  "fee_expected": 0.01398306438,
+  "tariff_effect": 0.009556713351,
+  "fee_realized": 38122260,
+  "fee_potential": 63784771,
+  "customers": 1995,
+  "repeat_customers": 857,
+  "repeat_order_share": 0.730714623758,
+  "business_model": "repeat_like",
+  "peers": {
+    "n": 6,
+    "p75": 0.341437632135,
+    "gap": -0.135591377911
+  },
+  "impact": null,
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 2176000
+  },
+  "case_family": null
+}

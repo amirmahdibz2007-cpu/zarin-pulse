@@ -1,0 +1,44 @@
+{
+  "key": "M208",
+  "category": "خدمات شبکه‌های کامپیوتری و اینترنت",
+  "sessions": 12710,
+  "verified": 5280,
+  "no_attempt": 1119,
+  "in_bank": 4663,
+  "failed": 119,
+  "paid_pending": 1529,
+  "revenue_rial": 5640041000,
+  "paid_amount_rial": 2681154000,
+  "attempted_amount_rial": 14931442000,
+  "median_amount": 840000,
+  "unique_prices": 46,
+  "success_rate": 0.415420928403,
+  "aov": 1068189.5833333333,
+  "health": "healthy",
+  "fee_actual": 0.012993167603,
+  "fee_expected": 0.007367695312,
+  "tariff_effect": 0.005625472291,
+  "fee_realized": 73281998,
+  "fee_potential": 120241582,
+  "customers": 3727,
+  "repeat_customers": 970,
+  "repeat_order_share": 0.477840909091,
+  "business_model": "repeat_like",
+  "peers": {
+    "n": 15,
+    "p75": 0.627220052903,
+    "gap": 0.2117991245
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 1437765486,
+    "conservative": 862659292,
+    "optimistic": 2012871680,
+    "basis": "own"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 2681154000
+  },
+  "case_family": "in_bank"
+}

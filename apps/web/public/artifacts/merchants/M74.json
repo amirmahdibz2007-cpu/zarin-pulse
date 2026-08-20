@@ -1,0 +1,44 @@
+{
+  "key": "M74",
+  "category": "خدمات شبکه‌های کامپیوتری و اینترنت",
+  "sessions": 387,
+  "verified": 171,
+  "no_attempt": 97,
+  "in_bank": 103,
+  "failed": 6,
+  "paid_pending": 10,
+  "revenue_rial": 203349300,
+  "paid_amount_rial": 13350000,
+  "attempted_amount_rial": 536836300,
+  "median_amount": 700000,
+  "unique_prices": 66,
+  "success_rate": 0.441860465116,
+  "aov": 1189177.192982456,
+  "health": "healthy",
+  "fee_actual": 0.012614894666,
+  "fee_expected": 0.007407268989,
+  "tariff_effect": 0.005207625677,
+  "fee_realized": 2565230,
+  "fee_potential": 3792574,
+  "customers": 103,
+  "repeat_customers": 36,
+  "repeat_order_share": 0.608187134503,
+  "business_model": null,
+  "peers": {
+    "n": 15,
+    "p75": 0.682869198312,
+    "gap": 0.241008733196
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 55457504,
+    "conservative": 33274503,
+    "optimistic": 77640506,
+    "basis": "own"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 13350000
+  },
+  "case_family": "in_bank"
+}

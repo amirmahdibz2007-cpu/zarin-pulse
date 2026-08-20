@@ -1,0 +1,44 @@
+{
+  "key": "M21",
+  "category": "خدمات شبکه‌های کامپیوتری و اینترنت",
+  "sessions": 1788,
+  "verified": 775,
+  "no_attempt": 368,
+  "in_bank": 346,
+  "failed": 34,
+  "paid_pending": 265,
+  "revenue_rial": 4373353280,
+  "paid_amount_rial": 4051500000,
+  "attempted_amount_rial": 20565149130,
+  "median_amount": 2000000,
+  "unique_prices": 121,
+  "success_rate": 0.433445190157,
+  "aov": 5643036.490322581,
+  "health": "healthy",
+  "fee_actual": 0.005888314251,
+  "fee_expected": 0.003851796574,
+  "tariff_effect": 0.002036517677,
+  "fee_realized": 25753569,
+  "fee_potential": 76541114,
+  "customers": 500,
+  "repeat_customers": 108,
+  "repeat_order_share": 0.494193548387,
+  "business_model": "one_shot",
+  "peers": {
+    "n": 16,
+    "p75": 0.730021598272,
+    "gap": 0.296576408115
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 1496190795,
+    "conservative": 897714477,
+    "optimistic": 2094667113,
+    "basis": "own"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 4051500000
+  },
+  "case_family": "residual"
+}

@@ -1,0 +1,38 @@
+{
+  "key": "M62",
+  "category": "خدمات شبکه‌های کامپیوتری و اینترنت",
+  "sessions": 85907,
+  "verified": 65702,
+  "no_attempt": 3903,
+  "in_bank": 15139,
+  "failed": 1110,
+  "paid_pending": 53,
+  "revenue_rial": 48157189400,
+  "paid_amount_rial": 14720000,
+  "attempted_amount_rial": 89739255704,
+  "median_amount": 270000,
+  "unique_prices": 1929,
+  "success_rate": 0.764803799458,
+  "aov": 732963.8275851572,
+  "health": "healthy",
+  "fee_actual": 0.014991061337,
+  "fee_expected": 0.010144963493,
+  "tariff_effect": 0.004846097844,
+  "fee_realized": 721921666,
+  "fee_potential": 344114346,
+  "customers": 18719,
+  "repeat_customers": 9480,
+  "repeat_order_share": 0.859380231956,
+  "business_model": "repeat_like",
+  "peers": {
+    "n": 9,
+    "p75": 0.581333333333,
+    "gap": -0.183470466125
+  },
+  "impact": null,
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 14720000
+  },
+  "case_family": null
+}

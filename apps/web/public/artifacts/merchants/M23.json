@@ -1,0 +1,44 @@
+{
+  "key": "M23",
+  "category": "خدمات شبکه‌های کامپیوتری و اینترنت",
+  "sessions": 1793,
+  "verified": 1015,
+  "no_attempt": 130,
+  "in_bank": 598,
+  "failed": 46,
+  "paid_pending": 4,
+  "revenue_rial": 376980000,
+  "paid_amount_rial": 1160000,
+  "attempted_amount_rial": 699483250,
+  "median_amount": 340000,
+  "unique_prices": 84,
+  "success_rate": 0.566090351366,
+  "aov": 371408.8669950739,
+  "health": "healthy",
+  "fee_actual": 0.027495920208,
+  "fee_expected": 0.012478240998,
+  "tariff_effect": 0.01501767921,
+  "fee_realized": 10365412,
+  "fee_potential": 8016798,
+  "customers": 916,
+  "repeat_customers": 36,
+  "repeat_order_share": 0.133004926108,
+  "business_model": "one_shot",
+  "peers": {
+    "n": 12,
+    "p75": 0.682869198312,
+    "gap": 0.116778846946
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 38883625,
+    "conservative": 23330175,
+    "optimistic": 54437075,
+    "basis": "own"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 1160000
+  },
+  "case_family": "in_bank"
+}

@@ -1,0 +1,38 @@
+{
+  "key": "M52",
+  "category": "فروشگاه لوازم آرایشی و بهداشتی",
+  "sessions": 150,
+  "verified": 106,
+  "no_attempt": 6,
+  "in_bank": 38,
+  "failed": 0,
+  "paid_pending": 0,
+  "revenue_rial": 3440040000,
+  "paid_amount_rial": 0,
+  "attempted_amount_rial": 5110580000,
+  "median_amount": 16575000,
+  "unique_prices": 83,
+  "success_rate": 0.706666666667,
+  "aov": 32453207.547169812,
+  "health": "healthy",
+  "fee_actual": 0.004302554621,
+  "fee_expected": 0.003360638718,
+  "tariff_effect": 0.000941915904,
+  "fee_realized": 14800960,
+  "fee_potential": 6707680,
+  "customers": 104,
+  "repeat_customers": 2,
+  "repeat_order_share": 0.037735849057,
+  "business_model": null,
+  "peers": {
+    "n": 7,
+    "p75": 0.545370039328,
+    "gap": -0.161296627339
+  },
+  "impact": null,
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 0
+  },
+  "case_family": null
+}

@@ -1,0 +1,44 @@
+{
+  "key": "M37",
+  "category": "کیف و کفش فروشی",
+  "sessions": 9963,
+  "verified": 5323,
+  "no_attempt": 1186,
+  "in_bank": 3119,
+  "failed": 222,
+  "paid_pending": 113,
+  "revenue_rial": 50179030000,
+  "paid_amount_rial": 1108900000,
+  "attempted_amount_rial": 90905430000,
+  "median_amount": 6960000,
+  "unique_prices": 776,
+  "success_rate": 0.53427682425,
+  "aov": 9426832.613188053,
+  "health": "healthy",
+  "fee_actual": 0.008948386607,
+  "fee_expected": 0.004525398169,
+  "tariff_effect": 0.004422988438,
+  "fee_realized": 449021360,
+  "fee_potential": 348475680,
+  "customers": 4576,
+  "repeat_customers": 497,
+  "repeat_order_share": 0.233702799173,
+  "business_model": "one_shot",
+  "peers": {
+    "n": 19,
+    "p75": 0.64,
+    "gap": 0.10572317575
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 4964735664,
+    "conservative": 2978841398,
+    "optimistic": 6950629930,
+    "basis": "own"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 1108900000
+  },
+  "case_family": "in_bank"
+}

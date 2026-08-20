@@ -1,0 +1,54 @@
+---
+description: RED LINE — hackathon session must be extreme-detail, production-engineering grade
+alwaysApply: true
+---
+
+# Hackathon Engineering Red Line (NON-NEGOTIABLE)
+
+This repo is a **Starcoach vibe-coding hackathon** build. Treat every change as if it will be judged by senior engineers and sponsors (Liara / Arvan / Starcoach).
+
+## Absolute bar
+
+- **No hand-wavy work.** Every claim needs a concrete artifact: schema, API contract, sequence, failure mode, or demo path.
+- **No toy shortcuts** that break deploy, auth, data integrity, or the happy-path demo.
+- **Depth over speed theater.** Prefer one complete vertical slice over five half-features.
+- **Engineering language by default:** invariants, contracts, edge cases, observability, rollback, rollback criteria.
+
+## Before writing code
+
+1. State the **user problem** in one sentence (who hurts, what fails today).
+2. Write the **acceptance criteria** (Given / When / Then) for the slice you are building.
+3. Define **non-goals** explicitly (what we will NOT build this session).
+4. Sketch **data model + API/events** before UI polish.
+5. Name the **demo script** (≤3 minutes): problem → solution → live path → value for sponsor.
+
+## While implementing
+
+- Explicit types / schemas at boundaries (request, response, env, DB).
+- Validate inputs; never trust client or LLM output.
+- Error paths: user-visible message + logged cause; no empty `catch`.
+- Env via `.env.example`; secrets never committed.
+- Every feature must be reachable from a **deployed or deployable** path (Liara/Arvan-ready).
+- Prefer small commits of working slices; keep README truthful (setup, run, deploy, demo).
+
+## Definition of Done (every task)
+
+- [ ] Happy path works end-to-end without manual DB surgery
+- [ ] At least one realistic failure case handled
+- [ ] How to run / test is documented in-repo
+- [ ] Demo path listed (clicks or curl)
+- [ ] Known limits written (not hidden)
+
+## Forbidden in this session
+
+- "We'll clean it later" for core path
+- Placeholder auth that always succeeds in demo
+- Fake data presented as real product behavior
+- Vague TODOs without owner + acceptance criteria
+- Switching stack mid-slice without a written reason
+
+## Communication in chat
+
+- Lead with the engineering decision and tradeoff.
+- Cite files/paths; avoid motivational filler.
+- If uncertain, say what evidence is missing — then gather it.

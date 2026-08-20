@@ -1,0 +1,38 @@
+{
+  "key": "M165",
+  "category": "کیف و کفش فروشی",
+  "sessions": 253,
+  "verified": 199,
+  "no_attempt": 4,
+  "in_bank": 36,
+  "failed": 13,
+  "paid_pending": 1,
+  "revenue_rial": 1590050000,
+  "paid_amount_rial": 22000000,
+  "attempted_amount_rial": 2055660000,
+  "median_amount": 5250000,
+  "unique_prices": 126,
+  "success_rate": 0.786561264822,
+  "aov": 7990201.005025126,
+  "health": "healthy",
+  "fee_actual": 0.008128348165,
+  "fee_expected": 0.004319990995,
+  "tariff_effect": 0.00380835717,
+  "fee_realized": 12924480,
+  "fee_potential": 3997280,
+  "customers": 185,
+  "repeat_customers": 11,
+  "repeat_order_share": 0.125628140704,
+  "business_model": null,
+  "peers": {
+    "n": 14,
+    "p75": 0.64,
+    "gap": -0.146561264822
+  },
+  "impact": null,
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 22000000
+  },
+  "case_family": null
+}

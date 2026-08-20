@@ -1,0 +1,17 @@
+{
+  "no_attempt_plus_attempted": 2062839,
+  "sessions_total": 2062839,
+  "attempted_identity": 1798903,
+  "attempted": 1798903,
+  "terminal_sum": 2062839,
+  "revenue": 5165464690799,
+  "category_revenue": 5165464690799,
+  "merchant_revenue": 5165464690799,
+  "month_revenue": 5165464690799,
+  "recoverable_sum": 426678146032,
+  "impact_sum": 426678146032,
+  "fee_realized_rial": 20957181891,
+  "fee_session_total": 41257084928,
+  "verified_gap": 28,
+  "sourceSha256": "84ac8a28df48ca7baeaf0b1cec563a3f0a3516039f5f62e9bfd11124ca35b461"
+}

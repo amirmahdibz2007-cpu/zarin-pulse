@@ -1,0 +1,38 @@
+{
+  "key": "M97",
+  "category": "خدمات شبکه‌های کامپیوتری و اینترنت",
+  "sessions": 12753,
+  "verified": 9899,
+  "no_attempt": 519,
+  "in_bank": 1735,
+  "failed": 600,
+  "paid_pending": 0,
+  "revenue_rial": 176292936500,
+  "paid_amount_rial": 0,
+  "attempted_amount_rial": 230860816151,
+  "median_amount": 7955000,
+  "unique_prices": 1750,
+  "success_rate": 0.776209519329,
+  "aov": 17809166.22891201,
+  "health": "healthy",
+  "fee_actual": 0.004203093724,
+  "fee_expected": 0.003660084691,
+  "tariff_effect": 0.000543009033,
+  "fee_realized": 736533375,
+  "fee_potential": 214884959,
+  "customers": 4259,
+  "repeat_customers": 2290,
+  "repeat_order_share": 0.801091019295,
+  "business_model": "repeat_like",
+  "peers": {
+    "n": 10,
+    "p75": 0.730021598272,
+    "gap": -0.046187921057
+  },
+  "impact": null,
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 0
+  },
+  "case_family": null
+}

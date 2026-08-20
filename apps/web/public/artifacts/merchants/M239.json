@@ -1,0 +1,38 @@
+{
+  "key": "M239",
+  "category": "فروشگاه لوازم آرایشی و بهداشتی",
+  "sessions": 118,
+  "verified": 78,
+  "no_attempt": 4,
+  "in_bank": 31,
+  "failed": 2,
+  "paid_pending": 3,
+  "revenue_rial": 1121281037,
+  "paid_amount_rial": 62679278,
+  "attempted_amount_rial": 1694259055,
+  "median_amount": 12867839,
+  "unique_prices": 32,
+  "success_rate": 0.661016949153,
+  "aov": 14375397.91025641,
+  "health": "healthy",
+  "fee_actual": 0.007664150839,
+  "fee_expected": 0.004664280005,
+  "tariff_effect": 0.002999870834,
+  "fee_realized": 8593667,
+  "fee_potential": 4444029,
+  "customers": 74,
+  "repeat_customers": 3,
+  "repeat_order_share": 0.089743589744,
+  "business_model": null,
+  "peers": {
+    "n": 8,
+    "p75": 0.593466424682,
+    "gap": -0.067550524471
+  },
+  "impact": null,
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 62679278
+  },
+  "case_family": null
+}

@@ -1,0 +1,10 @@
+node_modules
+.git
+.next
+v2
+*_files
+*.html
+coverage
+dist
+.env
+.env.local

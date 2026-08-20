@@ -1,0 +1,38 @@
+{
+  "key": "M268",
+  "category": "کیف و کفش فروشی",
+  "sessions": 3006,
+  "verified": 2002,
+  "no_attempt": 113,
+  "in_bank": 786,
+  "failed": 60,
+  "paid_pending": 46,
+  "revenue_rial": 30318212500,
+  "paid_amount_rial": 774390000,
+  "attempted_amount_rial": 44978448500,
+  "median_amount": 13260000,
+  "unique_prices": 251,
+  "success_rate": 0.666001330672,
+  "aov": 15143962.287712287,
+  "health": "healthy",
+  "fee_actual": 0.008296814299,
+  "fee_expected": 0.004940058816,
+  "tariff_effect": 0.003356755483,
+  "fee_realized": 251544579,
+  "fee_potential": 122861968,
+  "customers": 1950,
+  "repeat_customers": 50,
+  "repeat_order_share": 0.050949050949,
+  "business_model": "one_shot",
+  "peers": {
+    "n": 25,
+    "p75": 0.627272727273,
+    "gap": -0.038728603399
+  },
+  "impact": null,
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 774390000
+  },
+  "case_family": null
+}

@@ -1,0 +1,38 @@
+{
+  "key": "M43",
+  "category": "کیف و کفش فروشی",
+  "sessions": 36101,
+  "verified": 23971,
+  "no_attempt": 5295,
+  "in_bank": 6317,
+  "failed": 275,
+  "paid_pending": 246,
+  "revenue_rial": 30095741590,
+  "paid_amount_rial": 320726380,
+  "attempted_amount_rial": 46617327786,
+  "median_amount": 948200,
+  "unique_prices": 468,
+  "success_rate": 0.663998227196,
+  "aov": 1255506.3030328313,
+  "health": "healthy",
+  "fee_actual": 0.012749474634,
+  "fee_expected": 0.006846327197,
+  "tariff_effect": 0.005903147438,
+  "fee_realized": 383704894,
+  "fee_potential": 200493594,
+  "customers": 11069,
+  "repeat_customers": 4471,
+  "repeat_order_share": 0.724750740478,
+  "business_model": "repeat_like",
+  "peers": {
+    "n": 14,
+    "p75": 0.64,
+    "gap": -0.023998227196
+  },
+  "impact": null,
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 320726380
+  },
+  "case_family": null
+}

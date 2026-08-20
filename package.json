@@ -1,0 +1,38 @@
+{
+  "name": "zarinpulse",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=@zarinpulse/web",
+    "build": "npm run build --workspace=@zarinpulse/web",
+    "start": "npm run start --workspace=@zarinpulse/web",
+    "typecheck": "npm exec -- tsc --noEmit -p tsconfig.json --pretty false",
+    "lint": "npm exec -- eslint .",
+    "test": "npm exec -- vitest run",
+    "verify": "node scripts/verify.mjs",
+    "clean": "node scripts/clean.mjs",
+    "check:scripts": "node scripts/check-scripts.mjs",
+    "check:paths": "node scripts/check-paths.mjs",
+    "check:persian": "node scripts/check-persian.mjs",
+    "data:build": "node scripts/run-tsx.mjs packages/etl/src/cli.ts",
+    "data:verify": "node scripts/run-tsx.mjs packages/etl/src/verify-cli.ts"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.5",
+    "@types/node": "24.13.3",
+    "eslint": "9.39.5",
+    "prettier": "3.9.6",
+    "tsx": "^4.23.12",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.67.0",
+    "vitest": "4.1.11"
+  }
+}

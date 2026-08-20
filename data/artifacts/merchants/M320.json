@@ -1,0 +1,44 @@
+{
+  "key": "M320",
+  "category": "کیف و کفش فروشی",
+  "sessions": 137,
+  "verified": 71,
+  "no_attempt": 2,
+  "in_bank": 63,
+  "failed": 1,
+  "paid_pending": 0,
+  "revenue_rial": 524914500,
+  "paid_amount_rial": 0,
+  "attempted_amount_rial": 952117500,
+  "median_amount": 5490000,
+  "unique_prices": 63,
+  "success_rate": 0.518248175182,
+  "aov": 7393161.9718309855,
+  "health": "healthy",
+  "fee_actual": 0.009439805911,
+  "fee_expected": 0.004254743309,
+  "tariff_effect": 0.005185062602,
+  "fee_realized": 4955091,
+  "fee_potential": 3866134,
+  "customers": 70,
+  "repeat_customers": 1,
+  "repeat_order_share": 0.028169014085,
+  "business_model": null,
+  "peers": {
+    "n": 14,
+    "p75": 0.663998227196,
+    "gap": 0.145750052014
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 73812431,
+    "conservative": 44287459,
+    "optimistic": 103337404,
+    "basis": "own"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 0
+  },
+  "case_family": "in_bank"
+}

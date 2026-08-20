@@ -1,0 +1,44 @@
+{
+  "key": "M340",
+  "category": "مراکز آموزشی مجازی",
+  "sessions": 141,
+  "verified": 44,
+  "no_attempt": 3,
+  "in_bank": 52,
+  "failed": 39,
+  "paid_pending": 3,
+  "revenue_rial": 89250000,
+  "paid_amount_rial": 1430001,
+  "attempted_amount_rial": 1355331520,
+  "median_amount": 700000,
+  "unique_prices": 13,
+  "success_rate": 0.312056737589,
+  "aov": 2028409.0909090908,
+  "health": "healthy",
+  "fee_actual": 0.011943977591,
+  "fee_expected": 0.006512914614,
+  "tariff_effect": 0.005431062977,
+  "fee_realized": 1066000,
+  "fee_potential": 8098233,
+  "customers": 27,
+  "repeat_customers": 12,
+  "repeat_order_share": 0.659090909091,
+  "business_model": null,
+  "peers": {
+    "n": 19,
+    "p75": 0.60773480663,
+    "gap": 0.295678069041
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 42282804,
+    "conservative": 25369682,
+    "optimistic": 59195925,
+    "basis": "own"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 1430001
+  },
+  "case_family": "in_bank"
+}

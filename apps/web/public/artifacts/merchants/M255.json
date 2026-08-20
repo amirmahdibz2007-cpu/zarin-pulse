@@ -1,0 +1,44 @@
+{
+  "key": "M255",
+  "category": "خدمات شبکه‌های کامپیوتری و اینترنت",
+  "sessions": 154,
+  "verified": 0,
+  "no_attempt": 7,
+  "in_bank": 32,
+  "failed": 3,
+  "paid_pending": 112,
+  "revenue_rial": 0,
+  "paid_amount_rial": 88381200,
+  "attempted_amount_rial": 112501150,
+  "median_amount": 500000,
+  "unique_prices": 0,
+  "success_rate": 0,
+  "aov": null,
+  "health": "pattern_2_verify_broken",
+  "fee_actual": null,
+  "fee_expected": null,
+  "tariff_effect": null,
+  "fee_realized": 0,
+  "fee_potential": 1891986,
+  "customers": 0,
+  "repeat_customers": 0,
+  "repeat_order_share": null,
+  "business_model": null,
+  "peers": {
+    "n": 15,
+    "p75": 0.682869198312,
+    "gap": 0.682869198312
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 26290464,
+    "conservative": 15774278,
+    "optimistic": 36806650,
+    "basis": "median_attempted"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 88381200
+  },
+  "case_family": "gateway_broken"
+}

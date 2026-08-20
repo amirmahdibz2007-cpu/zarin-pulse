@@ -1,0 +1,38 @@
+{
+  "key": "M335",
+  "category": "کیف و کفش فروشی",
+  "sessions": 541,
+  "verified": 343,
+  "no_attempt": 13,
+  "in_bank": 167,
+  "failed": 13,
+  "paid_pending": 5,
+  "revenue_rial": 3479407240,
+  "paid_amount_rial": 32338240,
+  "attempted_amount_rial": 5128282151,
+  "median_amount": 7494380,
+  "unique_prices": 265,
+  "success_rate": 0.634011090573,
+  "aov": 10144044.43148688,
+  "health": "healthy",
+  "fee_actual": 0.008106036475,
+  "fee_expected": 0.00429294212,
+  "tariff_effect": 0.003813094355,
+  "fee_realized": 28204202,
+  "fee_potential": 14409560,
+  "customers": 319,
+  "repeat_customers": 20,
+  "repeat_order_share": 0.128279883382,
+  "business_model": null,
+  "peers": {
+    "n": 24,
+    "p75": 0.605398457584,
+    "gap": -0.028612632989
+  },
+  "impact": null,
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 32338240
+  },
+  "case_family": null
+}

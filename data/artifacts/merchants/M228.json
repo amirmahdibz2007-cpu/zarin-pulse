@@ -1,0 +1,38 @@
+{
+  "key": "M228",
+  "category": "مراکز آموزشی مجازی",
+  "sessions": 231,
+  "verified": 182,
+  "no_attempt": 21,
+  "in_bank": 23,
+  "failed": 2,
+  "paid_pending": 3,
+  "revenue_rial": 82280000,
+  "paid_amount_rial": 1040000,
+  "attempted_amount_rial": 98570000,
+  "median_amount": 370000,
+  "unique_prices": 33,
+  "success_rate": 0.787878787879,
+  "aov": 452087.9120879121,
+  "health": "healthy",
+  "fee_actual": 0.020305298979,
+  "fee_expected": 0.008762347437,
+  "tariff_effect": 0.011542951542,
+  "fee_realized": 1670720,
+  "fee_potential": 399920,
+  "customers": 164,
+  "repeat_customers": 12,
+  "repeat_order_share": 0.164835164835,
+  "business_model": null,
+  "peers": {
+    "n": 19,
+    "p75": 0.587786259542,
+    "gap": -0.200092528337
+  },
+  "impact": null,
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 1040000
+  },
+  "case_family": null
+}

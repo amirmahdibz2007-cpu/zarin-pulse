@@ -1,0 +1,44 @@
+{
+  "key": "M323",
+  "category": "مراکز آموزشی مجازی",
+  "sessions": 137,
+  "verified": 8,
+  "no_attempt": 19,
+  "in_bank": 50,
+  "failed": 0,
+  "paid_pending": 60,
+  "revenue_rial": 126734000,
+  "paid_amount_rial": 862680000,
+  "attempted_amount_rial": 2926044000,
+  "median_amount": 4400000,
+  "unique_prices": 6,
+  "success_rate": 0.058394160584,
+  "aov": 15841750,
+  "health": "degraded",
+  "fee_actual": 0.004595073145,
+  "fee_expected": 0.004055376854,
+  "tariff_effect": 0.000539696292,
+  "fee_realized": 582352,
+  "fee_potential": 12725360,
+  "customers": 8,
+  "repeat_customers": 0,
+  "repeat_order_share": null,
+  "business_model": null,
+  "peers": {
+    "n": 20,
+    "p75": 0.482336232913,
+    "gap": 0.423942072329
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 460044926,
+    "conservative": 276026956,
+    "optimistic": 644062897,
+    "basis": "own"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 862680000
+  },
+  "case_family": "in_bank"
+}

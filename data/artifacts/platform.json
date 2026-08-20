@@ -1,0 +1,2141 @@
+{
+  "sourceSha256": "84ac8a28df48ca7baeaf0b1cec563a3f0a3516039f5f62e9bfd11124ca35b461",
+  "rows_total": 2213289,
+  "sessions_total": 2062839,
+  "merchants_total": 343,
+  "categories_total": 5,
+  "distinct_psp": 8,
+  "verified_try_session_gap": 28,
+  "terminal": {
+    "Failed": {
+      "n": 30939,
+      "amount": 250215698296
+    },
+    "InBank": {
+      "n": 733620,
+      "amount": 3844968209483
+    },
+    "Verified": {
+      "n": 1025627,
+      "amount": 5165420875199
+    },
+    "NoAttempt": {
+      "n": 263936,
+      "amount": 1295639237755
+    },
+    "Paid": {
+      "n": 8716,
+      "amount": 116384774108
+    },
+    "Reversed": {
+      "n": 1,
+      "amount": 13003000
+    }
+  },
+  "session_status": {
+    "verified": 1025655,
+    "paid": 8706,
+    "no_attempt": 263936
+  },
+  "revenue_rial": 5165464690799,
+  "orders": 1025655,
+  "aov": 5036259.454493958,
+  "paid_pending_rial": 116550558678,
+  "fee_realized_rial": 20957181891,
+  "recoverable_expected_rial": 426678146032,
+  "low_coverage_days": 19,
+  "hazard": [
+    {
+      "k": 1,
+      "at_risk": 1798903,
+      "won": 985973,
+      "h": 0.548096812335,
+      "ci": [
+        0.547369440589,
+        0.548823978666
+      ]
+    },
+    {
+      "k": 2,
+      "at_risk": 72432,
+      "won": 30224,
+      "h": 0.41727413298,
+      "ci": [
+        0.413687527295,
+        0.420869512996
+      ]
+    },
+    {
+      "k": 3,
+      "at_risk": 23068,
+      "won": 5245,
+      "h": 0.227371250217,
+      "ci": [
+        0.222008159918,
+        0.232825125823
+      ]
+    },
+    {
+      "k": 4,
+      "at_risk": 11199,
+      "won": 3047,
+      "h": 0.272077864095,
+      "ci": [
+        0.263914778079,
+        0.280397259295
+      ]
+    },
+    {
+      "k": 5,
+      "at_risk": 5753,
+      "won": 589,
+      "h": 0.102381366244,
+      "ci": [
+        0.094811285919,
+        0.110482097141
+      ]
+    },
+    {
+      "k": 6,
+      "at_risk": 3398,
+      "won": 196,
+      "h": 0.057680988817,
+      "ci": [
+        0.05033015093,
+        0.066030785819
+      ]
+    },
+    {
+      "k": 7,
+      "at_risk": 2971,
+      "won": 111,
+      "h": 0.037361157859,
+      "ci": [
+        0.031117558004,
+        0.04479958311
+      ]
+    },
+    {
+      "k": 8,
+      "at_risk": 2569,
+      "won": 85,
+      "h": 0.033086804204,
+      "ci": [
+        0.02683752476,
+        0.040730361409
+      ]
+    },
+    {
+      "k": 9,
+      "at_risk": 2082,
+      "won": 51,
+      "h": 0.024495677233,
+      "ci": [
+        0.018679986129,
+        0.032062824823
+      ]
+    },
+    {
+      "k": 10,
+      "at_risk": 1694,
+      "won": 23,
+      "h": 0.013577331759,
+      "ci": [
+        0.009064192711,
+        0.020291586394
+      ]
+    },
+    {
+      "k": 11,
+      "at_risk": 1598,
+      "won": 18,
+      "h": 0.0112640801,
+      "ci": [
+        0.007136857369,
+        0.017735428587
+      ]
+    },
+    {
+      "k": 12,
+      "at_risk": 1498,
+      "won": 14,
+      "h": 0.009345794393,
+      "ci": [
+        0.005575209317,
+        0.015626401968
+      ]
+    },
+    {
+      "k": 13,
+      "at_risk": 1368,
+      "won": 15,
+      "h": 0.010964912281,
+      "ci": [
+        0.006656045929,
+        0.018012590963
+      ]
+    },
+    {
+      "k": 14,
+      "at_risk": 1217,
+      "won": 7,
+      "h": 0.005751848809,
+      "ci": [
+        0.0027889505,
+        0.011825116455
+      ]
+    },
+    {
+      "k": 15,
+      "at_risk": 1045,
+      "won": 9,
+      "h": 0.008612440191,
+      "ci": [
+        0.004537568229,
+        0.016286798159
+      ]
+    },
+    {
+      "k": 16,
+      "at_risk": 986,
+      "won": 5,
+      "h": 0.005070993915,
+      "ci": [
+        0.002167912397,
+        0.011815598494
+      ]
+    },
+    {
+      "k": 17,
+      "at_risk": 935,
+      "won": 5,
+      "h": 0.005347593583,
+      "ci": [
+        0.002286270922,
+        0.012456856035
+      ]
+    },
+    {
+      "k": 18,
+      "at_risk": 891,
+      "won": 1,
+      "h": 0.001122334456,
+      "ci": [
+        0.000198147071,
+        0.006329778924
+      ]
+    },
+    {
+      "k": 19,
+      "at_risk": 867,
+      "won": 2,
+      "h": 0.002306805075,
+      "ci": [
+        0.000632837265,
+        0.008371624731
+      ]
+    },
+    {
+      "k": 20,
+      "at_risk": 835,
+      "won": 3,
+      "h": 0.003592814371,
+      "ci": [
+        0.001222617261,
+        0.010509586384
+      ]
+    },
+    {
+      "k": 21,
+      "at_risk": 537,
+      "won": 1,
+      "h": 0.001862197393,
+      "ci": [
+        0.000328799234,
+        0.010471886855
+      ]
+    },
+    {
+      "k": 22,
+      "at_risk": 497,
+      "won": 1,
+      "h": 0.002012072435,
+      "ci": [
+        0.000355268533,
+        0.011308020753
+      ]
+    },
+    {
+      "k": 23,
+      "at_risk": 458,
+      "won": 1,
+      "h": 0.002183406114,
+      "ci": [
+        0.000385528824,
+        0.012262661824
+      ]
+    },
+    {
+      "k": 24,
+      "at_risk": 432,
+      "won": 1,
+      "h": 0.002314814815,
+      "ci": [
+        0.00040873859,
+        0.012993976325
+      ]
+    },
+    {
+      "k": 25,
+      "at_risk": 409,
+      "won": 0,
+      "h": 0,
+      "ci": [
+        0,
+        0.009304925023
+      ]
+    },
+    {
+      "k": 26,
+      "at_risk": 396,
+      "won": 0,
+      "h": 0,
+      "ci": [
+        0,
+        0.009607454995
+      ]
+    },
+    {
+      "k": 27,
+      "at_risk": 374,
+      "won": 0,
+      "h": 0,
+      "ci": [
+        0,
+        0.010166853666
+      ]
+    },
+    {
+      "k": 28,
+      "at_risk": 362,
+      "won": 0,
+      "h": 0,
+      "ci": [
+        0,
+        0.010500337586
+      ]
+    },
+    {
+      "k": 29,
+      "at_risk": 345,
+      "won": 0,
+      "h": 0,
+      "ci": [
+        0,
+        0.011012047804
+      ]
+    },
+    {
+      "k": 30,
+      "at_risk": 323,
+      "won": 0,
+      "h": 0,
+      "ci": [
+        0,
+        0.011753278897
+      ]
+    },
+    {
+      "k": 31,
+      "at_risk": 295,
+      "won": 0,
+      "h": 0,
+      "ci": [
+        0,
+        0.012854504311
+      ]
+    },
+    {
+      "k": 32,
+      "at_risk": 260,
+      "won": 0,
+      "h": 0,
+      "ci": [
+        0,
+        0.014559724002
+      ]
+    },
+    {
+      "k": 33,
+      "at_risk": 226,
+      "won": 0,
+      "h": 0,
+      "ci": [
+        0,
+        0.016713515657
+      ]
+    },
+    {
+      "k": 34,
+      "at_risk": 202,
+      "won": 0,
+      "h": 0,
+      "ci": [
+        0,
+        0.018662221123
+      ]
+    },
+    {
+      "k": 35,
+      "at_risk": 191,
+      "won": 0,
+      "h": 0,
+      "ci": [
+        0,
+        0.019715818409
+      ]
+    },
+    {
+      "k": 36,
+      "at_risk": 172,
+      "won": 0,
+      "h": 0,
+      "ci": [
+        0,
+        0.021846149631
+      ]
+    },
+    {
+      "k": 37,
+      "at_risk": 152,
+      "won": 0,
+      "h": 0,
+      "ci": [
+        0,
+        0.024649787353
+      ]
+    },
+    {
+      "k": 38,
+      "at_risk": 136,
+      "won": 0,
+      "h": 0,
+      "ci": [
+        0,
+        0.027470099734
+      ]
+    },
+    {
+      "k": 39,
+      "at_risk": 127,
+      "won": 0,
+      "h": 0,
+      "ci": [
+        0,
+        0.029359645294
+      ]
+    },
+    {
+      "k": 40,
+      "at_risk": 107,
+      "won": 0,
+      "h": 0,
+      "ci": [
+        0,
+        0.034657238019
+      ]
+    },
+    {
+      "k": 41,
+      "at_risk": 103,
+      "won": 0,
+      "h": 0,
+      "ci": [
+        0,
+        0.035954758229
+      ]
+    },
+    {
+      "k": 42,
+      "at_risk": 99,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 43,
+      "at_risk": 92,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 44,
+      "at_risk": 91,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 45,
+      "at_risk": 83,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 46,
+      "at_risk": 75,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 47,
+      "at_risk": 72,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 48,
+      "at_risk": 60,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 49,
+      "at_risk": 60,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 50,
+      "at_risk": 57,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 51,
+      "at_risk": 52,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 52,
+      "at_risk": 47,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 53,
+      "at_risk": 44,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 54,
+      "at_risk": 43,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 55,
+      "at_risk": 41,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 56,
+      "at_risk": 38,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 57,
+      "at_risk": 36,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 58,
+      "at_risk": 34,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 59,
+      "at_risk": 32,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 60,
+      "at_risk": 31,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 61,
+      "at_risk": 29,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 62,
+      "at_risk": 27,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 63,
+      "at_risk": 25,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 64,
+      "at_risk": 24,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 65,
+      "at_risk": 23,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 66,
+      "at_risk": 22,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 67,
+      "at_risk": 21,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 68,
+      "at_risk": 19,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 69,
+      "at_risk": 16,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 70,
+      "at_risk": 16,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 71,
+      "at_risk": 14,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 72,
+      "at_risk": 14,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 73,
+      "at_risk": 14,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 74,
+      "at_risk": 14,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 75,
+      "at_risk": 14,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 76,
+      "at_risk": 14,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 77,
+      "at_risk": 14,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 78,
+      "at_risk": 11,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 79,
+      "at_risk": 9,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 80,
+      "at_risk": 8,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 81,
+      "at_risk": 8,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 82,
+      "at_risk": 6,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 83,
+      "at_risk": 5,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 84,
+      "at_risk": 5,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 85,
+      "at_risk": 5,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 86,
+      "at_risk": 5,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 87,
+      "at_risk": 5,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 88,
+      "at_risk": 5,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 89,
+      "at_risk": 5,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 90,
+      "at_risk": 4,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 91,
+      "at_risk": 4,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 92,
+      "at_risk": 4,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 93,
+      "at_risk": 4,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 94,
+      "at_risk": 4,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 95,
+      "at_risk": 4,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 96,
+      "at_risk": 4,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 97,
+      "at_risk": 4,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 98,
+      "at_risk": 4,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 99,
+      "at_risk": 4,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 100,
+      "at_risk": 4,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 101,
+      "at_risk": 4,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 102,
+      "at_risk": 4,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 103,
+      "at_risk": 4,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 104,
+      "at_risk": 4,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 105,
+      "at_risk": 4,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 106,
+      "at_risk": 4,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 107,
+      "at_risk": 4,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 108,
+      "at_risk": 4,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 109,
+      "at_risk": 3,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 110,
+      "at_risk": 3,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 111,
+      "at_risk": 3,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 112,
+      "at_risk": 3,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 113,
+      "at_risk": 3,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 114,
+      "at_risk": 3,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 115,
+      "at_risk": 3,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 116,
+      "at_risk": 3,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 117,
+      "at_risk": 3,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 118,
+      "at_risk": 3,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 119,
+      "at_risk": 3,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 120,
+      "at_risk": 3,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 121,
+      "at_risk": 3,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 122,
+      "at_risk": 3,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 123,
+      "at_risk": 3,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 124,
+      "at_risk": 2,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 125,
+      "at_risk": 2,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 126,
+      "at_risk": 2,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 127,
+      "at_risk": 2,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 128,
+      "at_risk": 2,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 129,
+      "at_risk": 2,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 130,
+      "at_risk": 1,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 131,
+      "at_risk": 1,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 132,
+      "at_risk": 1,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 133,
+      "at_risk": 1,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 134,
+      "at_risk": 1,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    },
+    {
+      "k": 135,
+      "at_risk": 1,
+      "won": 0,
+      "h": 0,
+      "ci": null
+    }
+  ],
+  "optimal_retry_cap": 2,
+  "daily": [
+    {
+      "day": "2026-01-01",
+      "sessions": 9996,
+      "low": false
+    },
+    {
+      "day": "2026-01-02",
+      "sessions": 9320,
+      "low": false
+    },
+    {
+      "day": "2026-01-03",
+      "sessions": 10535,
+      "low": false
+    },
+    {
+      "day": "2026-01-04",
+      "sessions": 11466,
+      "low": false
+    },
+    {
+      "day": "2026-01-05",
+      "sessions": 9266,
+      "low": false
+    },
+    {
+      "day": "2026-01-06",
+      "sessions": 8497,
+      "low": false
+    },
+    {
+      "day": "2026-01-07",
+      "sessions": 8275,
+      "low": false
+    },
+    {
+      "day": "2026-01-08",
+      "sessions": 6332,
+      "low": false
+    },
+    {
+      "day": "2026-01-09",
+      "sessions": 664,
+      "low": true
+    },
+    {
+      "day": "2026-01-10",
+      "sessions": 1165,
+      "low": true
+    },
+    {
+      "day": "2026-01-11",
+      "sessions": 3206,
+      "low": true
+    },
+    {
+      "day": "2026-01-12",
+      "sessions": 3304,
+      "low": true
+    },
+    {
+      "day": "2026-01-13",
+      "sessions": 3491,
+      "low": true
+    },
+    {
+      "day": "2026-01-14",
+      "sessions": 3106,
+      "low": true
+    },
+    {
+      "day": "2026-01-15",
+      "sessions": 2860,
+      "low": true
+    },
+    {
+      "day": "2026-01-16",
+      "sessions": 2722,
+      "low": true
+    },
+    {
+      "day": "2026-01-17",
+      "sessions": 3189,
+      "low": true
+    },
+    {
+      "day": "2026-01-18",
+      "sessions": 4175,
+      "low": true
+    },
+    {
+      "day": "2026-01-19",
+      "sessions": 4854,
+      "low": true
+    },
+    {
+      "day": "2026-01-20",
+      "sessions": 4776,
+      "low": true
+    },
+    {
+      "day": "2026-01-21",
+      "sessions": 4413,
+      "low": true
+    },
+    {
+      "day": "2026-01-22",
+      "sessions": 3763,
+      "low": true
+    },
+    {
+      "day": "2026-01-23",
+      "sessions": 4169,
+      "low": true
+    },
+    {
+      "day": "2026-01-24",
+      "sessions": 4892,
+      "low": true
+    },
+    {
+      "day": "2026-01-25",
+      "sessions": 9227,
+      "low": false
+    },
+    {
+      "day": "2026-01-26",
+      "sessions": 11304,
+      "low": false
+    },
+    {
+      "day": "2026-01-27",
+      "sessions": 11250,
+      "low": false
+    },
+    {
+      "day": "2026-01-28",
+      "sessions": 12838,
+      "low": false
+    },
+    {
+      "day": "2026-01-29",
+      "sessions": 14593,
+      "low": false
+    },
+    {
+      "day": "2026-01-30",
+      "sessions": 12811,
+      "low": false
+    },
+    {
+      "day": "2026-01-31",
+      "sessions": 12345,
+      "low": false
+    },
+    {
+      "day": "2026-02-01",
+      "sessions": 12401,
+      "low": false
+    },
+    {
+      "day": "2026-02-02",
+      "sessions": 12623,
+      "low": false
+    },
+    {
+      "day": "2026-02-03",
+      "sessions": 12052,
+      "low": false
+    },
+    {
+      "day": "2026-02-04",
+      "sessions": 12447,
+      "low": false
+    },
+    {
+      "day": "2026-02-05",
+      "sessions": 10931,
+      "low": false
+    },
+    {
+      "day": "2026-02-06",
+      "sessions": 11208,
+      "low": false
+    },
+    {
+      "day": "2026-02-07",
+      "sessions": 11472,
+      "low": false
+    },
+    {
+      "day": "2026-02-08",
+      "sessions": 12044,
+      "low": false
+    },
+    {
+      "day": "2026-02-09",
+      "sessions": 11056,
+      "low": false
+    },
+    {
+      "day": "2026-02-10",
+      "sessions": 10910,
+      "low": false
+    },
+    {
+      "day": "2026-02-11",
+      "sessions": 12301,
+      "low": false
+    },
+    {
+      "day": "2026-02-12",
+      "sessions": 10665,
+      "low": false
+    },
+    {
+      "day": "2026-02-13",
+      "sessions": 10991,
+      "low": false
+    },
+    {
+      "day": "2026-02-14",
+      "sessions": 12380,
+      "low": false
+    },
+    {
+      "day": "2026-02-15",
+      "sessions": 12181,
+      "low": false
+    },
+    {
+      "day": "2026-02-16",
+      "sessions": 11855,
+      "low": false
+    },
+    {
+      "day": "2026-02-17",
+      "sessions": 11793,
+      "low": false
+    },
+    {
+      "day": "2026-02-18",
+      "sessions": 11424,
+      "low": false
+    },
+    {
+      "day": "2026-02-19",
+      "sessions": 11111,
+      "low": false
+    },
+    {
+      "day": "2026-02-20",
+      "sessions": 12253,
+      "low": false
+    },
+    {
+      "day": "2026-02-21",
+      "sessions": 12702,
+      "low": false
+    },
+    {
+      "day": "2026-02-22",
+      "sessions": 13254,
+      "low": false
+    },
+    {
+      "day": "2026-02-23",
+      "sessions": 12095,
+      "low": false
+    },
+    {
+      "day": "2026-02-24",
+      "sessions": 13433,
+      "low": false
+    },
+    {
+      "day": "2026-02-25",
+      "sessions": 13300,
+      "low": false
+    },
+    {
+      "day": "2026-02-26",
+      "sessions": 12081,
+      "low": false
+    },
+    {
+      "day": "2026-02-27",
+      "sessions": 12681,
+      "low": false
+    },
+    {
+      "day": "2026-02-28",
+      "sessions": 8553,
+      "low": false
+    },
+    {
+      "day": "2026-03-01",
+      "sessions": 6590,
+      "low": false
+    },
+    {
+      "day": "2026-03-02",
+      "sessions": 5254,
+      "low": true
+    },
+    {
+      "day": "2026-03-03",
+      "sessions": 2693,
+      "low": true
+    },
+    {
+      "day": "2026-03-04",
+      "sessions": 8819,
+      "low": false
+    },
+    {
+      "day": "2026-03-05",
+      "sessions": 9385,
+      "low": false
+    },
+    {
+      "day": "2026-03-06",
+      "sessions": 10904,
+      "low": false
+    },
+    {
+      "day": "2026-03-07",
+      "sessions": 9988,
+      "low": false
+    },
+    {
+      "day": "2026-03-08",
+      "sessions": 10200,
+      "low": false
+    },
+    {
+      "day": "2026-03-09",
+      "sessions": 10568,
+      "low": false
+    },
+    {
+      "day": "2026-03-10",
+      "sessions": 9906,
+      "low": false
+    },
+    {
+      "day": "2026-03-11",
+      "sessions": 9621,
+      "low": false
+    },
+    {
+      "day": "2026-03-12",
+      "sessions": 9851,
+      "low": false
+    },
+    {
+      "day": "2026-03-13",
+      "sessions": 10273,
+      "low": false
+    },
+    {
+      "day": "2026-03-14",
+      "sessions": 9086,
+      "low": false
+    },
+    {
+      "day": "2026-03-15",
+      "sessions": 10117,
+      "low": false
+    },
+    {
+      "day": "2026-03-16",
+      "sessions": 10505,
+      "low": false
+    },
+    {
+      "day": "2026-03-17",
+      "sessions": 9610,
+      "low": false
+    },
+    {
+      "day": "2026-03-18",
+      "sessions": 11870,
+      "low": false
+    },
+    {
+      "day": "2026-03-19",
+      "sessions": 12525,
+      "low": false
+    },
+    {
+      "day": "2026-03-20",
+      "sessions": 18909,
+      "low": false
+    },
+    {
+      "day": "2026-03-21",
+      "sessions": 19003,
+      "low": false
+    },
+    {
+      "day": "2026-03-22",
+      "sessions": 16320,
+      "low": false
+    },
+    {
+      "day": "2026-03-23",
+      "sessions": 13838,
+      "low": false
+    },
+    {
+      "day": "2026-03-24",
+      "sessions": 18418,
+      "low": false
+    },
+    {
+      "day": "2026-03-25",
+      "sessions": 19615,
+      "low": false
+    },
+    {
+      "day": "2026-03-26",
+      "sessions": 19445,
+      "low": false
+    },
+    {
+      "day": "2026-03-27",
+      "sessions": 20470,
+      "low": false
+    },
+    {
+      "day": "2026-03-28",
+      "sessions": 20013,
+      "low": false
+    },
+    {
+      "day": "2026-03-29",
+      "sessions": 17815,
+      "low": false
+    },
+    {
+      "day": "2026-03-30",
+      "sessions": 13867,
+      "low": false
+    },
+    {
+      "day": "2026-03-31",
+      "sessions": 1736,
+      "low": true
+    },
+    {
+      "day": "2026-04-01",
+      "sessions": 10509,
+      "low": false
+    },
+    {
+      "day": "2026-04-02",
+      "sessions": 12610,
+      "low": false
+    },
+    {
+      "day": "2026-04-03",
+      "sessions": 12686,
+      "low": false
+    },
+    {
+      "day": "2026-04-04",
+      "sessions": 13481,
+      "low": false
+    },
+    {
+      "day": "2026-04-05",
+      "sessions": 16324,
+      "low": false
+    },
+    {
+      "day": "2026-04-06",
+      "sessions": 11704,
+      "low": false
+    },
+    {
+      "day": "2026-04-07",
+      "sessions": 8444,
+      "low": false
+    },
+    {
+      "day": "2026-04-08",
+      "sessions": 11166,
+      "low": false
+    },
+    {
+      "day": "2026-04-09",
+      "sessions": 11040,
+      "low": false
+    },
+    {
+      "day": "2026-04-10",
+      "sessions": 12090,
+      "low": false
+    },
+    {
+      "day": "2026-04-11",
+      "sessions": 12791,
+      "low": false
+    },
+    {
+      "day": "2026-04-12",
+      "sessions": 12423,
+      "low": false
+    },
+    {
+      "day": "2026-04-13",
+      "sessions": 11031,
+      "low": false
+    },
+    {
+      "day": "2026-04-14",
+      "sessions": 12416,
+      "low": false
+    },
+    {
+      "day": "2026-04-15",
+      "sessions": 11757,
+      "low": false
+    },
+    {
+      "day": "2026-04-16",
+      "sessions": 10925,
+      "low": false
+    },
+    {
+      "day": "2026-04-17",
+      "sessions": 9655,
+      "low": false
+    },
+    {
+      "day": "2026-04-18",
+      "sessions": 12307,
+      "low": false
+    },
+    {
+      "day": "2026-04-19",
+      "sessions": 11101,
+      "low": false
+    },
+    {
+      "day": "2026-04-20",
+      "sessions": 9527,
+      "low": false
+    },
+    {
+      "day": "2026-04-21",
+      "sessions": 11679,
+      "low": false
+    },
+    {
+      "day": "2026-04-22",
+      "sessions": 10719,
+      "low": false
+    },
+    {
+      "day": "2026-04-23",
+      "sessions": 10635,
+      "low": false
+    },
+    {
+      "day": "2026-04-24",
+      "sessions": 11345,
+      "low": false
+    },
+    {
+      "day": "2026-04-25",
+      "sessions": 11090,
+      "low": false
+    },
+    {
+      "day": "2026-04-26",
+      "sessions": 11699,
+      "low": false
+    },
+    {
+      "day": "2026-04-27",
+      "sessions": 10798,
+      "low": false
+    },
+    {
+      "day": "2026-04-28",
+      "sessions": 11471,
+      "low": false
+    },
+    {
+      "day": "2026-04-29",
+      "sessions": 11307,
+      "low": false
+    },
+    {
+      "day": "2026-04-30",
+      "sessions": 10513,
+      "low": false
+    },
+    {
+      "day": "2026-05-01",
+      "sessions": 11244,
+      "low": false
+    },
+    {
+      "day": "2026-05-02",
+      "sessions": 11175,
+      "low": false
+    },
+    {
+      "day": "2026-05-03",
+      "sessions": 11055,
+      "low": false
+    },
+    {
+      "day": "2026-05-04",
+      "sessions": 10486,
+      "low": false
+    },
+    {
+      "day": "2026-05-05",
+      "sessions": 10369,
+      "low": false
+    },
+    {
+      "day": "2026-05-06",
+      "sessions": 10476,
+      "low": false
+    },
+    {
+      "day": "2026-05-07",
+      "sessions": 10427,
+      "low": false
+    },
+    {
+      "day": "2026-05-08",
+      "sessions": 10539,
+      "low": false
+    },
+    {
+      "day": "2026-05-09",
+      "sessions": 10891,
+      "low": false
+    },
+    {
+      "day": "2026-05-10",
+      "sessions": 10305,
+      "low": false
+    },
+    {
+      "day": "2026-05-11",
+      "sessions": 10426,
+      "low": false
+    },
+    {
+      "day": "2026-05-12",
+      "sessions": 10551,
+      "low": false
+    },
+    {
+      "day": "2026-05-13",
+      "sessions": 10860,
+      "low": false
+    },
+    {
+      "day": "2026-05-14",
+      "sessions": 10129,
+      "low": false
+    },
+    {
+      "day": "2026-05-15",
+      "sessions": 11717,
+      "low": false
+    },
+    {
+      "day": "2026-05-16",
+      "sessions": 11688,
+      "low": false
+    },
+    {
+      "day": "2026-05-17",
+      "sessions": 11714,
+      "low": false
+    },
+    {
+      "day": "2026-05-18",
+      "sessions": 10929,
+      "low": false
+    },
+    {
+      "day": "2026-05-19",
+      "sessions": 10793,
+      "low": false
+    },
+    {
+      "day": "2026-05-20",
+      "sessions": 14308,
+      "low": false
+    },
+    {
+      "day": "2026-05-21",
+      "sessions": 13870,
+      "low": false
+    },
+    {
+      "day": "2026-05-22",
+      "sessions": 14975,
+      "low": false
+    },
+    {
+      "day": "2026-05-23",
+      "sessions": 14371,
+      "low": false
+    },
+    {
+      "day": "2026-05-24",
+      "sessions": 14557,
+      "low": false
+    },
+    {
+      "day": "2026-05-25",
+      "sessions": 14197,
+      "low": false
+    },
+    {
+      "day": "2026-05-26",
+      "sessions": 14353,
+      "low": false
+    },
+    {
+      "day": "2026-05-27",
+      "sessions": 15490,
+      "low": false
+    },
+    {
+      "day": "2026-05-28",
+      "sessions": 13610,
+      "low": false
+    },
+    {
+      "day": "2026-05-29",
+      "sessions": 13117,
+      "low": false
+    },
+    {
+      "day": "2026-05-30",
+      "sessions": 10898,
+      "low": false
+    },
+    {
+      "day": "2026-05-31",
+      "sessions": 14074,
+      "low": false
+    },
+    {
+      "day": "2026-06-01",
+      "sessions": 12776,
+      "low": false
+    },
+    {
+      "day": "2026-06-02",
+      "sessions": 13222,
+      "low": false
+    },
+    {
+      "day": "2026-06-03",
+      "sessions": 13348,
+      "low": false
+    },
+    {
+      "day": "2026-06-04",
+      "sessions": 12445,
+      "low": false
+    },
+    {
+      "day": "2026-06-05",
+      "sessions": 13683,
+      "low": false
+    },
+    {
+      "day": "2026-06-06",
+      "sessions": 13525,
+      "low": false
+    },
+    {
+      "day": "2026-06-07",
+      "sessions": 13188,
+      "low": false
+    },
+    {
+      "day": "2026-06-08",
+      "sessions": 13024,
+      "low": false
+    },
+    {
+      "day": "2026-06-09",
+      "sessions": 13831,
+      "low": false
+    },
+    {
+      "day": "2026-06-10",
+      "sessions": 12252,
+      "low": false
+    },
+    {
+      "day": "2026-06-11",
+      "sessions": 11716,
+      "low": false
+    },
+    {
+      "day": "2026-06-12",
+      "sessions": 14247,
+      "low": false
+    },
+    {
+      "day": "2026-06-13",
+      "sessions": 14725,
+      "low": false
+    },
+    {
+      "day": "2026-06-14",
+      "sessions": 14043,
+      "low": false
+    },
+    {
+      "day": "2026-06-15",
+      "sessions": 14011,
+      "low": false
+    },
+    {
+      "day": "2026-06-16",
+      "sessions": 13736,
+      "low": false
+    },
+    {
+      "day": "2026-06-17",
+      "sessions": 13320,
+      "low": false
+    },
+    {
+      "day": "2026-06-18",
+      "sessions": 12772,
+      "low": false
+    },
+    {
+      "day": "2026-06-19",
+      "sessions": 12912,
+      "low": false
+    },
+    {
+      "day": "2026-06-20",
+      "sessions": 14160,
+      "low": false
+    },
+    {
+      "day": "2026-06-21",
+      "sessions": 14792,
+      "low": false
+    },
+    {
+      "day": "2026-06-22",
+      "sessions": 15052,
+      "low": false
+    },
+    {
+      "day": "2026-06-23",
+      "sessions": 15358,
+      "low": false
+    },
+    {
+      "day": "2026-06-24",
+      "sessions": 14708,
+      "low": false
+    },
+    {
+      "day": "2026-06-25",
+      "sessions": 13624,
+      "low": false
+    },
+    {
+      "day": "2026-06-26",
+      "sessions": 16239,
+      "low": false
+    },
+    {
+      "day": "2026-06-27",
+      "sessions": 16659,
+      "low": false
+    },
+    {
+      "day": "2026-06-28",
+      "sessions": 16109,
+      "low": false
+    },
+    {
+      "day": "2026-06-29",
+      "sessions": 16942,
+      "low": false
+    },
+    {
+      "day": "2026-06-30",
+      "sessions": 15368,
+      "low": false
+    }
+  ],
+  "weekdays": [
+    {
+      "weekday": 0,
+      "sessions": 303084,
+      "revenue_rial": 725293641794,
+      "orders": 149919,
+      "aov": 4837903.413136427
+    },
+    {
+      "weekday": 1,
+      "sessions": 310380,
+      "revenue_rial": 763092003510,
+      "orders": 152236,
+      "aov": 5012559.470230431
+    },
+    {
+      "weekday": 2,
+      "sessions": 291292,
+      "revenue_rial": 787818251663,
+      "orders": 145572,
+      "aov": 5411880.386770807
+    },
+    {
+      "weekday": 3,
+      "sessions": 280156,
+      "revenue_rial": 757761725264,
+      "orders": 136556,
+      "aov": 5549091.400333929
+    },
+    {
+      "weekday": 4,
+      "sessions": 288249,
+      "revenue_rial": 737882806507,
+      "orders": 142019,
+      "aov": 5195662.598011534
+    },
+    {
+      "weekday": 5,
+      "sessions": 287854,
+      "revenue_rial": 693936464658,
+      "orders": 146753,
+      "aov": 4728601.559477489
+    },
+    {
+      "weekday": 6,
+      "sessions": 301824,
+      "revenue_rial": 699679797403,
+      "orders": 152600,
+      "aov": 4585057.65008519
+    }
+  ],
+  "jalali_months": [
+    {
+      "key": "1404-10",
+      "days": 20,
+      "revenue_rial": 309318038065,
+      "orders": 49032,
+      "per_day_revenue": 15465901903.25,
+      "per_day_orders": 2451.6,
+      "aov": 6308493.1894477075
+    },
+    {
+      "key": "1404-11",
+      "days": 30,
+      "revenue_rial": 917902316168,
+      "orders": 146660,
+      "per_day_revenue": 30596743872.266666,
+      "per_day_orders": 4888.666666666667,
+      "aov": 6258709.369753171
+    },
+    {
+      "key": "1404-12",
+      "days": 29,
+      "revenue_rial": 657755059089,
+      "orders": 149980,
+      "per_day_revenue": 22681208934.103447,
+      "per_day_orders": 5171.724137931034,
+      "aov": 4385618.476390186
+    },
+    {
+      "key": "1405-01",
+      "days": 31,
+      "revenue_rial": 704749785942,
+      "orders": 218893,
+      "per_day_revenue": 22733864062.64516,
+      "per_day_orders": 7061.064516129032,
+      "aov": 3219608.603025222
+    },
+    {
+      "key": "1405-02",
+      "days": 31,
+      "revenue_rial": 1022647123747,
+      "orders": 195399,
+      "per_day_revenue": 32988616895.064518,
+      "per_day_orders": 6303.193548387097,
+      "aov": 5233635.401138183
+    },
+    {
+      "key": "1405-03",
+      "days": 31,
+      "revenue_rial": 1197218820966,
+      "orders": 202147,
+      "per_day_revenue": 38619961966.645164,
+      "per_day_orders": 6520.870967741936,
+      "aov": 5922515.896679149
+    },
+    {
+      "key": "1405-04",
+      "days": 9,
+      "revenue_rial": 355873546822,
+      "orders": 63544,
+      "per_day_revenue": 39541505202.44444,
+      "per_day_orders": 7060.444444444444,
+      "aov": 5600427.212986278
+    }
+  ]
+}

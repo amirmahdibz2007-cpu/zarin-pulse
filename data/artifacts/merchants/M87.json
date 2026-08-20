@@ -1,0 +1,44 @@
+{
+  "key": "M87",
+  "category": "مراکز آموزشی مجازی",
+  "sessions": 272,
+  "verified": 123,
+  "no_attempt": 12,
+  "in_bank": 85,
+  "failed": 13,
+  "paid_pending": 39,
+  "revenue_rial": 2238444500,
+  "paid_amount_rial": 312940000,
+  "attempted_amount_rial": 4962715502,
+  "median_amount": 13930000,
+  "unique_prices": 82,
+  "success_rate": 0.452205882353,
+  "aov": 18198735.772357725,
+  "health": "healthy",
+  "fee_actual": 0.007453683618,
+  "fee_expected": 0.004756204022,
+  "tariff_effect": 0.002697479596,
+  "fee_realized": 16700411,
+  "fee_potential": 18478550,
+  "customers": 109,
+  "repeat_customers": 13,
+  "repeat_order_share": 0.219512195122,
+  "business_model": null,
+  "peers": {
+    "n": 16,
+    "p75": 0.627235213205,
+    "gap": 0.175029330852
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 433202506,
+    "conservative": 259921504,
+    "optimistic": 606483508,
+    "basis": "own"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 312940000
+  },
+  "case_family": "in_bank"
+}

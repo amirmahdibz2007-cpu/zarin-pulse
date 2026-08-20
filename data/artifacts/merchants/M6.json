@@ -1,0 +1,38 @@
+{
+  "key": "M6",
+  "category": "کیف و کفش فروشی",
+  "sessions": 877,
+  "verified": 617,
+  "no_attempt": 31,
+  "in_bank": 204,
+  "failed": 22,
+  "paid_pending": 3,
+  "revenue_rial": 24837700000,
+  "paid_amount_rial": 76700000,
+  "attempted_amount_rial": 33628100000,
+  "median_amount": 29900000,
+  "unique_prices": 241,
+  "success_rate": 0.703534777651,
+  "aov": 40255591.57212318,
+  "health": "healthy",
+  "fee_actual": 0.00504655423,
+  "fee_expected": 0.004183596248,
+  "tariff_effect": 0.000862957983,
+  "fee_realized": 125344800,
+  "fee_potential": 50914400,
+  "customers": 546,
+  "repeat_customers": 53,
+  "repeat_order_share": 0.200972447326,
+  "business_model": "one_shot",
+  "peers": {
+    "n": 20,
+    "p75": 0.627272727273,
+    "gap": -0.076262050378
+  },
+  "impact": null,
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 76700000
+  },
+  "case_family": null
+}

@@ -1,0 +1,44 @@
+{
+  "key": "M220",
+  "category": "خدمات شبکه‌های کامپیوتری و اینترنت",
+  "sessions": 231,
+  "verified": 78,
+  "no_attempt": 93,
+  "in_bank": 56,
+  "failed": 2,
+  "paid_pending": 2,
+  "revenue_rial": 151800000,
+  "paid_amount_rial": 3800000,
+  "attempted_amount_rial": 455100000,
+  "median_amount": 1900000,
+  "unique_prices": 3,
+  "success_rate": 0.337662337662,
+  "aov": 1946153.8461538462,
+  "health": "healthy",
+  "fee_actual": 0.013644268775,
+  "fee_expected": 0.005214804571,
+  "tariff_effect": 0.008429464203,
+  "fee_realized": 2071200,
+  "fee_potential": 3417600,
+  "customers": 78,
+  "repeat_customers": 0,
+  "repeat_order_share": null,
+  "business_model": null,
+  "peers": {
+    "n": 15,
+    "p75": 0.722295064772,
+    "gap": 0.38463272711
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 86458040,
+    "conservative": 51874824,
+    "optimistic": 121041256,
+    "basis": "own"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 3800000
+  },
+  "case_family": "no_attempt"
+}

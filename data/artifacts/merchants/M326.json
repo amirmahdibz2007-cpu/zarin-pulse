@@ -1,0 +1,38 @@
+{
+  "key": "M326",
+  "category": "مراکز آموزشی مجازی",
+  "sessions": 727,
+  "verified": 456,
+  "no_attempt": 14,
+  "in_bank": 245,
+  "failed": 9,
+  "paid_pending": 3,
+  "revenue_rial": 5023212000,
+  "paid_amount_rial": 29700000,
+  "attempted_amount_rial": 8026612000,
+  "median_amount": 12900000,
+  "unique_prices": 18,
+  "success_rate": 0.627235213205,
+  "aov": 11015815.789473686,
+  "health": "healthy",
+  "fee_actual": 0.008961790982,
+  "fee_expected": 0.004459273042,
+  "tariff_effect": 0.00450251794,
+  "fee_realized": 45016976,
+  "fee_potential": 25501600,
+  "customers": 408,
+  "repeat_customers": 37,
+  "repeat_order_share": 0.186403508772,
+  "business_model": null,
+  "peers": {
+    "n": 16,
+    "p75": 0.566854990584,
+    "gap": -0.060380222621
+  },
+  "impact": null,
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 29700000
+  },
+  "case_family": null
+}

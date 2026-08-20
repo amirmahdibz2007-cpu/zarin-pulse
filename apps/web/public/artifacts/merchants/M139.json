@@ -1,0 +1,44 @@
+{
+  "key": "M139",
+  "category": "مراکز آموزشی مجازی",
+  "sessions": 2495,
+  "verified": 784,
+  "no_attempt": 1140,
+  "in_bank": 544,
+  "failed": 21,
+  "paid_pending": 6,
+  "revenue_rial": 2287330000,
+  "paid_amount_rial": 17700000,
+  "attempted_amount_rial": 7132630000,
+  "median_amount": 2800000,
+  "unique_prices": 13,
+  "success_rate": 0.314228456914,
+  "aov": 2917512.7551020407,
+  "health": "healthy",
+  "fee_actual": 0.010140102215,
+  "fee_expected": 0.004349490029,
+  "tariff_effect": 0.005790612186,
+  "fee_realized": 23193760,
+  "fee_potential": 49899200,
+  "customers": 771,
+  "repeat_customers": 12,
+  "repeat_order_share": 0.031887755102,
+  "business_model": "one_shot",
+  "peers": {
+    "n": 20,
+    "p75": 0.482336232913,
+    "gap": 0.168107775999
+  },
+  "impact": {
+    "currency": "recoverable_sales",
+    "expected": 611844584,
+    "conservative": 367106751,
+    "optimistic": 856582418,
+    "basis": "own"
+  },
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 17700000
+  },
+  "case_family": "no_attempt"
+}

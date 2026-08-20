@@ -1,0 +1,38 @@
+{
+  "key": "M106",
+  "category": "خدمات شبکه‌های کامپیوتری و اینترنت",
+  "sessions": 3470,
+  "verified": 2453,
+  "no_attempt": 709,
+  "in_bank": 278,
+  "failed": 31,
+  "paid_pending": 0,
+  "revenue_rial": 245300000,
+  "paid_amount_rial": 0,
+  "attempted_amount_rial": 346901000,
+  "median_amount": 100000,
+  "unique_prices": 1,
+  "success_rate": 0.706916426513,
+  "aov": 100000,
+  "health": "healthy",
+  "fee_actual": 0.081135862913,
+  "fee_expected": 0.05940582433,
+  "tariff_effect": 0.021730038584,
+  "fee_realized": 19901600,
+  "fee_potential": 8585120,
+  "customers": 1516,
+  "repeat_customers": 500,
+  "repeat_order_share": 0.585813289849,
+  "business_model": "repeat_like",
+  "peers": {
+    "n": 9,
+    "p75": 0.581333333333,
+    "gap": -0.12558309318
+  },
+  "impact": null,
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 0
+  },
+  "case_family": null
+}

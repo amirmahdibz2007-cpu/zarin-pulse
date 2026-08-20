@@ -1,0 +1,38 @@
+{
+  "key": "M27",
+  "category": "ارائه دهنده خدمات اینترنت",
+  "sessions": 33847,
+  "verified": 26517,
+  "no_attempt": 841,
+  "in_bank": 6171,
+  "failed": 263,
+  "paid_pending": 58,
+  "revenue_rial": 218319690000,
+  "paid_amount_rial": 129999000,
+  "attempted_amount_rial": 299991602025,
+  "median_amount": 1725000,
+  "unique_prices": 227,
+  "success_rate": 0.783437232251,
+  "aov": 8233197.194252743,
+  "health": "healthy",
+  "fee_actual": 0.006715544633,
+  "fee_expected": 0.003883518226,
+  "tariff_effect": 0.002832026408,
+  "fee_realized": 1422689520,
+  "fee_potential": 375150896,
+  "customers": 1839,
+  "repeat_customers": 1329,
+  "repeat_order_share": 0.980767055097,
+  "business_model": "subscription_like",
+  "peers": {
+    "n": 8,
+    "p75": 0.663190823775,
+    "gap": -0.120246408476
+  },
+  "impact": null,
+  "pending": {
+    "currency": "pending_reconciliation",
+    "rial": 129999000
+  },
+  "case_family": null
+}
