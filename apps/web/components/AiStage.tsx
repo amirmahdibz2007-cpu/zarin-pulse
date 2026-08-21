@@ -115,6 +115,7 @@ export function AiStage(props: {
   const reqGenRef = useRef(0);
 
   const thinking = status === 'boot' || status === 'thinking';
+  const showSuggestions = !thread.some((m) => m.role === 'user');
 
   useEffect(() => {
     setMounted(true);
@@ -399,20 +400,22 @@ export function AiStage(props: {
         </div>
 
         <div className="ai-bot-dock">
-          <div className="ai-bot-suggestions" aria-label={copy.aiStage.runHint}>
-            {AI_PROMPT_IDS.map((id) => (
-              <button
-                key={id}
-                type="button"
-                className="ai-bot-suggest"
-                disabled={thinking}
-                onClick={() => void runRecipe(id)}
-              >
-                <span className="ai-bot-suggest-path">{copy.aiStage.prompts[id].path}</span>
-                <span>{copy.aiStage.prompts[id].label}</span>
-              </button>
-            ))}
-          </div>
+          {showSuggestions ? (
+            <div className="ai-bot-suggestions" aria-label={copy.aiStage.runHint}>
+              {AI_PROMPT_IDS.map((id) => (
+                <button
+                  key={id}
+                  type="button"
+                  className="ai-bot-suggest"
+                  disabled={thinking}
+                  onClick={() => void runRecipe(id)}
+                >
+                  <span className="ai-bot-suggest-path">{copy.aiStage.prompts[id].path}</span>
+                  <span>{copy.aiStage.prompts[id].label}</span>
+                </button>
+              ))}
+            </div>
+          ) : null}
 
           <form
             className="ai-bot-composer"
