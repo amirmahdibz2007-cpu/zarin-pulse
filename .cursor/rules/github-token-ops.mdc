@@ -1,0 +1,15 @@
+---
+description: GitHub commit/push/pull using local token file
+alwaysApply: true
+---
+
+# GitHub auth for this repo
+
+When the user asks to **commit**, **push**, or **pull** for this project:
+
+1. Load credentials from the local file `.github-token` at the repo root (gitignored). Export as `GH_TOKEN` for `gh` / `git` HTTPS. Never print, quote, or commit the token value.
+2. If `.github-token` is missing, ask the user for a new PAT — do not invent credentials.
+3. Remote: `origin` → `https://github.com/amirmahdibz2007-cpu/zarin-pulse.git`. Prefer `git push origin master:main` (local `master`, remote default `main`) unless the user specifies otherwise.
+4. Never commit `.github-token`, `.env.local`, or other secrets. Keep `.github-token` in `.gitignore`.
+5. Only create commits when the user asks; follow the usual commit protocol (status/diff/log, no force-push to main unless explicitly requested).
+6. After a successful push, reply with the repo URL only — never the token.
