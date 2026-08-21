@@ -271,12 +271,14 @@ export function HomeMerchantDash(props: { merchant: MerchantArtifact }) {
         <article className="chart-card">
           <h2 className="chart-title">{copy.dash.split}</h2>
           <LiquidCylinders
+            fillMax={1}
             series={TERMINAL_SPLIT.map((state) => {
               const n = terminalCounts[state];
+              const share = m.sessions > 0 ? n / m.sessions : 0;
               return {
                 label: copy.terminalShort[state],
-                value: n,
-                caption: formatRatioAsPercent(m.sessions > 0 ? n / m.sessions : 0),
+                value: share,
+                caption: formatRatioAsPercent(share),
                 title: copy.terminal[state],
                 tone: cylinderTone(state),
               };

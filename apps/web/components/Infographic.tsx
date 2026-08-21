@@ -170,13 +170,21 @@ export function RingMeter(props: {
 
 type SeriesTone = 'muted' | 'positive' | 'negative' | 'accent' | 'warm';
 
-const VIAL_FILL_MS = 980;
-const VIAL_STAGGER_MS = 78;
+const VIAL_FILL_MS = 1580;
+const VIAL_STAGGER_MS = 110;
 
 export function LiquidCylinders(props: {
   series: readonly { label: string; value: number; caption?: string; title?: string; tone?: SeriesTone }[];
+  /**
+   * Absolute ceiling for fill (e.g. `1` when values are session shares).
+   * When omitted, fill is relative to the series max (compare amounts).
+   */
+  fillMax?: number;
 }) {
-  const max = Math.max(1, ...props.series.map((s) => s.value));
+  const max =
+    props.fillMax != null && props.fillMax > 0
+      ? props.fillMax
+      : Math.max(1, ...props.series.map((s) => s.value));
   const { ref, active } = useInViewOnce<HTMLUListElement>({
     threshold: 0.14,
     rootMargin: '0px',
