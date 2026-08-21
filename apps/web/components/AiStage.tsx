@@ -34,7 +34,7 @@ function uid(): string {
 }
 
 function formatAssistantMessage(data: ApiOk): string {
-  return data.summary.trim();
+  return (data.summary ?? '').trim();
 }
 
 function sourceLabel(source: AiBriefAnswer['source'] | undefined): string {
@@ -206,12 +206,27 @@ export function AiStage(props: {
     abortRef.current?.abort();
     const ac = new AbortController();
     abortRef.current = ac;
-    const res = await fetch('/api/ai-brief', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(body),
-      signal: ac.signal,
-    });
+
+    async function once(): Promise<Response> {
+      return fetch('/api/ai-brief', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body),
+        signal: ac.signal,
+      });
+    }
+
+    let res: Response;
+    try {
+      res = await once();
+    } catch (err) {
+      if ((err as Error).name === 'AbortError') throw err;
+      // One quiet retry for transient network / server restart.
+      await new Promise((r) => window.setTimeout(r, 400));
+      if (ac.signal.aborted) throw err;
+      res = await once();
+    }
+
     const data = (await res.json()) as ApiOk;
     if (!res.ok) {
       setError(copy.aiStage.error);

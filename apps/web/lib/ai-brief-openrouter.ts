@@ -4,6 +4,7 @@
  */
 
 import {
+  AI_BRIEF_ALT_MODEL,
   AI_BRIEF_FALLBACK_MODEL,
   AI_BRIEF_PREFERRED_MODEL,
   AI_CHAT_PROMPT_ID,
@@ -16,8 +17,8 @@ import {
 } from './ai-brief-prompt';
 
 const OPENROUTER_URL = 'https://openrouter.ai/api/v1/chat/completions';
-/** Free models often queue; too-short timeout forces canned fallback and feels repetitive. */
-const MODEL_TIMEOUT_MS = 14_000;
+/** Free models queue/rate-limit often; give them room before deterministic fallback. */
+const MODEL_TIMEOUT_MS = 22_000;
 
 export type AiChatTurn = { role: 'user' | 'assistant'; content: string };
 
@@ -143,15 +144,15 @@ function isAbortError(err: unknown): boolean {
 }
 
 /**
- * Race preferred + fallback; first validated answer wins.
- * Cuts p50 latency when one free model is queued/slow.
+ * Race several free models; first validated answer wins.
+ * Extra models cover upstream 429 / overload on a single provider.
  */
 export async function rewriteAiBriefWithOpenRouter(
   locked: AiBriefLockedInput,
   apiKey: string,
   history: readonly AiChatTurn[] = [],
 ): Promise<AiBriefAnswer | null> {
-  const models = [AI_BRIEF_PREFERRED_MODEL, AI_BRIEF_FALLBACK_MODEL];
+  const models = [AI_BRIEF_PREFERRED_MODEL, AI_BRIEF_FALLBACK_MODEL, AI_BRIEF_ALT_MODEL];
   const race = new AbortController();
 
   const attempts = models.map(async (model) => {
