@@ -57,8 +57,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <SidebarNav />
             <div className="min-h-dvh flex-1 pb-28 lg:pb-0">
               <header className="flex items-center justify-between gap-3 px-4 py-3 lg:px-8">
-                <p className="page-kicker">{copy.installHint}</p>
-                <div className="flex items-center gap-2">
+                <p className="page-kicker install-hint">{copy.installHint}</p>
+                <div className="flex shrink-0 items-center gap-2">
                   <NavToggle />
                   <PaletteSwitch />
                   <CommandPalette />

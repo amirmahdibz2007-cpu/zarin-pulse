@@ -13,7 +13,7 @@ export function FinalVisionLab() {
     value,
     detail: copy.lab.visionWeek[i]!.detail,
     meta: copy.lab.visionWeek[i]!.meta,
-    badge: i === 1 ? copy.dash.weekPeak : undefined,
+    ...(i === 1 ? { badge: copy.dash.weekPeak } : {}),
   }));
 
   return (

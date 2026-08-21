@@ -1,8 +1,11 @@
 import { copy, formatBillionsRial, formatRatioAsPercent } from '@zarinpulse/contracts';
 import Link from 'next/link';
 import { MiniRing, RowBar } from '../../components/Charts';
+import { PipelineLab } from '../../components/PipelineLab';
+import { JudgeCodeMap } from '../../components/JudgeCodeMap';
 import { PageHeader, PageShell } from '../../components/PageShell';
 import { readArtifact, type MerchantIndexRow } from '../../lib/artifacts';
+import { buildPipelineSteps } from '../../lib/pipeline-steps';
 
 const featured = ['M91', 'M282', 'M31', 'M106', 'M250', 'M27', 'M319'] as const;
 
@@ -15,10 +18,14 @@ export default function JudgePage() {
     ...featured.map((key) => byKey[key]?.recoverable_rial ?? 0),
     sparse?.recoverable_rial ?? 0,
   );
+  const steps = buildPipelineSteps();
+
   return (
     <PageShell width="wide">
       <PageHeader kicker={copy.product.name} title={copy.nav.judge} lede={copy.judgeIntro} />
-      <p className="surface-panel mb-4 text-sm leading-7">{copy.judgeDemoPath}</p>
+      <p className="mb-4 text-sm leading-7 text-[color:var(--zp-muted)]">{copy.judgeDemoPath}</p>
+      <PipelineLab steps={steps} note={copy.pipeline.noteProduct} />
+      <h2 className="chart-title mt-8">{copy.pipeline.casesTitle}</h2>
       <ul className="case-grid">
         {featured.map((key) => {
           const m = byKey[key];
@@ -50,7 +57,8 @@ export default function JudgePage() {
           </li>
         ) : null}
       </ul>
-      <div className="flex flex-wrap gap-2">
+      <JudgeCodeMap />
+      <div className="mt-4 flex flex-wrap gap-2">
         <Link className="control-neuro inline-flex min-h-11 items-center px-4" href="/reconciliation">
           {copy.nav.reconciliation}
         </Link>

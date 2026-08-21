@@ -1,20 +1,52 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
-function isRoughlyVisible(node: Element): boolean {
-  const rect = node.getBoundingClientRect();
-  const vh = typeof window !== 'undefined' ? window.innerHeight : 0;
-  return rect.bottom > 8 && rect.top < vh * 1.05;
+export type InViewOnceOptions = {
+  /** Fraction of the target that must be visible (0–1). */
+  threshold?: number;
+  /**
+   * IntersectionObserver rootMargin. Keep vertical margins at 0 (or slightly
+   * negative) so below-the-fold charts do not start motion before they are seen.
+   */
+  rootMargin?: string;
+};
+
+const DEFAULTS: Required<InViewOnceOptions> = {
+  threshold: 0.2,
+  rootMargin: '0px',
+};
+
+function normalizeOptions(input?: number | InViewOnceOptions): Required<InViewOnceOptions> {
+  if (typeof input === 'number') {
+    return { threshold: input, rootMargin: DEFAULTS.rootMargin };
+  }
+  return {
+    threshold: input?.threshold ?? DEFAULTS.threshold,
+    rootMargin: input?.rootMargin ?? DEFAULTS.rootMargin,
+  };
 }
 
-/** Fires once when the element enters the viewport; then disconnects. */
-export function useInViewOnce<T extends Element>(threshold = 0.12) {
-  const ref = useRef<T | null>(null);
+/**
+ * One-shot in-view flag for scroll-triggered motion.
+ *
+ * Invariant: the observed node must keep a non-zero intersection box while
+ * waiting (do not rest-state clip/hide the same node — that deadlocks IO).
+ * AreaLine keeps clip open at rest; Columns observe a sized track, not empty ink.
+ *
+ * Uses a callback ref so the observer attaches when the node mounts (avoids
+ * a null-ref effect that never re-subscribes on mobile).
+ */
+export function useInViewOnce<T extends Element>(options?: number | InViewOnceOptions) {
+  const { threshold, rootMargin } = normalizeOptions(options);
+  const [node, setNode] = useState<T | null>(null);
   const [active, setActive] = useState(false);
 
+  const ref = useCallback((el: T | null) => {
+    setNode(el);
+  }, []);
+
   useEffect(() => {
-    const node = ref.current;
     if (!node || active) return;
 
     if (typeof window === 'undefined') {
@@ -22,9 +54,7 @@ export function useInViewOnce<T extends Element>(threshold = 0.12) {
       return;
     }
 
-    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const narrow = window.matchMedia('(max-width: 700px)').matches;
-    if (reduced || narrow || isRoughlyVisible(node)) {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       setActive(true);
       return;
     }
@@ -41,11 +71,11 @@ export function useInViewOnce<T extends Element>(threshold = 0.12) {
           io.disconnect();
         }
       },
-      { threshold, rootMargin: '80px 0px 80px 0px' },
+      { threshold, rootMargin },
     );
     io.observe(node);
     return () => io.disconnect();
-  }, [active, threshold]);
+  }, [node, active, threshold, rootMargin]);
 
   return { ref, active };
 }

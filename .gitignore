@@ -12,3 +12,6 @@ out/
 *.tsbuildinfo
 
 v2/
+
+# Accidental browser "Save Page As" dumps at repo root
+*_files/

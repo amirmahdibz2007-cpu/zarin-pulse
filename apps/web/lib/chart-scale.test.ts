@@ -10,7 +10,7 @@ describe('insetBarPercents', () => {
     expect(tallest).toBeCloseTo(100, 5);
     expect(shortest).toBeGreaterThan(40);
     expect(shortest).toBeLessThan(70);
-    expect(pct[1]).toBeGreaterThan(pct[3]);
+    expect(pct[1]!).toBeGreaterThan(pct[3]!);
   });
 
   it('keeps a zero floor when values already span the axis', () => {

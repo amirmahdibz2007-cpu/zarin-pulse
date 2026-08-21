@@ -30,5 +30,113 @@
     "currency": "pending_reconciliation",
     "rial": 0
   },
-  "case_family": null
+  "case_family": null,
+  "series": {
+    "daily": [
+      {
+        "day": "2026-02-16",
+        "sessions": 2,
+        "revenue_rial": 30000,
+        "orders": 1
+      },
+      {
+        "day": "2026-02-22",
+        "sessions": 1,
+        "revenue_rial": 150000,
+        "orders": 1
+      },
+      {
+        "day": "2026-02-24",
+        "sessions": 1,
+        "revenue_rial": 350000,
+        "orders": 1
+      },
+      {
+        "day": "2026-06-01",
+        "sessions": 4,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-06-20",
+        "sessions": 1,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-06-22",
+        "sessions": 2,
+        "revenue_rial": 0,
+        "orders": 0
+      }
+    ],
+    "jalali_months": [
+      {
+        "key": "1404-11",
+        "days": 1,
+        "revenue_rial": 30000,
+        "orders": 1,
+        "sessions": 2,
+        "per_day_revenue": 30000,
+        "aov": 30000
+      },
+      {
+        "key": "1404-12",
+        "days": 2,
+        "revenue_rial": 500000,
+        "orders": 2,
+        "sessions": 2,
+        "per_day_revenue": 250000,
+        "aov": 250000
+      },
+      {
+        "key": "1405-03",
+        "days": 2,
+        "revenue_rial": 0,
+        "orders": 0,
+        "sessions": 5,
+        "per_day_revenue": 0,
+        "aov": 0
+      },
+      {
+        "key": "1405-04",
+        "days": 1,
+        "revenue_rial": 0,
+        "orders": 0,
+        "sessions": 2,
+        "per_day_revenue": 0,
+        "aov": 0
+      }
+    ],
+    "weekdays": [
+      {
+        "weekday": 0,
+        "sessions": 1,
+        "revenue_rial": 0,
+        "orders": 0,
+        "aov": 0
+      },
+      {
+        "weekday": 1,
+        "sessions": 1,
+        "revenue_rial": 150000,
+        "orders": 1,
+        "aov": 150000
+      },
+      {
+        "weekday": 2,
+        "sessions": 8,
+        "revenue_rial": 30000,
+        "orders": 1,
+        "aov": 30000
+      },
+      {
+        "weekday": 3,
+        "sessions": 1,
+        "revenue_rial": 350000,
+        "orders": 1,
+        "aov": 350000
+      }
+    ]
+  }
 }

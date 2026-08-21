@@ -1,7 +1,30 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import {
+  parseManifestArtifact,
+  parseMerchantArtifact,
+  parsePlatformArtifact,
+  type ManifestArtifactParsed,
+  type MerchantArtifactParsed,
+  type PlatformArtifactParsed,
+} from '@zarinpulse/contracts';
 
-function artifactRoot(): string {
+/** Prefer env for Docker/Liara; else discover first tree that has platform.json. */
+let cachedRoot: string | null = null;
+
+export function getArtifactRoot(): string {
+  if (cachedRoot) return cachedRoot;
+
+  const fromEnv = process.env.ARTIFACTS_ROOT?.trim();
+  if (fromEnv) {
+    const resolved = path.resolve(fromEnv);
+    if (!fs.existsSync(path.join(resolved, 'platform.json'))) {
+      throw new Error(`ARTIFACTS_ROOT missing platform.json: ${resolved}`);
+    }
+    cachedRoot = resolved;
+    return cachedRoot;
+  }
+
   const candidates = [
     path.resolve(process.cwd(), '..', '..', 'data', 'artifacts'),
     path.resolve(process.cwd(), 'data', 'artifacts'),
@@ -9,50 +32,76 @@ function artifactRoot(): string {
     path.resolve(process.cwd(), 'apps', 'web', 'public', 'artifacts'),
   ];
   for (const dir of candidates) {
-    if (fs.existsSync(path.join(dir, 'platform.json'))) return dir;
+    if (fs.existsSync(path.join(dir, 'platform.json'))) {
+      cachedRoot = dir;
+      return cachedRoot;
+    }
   }
-  throw new Error('artifacts not built; run npm run data:build');
+  throw new Error('artifacts not built; run npm run data:build (or set ARTIFACTS_ROOT)');
 }
 
-export function readArtifact<T>(relativePath: string): T {
-  const full = path.join(artifactRoot(), ...relativePath.split('/'));
+/** Test/ops helper — clears memoized root. */
+export function resetArtifactRootCache(): void {
+  cachedRoot = null;
+}
+
+function readRawJson(relativePath: string): unknown {
+  const full = path.join(getArtifactRoot(), ...relativePath.split('/'));
   const raw = fs.readFileSync(full, 'utf8');
-  return JSON.parse(raw) as T;
+  return JSON.parse(raw) as unknown;
 }
 
-export type PlatformArtifact = {
-  sourceSha256: string;
-  sessions_total: number;
-  merchants_total: number;
-  verified_try_session_gap: number;
-  terminal: Record<string, { n: number; amount: number }>;
-  revenue_rial: number;
-  orders: number;
-  aov: number;
-  paid_pending_rial: number;
-  fee_realized_rial: number;
-  recoverable_expected_rial: number;
-  low_coverage_days: number;
-  optimal_retry_cap: number;
-  hazard: { k: number; at_risk: number; won: number; h: number; ci: [number, number] | null }[];
-  daily: { day: string; sessions: number; low: boolean }[];
-  jalali_months: {
-    key: string;
-    days: number;
-    revenue_rial: number;
-    orders: number;
-    per_day_revenue: number;
-    per_day_orders: number;
-    aov: number;
-  }[];
-  weekdays?: {
-    weekday: number;
-    sessions: number;
-    revenue_rial: number;
-    orders: number;
-    aov: number;
-  }[];
-};
+/**
+ * Untyped escape hatch for rare artifact files.
+ * Prefer readMerchantArtifact / readPlatformArtifact for hot paths.
+ */
+export function readArtifact<T>(relativePath: string): T {
+  return readRawJson(relativePath) as T;
+}
+
+export function tryReadArtifact<T>(relativePath: string): T | null {
+  try {
+    return readArtifact<T>(relativePath);
+  } catch {
+    return null;
+  }
+}
+
+export type PlatformArtifact = PlatformArtifactParsed;
+export type MerchantArtifact = MerchantArtifactParsed;
+export type ManifestArtifact = ManifestArtifactParsed;
+
+export function readPlatformArtifact(): PlatformArtifact {
+  return parsePlatformArtifact(readRawJson('platform.json'));
+}
+
+export function tryReadPlatformArtifact(): PlatformArtifact | null {
+  try {
+    return readPlatformArtifact();
+  } catch {
+    return null;
+  }
+}
+
+export function readMerchantArtifact(key: string): MerchantArtifact {
+  if (!/^[A-Za-z0-9_-]{1,32}$/.test(key)) {
+    throw new Error(`invalid merchant key: ${key}`);
+  }
+  return parseMerchantArtifact(readRawJson(`merchants/${key}.json`));
+}
+
+/** Missing file → null. Corrupt/invalid schema → throws (caller maps to 500). */
+export function tryReadMerchantArtifact(key: string): MerchantArtifact | null {
+  if (!/^[A-Za-z0-9_-]{1,32}$/.test(key)) return null;
+  const relative = `merchants/${key}.json`;
+  const full = path.join(getArtifactRoot(), ...relative.split('/'));
+  if (!fs.existsSync(full)) return null;
+  return parseMerchantArtifact(readRawJson(relative));
+}
+
+export function readManifestArtifact(): ManifestArtifact {
+  return parseManifestArtifact(readRawJson('manifest.json'));
+}
 
 export type MerchantIndexRow = {
   key: string;
@@ -65,44 +114,6 @@ export type MerchantIndexRow = {
   tier: 'rich' | 'limited' | 'sparse';
   recoverable_rial: number;
 };
-
-export type MerchantArtifact = MerchantIndexRow & {
-  no_attempt: number;
-  in_bank: number;
-  failed: number;
-  paid_pending: number;
-  paid_amount_rial: number;
-  median_amount: number;
-  aov: number | null;
-  fee_actual: number | null;
-  fee_expected: number | null;
-  tariff_effect: number | null;
-  fee_realized: number;
-  fee_potential: number;
-  peers: { n: number; p75: number; gap: number } | null;
-  impact: {
-    currency: string;
-    expected: number;
-    conservative: number;
-    optimistic: number;
-    basis: string;
-  } | null;
-  pending: { currency: string; rial: number };
-  unique_prices?: number;
-  customers?: number;
-  repeat_customers?: number;
-  repeat_order_share?: number | null;
-  business_model?: string | null;
-  case_family?: string | null;
-};
-
-export function tryReadArtifact<T>(relativePath: string): T | null {
-  try {
-    return readArtifact<T>(relativePath);
-  } catch {
-    return null;
-  }
-}
 
 export type ReconArtifact = {
   no_attempt_plus_attempted: number;
@@ -132,4 +143,3 @@ export type PassportArtifact = {
 };
 
 export type CaseRow = { key: string; family: string; impactRial: number };
-

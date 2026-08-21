@@ -49,6 +49,8 @@ describe('buildMerchantActions', () => {
       }),
     );
     expect(actions.map((a) => a.kind)).toEqual(['pending', 'health']);
+    expect(actions[0]?.body).toContain('ریال');
+    expect(actions[1]?.body).toMatch(/قابل بازیابی|تطبیق/);
   });
 
   it('ranks M91 as health only without fee', () => {
@@ -68,6 +70,7 @@ describe('buildMerchantActions', () => {
     );
     expect(actions.map((a) => a.kind)).toEqual(['health']);
     expect(actions.some((a) => a.kind === 'fee')).toBe(false);
+    expect(actions[0]?.body).toContain('قابل بازیابی');
   });
 
   it('ranks M31 as in_bank funnel then peer without fee', () => {
@@ -90,6 +93,10 @@ describe('buildMerchantActions', () => {
     );
     expect(actions.map((a) => a.kind)).toEqual(['funnel', 'peer']);
     expect(actions[0]?.title).toBe(copy.actionBrief.inBankTitle);
+    expect(actions[0]?.body).toMatch(/%|٪/);
+    expect(actions[0]?.body).toContain('قابل بازیابی');
+    expect(actions[0]?.nextStep.length).toBeGreaterThan(0);
+    expect(actions[0]?.why.length).toBeGreaterThan(0);
     expect(actions.some((a) => a.kind === 'fee')).toBe(false);
   });
 

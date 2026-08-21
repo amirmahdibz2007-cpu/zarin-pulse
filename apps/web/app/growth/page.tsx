@@ -25,10 +25,12 @@ export default function GrowthPage() {
             label: monthLabel(m.key),
             value: m.per_day_revenue,
           }))}
-          marker={last ? formatBillionsFigure(last.per_day_revenue) : undefined}
-          caption={
-            last ? `${monthLabel(last.key)} · ${formatBillionsRial(last.per_day_revenue)}` : undefined
-          }
+          {...(last
+            ? {
+                marker: formatBillionsFigure(last.per_day_revenue),
+                caption: `${monthLabel(last.key)} · ${formatBillionsRial(last.per_day_revenue)}`,
+              }
+            : {})}
         />
       </article>
       <ul className="case-grid">

@@ -40,5 +40,1097 @@
     "currency": "pending_reconciliation",
     "rial": 1290000
   },
-  "case_family": "in_bank"
+  "case_family": "in_bank",
+  "series": {
+    "daily": [
+      {
+        "day": "2026-01-01",
+        "sessions": 11,
+        "revenue_rial": 955000,
+        "orders": 6
+      },
+      {
+        "day": "2026-01-02",
+        "sessions": 20,
+        "revenue_rial": 954000,
+        "orders": 14
+      },
+      {
+        "day": "2026-01-03",
+        "sessions": 26,
+        "revenue_rial": 2094000,
+        "orders": 21
+      },
+      {
+        "day": "2026-01-04",
+        "sessions": 20,
+        "revenue_rial": 1325000,
+        "orders": 18
+      },
+      {
+        "day": "2026-01-05",
+        "sessions": 34,
+        "revenue_rial": 2550000,
+        "orders": 24
+      },
+      {
+        "day": "2026-01-06",
+        "sessions": 8,
+        "revenue_rial": 380000,
+        "orders": 5
+      },
+      {
+        "day": "2026-01-07",
+        "sessions": 17,
+        "revenue_rial": 1990000,
+        "orders": 12
+      },
+      {
+        "day": "2026-01-08",
+        "sessions": 8,
+        "revenue_rial": 395000,
+        "orders": 7
+      },
+      {
+        "day": "2026-01-11",
+        "sessions": 1,
+        "revenue_rial": 100000,
+        "orders": 1
+      },
+      {
+        "day": "2026-01-12",
+        "sessions": 1,
+        "revenue_rial": 40000,
+        "orders": 1
+      },
+      {
+        "day": "2026-01-13",
+        "sessions": 1,
+        "revenue_rial": 50000,
+        "orders": 1
+      },
+      {
+        "day": "2026-01-14",
+        "sessions": 9,
+        "revenue_rial": 640000,
+        "orders": 7
+      },
+      {
+        "day": "2026-01-15",
+        "sessions": 7,
+        "revenue_rial": 335000,
+        "orders": 5
+      },
+      {
+        "day": "2026-01-16",
+        "sessions": 6,
+        "revenue_rial": 1020000,
+        "orders": 5
+      },
+      {
+        "day": "2026-01-17",
+        "sessions": 4,
+        "revenue_rial": 270000,
+        "orders": 3
+      },
+      {
+        "day": "2026-01-18",
+        "sessions": 6,
+        "revenue_rial": 479000,
+        "orders": 5
+      },
+      {
+        "day": "2026-01-19",
+        "sessions": 8,
+        "revenue_rial": 3215000,
+        "orders": 8
+      },
+      {
+        "day": "2026-01-20",
+        "sessions": 21,
+        "revenue_rial": 2585000,
+        "orders": 19
+      },
+      {
+        "day": "2026-01-21",
+        "sessions": 12,
+        "revenue_rial": 869000,
+        "orders": 11
+      },
+      {
+        "day": "2026-01-22",
+        "sessions": 17,
+        "revenue_rial": 1174000,
+        "orders": 14
+      },
+      {
+        "day": "2026-01-23",
+        "sessions": 23,
+        "revenue_rial": 1875000,
+        "orders": 17
+      },
+      {
+        "day": "2026-01-24",
+        "sessions": 25,
+        "revenue_rial": 2054000,
+        "orders": 18
+      },
+      {
+        "day": "2026-01-25",
+        "sessions": 25,
+        "revenue_rial": 1590000,
+        "orders": 19
+      },
+      {
+        "day": "2026-01-26",
+        "sessions": 26,
+        "revenue_rial": 2730000,
+        "orders": 19
+      },
+      {
+        "day": "2026-01-27",
+        "sessions": 31,
+        "revenue_rial": 2062000,
+        "orders": 20
+      },
+      {
+        "day": "2026-01-28",
+        "sessions": 28,
+        "revenue_rial": 2145000,
+        "orders": 23
+      },
+      {
+        "day": "2026-01-29",
+        "sessions": 22,
+        "revenue_rial": 1210000,
+        "orders": 14
+      },
+      {
+        "day": "2026-01-30",
+        "sessions": 22,
+        "revenue_rial": 1675000,
+        "orders": 18
+      },
+      {
+        "day": "2026-01-31",
+        "sessions": 25,
+        "revenue_rial": 2110000,
+        "orders": 18
+      },
+      {
+        "day": "2026-02-01",
+        "sessions": 26,
+        "revenue_rial": 2655000,
+        "orders": 19
+      },
+      {
+        "day": "2026-02-02",
+        "sessions": 13,
+        "revenue_rial": 1545000,
+        "orders": 13
+      },
+      {
+        "day": "2026-02-03",
+        "sessions": 22,
+        "revenue_rial": 1275000,
+        "orders": 16
+      },
+      {
+        "day": "2026-02-04",
+        "sessions": 9,
+        "revenue_rial": 710000,
+        "orders": 7
+      },
+      {
+        "day": "2026-02-05",
+        "sessions": 16,
+        "revenue_rial": 775000,
+        "orders": 10
+      },
+      {
+        "day": "2026-02-06",
+        "sessions": 11,
+        "revenue_rial": 490000,
+        "orders": 7
+      },
+      {
+        "day": "2026-02-07",
+        "sessions": 20,
+        "revenue_rial": 3375000,
+        "orders": 15
+      },
+      {
+        "day": "2026-02-08",
+        "sessions": 19,
+        "revenue_rial": 1510000,
+        "orders": 11
+      },
+      {
+        "day": "2026-02-09",
+        "sessions": 9,
+        "revenue_rial": 515000,
+        "orders": 6
+      },
+      {
+        "day": "2026-02-10",
+        "sessions": 11,
+        "revenue_rial": 1479000,
+        "orders": 10
+      },
+      {
+        "day": "2026-02-11",
+        "sessions": 11,
+        "revenue_rial": 1635000,
+        "orders": 9
+      },
+      {
+        "day": "2026-02-12",
+        "sessions": 9,
+        "revenue_rial": 1735000,
+        "orders": 8
+      },
+      {
+        "day": "2026-02-13",
+        "sessions": 7,
+        "revenue_rial": 2159000,
+        "orders": 4
+      },
+      {
+        "day": "2026-02-14",
+        "sessions": 9,
+        "revenue_rial": 1060000,
+        "orders": 8
+      },
+      {
+        "day": "2026-02-15",
+        "sessions": 16,
+        "revenue_rial": 1780000,
+        "orders": 10
+      },
+      {
+        "day": "2026-02-16",
+        "sessions": 13,
+        "revenue_rial": 905000,
+        "orders": 11
+      },
+      {
+        "day": "2026-02-17",
+        "sessions": 19,
+        "revenue_rial": 1335000,
+        "orders": 12
+      },
+      {
+        "day": "2026-02-18",
+        "sessions": 6,
+        "revenue_rial": 240000,
+        "orders": 4
+      },
+      {
+        "day": "2026-02-19",
+        "sessions": 9,
+        "revenue_rial": 3460000,
+        "orders": 8
+      },
+      {
+        "day": "2026-02-20",
+        "sessions": 13,
+        "revenue_rial": 685000,
+        "orders": 6
+      },
+      {
+        "day": "2026-02-21",
+        "sessions": 13,
+        "revenue_rial": 3190000,
+        "orders": 11
+      },
+      {
+        "day": "2026-02-22",
+        "sessions": 14,
+        "revenue_rial": 1090000,
+        "orders": 11
+      },
+      {
+        "day": "2026-02-23",
+        "sessions": 16,
+        "revenue_rial": 3180000,
+        "orders": 12
+      },
+      {
+        "day": "2026-02-24",
+        "sessions": 24,
+        "revenue_rial": 3025000,
+        "orders": 17
+      },
+      {
+        "day": "2026-02-25",
+        "sessions": 21,
+        "revenue_rial": 1405000,
+        "orders": 13
+      },
+      {
+        "day": "2026-02-26",
+        "sessions": 12,
+        "revenue_rial": 885000,
+        "orders": 8
+      },
+      {
+        "day": "2026-02-27",
+        "sessions": 17,
+        "revenue_rial": 789000,
+        "orders": 10
+      },
+      {
+        "day": "2026-02-28",
+        "sessions": 8,
+        "revenue_rial": 760000,
+        "orders": 6
+      },
+      {
+        "day": "2026-03-02",
+        "sessions": 4,
+        "revenue_rial": 340000,
+        "orders": 2
+      },
+      {
+        "day": "2026-03-04",
+        "sessions": 2,
+        "revenue_rial": 70000,
+        "orders": 1
+      },
+      {
+        "day": "2026-03-05",
+        "sessions": 2,
+        "revenue_rial": 160000,
+        "orders": 2
+      },
+      {
+        "day": "2026-03-06",
+        "sessions": 2,
+        "revenue_rial": 290000,
+        "orders": 2
+      },
+      {
+        "day": "2026-03-07",
+        "sessions": 4,
+        "revenue_rial": 700000,
+        "orders": 4
+      },
+      {
+        "day": "2026-03-08",
+        "sessions": 3,
+        "revenue_rial": 590000,
+        "orders": 2
+      },
+      {
+        "day": "2026-03-10",
+        "sessions": 2,
+        "revenue_rial": 300000,
+        "orders": 2
+      },
+      {
+        "day": "2026-03-11",
+        "sessions": 1,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-03-13",
+        "sessions": 2,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-03-15",
+        "sessions": 4,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-03-16",
+        "sessions": 9,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-03-17",
+        "sessions": 3,
+        "revenue_rial": 190000,
+        "orders": 1
+      },
+      {
+        "day": "2026-03-18",
+        "sessions": 3,
+        "revenue_rial": 115000,
+        "orders": 2
+      },
+      {
+        "day": "2026-03-20",
+        "sessions": 1,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-03-22",
+        "sessions": 3,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-03-23",
+        "sessions": 3,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-03-24",
+        "sessions": 6,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-03-25",
+        "sessions": 3,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-03-26",
+        "sessions": 2,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-03-27",
+        "sessions": 2,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-03-28",
+        "sessions": 4,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-03-29",
+        "sessions": 5,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-03-30",
+        "sessions": 3,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-03-31",
+        "sessions": 1,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-04-01",
+        "sessions": 5,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-04-02",
+        "sessions": 3,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-04-03",
+        "sessions": 5,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-04-04",
+        "sessions": 9,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-04-05",
+        "sessions": 5,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-04-06",
+        "sessions": 4,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-04-07",
+        "sessions": 9,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-04-08",
+        "sessions": 3,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-04-09",
+        "sessions": 3,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-04-10",
+        "sessions": 4,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-04-11",
+        "sessions": 10,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-04-12",
+        "sessions": 6,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-04-13",
+        "sessions": 6,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-04-14",
+        "sessions": 9,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-04-15",
+        "sessions": 3,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-04-16",
+        "sessions": 19,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-04-17",
+        "sessions": 14,
+        "revenue_rial": 200000,
+        "orders": 1
+      },
+      {
+        "day": "2026-04-18",
+        "sessions": 13,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-04-19",
+        "sessions": 7,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-04-20",
+        "sessions": 16,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-04-21",
+        "sessions": 10,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-04-22",
+        "sessions": 13,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-04-23",
+        "sessions": 9,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-04-24",
+        "sessions": 4,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-04-25",
+        "sessions": 4,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-04-26",
+        "sessions": 7,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-04-27",
+        "sessions": 16,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-04-28",
+        "sessions": 15,
+        "revenue_rial": 50000,
+        "orders": 1
+      },
+      {
+        "day": "2026-04-29",
+        "sessions": 5,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-05-09",
+        "sessions": 2,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-05-11",
+        "sessions": 14,
+        "revenue_rial": 1425000,
+        "orders": 12
+      },
+      {
+        "day": "2026-05-12",
+        "sessions": 10,
+        "revenue_rial": 2674000,
+        "orders": 9
+      },
+      {
+        "day": "2026-05-13",
+        "sessions": 4,
+        "revenue_rial": 345000,
+        "orders": 3
+      },
+      {
+        "day": "2026-05-14",
+        "sessions": 14,
+        "revenue_rial": 475000,
+        "orders": 7
+      },
+      {
+        "day": "2026-05-15",
+        "sessions": 15,
+        "revenue_rial": 1200000,
+        "orders": 11
+      },
+      {
+        "day": "2026-05-16",
+        "sessions": 6,
+        "revenue_rial": 740000,
+        "orders": 5
+      },
+      {
+        "day": "2026-05-17",
+        "sessions": 9,
+        "revenue_rial": 1005000,
+        "orders": 8
+      },
+      {
+        "day": "2026-05-18",
+        "sessions": 10,
+        "revenue_rial": 805000,
+        "orders": 7
+      },
+      {
+        "day": "2026-05-19",
+        "sessions": 12,
+        "revenue_rial": 2065000,
+        "orders": 12
+      },
+      {
+        "day": "2026-05-20",
+        "sessions": 17,
+        "revenue_rial": 1395000,
+        "orders": 12
+      },
+      {
+        "day": "2026-05-21",
+        "sessions": 7,
+        "revenue_rial": 910000,
+        "orders": 6
+      },
+      {
+        "day": "2026-05-22",
+        "sessions": 9,
+        "revenue_rial": 1285000,
+        "orders": 8
+      },
+      {
+        "day": "2026-05-23",
+        "sessions": 18,
+        "revenue_rial": 1710000,
+        "orders": 14
+      },
+      {
+        "day": "2026-05-24",
+        "sessions": 8,
+        "revenue_rial": 890000,
+        "orders": 7
+      },
+      {
+        "day": "2026-05-25",
+        "sessions": 5,
+        "revenue_rial": 1770000,
+        "orders": 5
+      },
+      {
+        "day": "2026-05-26",
+        "sessions": 3,
+        "revenue_rial": 880000,
+        "orders": 3
+      },
+      {
+        "day": "2026-05-27",
+        "sessions": 4,
+        "revenue_rial": 230000,
+        "orders": 3
+      },
+      {
+        "day": "2026-05-28",
+        "sessions": 2,
+        "revenue_rial": 125000,
+        "orders": 2
+      },
+      {
+        "day": "2026-05-29",
+        "sessions": 6,
+        "revenue_rial": 1100000,
+        "orders": 5
+      },
+      {
+        "day": "2026-05-30",
+        "sessions": 7,
+        "revenue_rial": 670000,
+        "orders": 5
+      },
+      {
+        "day": "2026-05-31",
+        "sessions": 13,
+        "revenue_rial": 750000,
+        "orders": 7
+      },
+      {
+        "day": "2026-06-01",
+        "sessions": 14,
+        "revenue_rial": 730000,
+        "orders": 4
+      },
+      {
+        "day": "2026-06-02",
+        "sessions": 7,
+        "revenue_rial": 765000,
+        "orders": 6
+      },
+      {
+        "day": "2026-06-03",
+        "sessions": 9,
+        "revenue_rial": 970000,
+        "orders": 6
+      },
+      {
+        "day": "2026-06-04",
+        "sessions": 9,
+        "revenue_rial": 445000,
+        "orders": 5
+      },
+      {
+        "day": "2026-06-05",
+        "sessions": 7,
+        "revenue_rial": 545000,
+        "orders": 5
+      },
+      {
+        "day": "2026-06-06",
+        "sessions": 11,
+        "revenue_rial": 710000,
+        "orders": 6
+      },
+      {
+        "day": "2026-06-07",
+        "sessions": 10,
+        "revenue_rial": 1545000,
+        "orders": 9
+      },
+      {
+        "day": "2026-06-08",
+        "sessions": 10,
+        "revenue_rial": 560000,
+        "orders": 8
+      },
+      {
+        "day": "2026-06-09",
+        "sessions": 4,
+        "revenue_rial": 70000,
+        "orders": 2
+      },
+      {
+        "day": "2026-06-10",
+        "sessions": 8,
+        "revenue_rial": 105000,
+        "orders": 2
+      },
+      {
+        "day": "2026-06-11",
+        "sessions": 2,
+        "revenue_rial": 290000,
+        "orders": 1
+      },
+      {
+        "day": "2026-06-12",
+        "sessions": 6,
+        "revenue_rial": 830000,
+        "orders": 2
+      },
+      {
+        "day": "2026-06-13",
+        "sessions": 9,
+        "revenue_rial": 430000,
+        "orders": 3
+      },
+      {
+        "day": "2026-06-14",
+        "sessions": 4,
+        "revenue_rial": 100000,
+        "orders": 2
+      },
+      {
+        "day": "2026-06-15",
+        "sessions": 15,
+        "revenue_rial": 970000,
+        "orders": 9
+      },
+      {
+        "day": "2026-06-16",
+        "sessions": 12,
+        "revenue_rial": 1425000,
+        "orders": 9
+      },
+      {
+        "day": "2026-06-17",
+        "sessions": 10,
+        "revenue_rial": 700000,
+        "orders": 9
+      },
+      {
+        "day": "2026-06-18",
+        "sessions": 15,
+        "revenue_rial": 1449000,
+        "orders": 13
+      },
+      {
+        "day": "2026-06-19",
+        "sessions": 5,
+        "revenue_rial": 730000,
+        "orders": 4
+      },
+      {
+        "day": "2026-06-20",
+        "sessions": 4,
+        "revenue_rial": 1045000,
+        "orders": 4
+      },
+      {
+        "day": "2026-06-21",
+        "sessions": 15,
+        "revenue_rial": 2705000,
+        "orders": 12
+      },
+      {
+        "day": "2026-06-22",
+        "sessions": 4,
+        "revenue_rial": 490000,
+        "orders": 4
+      },
+      {
+        "day": "2026-06-23",
+        "sessions": 5,
+        "revenue_rial": 365000,
+        "orders": 4
+      },
+      {
+        "day": "2026-06-24",
+        "sessions": 12,
+        "revenue_rial": 1490000,
+        "orders": 10
+      },
+      {
+        "day": "2026-06-25",
+        "sessions": 7,
+        "revenue_rial": 490000,
+        "orders": 5
+      },
+      {
+        "day": "2026-06-26",
+        "sessions": 13,
+        "revenue_rial": 985000,
+        "orders": 9
+      },
+      {
+        "day": "2026-06-27",
+        "sessions": 16,
+        "revenue_rial": 1580000,
+        "orders": 12
+      },
+      {
+        "day": "2026-06-28",
+        "sessions": 7,
+        "revenue_rial": 840000,
+        "orders": 6
+      },
+      {
+        "day": "2026-06-29",
+        "sessions": 7,
+        "revenue_rial": 415000,
+        "orders": 4
+      },
+      {
+        "day": "2026-06-30",
+        "sessions": 10,
+        "revenue_rial": 1220000,
+        "orders": 9
+      }
+    ],
+    "jalali_months": [
+      {
+        "key": "1404-10",
+        "days": 18,
+        "revenue_rial": 19377000,
+        "orders": 162,
+        "sessions": 208,
+        "per_day_revenue": 1076500,
+        "aov": 119611.11111111111
+      },
+      {
+        "key": "1404-11",
+        "days": 30,
+        "revenue_rial": 48132000,
+        "orders": 379,
+        "sessions": 511,
+        "per_day_revenue": 1604400,
+        "aov": 126997.36147757256
+      },
+      {
+        "key": "1404-12",
+        "days": 23,
+        "revenue_rial": 17764000,
+        "orders": 112,
+        "sessions": 180,
+        "per_day_revenue": 772347.8260869565,
+        "aov": 158607.14285714287
+      },
+      {
+        "key": "1405-01",
+        "days": 30,
+        "revenue_rial": 200000,
+        "orders": 1,
+        "sessions": 185,
+        "per_day_revenue": 6666.666666666667,
+        "aov": 200000
+      },
+      {
+        "key": "1405-02",
+        "days": 21,
+        "revenue_rial": 13089000,
+        "orders": 93,
+        "sessions": 203,
+        "per_day_revenue": 623285.7142857143,
+        "aov": 140741.93548387097
+      },
+      {
+        "key": "1405-03",
+        "days": 31,
+        "revenue_rial": 26529000,
+        "orders": 180,
+        "sessions": 261,
+        "per_day_revenue": 855774.1935483871,
+        "aov": 147383.33333333334
+      },
+      {
+        "key": "1405-04",
+        "days": 9,
+        "revenue_rial": 7875000,
+        "orders": 63,
+        "sessions": 81,
+        "per_day_revenue": 875000,
+        "aov": 125000
+      }
+    ],
+    "weekdays": [
+      {
+        "weekday": 0,
+        "sessions": 247,
+        "revenue_rial": 22498000,
+        "orders": 153,
+        "aov": 147045.75163398692
+      },
+      {
+        "weekday": 1,
+        "sessions": 233,
+        "revenue_rial": 18954000,
+        "orders": 147,
+        "aov": 128938.77551020408
+      },
+      {
+        "weekday": 2,
+        "sessions": 260,
+        "revenue_rial": 22185000,
+        "orders": 149,
+        "aov": 148892.61744966442
+      },
+      {
+        "weekday": 3,
+        "sessions": 255,
+        "revenue_rial": 22195000,
+        "orders": 158,
+        "aov": 140474.68354430379
+      },
+      {
+        "weekday": 4,
+        "sessions": 215,
+        "revenue_rial": 15054000,
+        "orders": 134,
+        "aov": 112343.28358208956
+      },
+      {
+        "weekday": 5,
+        "sessions": 205,
+        "revenue_rial": 15268000,
+        "orders": 121,
+        "aov": 126181.81818181818
+      },
+      {
+        "weekday": 6,
+        "sessions": 214,
+        "revenue_rial": 16812000,
+        "orders": 128,
+        "aov": 131343.75
+      }
+    ]
+  }
 }

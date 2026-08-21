@@ -640,6 +640,84 @@ export async function buildArtifacts(outDir = path.join(repoRoot, 'data', 'artif
       })),
   );
 
+  const merchantDayRows = await q(`
+    SELECT merchant_key,
+           CAST(CAST(created_at AS DATE) AS VARCHAR) AS day,
+           COUNT(*) AS sessions,
+           COUNT(*) FILTER (WHERE session_status='Verified') AS orders,
+           COALESCE(SUM(CASE WHEN session_status='Verified' THEN amount ELSE 0 END), 0) AS revenue
+    FROM sessions
+    GROUP BY 1, 2
+  `);
+
+  type MerchantDayPoint = {
+    day: string;
+    sessions: number;
+    revenue_rial: number;
+    orders: number;
+  };
+  const daysByMerchant: Record<string, MerchantDayPoint[]> = {};
+  for (const row of merchantDayRows) {
+    const key = str(row.merchant_key);
+    daysByMerchant[key] ??= [];
+    daysByMerchant[key].push({
+      day: str(row.day).slice(0, 10),
+      sessions: num(row.sessions),
+      revenue_rial: num(row.revenue),
+      orders: num(row.orders),
+    });
+  }
+  for (const key of Object.keys(daysByMerchant)) {
+    daysByMerchant[key]!.sort((a, b) => a.day.localeCompare(b.day));
+  }
+
+  function merchantSeries(daily: MerchantDayPoint[]) {
+    const monthBuckets: Record<
+      string,
+      { days: Set<string>; revenue: number; orders: number; sessions: number }
+    > = {};
+    const weekdayBuckets: Record<number, { sessions: number; revenue: number; orders: number }> = {};
+    for (const d of daily) {
+      const j = isoToJalali(d.day);
+      const monthKey = `${j.year}-${String(j.month).padStart(2, '0')}`;
+      monthBuckets[monthKey] ??= { days: new Set(), revenue: 0, orders: 0, sessions: 0 };
+      const mb = monthBuckets[monthKey]!;
+      mb.days.add(d.day);
+      mb.revenue += d.revenue_rial;
+      mb.orders += d.orders;
+      mb.sessions += d.sessions;
+      const wd = jalaliWeekdayIso(d.day);
+      weekdayBuckets[wd] ??= { sessions: 0, revenue: 0, orders: 0 };
+      const wb = weekdayBuckets[wd]!;
+      wb.sessions += d.sessions;
+      wb.revenue += d.revenue_rial;
+      wb.orders += d.orders;
+    }
+    return {
+      daily,
+      jalali_months: Object.entries(monthBuckets)
+        .sort(([a], [b]) => a.localeCompare(b))
+        .map(([key, v]) => ({
+          key,
+          days: v.days.size,
+          revenue_rial: v.revenue,
+          orders: v.orders,
+          sessions: v.sessions,
+          per_day_revenue: v.days.size === 0 ? 0 : rate(v.revenue / v.days.size),
+          aov: v.orders === 0 ? 0 : rate(v.revenue / v.orders),
+        })),
+      weekdays: Object.entries(weekdayBuckets)
+        .sort(([a], [b]) => Number(a) - Number(b))
+        .map(([k, v]) => ({
+          weekday: Number(k),
+          sessions: v.sessions,
+          revenue_rial: v.revenue,
+          orders: v.orders,
+          aov: v.orders === 0 ? 0 : rate(v.revenue / v.orders),
+        })),
+    };
+  }
+
   for (const m of merchants) {
     const rec = recoverableBy[m.key];
     const peers = peerOf[m.key];
@@ -654,6 +732,7 @@ export async function buildArtifacts(outDir = path.join(repoRoot, 'data', 'artif
         : null,
       pending: { currency: 'pending_reconciliation', rial: m.paid_amount_rial },
       case_family: cases.find((c) => c.key === m.key)?.family ?? null,
+      series: merchantSeries(daysByMerchant[m.key] ?? []),
     };
     files[`merchants/${m.key}.json`] = writeJson(path.join(outDir, 'merchants', `${m.key}.json`), payload);
   }

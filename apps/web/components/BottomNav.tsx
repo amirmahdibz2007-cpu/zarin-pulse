@@ -4,9 +4,10 @@ import { MoreSheet } from './MoreSheet';
 import { NavLink } from './NavLink';
 
 export function BottomNav() {
+  const slots = primaryNav.length + 1;
   return (
     <nav className="nav-bottom">
-      <ul className="grid grid-cols-5">
+      <ul className="grid" style={{ gridTemplateColumns: `repeat(${slots}, minmax(0, 1fr))` }}>
         {primaryNav.map((item) => (
           <li key={item.href}>
             <NavLink href={item.href} className="nav-bottom-link">

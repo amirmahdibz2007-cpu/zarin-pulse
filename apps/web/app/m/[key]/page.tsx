@@ -1,4 +1,5 @@
 import { copy, formatBillionsRial, formatCount, count, formatRatioAsPercent, formatRial } from '@zarinpulse/contracts';
+import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { ActionBrief } from '../../../components/ActionBrief';
 import { FunnelStack, MiniRing } from '../../../components/Charts';
@@ -10,7 +11,6 @@ import {
   type MerchantIndexRow,
 } from '../../../lib/artifacts';
 import { buildMerchantActions, isSparseMerchant } from '../../../lib/merchant-actions';
-import { healthAction } from '../../../lib/health';
 
 export function generateStaticParams() {
   const index = tryReadArtifact<MerchantIndexRow[]>('merchants-index.json') ?? [];
@@ -27,10 +27,6 @@ export default async function MerchantPage({ params }: { params: Promise<{ key: 
       : m.impact?.basis === 'median_attempted'
         ? copy.aovBasis.median_attempted
         : copy.aovBasis.peer_aov;
-  const playbook =
-    m.case_family && m.case_family in copy.playbook
-      ? copy.playbook[m.case_family as keyof typeof copy.playbook]
-      : healthAction(m.health);
   const model =
     m.business_model && m.business_model in copy.businessModel
       ? copy.businessModel[m.business_model as keyof typeof copy.businessModel]
@@ -56,6 +52,11 @@ export default async function MerchantPage({ params }: { params: Promise<{ key: 
         </p>
         <p className="page-lede">{m.key}</p>
         <StatusPill code={m.health} />
+        <p className="page-lede">
+          <Link className="link-quiet font-medium" href="/ai">
+            {copy.nav.ai}
+          </Link>
+        </p>
       </header>
       <p className="text-sm text-[color:var(--zp-muted)]">{copy.monthRevenue}</p>
       <section className="dash-kpis">
@@ -114,7 +115,6 @@ export default async function MerchantPage({ params }: { params: Promise<{ key: 
         <p className="text-sm text-[color:var(--zp-muted)]">{aovLabel}</p>
       )}
       <p className="text-sm text-[color:var(--zp-muted)]">{copy.impactNoSum}</p>
-      <p className="surface-panel leading-7">{playbook}</p>
       <p className="text-sm text-[color:var(--zp-muted)]">{model}</p>
     </PageShell>
   );

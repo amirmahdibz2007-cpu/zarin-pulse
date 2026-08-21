@@ -111,7 +111,7 @@ export function AreaLine(props: {
   pace?: 'default' | 'slow';
 }) {
   const uid = useId().replace(/:/g, '');
-  const { ref, active } = useInViewOnce<HTMLDivElement>(0.08);
+  const { ref, active } = useInViewOnce<HTMLDivElement>({ threshold: 0.15 });
   const w = 640;
   const h = 248;
   const pad = { l: 8, r: 36, t: 36, b: 32 };
@@ -208,7 +208,10 @@ export function Columns(props: {
 }) {
   const percents = insetBarPercents(props.bars.map((b) => b.value));
   const peak = Math.max(1, ...props.bars.map((b) => b.value));
-  const { ref, active } = useInViewOnce<HTMLUListElement>(0.12);
+  const { ref, active } = useInViewOnce<HTMLUListElement>({
+    threshold: 0.12,
+    rootMargin: '0px',
+  });
   const depth = props.variant === 'depth';
   return (
     <ul

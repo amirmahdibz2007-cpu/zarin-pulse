@@ -3,11 +3,12 @@ import { copy } from '@zarinpulse/contracts';
 export const primaryNav = [
   { href: '/', label: copy.nav.home },
   { href: '/abandonment', label: copy.nav.abandonment },
-  { href: '/fees', label: copy.nav.fees },
+  { href: '/ai', label: copy.nav.ai },
   { href: '/peers', label: copy.nav.peers },
 ] as const;
 
 export const extraNav = [
+  { href: '/fees', label: copy.nav.fees },
   { href: '/health', label: copy.nav.health },
   { href: '/psp', label: copy.nav.psp },
   { href: '/calendar', label: copy.nav.calendar },

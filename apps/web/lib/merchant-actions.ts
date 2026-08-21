@@ -7,7 +7,7 @@ import {
 import { healthAction, healthLabel } from './health';
 
 /** Same sparse rule as packages/etl/src/build.ts when tier is missing on merchant JSON. */
-export function isSparseMerchant(m: { sessions: number; tier?: string }): boolean {
+export function isSparseMerchant(m: { sessions: number; tier?: string | undefined }): boolean {
   if (m.tier === 'sparse') return true;
   return m.sessions < 100;
 }
@@ -25,7 +25,10 @@ export type MerchantAction = {
   kind: MerchantActionKind;
   title: string;
   body: string;
+  why: string;
+  nextStep: string;
   evidence: string;
+  impactRial: number;
 };
 
 export type MerchantActionInput = {
@@ -39,8 +42,8 @@ export type MerchantActionInput = {
   paid_amount_rial: number;
   success_rate: number;
   health: string;
-  tier?: string;
-  unique_prices?: number;
+  tier?: string | undefined;
+  unique_prices?: number | undefined;
   fee_actual: number | null;
   tariff_effect: number | null;
   peers: { n: number; p75: number; gap: number } | null;
@@ -55,10 +58,20 @@ function ratio(part: number, whole: number): number {
   return part / whole;
 }
 
-function recoverableEvidence(m: MerchantActionInput): string {
+function fill(template: string, vars: Record<string, string>): string {
+  return template.replace(/\{(\w+)\}/g, (_, key: string) => vars[key] ?? '');
+}
+
+function recoverableClause(m: MerchantActionInput): string {
   const expected = m.impact?.expected ?? 0;
   if (expected <= 0) return '';
-  return formatBillionsRial(expected);
+  return fill(copy.actionBrief.recoverableClause, {
+    recoverable: formatBillionsRial(expected),
+  });
+}
+
+function impactOf(m: MerchantActionInput): number {
+  return Math.max(0, m.impact?.expected ?? 0);
 }
 
 /**
@@ -72,7 +85,10 @@ export function buildMerchantActions(m: MerchantActionInput): MerchantAction[] {
         kind: 'sparse',
         title: m.key,
         body: copy.sparseNote,
+        why: '',
+        nextStep: '',
         evidence: '',
+        impactRial: 0,
       },
     ];
   }
@@ -82,14 +98,20 @@ export function buildMerchantActions(m: MerchantActionInput): MerchantAction[] {
   const na = ratio(m.no_attempt, sessions);
   const ib = ratio(m.in_bank, sessions);
   const fl = ratio(m.failed, sessions);
-  const rec = recoverableEvidence(m);
+  const recClause = recoverableClause(m);
+  const impactRial = impactOf(m);
 
   if (m.paid_amount_rial > 0) {
     actions.push({
       kind: 'pending',
       title: copy.actionBrief.pendingTitle,
-      body: copy.actionBrief.pendingBody,
-      evidence: formatRial(Math.trunc(m.paid_amount_rial)),
+      body: fill(copy.actionBrief.pendingBody, {
+        amount: formatRial(Math.trunc(m.paid_amount_rial)),
+      }),
+      why: copy.actionBrief.pendingWhy,
+      nextStep: copy.actionBrief.pendingNext,
+      evidence: '',
+      impactRial: Math.trunc(m.paid_amount_rial),
     });
   }
 
@@ -100,19 +122,30 @@ export function buildMerchantActions(m: MerchantActionInput): MerchantAction[] {
         : m.health === 'pattern_2_verify_broken'
           ? formatRial(Math.trunc(m.paid_amount_rial))
           : formatRatioAsPercent(m.success_rate);
-    const bits = [healthLabel(m.health), rateHint, rec].filter((s) => s.length > 0);
     actions.push({
       kind: 'health',
       title: copy.actionBrief.healthTitle,
-      body: healthAction(m.health),
-      evidence: bits.join(' · '),
+      body: fill(copy.actionBrief.healthBody, {
+        action: healthAction(m.health),
+        recoverableClause: recClause,
+      }),
+      why: copy.actionBrief.healthWhy,
+      nextStep: copy.actionBrief.healthNext,
+      evidence: [healthLabel(m.health), rateHint].filter((s) => s.length > 0).join(' · '),
+      impactRial,
     });
   } else if (na >= FUNNEL_FLOOR && na >= ib && na >= fl) {
     actions.push({
       kind: 'funnel',
       title: copy.actionBrief.noAttemptTitle,
-      body: copy.actionBrief.noAttemptBody,
-      evidence: [formatRatioAsPercent(na), rec].filter((s) => s.length > 0).join(' · '),
+      body: fill(copy.actionBrief.noAttemptBody, {
+        share: formatRatioAsPercent(na),
+        recoverableClause: recClause,
+      }),
+      why: copy.actionBrief.noAttemptWhy,
+      nextStep: copy.actionBrief.noAttemptNext,
+      evidence: '',
+      impactRial,
     });
   }
 
@@ -120,24 +153,30 @@ export function buildMerchantActions(m: MerchantActionInput): MerchantAction[] {
     actions.push({
       kind: 'funnel',
       title: copy.actionBrief.inBankTitle,
-      body: copy.actionBrief.inBankBody,
-      evidence: [formatRatioAsPercent(ib), rec].filter((s) => s.length > 0).join(' · '),
+      body: fill(copy.actionBrief.inBankBody, {
+        share: formatRatioAsPercent(ib),
+        recoverableClause: recClause,
+      }),
+      why: copy.actionBrief.inBankWhy,
+      nextStep: copy.actionBrief.inBankNext,
+      evidence: '',
+      impactRial,
     });
   }
 
   if (m.unique_prices === 1) {
-    const feeBits = [
-      m.fee_actual !== null ? formatRatioAsPercent(m.fee_actual) : '',
-      m.tariff_effect !== null && m.tariff_effect > 0
-        ? formatRatioAsPercent(m.tariff_effect)
-        : '',
-      copy.feeDisclaimer,
-    ].filter((s) => s.length > 0);
+    const feeClause =
+      m.fee_actual !== null
+        ? fill(copy.actionBrief.feeClause, { fee: formatRatioAsPercent(m.fee_actual) })
+        : '';
     actions.push({
       kind: 'fee',
       title: copy.actionBrief.feeTitle,
-      body: copy.actionBrief.feeBody,
-      evidence: feeBits.join(' · '),
+      body: fill(copy.actionBrief.feeBody, { feeClause }),
+      why: copy.actionBrief.feeWhy,
+      nextStep: copy.actionBrief.feeNext,
+      evidence: copy.feeDisclaimer,
+      impactRial: 0,
     });
   }
 
@@ -145,8 +184,14 @@ export function buildMerchantActions(m: MerchantActionInput): MerchantAction[] {
     actions.push({
       kind: 'peer',
       title: copy.actionBrief.peerTitle,
-      body: copy.actionBrief.peerBody,
-      evidence: [formatRatioAsPercent(m.peers.gap), rec].filter((s) => s.length > 0).join(' · '),
+      body: fill(copy.actionBrief.peerBody, {
+        gap: formatRatioAsPercent(m.peers.gap),
+        recoverableClause: recClause,
+      }),
+      why: copy.actionBrief.peerWhy,
+      nextStep: copy.actionBrief.peerNext,
+      evidence: '',
+      impactRial,
     });
   }
 
@@ -157,11 +202,19 @@ export function buildMerchantActions(m: MerchantActionInput): MerchantAction[] {
         kind: 'none',
         title: m.key,
         body: copy.actionBrief.none,
+        why: '',
+        nextStep: '',
         evidence: '',
+        impactRial: 0,
       },
     ];
   }
   return trimmed;
+}
+
+/** First ranked action title for discovery surfaces (home table). */
+export function primaryActionTitle(m: MerchantActionInput): string {
+  return buildMerchantActions(m)[0]?.title ?? copy.actionBrief.none;
 }
 
 export function formatActionBriefClipboard(key: string, actions: readonly MerchantAction[]): string {
@@ -169,6 +222,8 @@ export function formatActionBriefClipboard(key: string, actions: readonly Mercha
   for (const [i, action] of actions.entries()) {
     lines.push(`${String(i + 1)}. ${action.title}`);
     lines.push(action.body);
+    if (action.why) lines.push(`${copy.actionBrief.whyLabel}: ${action.why}`);
+    if (action.nextStep) lines.push(`${copy.actionBrief.nextLabel}: ${action.nextStep}`);
     if (action.evidence) lines.push(action.evidence);
   }
   lines.push(copy.actionBrief.limitNote);

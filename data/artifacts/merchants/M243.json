@@ -30,5 +30,206 @@
     "currency": "pending_reconciliation",
     "rial": 0
   },
-  "case_family": null
+  "case_family": null,
+  "series": {
+    "daily": [
+      {
+        "day": "2026-04-11",
+        "sessions": 2,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-04-17",
+        "sessions": 1,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-04-29",
+        "sessions": 2,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-05-01",
+        "sessions": 1,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-05-17",
+        "sessions": 1,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-05-30",
+        "sessions": 5,
+        "revenue_rial": 1425000,
+        "orders": 1
+      },
+      {
+        "day": "2026-06-02",
+        "sessions": 1,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-06-04",
+        "sessions": 1,
+        "revenue_rial": 15900000,
+        "orders": 1
+      },
+      {
+        "day": "2026-06-05",
+        "sessions": 3,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-06-06",
+        "sessions": 3,
+        "revenue_rial": 3790000,
+        "orders": 2
+      },
+      {
+        "day": "2026-06-09",
+        "sessions": 1,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-06-14",
+        "sessions": 3,
+        "revenue_rial": 15900000,
+        "orders": 1
+      },
+      {
+        "day": "2026-06-18",
+        "sessions": 5,
+        "revenue_rial": 34070000,
+        "orders": 3
+      },
+      {
+        "day": "2026-06-19",
+        "sessions": 1,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-06-22",
+        "sessions": 1,
+        "revenue_rial": 5450000,
+        "orders": 1
+      },
+      {
+        "day": "2026-06-26",
+        "sessions": 2,
+        "revenue_rial": 22350000,
+        "orders": 2
+      },
+      {
+        "day": "2026-06-27",
+        "sessions": 5,
+        "revenue_rial": 24230000,
+        "orders": 4
+      },
+      {
+        "day": "2026-06-29",
+        "sessions": 1,
+        "revenue_rial": 16900000,
+        "orders": 1
+      }
+    ],
+    "jalali_months": [
+      {
+        "key": "1405-01",
+        "days": 2,
+        "revenue_rial": 0,
+        "orders": 0,
+        "sessions": 3,
+        "per_day_revenue": 0,
+        "aov": 0
+      },
+      {
+        "key": "1405-02",
+        "days": 3,
+        "revenue_rial": 0,
+        "orders": 0,
+        "sessions": 4,
+        "per_day_revenue": 0,
+        "aov": 0
+      },
+      {
+        "key": "1405-03",
+        "days": 9,
+        "revenue_rial": 71085000,
+        "orders": 8,
+        "sessions": 23,
+        "per_day_revenue": 7898333.333333333,
+        "aov": 8885625
+      },
+      {
+        "key": "1405-04",
+        "days": 4,
+        "revenue_rial": 68930000,
+        "orders": 8,
+        "sessions": 9,
+        "per_day_revenue": 17232500,
+        "aov": 8616250
+      }
+    ],
+    "weekdays": [
+      {
+        "weekday": 0,
+        "sessions": 15,
+        "revenue_rial": 29445000,
+        "orders": 7,
+        "aov": 4206428.571428572
+      },
+      {
+        "weekday": 1,
+        "sessions": 4,
+        "revenue_rial": 15900000,
+        "orders": 1,
+        "aov": 15900000
+      },
+      {
+        "weekday": 2,
+        "sessions": 2,
+        "revenue_rial": 22350000,
+        "orders": 2,
+        "aov": 11175000
+      },
+      {
+        "weekday": 3,
+        "sessions": 2,
+        "revenue_rial": 0,
+        "orders": 0,
+        "aov": 0
+      },
+      {
+        "weekday": 4,
+        "sessions": 2,
+        "revenue_rial": 0,
+        "orders": 0,
+        "aov": 0
+      },
+      {
+        "weekday": 5,
+        "sessions": 6,
+        "revenue_rial": 49970000,
+        "orders": 4,
+        "aov": 12492500
+      },
+      {
+        "weekday": 6,
+        "sessions": 8,
+        "revenue_rial": 22350000,
+        "orders": 2,
+        "aov": 11175000
+      }
+    ]
+  }
 }

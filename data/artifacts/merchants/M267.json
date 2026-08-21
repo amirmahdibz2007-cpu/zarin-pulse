@@ -30,5 +30,102 @@
     "currency": "pending_reconciliation",
     "rial": 54700000
   },
-  "case_family": null
+  "case_family": null,
+  "series": {
+    "daily": [
+      {
+        "day": "2026-01-01",
+        "sessions": 12,
+        "revenue_rial": 102040000,
+        "orders": 7
+      },
+      {
+        "day": "2026-01-02",
+        "sessions": 10,
+        "revenue_rial": 104700000,
+        "orders": 8
+      },
+      {
+        "day": "2026-01-03",
+        "sessions": 14,
+        "revenue_rial": 113640000,
+        "orders": 9
+      },
+      {
+        "day": "2026-01-04",
+        "sessions": 11,
+        "revenue_rial": 85100000,
+        "orders": 6
+      },
+      {
+        "day": "2026-01-05",
+        "sessions": 3,
+        "revenue_rial": 0,
+        "orders": 0
+      },
+      {
+        "day": "2026-05-28",
+        "sessions": 1,
+        "revenue_rial": 0,
+        "orders": 0
+      }
+    ],
+    "jalali_months": [
+      {
+        "key": "1404-10",
+        "days": 5,
+        "revenue_rial": 405480000,
+        "orders": 30,
+        "sessions": 50,
+        "per_day_revenue": 81096000,
+        "aov": 13516000
+      },
+      {
+        "key": "1405-03",
+        "days": 1,
+        "revenue_rial": 0,
+        "orders": 0,
+        "sessions": 1,
+        "per_day_revenue": 0,
+        "aov": 0
+      }
+    ],
+    "weekdays": [
+      {
+        "weekday": 0,
+        "sessions": 14,
+        "revenue_rial": 113640000,
+        "orders": 9,
+        "aov": 12626666.666666666
+      },
+      {
+        "weekday": 1,
+        "sessions": 11,
+        "revenue_rial": 85100000,
+        "orders": 6,
+        "aov": 14183333.333333334
+      },
+      {
+        "weekday": 2,
+        "sessions": 3,
+        "revenue_rial": 0,
+        "orders": 0,
+        "aov": 0
+      },
+      {
+        "weekday": 5,
+        "sessions": 13,
+        "revenue_rial": 102040000,
+        "orders": 7,
+        "aov": 14577142.857142856
+      },
+      {
+        "weekday": 6,
+        "sessions": 10,
+        "revenue_rial": 104700000,
+        "orders": 8,
+        "aov": 13087500
+      }
+    ]
+  }
 }

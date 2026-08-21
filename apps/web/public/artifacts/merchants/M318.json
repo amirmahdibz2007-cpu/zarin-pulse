@@ -30,5 +30,70 @@
     "currency": "pending_reconciliation",
     "rial": 0
   },
-  "case_family": null
+  "case_family": null,
+  "series": {
+    "daily": [
+      {
+        "day": "2026-01-01",
+        "sessions": 2,
+        "revenue_rial": 1100000,
+        "orders": 2
+      },
+      {
+        "day": "2026-01-05",
+        "sessions": 2,
+        "revenue_rial": 1100000,
+        "orders": 2
+      },
+      {
+        "day": "2026-02-20",
+        "sessions": 1,
+        "revenue_rial": 0,
+        "orders": 0
+      }
+    ],
+    "jalali_months": [
+      {
+        "key": "1404-10",
+        "days": 2,
+        "revenue_rial": 2200000,
+        "orders": 4,
+        "sessions": 4,
+        "per_day_revenue": 1100000,
+        "aov": 550000
+      },
+      {
+        "key": "1404-12",
+        "days": 1,
+        "revenue_rial": 0,
+        "orders": 0,
+        "sessions": 1,
+        "per_day_revenue": 0,
+        "aov": 0
+      }
+    ],
+    "weekdays": [
+      {
+        "weekday": 2,
+        "sessions": 2,
+        "revenue_rial": 1100000,
+        "orders": 2,
+        "aov": 550000
+      },
+      {
+        "weekday": 5,
+        "sessions": 2,
+        "revenue_rial": 1100000,
+        "orders": 2,
+        "aov": 550000
+      },
+      {
+        "weekday": 6,
+        "sessions": 1,
+        "revenue_rial": 0,
+        "orders": 0,
+        "aov": 0
+      }
+    ]
+  }
 }
