@@ -107,7 +107,7 @@ async function callModel(
     headers: {
       Authorization: `Bearer ${apiKey}`,
       'Content-Type': 'application/json',
-      'HTTP-Referer': 'https://zarinpulse.local',
+      'HTTP-Referer': process.env.OPENROUTER_HTTP_REFERER?.trim() || 'http://216.146.26.224',
       'X-Title': 'ZarinPulse AI Brief',
     },
     body: JSON.stringify({

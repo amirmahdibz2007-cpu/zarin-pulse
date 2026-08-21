@@ -620,6 +620,8 @@ export function groundedChatAnswer(
     summary = `قدم بعدی روی «${focus.title}» است. ${focus.body} کار عملی: ${focus.next_step}${
       focus.impact_rial_billions ? ` اثر تقریبی حدود ${focus.impact_rial_billions} میلیارد ریال.` : ''
     }`;
+  } else if (isChitchatMessage(q)) {
+    summary = `سلام. آماده‌ام دربارهٔ فروش، قیف پرداخت یا روزهای پرترافیک ${locked.merchant_key} کمک کنم؛ چه سؤالی دارید؟`;
   } else if (daySalesQ) {
     summary = formatDaySalesAnswer(peaks, metrics);
   } else if (/اینستا|تلگرام|تبلیغ|مارکتینگ|بازاریابی|شبکه\s*اجتماع|تولید\s*محتوا/.test(q)) {
@@ -716,9 +718,22 @@ export function groundedChatAnswer(
     merchant_key: locked.merchant_key,
     prompt_id: 'chat',
     summary: summary.trim(),
-    actions: daySalesQ ? [] : followUp && focusActions.length > 0 ? focusActions : actions,
+    actions:
+      daySalesQ || isChitchatMessage(q)
+        ? []
+        : followUp && focusActions.length > 0
+          ? focusActions
+          : actions,
     source: 'deterministic',
   };
+}
+
+export function isChitchatMessage(q: string): boolean {
+  const t = q.trim();
+  if (!t) return true;
+  return /^(سلام|درود|هی+|hi|hello|hey|صبح\s*بخیر|عصر\s*بخیر|شب\s*بخیر|ممنون|مرسی|تشکر|خداحافظ|bye)([\s!.،؟?]*)$/i.test(
+    t,
+  );
 }
 
 export function isDaySalesQuestion(q: string): boolean {

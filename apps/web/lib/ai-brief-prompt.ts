@@ -614,5 +614,6 @@ export function validateAiBriefResponse(
 /** Preferred OpenRouter model after rewrite-only eval (see prompt bakeoff). */
 /** Latency-first free model; heavier models race as backups when one is rate-limited. */
 export const AI_BRIEF_PREFERRED_MODEL = 'poolside/laguna-s-2.1:free';
-export const AI_BRIEF_FALLBACK_MODEL = 'nvidia/nemotron-3-ultra-550b-a55b:free';
-export const AI_BRIEF_ALT_MODEL = 'google/gemma-3-27b-it:free';
+export const AI_BRIEF_FALLBACK_MODEL = 'nvidia/nemotron-3-nano-30b-a3b:free';
+/** OpenRouter auto free-router — useful when a named free model is rate-limited. */
+export const AI_BRIEF_ALT_MODEL = 'openrouter/free';

@@ -125,6 +125,12 @@ export function AiStage(props: {
   }, [thread, status, revealActionsFor, thinking]);
 
   function pushAssistant(data: ApiOk) {
+    const content = formatAssistantMessage(data);
+    if (!content) {
+      setError(copy.aiStage.error);
+      setStatus('error');
+      return;
+    }
     const id = uid();
     setLastSource(data.source);
     setRevealActionsFor((prev) => ({ ...prev, [id]: false }));
@@ -133,7 +139,7 @@ export function AiStage(props: {
       {
         id,
         role: 'assistant',
-        content: formatAssistantMessage(data),
+        content,
         actions: data.actions,
         source: data.source,
         animate: true,
