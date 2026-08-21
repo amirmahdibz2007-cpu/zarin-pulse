@@ -80,6 +80,13 @@ const amountBandSchema = z.object({
   revenue_rial: finiteNumber,
 });
 
+const pspMixSchema = z.object({
+  psp: z.string().min(1),
+  sessions: finiteNumber,
+  verified: finiteNumber,
+  success_rate: finiteNumber,
+});
+
 const opsSchema = z
   .object({
     customer_tiers: z.object({
@@ -99,6 +106,7 @@ const opsSchema = z
         }),
       ),
     }),
+    psp_mix: z.array(pspMixSchema).optional(),
   })
   .nullable()
   .optional();

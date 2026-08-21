@@ -59,6 +59,18 @@ export default function JudgePage() {
       </ul>
       <JudgeCodeMap />
       <div className="mt-4 flex flex-wrap gap-2">
+        <Link className="control-neuro inline-flex min-h-11 items-center px-4" href="/peers">
+          {copy.nav.peers}
+        </Link>
+        <Link className="control-neuro inline-flex min-h-11 items-center px-4" href="/growth">
+          {copy.nav.growth}
+        </Link>
+        <Link className="control-neuro inline-flex min-h-11 items-center px-4" href="/abandonment">
+          {copy.nav.abandonment}
+        </Link>
+        <Link className="control-neuro inline-flex min-h-11 items-center px-4" href="/customers">
+          {copy.nav.customers}
+        </Link>
         <Link className="control-neuro inline-flex min-h-11 items-center px-4" href="/reconciliation">
           {copy.nav.reconciliation}
         </Link>

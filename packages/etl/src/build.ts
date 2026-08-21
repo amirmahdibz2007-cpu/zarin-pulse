@@ -751,7 +751,33 @@ export async function buildArtifacts(outDir = path.join(repoRoot, 'data', 'artif
     sales_peaks: {
       top_days: { day: string; orders: number; revenue_rial: number; sessions: number }[];
     };
+    psp_mix: { psp: string; sessions: number; verified: number; success_rate: number }[];
   };
+
+  const pspMixRows = await q(`
+    SELECT
+      merchant_key,
+      COALESCE(NULLIF(CAST(psp_code_last AS VARCHAR), ''), '(empty)') AS psp,
+      COUNT(*) AS sessions,
+      COUNT(*) FILTER (WHERE session_status = 'Verified') AS verified
+    FROM terminal_state
+    GROUP BY 1, 2
+  `);
+  const pspByMerchant: Record<string, OpsPayload['psp_mix']> = {};
+  for (const row of pspMixRows) {
+    const key = str(row.merchant_key);
+    const sessions = num(row.sessions);
+    pspByMerchant[key] ??= [];
+    pspByMerchant[key]!.push({
+      psp: str(row.psp),
+      sessions,
+      verified: num(row.verified),
+      success_rate: sessions === 0 ? 0 : rate(num(row.verified) / sessions),
+    });
+  }
+  for (const key of Object.keys(pspByMerchant)) {
+    pspByMerchant[key]!.sort((a, b) => b.sessions - a.sessions || a.psp.localeCompare(b.psp));
+  }
 
   const opsByMerchant: Record<string, OpsPayload> = {};
   const tiersByMerchant: Record<string, ReturnType<typeof assignCustomerTiers>> = {};
@@ -806,6 +832,7 @@ export async function buildArtifacts(outDir = path.join(repoRoot, 'data', 'artif
       },
       amount_bands,
       sales_peaks: { top_days },
+      psp_mix: pspByMerchant[m.key] ?? [],
     };
   }
 

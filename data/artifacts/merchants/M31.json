@@ -1328,6 +1328,56 @@
           "sessions": 2453
         }
       ]
-    }
+    },
+    "psp_mix": [
+      {
+        "psp": "PSP-05",
+        "sessions": 183576,
+        "verified": 38731,
+        "success_rate": 0.210980738223
+      },
+      {
+        "psp": "PSP-08",
+        "sessions": 54790,
+        "verified": 11646,
+        "success_rate": 0.212557035955
+      },
+      {
+        "psp": "PSP-01",
+        "sessions": 36326,
+        "verified": 7991,
+        "success_rate": 0.219980179486
+      },
+      {
+        "psp": "(empty)",
+        "sessions": 24242,
+        "verified": 0,
+        "success_rate": 0.0
+      },
+      {
+        "psp": "PSP-03",
+        "sessions": 11533,
+        "verified": 2456,
+        "success_rate": 0.212954131622
+      },
+      {
+        "psp": "PSP-06",
+        "sessions": 1385,
+        "verified": 306,
+        "success_rate": 0.220938628159
+      },
+      {
+        "psp": "PSP-07",
+        "sessions": 708,
+        "verified": 109,
+        "success_rate": 0.15395480226
+      },
+      {
+        "psp": "PSP-04",
+        "sessions": 254,
+        "verified": 16,
+        "success_rate": 0.062992125984
+      }
+    ]
   }
 }

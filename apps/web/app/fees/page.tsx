@@ -59,6 +59,7 @@ export default function FeesPage() {
       </section>
 
       <p className="leading-7 text-[color:var(--zp-muted)]">{copy.fee.basketVsTariff}</p>
+      <p className="text-sm leading-7 text-[color:var(--zp-muted)]">{copy.feeDisclaimer}</p>
 
       <section className="dash-pair">
         <article className="chart-card space-y-3">

@@ -339,6 +339,23 @@ export function AiStage(props: {
         ) : null}
       </div>
 
+      {props.merchantKey === 'M31' ? (
+        <div className="ops-footer-links ai-bot-export-strip" aria-label={copy.efficacy.downloadsTitle}>
+          <span className="stat-hint">{copy.efficacy.downloadsTitle}:</span>{' '}
+          <a className="ops-ladder-link" href="/api/download/export?merchant=M31&kind=gold">
+            {copy.ops.downloadGold}
+          </a>
+          {' · '}
+          <a className="ops-ladder-link" href="/api/download/export?merchant=M31&kind=inbank">
+            {copy.ops.downloadInbank}
+          </a>
+          {' · '}
+          <a className="ops-ladder-link" href="/api/download/export?merchant=M31&kind=peak_days">
+            {copy.ops.downloadPeaks}
+          </a>
+        </div>
+      ) : null}
+
       <div className="ai-bot-shell">
         <div className="ai-bot-thread" role="log" aria-live="polite">
           {thread.map((msg) => (

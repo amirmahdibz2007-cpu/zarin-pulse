@@ -10,7 +10,12 @@ import {
 import Link from 'next/link';
 import { MiniRing, RowBar } from '../../components/Charts';
 import { PageHeader, PageShell } from '../../components/PageShell';
-import { readArtifact, type PlatformArtifact } from '../../lib/artifacts';
+import {
+  readArtifact,
+  readMerchantArtifact,
+  type PlatformArtifact,
+} from '../../lib/artifacts';
+import { HOME_SAMPLE_MERCHANT_KEY } from '../../lib/merchant-periods';
 
 type CalEvent = {
   id: string;
@@ -45,6 +50,7 @@ function occasionBand(
 }
 
 export default function CalendarPage() {
+  const sample = readMerchantArtifact(HOME_SAMPLE_MERCHANT_KEY);
   const platform = readArtifact<PlatformArtifact>('platform.json');
   const events = readArtifact<CalEvent[]>('calendar-events.json');
   const spike = readArtifact<{ key: string; revenue_rial: number }[]>('spike-2026-06-23.json');
@@ -55,12 +61,66 @@ export default function CalendarPage() {
   const bahman = platform.jalali_months.find((m) => m.key === '1404-11');
   const farvardin = platform.jalali_months.find((m) => m.key === '1405-01');
   const inWindow = ordered.filter((e) => e.inDataWindow);
+  const nextOccasion = inWindow[0];
+  const peaks = sample.ops?.sales_peaks.top_days ?? [];
   const spikeMax = Math.max(1, ...spike.map((s) => s.revenue_rial));
 
   return (
     <PageShell width="wide">
-      <PageHeader kicker={copy.product.name} title={copy.nav.calendar} />
+      <PageHeader
+        kicker={`${copy.efficacy.sampleKicker} · ${sample.key}`}
+        title={copy.nav.calendar}
+        lede={copy.efficacy.calendarDiagnosis}
+      />
+
+      <section className="ops-block reveal">
+        <h2 className="ops-block-title">{copy.efficacy.calendarNext}</h2>
+        {nextOccasion ? (
+          <p className="stat-value text-xl">
+            {nextOccasion.titleFa}
+            <span className="stat-hint mr-2 text-base font-normal">
+              · {formatJalali(nextOccasion.startIso)}
+            </span>
+          </p>
+        ) : (
+          <p className="ops-block-hint">{copy.outOfWindow}</p>
+        )}
+        <p className="ops-block-hint">
+          <span className="font-medium">{copy.efficacy.nextStep}: </span>
+          {copy.efficacy.calendarAction}
+        </p>
+        <ul className="mt-3 space-y-2 text-sm leading-7 text-[color:var(--zp-ink)]">
+          <li>— {copy.efficacy.calendarChecklistSupport}</li>
+          <li>— {copy.efficacy.calendarChecklistStock}</li>
+          <li>— {copy.efficacy.calendarChecklistMsg}</li>
+        </ul>
+        {peaks.length > 0 ? (
+          <ol className="ops-peak-list mt-4">
+            {peaks.map((d, i) => (
+              <li key={d.day} className="ops-peak-row">
+                <span className="ops-peak-rank">{String(i + 1).padStart(2, '0')}</span>
+                <div>
+                  <p className="ops-peak-day">{d.day}</p>
+                  <p className="ops-peak-meta">{formatBillionsRial(d.revenue_rial)}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        ) : null}
+        <div className="ops-footer-links">
+          <a className="ops-ladder-link" href="/api/download/export?merchant=M31&kind=peak_days">
+            {copy.ops.downloadPeaks}
+          </a>
+          {' · '}
+          <Link className="ops-ladder-link" href="/growth">
+            {copy.nav.growth}
+          </Link>
+        </div>
+      </section>
+
       <p className="text-sm text-[color:var(--zp-muted)]">
+        {copy.efficacy.platformSection}
+        {' · '}
         {copy.insufficient.low_coverage_period} ({String(platform.low_coverage_days)})
       </p>
       <p className="leading-7">{copy.nowruzNote}</p>

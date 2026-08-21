@@ -83,7 +83,30 @@ export default async function MerchantPage({ params }: { params: Promise<{ key: 
         </article>
       </section>
       <ActionBrief merchantKey={m.key} actions={actions} />
+      {m.key === 'M31' ? (
+        <section className="ops-block">
+          <h2 className="ops-block-title">{copy.efficacy.downloadsTitle}</h2>
+          <div className="ops-footer-links">
+            <a className="ops-ladder-link" href="/api/download/export?merchant=M31&kind=gold">
+              {copy.ops.downloadGold}
+            </a>
+            {' · '}
+            <a className="ops-ladder-link" href="/api/download/export?merchant=M31&kind=inbank">
+              {copy.ops.downloadInbank}
+            </a>
+            {' · '}
+            <a className="ops-ladder-link" href="/api/download/export?merchant=M31&kind=peak_days">
+              {copy.ops.downloadPeaks}
+            </a>
+            {' · '}
+            <Link className="ops-ladder-link" href="/customers">
+              {copy.efficacy.goCustomers}
+            </Link>
+          </div>
+        </section>
+      ) : null}
       <article className="chart-card">
+
         <h2 className="chart-title">{copy.dash.funnel}</h2>
         <FunnelStack
           drops

@@ -1,4 +1,5 @@
 import { copy, count, formatCount } from '@zarinpulse/contracts';
+import Link from 'next/link';
 import { PageHeader, PageShell } from '../../components/PageShell';
 
 const ids = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'h7', 'h8', 'h9', 'h10', 'h11', 'h12', 'h13'] as const;
@@ -34,6 +35,18 @@ export default function MethodologyPage() {
   return (
     <PageShell width="wide">
       <PageHeader kicker={copy.product.name} title={copy.nav.methodology} lede={copy.feeDisclaimer} />
+      <section className="ops-block reveal">
+        <p className="ops-block-hint">{copy.efficacy.methodologyBridge}</p>
+        <div className="ops-footer-links">
+          <Link className="ops-ladder-link" href="/">
+            {copy.efficacy.goHome}
+          </Link>
+          {' · '}
+          <Link className="ops-ladder-link" href="/customers">
+            {copy.efficacy.goCustomers}
+          </Link>
+        </div>
+      </section>
       <section className="chart-card space-y-4">
         <div className="verdict-bar" role="img" aria-label={copy.nav.methodology}>
           <span className="verdict-bar-seg verdict-ok" style={{ flexGrow: verdicts.confirmed }} />
