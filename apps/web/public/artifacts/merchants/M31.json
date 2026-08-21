@@ -1246,5 +1246,88 @@
         "aov": 1909917.7609762568
       }
     ]
+  },
+  "ops": {
+    "customer_tiers": {
+      "gold": {
+        "customers": 1767,
+        "revenue_rial": 11451210000,
+        "share_of_revenue": 0.100028240797
+      },
+      "silver": {
+        "customers": 8860,
+        "revenue_rial": 22599960000,
+        "share_of_revenue": 0.197414442742
+      },
+      "bronze": {
+        "customers": 34628,
+        "revenue_rial": 80428600001,
+        "share_of_revenue": 0.702557316461
+      },
+      "at_risk": {
+        "customers": 4293,
+        "revenue_rial": 11293840000,
+        "share_of_revenue": 0.098653587441
+      }
+    },
+    "amount_bands": [
+      {
+        "id": "lt_0_5m",
+        "sessions": 21,
+        "verified": 1,
+        "success_rate": 0.047619047619,
+        "revenue_rial": 30001
+      },
+      {
+        "id": "0_5_2m",
+        "sessions": 97387,
+        "verified": 43617,
+        "success_rate": 0.447872919383,
+        "revenue_rial": 36030230000
+      },
+      {
+        "id": "2_5m",
+        "sessions": 158481,
+        "verified": 13668,
+        "success_rate": 0.086243776857,
+        "revenue_rial": 54984840000
+      },
+      {
+        "id": "5_10m",
+        "sessions": 56772,
+        "verified": 3964,
+        "success_rate": 0.069823152258,
+        "revenue_rial": 23402150000
+      },
+      {
+        "id": "10m_plus",
+        "sessions": 153,
+        "verified": 5,
+        "success_rate": 0.032679738562,
+        "revenue_rial": 62520000
+      }
+    ],
+    "sales_peaks": {
+      "top_days": [
+        {
+          "day": "2026-01-29",
+          "orders": 664,
+          "revenue_rial": 1105940000,
+          "sessions": 3067
+        },
+        {
+          "day": "2026-01-04",
+          "orders": 631,
+          "revenue_rial": 1060970000,
+          "sessions": 3062
+        },
+        {
+          "day": "2026-04-04",
+          "orders": 582,
+          "revenue_rial": 983480000,
+          "sessions": 2453
+        }
+      ]
+    }
   }
 }

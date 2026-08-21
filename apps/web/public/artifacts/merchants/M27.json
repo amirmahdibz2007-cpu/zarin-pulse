@@ -595,5 +595,88 @@
         "aov": 6935672.13570634
       }
     ]
+  },
+  "ops": {
+    "customer_tiers": {
+      "gold": {
+        "customers": 3,
+        "revenue_rial": 24081115000,
+        "share_of_revenue": 0.110302075823
+      },
+      "silver": {
+        "customers": 1326,
+        "revenue_rial": 190258452000,
+        "share_of_revenue": 0.871467213974
+      },
+      "bronze": {
+        "customers": 510,
+        "revenue_rial": 3980123000,
+        "share_of_revenue": 0.018230710203
+      },
+      "at_risk": {
+        "customers": 483,
+        "revenue_rial": 66274782000,
+        "share_of_revenue": 0.303567589346
+      }
+    },
+    "amount_bands": [
+      {
+        "id": "lt_0_5m",
+        "sessions": 4155,
+        "verified": 2998,
+        "success_rate": 0.721540312876,
+        "revenue_rial": 944300000
+      },
+      {
+        "id": "0_5_2m",
+        "sessions": 13359,
+        "verified": 10593,
+        "success_rate": 0.792948573995,
+        "revenue_rial": 12897385000
+      },
+      {
+        "id": "2_5m",
+        "sessions": 7023,
+        "verified": 5628,
+        "success_rate": 0.801366937206,
+        "revenue_rial": 17701530000
+      },
+      {
+        "id": "5_10m",
+        "sessions": 4404,
+        "verified": 3571,
+        "success_rate": 0.810853769301,
+        "revenue_rial": 24961275000
+      },
+      {
+        "id": "10m_plus",
+        "sessions": 4906,
+        "verified": 3727,
+        "success_rate": 0.759682022014,
+        "revenue_rial": 161815200000
+      }
+    ],
+    "sales_peaks": {
+      "top_days": [
+        {
+          "day": "2026-06-10",
+          "orders": 443,
+          "revenue_rial": 7371555000,
+          "sessions": 612
+        },
+        {
+          "day": "2026-06-23",
+          "orders": 579,
+          "revenue_rial": 7163909000,
+          "sessions": 834
+        },
+        {
+          "day": "2026-06-09",
+          "orders": 529,
+          "revenue_rial": 6338640000,
+          "sessions": 613
+        }
+      ]
+    }
   }
 }

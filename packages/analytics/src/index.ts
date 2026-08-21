@@ -8,3 +8,6 @@ export * from './fee-drag';
 export * from './impact-ledger';
 export * from './cohort';
 export * from './psp-simulator';
+export * from './customer-tiers';
+export * from './amount-bands';
+export * from './scale-recoverable';

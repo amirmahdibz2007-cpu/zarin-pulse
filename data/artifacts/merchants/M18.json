@@ -1240,5 +1240,88 @@
         "aov": 9963252.019119829
       }
     ]
+  },
+  "ops": {
+    "customer_tiers": {
+      "gold": {
+        "customers": 216,
+        "revenue_rial": 96876360000,
+        "share_of_revenue": 0.100014659027
+      },
+      "silver": {
+        "customers": 16011,
+        "revenue_rial": 412406590000,
+        "share_of_revenue": 0.425766456122
+      },
+      "bronze": {
+        "customers": 45949,
+        "revenue_rial": 459338659500,
+        "share_of_revenue": 0.474218884851
+      },
+      "at_risk": {
+        "customers": 8933,
+        "revenue_rial": 249404930000,
+        "share_of_revenue": 0.257484375275
+      }
+    },
+    "amount_bands": [
+      {
+        "id": "lt_0_5m",
+        "sessions": 11,
+        "verified": 1,
+        "success_rate": 0.090909090909,
+        "revenue_rial": 149500
+      },
+      {
+        "id": "0_5_2m",
+        "sessions": 412,
+        "verified": 187,
+        "success_rate": 0.453883495146,
+        "revenue_rial": 344190000
+      },
+      {
+        "id": "2_5m",
+        "sessions": 35082,
+        "verified": 19983,
+        "success_rate": 0.56960834616,
+        "revenue_rial": 77840480000
+      },
+      {
+        "id": "5_10m",
+        "sessions": 69122,
+        "verified": 42328,
+        "success_rate": 0.61236654032,
+        "revenue_rial": 312392190000
+      },
+      {
+        "id": "10m_plus",
+        "sessions": 57123,
+        "verified": 35219,
+        "success_rate": 0.616546749996,
+        "revenue_rial": 578044600000
+      }
+    ],
+    "sales_peaks": {
+      "top_days": [
+        {
+          "day": "2026-02-22",
+          "orders": 1411,
+          "revenue_rial": 11983990000,
+          "sessions": 2207
+        },
+        {
+          "day": "2026-02-11",
+          "orders": 1307,
+          "revenue_rial": 11025170000,
+          "sessions": 2042
+        },
+        {
+          "day": "2026-06-03",
+          "orders": 882,
+          "revenue_rial": 10876890000,
+          "sessions": 1692
+        }
+      ]
+    }
   }
 }

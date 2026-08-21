@@ -23,6 +23,7 @@ import {
 import { ActionBrief } from './ActionBrief';
 import { AreaLine, Columns, FunnelStack, MiniRing, Sparkline } from './Charts';
 import { LiquidCylinders } from './Infographic';
+import { OpsSuite } from './OpsSuite';
 import { StatusPill } from './StatusPill';
 
 const TERMINAL_SPLIT = ['Verified', 'InBank', 'NoAttempt', 'Failed', 'Paid'] as const;
@@ -292,6 +293,8 @@ export function HomeMerchantDash(props: { merchant: MerchantArtifact }) {
           <ActionBrief merchantKey={m.key} actions={actions} />
         </article>
       </section>
+
+      <OpsSuite merchant={m} />
     </>
   );
 }

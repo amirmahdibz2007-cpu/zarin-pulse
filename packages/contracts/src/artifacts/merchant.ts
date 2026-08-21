@@ -66,6 +66,43 @@ const seriesSchema = z.object({
   weekdays: z.array(weekdaySchema),
 });
 
+const tierBucketSchema = z.object({
+  customers: finiteNumber,
+  revenue_rial: finiteNumber,
+  share_of_revenue: finiteNumber,
+});
+
+const amountBandSchema = z.object({
+  id: z.enum(['lt_0_5m', '0_5_2m', '2_5m', '5_10m', '10m_plus']),
+  sessions: finiteNumber,
+  verified: finiteNumber,
+  success_rate: finiteNumber,
+  revenue_rial: finiteNumber,
+});
+
+const opsSchema = z
+  .object({
+    customer_tiers: z.object({
+      gold: tierBucketSchema,
+      silver: tierBucketSchema,
+      bronze: tierBucketSchema,
+      at_risk: tierBucketSchema,
+    }),
+    amount_bands: z.array(amountBandSchema),
+    sales_peaks: z.object({
+      top_days: z.array(
+        z.object({
+          day: z.string().min(1),
+          orders: finiteNumber,
+          revenue_rial: finiteNumber,
+          sessions: finiteNumber,
+        }),
+      ),
+    }),
+  })
+  .nullable()
+  .optional();
+
 /**
  * Wire format for merchants/{key}.json — mirrors ETL output.
  * Note: `tier` / `recoverable_rial` live on merchants-index.json, not full merchant files.
@@ -106,6 +143,7 @@ export const merchantArtifactSchema = z
     business_model: z.string().nullable().optional(),
     case_family: z.string().nullable().optional(),
     series: seriesSchema.optional(),
+    ops: opsSchema,
   });
 
 /** Parsed merchant dossier — unknown ETL keys stripped at the boundary. */

@@ -814,5 +814,88 @@
         "aov": 644365.8127825729
       }
     ]
+  },
+  "ops": {
+    "customer_tiers": {
+      "gold": {
+        "customers": 2,
+        "revenue_rial": 5830607720,
+        "share_of_revenue": 0.12107450191
+      },
+      "silver": {
+        "customers": 9478,
+        "revenue_rial": 34057774050,
+        "share_of_revenue": 0.707220966886
+      },
+      "bronze": {
+        "customers": 9239,
+        "revenue_rial": 8268807630,
+        "share_of_revenue": 0.171704531203
+      },
+      "at_risk": {
+        "customers": 4067,
+        "revenue_rial": 16172672920,
+        "share_of_revenue": 0.335830913753
+      }
+    },
+    "amount_bands": [
+      {
+        "id": "lt_0_5m",
+        "sessions": 56104,
+        "verified": 44498,
+        "success_rate": 0.793134179381,
+        "revenue_rial": 7637676550
+      },
+      {
+        "id": "0_5_2m",
+        "sessions": 22745,
+        "verified": 16986,
+        "success_rate": 0.746801494834,
+        "revenue_rial": 14090099020
+      },
+      {
+        "id": "2_5m",
+        "sessions": 4787,
+        "verified": 3166,
+        "success_rate": 0.661374556089,
+        "revenue_rial": 8519880360
+      },
+      {
+        "id": "5_10m",
+        "sessions": 1293,
+        "verified": 674,
+        "success_rate": 0.521268368136,
+        "revenue_rial": 4197916000
+      },
+      {
+        "id": "10m_plus",
+        "sessions": 978,
+        "verified": 378,
+        "success_rate": 0.386503067485,
+        "revenue_rial": 13711617470
+      }
+    ],
+    "sales_peaks": {
+      "top_days": [
+        {
+          "day": "2026-06-17",
+          "orders": 1316,
+          "revenue_rial": 1219825900,
+          "sessions": 1714
+        },
+        {
+          "day": "2026-06-06",
+          "orders": 1333,
+          "revenue_rial": 1141591100,
+          "sessions": 1648
+        },
+        {
+          "day": "2026-06-30",
+          "orders": 1611,
+          "revenue_rial": 1120792800,
+          "sessions": 2099
+        }
+      ]
+    }
   }
 }

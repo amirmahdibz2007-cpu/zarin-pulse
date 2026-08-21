@@ -1,0 +1,4002 @@
+[
+  {
+    "payer_card_key": "CARD-387144",
+    "orders": 2,
+    "revenue_rial": 15840000,
+    "last_order_day": "2026-06-18",
+    "first_order_day": "2026-05-27",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-285769",
+    "orders": 1,
+    "revenue_rial": 15000000,
+    "last_order_day": "2026-06-27",
+    "first_order_day": "2026-06-27",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-339673",
+    "orders": 3,
+    "revenue_rial": 14080000,
+    "last_order_day": "2026-06-27",
+    "first_order_day": "2026-06-21",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-384779",
+    "orders": 2,
+    "revenue_rial": 13940000,
+    "last_order_day": "2026-06-23",
+    "first_order_day": "2026-06-23",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-100327",
+    "orders": 1,
+    "revenue_rial": 11880000,
+    "last_order_day": "2026-05-14",
+    "first_order_day": "2026-05-14",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-162139",
+    "orders": 1,
+    "revenue_rial": 11880000,
+    "last_order_day": "2026-06-11",
+    "first_order_day": "2026-06-11",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-218995",
+    "orders": 1,
+    "revenue_rial": 11880000,
+    "last_order_day": "2026-05-27",
+    "first_order_day": "2026-05-27",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-8050",
+    "orders": 1,
+    "revenue_rial": 11880000,
+    "last_order_day": "2026-05-21",
+    "first_order_day": "2026-05-21",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-142308",
+    "orders": 2,
+    "revenue_rial": 11760000,
+    "last_order_day": "2026-05-05",
+    "first_order_day": "2026-04-30",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-18146",
+    "orders": 2,
+    "revenue_rial": 11760000,
+    "last_order_day": "2026-05-02",
+    "first_order_day": "2026-05-02",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-258083",
+    "orders": 2,
+    "revenue_rial": 11760000,
+    "last_order_day": "2026-05-18",
+    "first_order_day": "2026-05-18",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-385376",
+    "orders": 2,
+    "revenue_rial": 11760000,
+    "last_order_day": "2026-05-21",
+    "first_order_day": "2026-05-21",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-215090",
+    "orders": 2,
+    "revenue_rial": 11040000,
+    "last_order_day": "2026-05-24",
+    "first_order_day": "2026-04-28",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-97974",
+    "orders": 2,
+    "revenue_rial": 10680000,
+    "last_order_day": "2026-06-27",
+    "first_order_day": "2026-06-24",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-46700",
+    "orders": 3,
+    "revenue_rial": 10550000,
+    "last_order_day": "2026-06-03",
+    "first_order_day": "2026-01-29",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-115336",
+    "orders": 2,
+    "revenue_rial": 10080000,
+    "last_order_day": "2026-06-27",
+    "first_order_day": "2026-01-31",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-116524",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-16",
+    "first_order_day": "2026-06-16",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-122952",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-20",
+    "first_order_day": "2026-06-20",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-132128",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-11",
+    "first_order_day": "2026-06-11",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-135074",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-14",
+    "first_order_day": "2026-06-14",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-136190",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-16",
+    "first_order_day": "2026-06-16",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-138166",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-15",
+    "first_order_day": "2026-06-15",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-150053",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-13",
+    "first_order_day": "2026-06-13",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-159658",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-20",
+    "first_order_day": "2026-06-20",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-183265",
+    "orders": 2,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-04-27",
+    "first_order_day": "2026-03-24",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-18420",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-11",
+    "first_order_day": "2026-06-11",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-199981",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-17",
+    "first_order_day": "2026-06-17",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-210406",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-14",
+    "first_order_day": "2026-06-14",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-213088",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-15",
+    "first_order_day": "2026-06-15",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-216561",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-12",
+    "first_order_day": "2026-06-12",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-223681",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-13",
+    "first_order_day": "2026-06-13",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-225797",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-16",
+    "first_order_day": "2026-06-16",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-244891",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-11",
+    "first_order_day": "2026-06-11",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-251845",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-18",
+    "first_order_day": "2026-06-18",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-256943",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-15",
+    "first_order_day": "2026-06-15",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-262217",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-14",
+    "first_order_day": "2026-06-14",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-264061",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-20",
+    "first_order_day": "2026-06-20",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-266780",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-13",
+    "first_order_day": "2026-06-13",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-292178",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-14",
+    "first_order_day": "2026-06-14",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-296887",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-11",
+    "first_order_day": "2026-06-11",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-301738",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-14",
+    "first_order_day": "2026-06-14",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-306102",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-19",
+    "first_order_day": "2026-06-19",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-317450",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-16",
+    "first_order_day": "2026-06-16",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-318263",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-11",
+    "first_order_day": "2026-06-11",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-322104",
+    "orders": 2,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-21",
+    "first_order_day": "2026-05-24",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-327842",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-15",
+    "first_order_day": "2026-06-15",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-327950",
+    "orders": 2,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-05-05",
+    "first_order_day": "2026-04-01",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-333846",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-14",
+    "first_order_day": "2026-06-14",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-335401",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-12",
+    "first_order_day": "2026-06-12",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-337057",
+    "orders": 2,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-29",
+    "first_order_day": "2026-05-18",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-340110",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-17",
+    "first_order_day": "2026-06-17",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-34625",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-12",
+    "first_order_day": "2026-06-12",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-348140",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-12",
+    "first_order_day": "2026-06-12",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-349058",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-20",
+    "first_order_day": "2026-06-20",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-349397",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-18",
+    "first_order_day": "2026-06-18",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-360441",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-15",
+    "first_order_day": "2026-06-15",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-36826",
+    "orders": 2,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-26",
+    "first_order_day": "2026-06-24",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-37808",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-16",
+    "first_order_day": "2026-06-16",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-383940",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-17",
+    "first_order_day": "2026-06-17",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-384144",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-19",
+    "first_order_day": "2026-06-19",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-384877",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-15",
+    "first_order_day": "2026-06-15",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-39553",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-14",
+    "first_order_day": "2026-06-14",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-396765",
+    "orders": 2,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-04-02",
+    "first_order_day": "2026-03-23",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-42818",
+    "orders": 2,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-05-05",
+    "first_order_day": "2026-04-14",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-48085",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-18",
+    "first_order_day": "2026-06-18",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-50513",
+    "orders": 2,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-05-06",
+    "first_order_day": "2026-03-29",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-57175",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-14",
+    "first_order_day": "2026-06-14",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-57342",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-14",
+    "first_order_day": "2026-06-14",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-87555",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-18",
+    "first_order_day": "2026-06-18",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-96930",
+    "orders": 1,
+    "revenue_rial": 9960000,
+    "last_order_day": "2026-06-30",
+    "first_order_day": "2026-06-30",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-15408",
+    "orders": 2,
+    "revenue_rial": 9840000,
+    "last_order_day": "2026-02-21",
+    "first_order_day": "2026-02-14",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-277024",
+    "orders": 2,
+    "revenue_rial": 9840000,
+    "last_order_day": "2026-02-20",
+    "first_order_day": "2026-02-19",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-34490",
+    "orders": 2,
+    "revenue_rial": 9840000,
+    "last_order_day": "2026-02-15",
+    "first_order_day": "2026-01-08",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-38789",
+    "orders": 2,
+    "revenue_rial": 9840000,
+    "last_order_day": "2026-02-22",
+    "first_order_day": "2026-02-22",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-393155",
+    "orders": 2,
+    "revenue_rial": 9840000,
+    "last_order_day": "2026-03-08",
+    "first_order_day": "2026-03-07",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-96845",
+    "orders": 2,
+    "revenue_rial": 9840000,
+    "last_order_day": "2026-01-05",
+    "first_order_day": "2026-01-05",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-23194",
+    "orders": 5,
+    "revenue_rial": 9580000,
+    "last_order_day": "2026-05-20",
+    "first_order_day": "2026-01-19",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-47526",
+    "orders": 5,
+    "revenue_rial": 9580000,
+    "last_order_day": "2026-06-06",
+    "first_order_day": "2026-01-25",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-279799",
+    "orders": 2,
+    "revenue_rial": 9360000,
+    "last_order_day": "2026-06-05",
+    "first_order_day": "2026-03-02",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-43339",
+    "orders": 2,
+    "revenue_rial": 9360000,
+    "last_order_day": "2026-03-17",
+    "first_order_day": "2026-01-03",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-307777",
+    "orders": 6,
+    "revenue_rial": 9340000,
+    "last_order_day": "2026-06-05",
+    "first_order_day": "2026-01-18",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-324274",
+    "orders": 3,
+    "revenue_rial": 9250000,
+    "last_order_day": "2026-06-29",
+    "first_order_day": "2026-04-05",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-223847",
+    "orders": 5,
+    "revenue_rial": 9210000,
+    "last_order_day": "2026-05-25",
+    "first_order_day": "2026-01-25",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-255669",
+    "orders": 5,
+    "revenue_rial": 9210000,
+    "last_order_day": "2026-06-08",
+    "first_order_day": "2026-01-12",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-264274",
+    "orders": 5,
+    "revenue_rial": 9210000,
+    "last_order_day": "2026-06-04",
+    "first_order_day": "2026-01-24",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-339294",
+    "orders": 5,
+    "revenue_rial": 9210000,
+    "last_order_day": "2026-06-19",
+    "first_order_day": "2026-01-09",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-97895",
+    "orders": 5,
+    "revenue_rial": 9210000,
+    "last_order_day": "2026-06-02",
+    "first_order_day": "2026-01-07",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-326518",
+    "orders": 5,
+    "revenue_rial": 9180000,
+    "last_order_day": "2026-06-10",
+    "first_order_day": "2026-01-07",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-147544",
+    "orders": 5,
+    "revenue_rial": 9010000,
+    "last_order_day": "2026-05-18",
+    "first_order_day": "2026-01-09",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-171877",
+    "orders": 5,
+    "revenue_rial": 9010000,
+    "last_order_day": "2026-05-16",
+    "first_order_day": "2026-01-05",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-205164",
+    "orders": 5,
+    "revenue_rial": 9010000,
+    "last_order_day": "2026-05-25",
+    "first_order_day": "2026-01-12",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-305205",
+    "orders": 5,
+    "revenue_rial": 9010000,
+    "last_order_day": "2026-05-14",
+    "first_order_day": "2026-01-13",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-117062",
+    "orders": 2,
+    "revenue_rial": 9000000,
+    "last_order_day": "2026-04-23",
+    "first_order_day": "2026-02-25",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-118158",
+    "orders": 2,
+    "revenue_rial": 9000000,
+    "last_order_day": "2026-03-24",
+    "first_order_day": "2026-03-19",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-329336",
+    "orders": 2,
+    "revenue_rial": 9000000,
+    "last_order_day": "2026-04-16",
+    "first_order_day": "2026-01-07",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-49846",
+    "orders": 2,
+    "revenue_rial": 8960000,
+    "last_order_day": "2026-06-20",
+    "first_order_day": "2026-06-19",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-389145",
+    "orders": 5,
+    "revenue_rial": 8910000,
+    "last_order_day": "2026-06-05",
+    "first_order_day": "2026-01-31",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-226952",
+    "orders": 5,
+    "revenue_rial": 8880000,
+    "last_order_day": "2026-05-26",
+    "first_order_day": "2026-01-25",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-256591",
+    "orders": 2,
+    "revenue_rial": 8880000,
+    "last_order_day": "2026-06-27",
+    "first_order_day": "2026-06-27",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-284856",
+    "orders": 5,
+    "revenue_rial": 8880000,
+    "last_order_day": "2026-06-02",
+    "first_order_day": "2026-01-22",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-60378",
+    "orders": 3,
+    "revenue_rial": 8780000,
+    "last_order_day": "2026-06-27",
+    "first_order_day": "2026-04-30",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-122225",
+    "orders": 5,
+    "revenue_rial": 8710000,
+    "last_order_day": "2026-05-24",
+    "first_order_day": "2026-01-03",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-67665",
+    "orders": 5,
+    "revenue_rial": 8710000,
+    "last_order_day": "2026-05-19",
+    "first_order_day": "2026-01-02",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-75651",
+    "orders": 5,
+    "revenue_rial": 8710000,
+    "last_order_day": "2026-05-12",
+    "first_order_day": "2026-01-04",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-97965",
+    "orders": 5,
+    "revenue_rial": 8710000,
+    "last_order_day": "2026-05-08",
+    "first_order_day": "2026-01-01",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-350624",
+    "orders": 6,
+    "revenue_rial": 8700000,
+    "last_order_day": "2026-06-22",
+    "first_order_day": "2026-01-05",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-223238",
+    "orders": 4,
+    "revenue_rial": 8620000,
+    "last_order_day": "2026-05-29",
+    "first_order_day": "2026-02-24",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-23651",
+    "orders": 4,
+    "revenue_rial": 8620000,
+    "last_order_day": "2026-05-29",
+    "first_order_day": "2026-02-27",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-239642",
+    "orders": 4,
+    "revenue_rial": 8620000,
+    "last_order_day": "2026-06-07",
+    "first_order_day": "2026-03-07",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-298795",
+    "orders": 4,
+    "revenue_rial": 8620000,
+    "last_order_day": "2026-06-16",
+    "first_order_day": "2026-01-10",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-381967",
+    "orders": 4,
+    "revenue_rial": 8620000,
+    "last_order_day": "2026-05-26",
+    "first_order_day": "2026-02-14",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-93364",
+    "orders": 4,
+    "revenue_rial": 8620000,
+    "last_order_day": "2026-06-15",
+    "first_order_day": "2026-02-26",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-134066",
+    "orders": 4,
+    "revenue_rial": 8550000,
+    "last_order_day": "2026-05-28",
+    "first_order_day": "2026-01-05",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-21571",
+    "orders": 2,
+    "revenue_rial": 8520000,
+    "last_order_day": "2026-02-22",
+    "first_order_day": "2026-02-22",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-12747",
+    "orders": 3,
+    "revenue_rial": 8450000,
+    "last_order_day": "2026-05-01",
+    "first_order_day": "2026-03-02",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-157438",
+    "orders": 4,
+    "revenue_rial": 8450000,
+    "last_order_day": "2026-04-28",
+    "first_order_day": "2026-01-22",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-240828",
+    "orders": 4,
+    "revenue_rial": 8450000,
+    "last_order_day": "2026-04-25",
+    "first_order_day": "2026-01-21",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-260583",
+    "orders": 2,
+    "revenue_rial": 8400000,
+    "last_order_day": "2026-03-06",
+    "first_order_day": "2026-03-04",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-288936",
+    "orders": 2,
+    "revenue_rial": 8400000,
+    "last_order_day": "2026-03-19",
+    "first_order_day": "2026-02-09",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-64687",
+    "orders": 2,
+    "revenue_rial": 8400000,
+    "last_order_day": "2026-02-24",
+    "first_order_day": "2026-01-29",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-215311",
+    "orders": 2,
+    "revenue_rial": 8340000,
+    "last_order_day": "2026-06-21",
+    "first_order_day": "2026-02-10",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-126097",
+    "orders": 4,
+    "revenue_rial": 8320000,
+    "last_order_day": "2026-04-06",
+    "first_order_day": "2026-01-22",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-167556",
+    "orders": 4,
+    "revenue_rial": 8320000,
+    "last_order_day": "2026-06-15",
+    "first_order_day": "2026-02-09",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-293721",
+    "orders": 4,
+    "revenue_rial": 8290000,
+    "last_order_day": "2026-06-08",
+    "first_order_day": "2026-02-27",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-107597",
+    "orders": 2,
+    "revenue_rial": 8160000,
+    "last_order_day": "2026-04-04",
+    "first_order_day": "2026-04-02",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-122185",
+    "orders": 1,
+    "revenue_rial": 8160000,
+    "last_order_day": "2026-06-13",
+    "first_order_day": "2026-06-13",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-135253",
+    "orders": 1,
+    "revenue_rial": 8160000,
+    "last_order_day": "2026-06-20",
+    "first_order_day": "2026-06-20",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-135902",
+    "orders": 2,
+    "revenue_rial": 8160000,
+    "last_order_day": "2026-06-28",
+    "first_order_day": "2026-06-28",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-159872",
+    "orders": 2,
+    "revenue_rial": 8160000,
+    "last_order_day": "2026-06-22",
+    "first_order_day": "2026-04-20",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-16464",
+    "orders": 2,
+    "revenue_rial": 8160000,
+    "last_order_day": "2026-06-26",
+    "first_order_day": "2026-06-26",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-202019",
+    "orders": 1,
+    "revenue_rial": 8160000,
+    "last_order_day": "2026-06-17",
+    "first_order_day": "2026-06-17",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-22393",
+    "orders": 1,
+    "revenue_rial": 8160000,
+    "last_order_day": "2026-06-18",
+    "first_order_day": "2026-06-18",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-247324",
+    "orders": 1,
+    "revenue_rial": 8160000,
+    "last_order_day": "2026-06-11",
+    "first_order_day": "2026-06-11",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-280994",
+    "orders": 2,
+    "revenue_rial": 8160000,
+    "last_order_day": "2026-06-24",
+    "first_order_day": "2026-06-23",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-283217",
+    "orders": 1,
+    "revenue_rial": 8160000,
+    "last_order_day": "2026-06-14",
+    "first_order_day": "2026-06-14",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-319834",
+    "orders": 1,
+    "revenue_rial": 8160000,
+    "last_order_day": "2026-06-19",
+    "first_order_day": "2026-06-19",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-322775",
+    "orders": 1,
+    "revenue_rial": 8160000,
+    "last_order_day": "2026-06-12",
+    "first_order_day": "2026-06-12",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-339620",
+    "orders": 2,
+    "revenue_rial": 8160000,
+    "last_order_day": "2026-06-21",
+    "first_order_day": "2026-06-21",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-361931",
+    "orders": 1,
+    "revenue_rial": 8160000,
+    "last_order_day": "2026-06-19",
+    "first_order_day": "2026-06-19",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-368424",
+    "orders": 1,
+    "revenue_rial": 8160000,
+    "last_order_day": "2026-06-17",
+    "first_order_day": "2026-06-17",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-380517",
+    "orders": 1,
+    "revenue_rial": 8160000,
+    "last_order_day": "2026-06-18",
+    "first_order_day": "2026-06-18",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-61044",
+    "orders": 1,
+    "revenue_rial": 8160000,
+    "last_order_day": "2026-06-18",
+    "first_order_day": "2026-06-18",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-96637",
+    "orders": 1,
+    "revenue_rial": 8160000,
+    "last_order_day": "2026-06-15",
+    "first_order_day": "2026-06-15",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-15681",
+    "orders": 4,
+    "revenue_rial": 8120000,
+    "last_order_day": "2026-04-25",
+    "first_order_day": "2026-01-29",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-161262",
+    "orders": 4,
+    "revenue_rial": 8120000,
+    "last_order_day": "2026-05-20",
+    "first_order_day": "2026-01-20",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-167536",
+    "orders": 4,
+    "revenue_rial": 8120000,
+    "last_order_day": "2026-05-10",
+    "first_order_day": "2026-01-20",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-177564",
+    "orders": 4,
+    "revenue_rial": 8120000,
+    "last_order_day": "2026-05-03",
+    "first_order_day": "2026-01-20",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-209424",
+    "orders": 4,
+    "revenue_rial": 8120000,
+    "last_order_day": "2026-06-14",
+    "first_order_day": "2026-01-13",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-214521",
+    "orders": 4,
+    "revenue_rial": 8120000,
+    "last_order_day": "2026-05-25",
+    "first_order_day": "2026-01-01",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-218158",
+    "orders": 4,
+    "revenue_rial": 8120000,
+    "last_order_day": "2026-05-16",
+    "first_order_day": "2026-02-09",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-300119",
+    "orders": 4,
+    "revenue_rial": 8120000,
+    "last_order_day": "2026-05-23",
+    "first_order_day": "2026-01-31",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-326909",
+    "orders": 4,
+    "revenue_rial": 8120000,
+    "last_order_day": "2026-06-06",
+    "first_order_day": "2026-02-02",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-328016",
+    "orders": 4,
+    "revenue_rial": 8120000,
+    "last_order_day": "2026-05-06",
+    "first_order_day": "2026-01-13",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-341011",
+    "orders": 4,
+    "revenue_rial": 8120000,
+    "last_order_day": "2026-06-06",
+    "first_order_day": "2026-01-07",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-376299",
+    "orders": 4,
+    "revenue_rial": 8120000,
+    "last_order_day": "2026-05-13",
+    "first_order_day": "2026-01-22",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-395101",
+    "orders": 4,
+    "revenue_rial": 8120000,
+    "last_order_day": "2026-05-05",
+    "first_order_day": "2026-01-20",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-45772",
+    "orders": 4,
+    "revenue_rial": 8120000,
+    "last_order_day": "2026-04-29",
+    "first_order_day": "2026-01-21",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-200560",
+    "orders": 3,
+    "revenue_rial": 8060000,
+    "last_order_day": "2026-03-15",
+    "first_order_day": "2026-01-05",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-227099",
+    "orders": 3,
+    "revenue_rial": 8060000,
+    "last_order_day": "2026-06-26",
+    "first_order_day": "2026-04-25",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-291848",
+    "orders": 2,
+    "revenue_rial": 8060000,
+    "last_order_day": "2026-06-23",
+    "first_order_day": "2026-06-16",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-347692",
+    "orders": 3,
+    "revenue_rial": 8060000,
+    "last_order_day": "2026-06-25",
+    "first_order_day": "2026-05-21",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-260764",
+    "orders": 6,
+    "revenue_rial": 8000000,
+    "last_order_day": "2026-06-30",
+    "first_order_day": "2026-01-03",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-29613",
+    "orders": 6,
+    "revenue_rial": 8000000,
+    "last_order_day": "2026-06-25",
+    "first_order_day": "2026-01-02",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-73772",
+    "orders": 4,
+    "revenue_rial": 7950000,
+    "last_order_day": "2026-05-09",
+    "first_order_day": "2026-01-04",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-162897",
+    "orders": 5,
+    "revenue_rial": 7910000,
+    "last_order_day": "2026-06-27",
+    "first_order_day": "2026-02-21",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-267244",
+    "orders": 5,
+    "revenue_rial": 7910000,
+    "last_order_day": "2026-06-22",
+    "first_order_day": "2026-01-08",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-22517",
+    "orders": 3,
+    "revenue_rial": 7860000,
+    "last_order_day": "2026-05-31",
+    "first_order_day": "2026-03-19",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-333683",
+    "orders": 3,
+    "revenue_rial": 7860000,
+    "last_order_day": "2026-05-14",
+    "first_order_day": "2026-02-16",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-339535",
+    "orders": 3,
+    "revenue_rial": 7860000,
+    "last_order_day": "2026-06-13",
+    "first_order_day": "2026-02-14",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-163209",
+    "orders": 4,
+    "revenue_rial": 7820000,
+    "last_order_day": "2026-06-17",
+    "first_order_day": "2026-02-01",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-167359",
+    "orders": 4,
+    "revenue_rial": 7820000,
+    "last_order_day": "2026-05-06",
+    "first_order_day": "2026-01-12",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-191542",
+    "orders": 4,
+    "revenue_rial": 7820000,
+    "last_order_day": "2026-05-13",
+    "first_order_day": "2026-01-11",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-205079",
+    "orders": 4,
+    "revenue_rial": 7820000,
+    "last_order_day": "2026-05-14",
+    "first_order_day": "2026-01-30",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-237636",
+    "orders": 4,
+    "revenue_rial": 7820000,
+    "last_order_day": "2026-05-19",
+    "first_order_day": "2026-01-17",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-262736",
+    "orders": 4,
+    "revenue_rial": 7820000,
+    "last_order_day": "2026-05-20",
+    "first_order_day": "2026-01-20",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-295348",
+    "orders": 4,
+    "revenue_rial": 7820000,
+    "last_order_day": "2026-05-24",
+    "first_order_day": "2026-01-29",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-46968",
+    "orders": 4,
+    "revenue_rial": 7820000,
+    "last_order_day": "2026-05-04",
+    "first_order_day": "2026-01-30",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-93349",
+    "orders": 4,
+    "revenue_rial": 7820000,
+    "last_order_day": "2026-05-03",
+    "first_order_day": "2026-01-26",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-195135",
+    "orders": 5,
+    "revenue_rial": 7740000,
+    "last_order_day": "2026-06-06",
+    "first_order_day": "2026-01-15",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-273622",
+    "orders": 3,
+    "revenue_rial": 7730000,
+    "last_order_day": "2026-06-13",
+    "first_order_day": "2026-04-13",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-365729",
+    "orders": 3,
+    "revenue_rial": 7730000,
+    "last_order_day": "2026-06-15",
+    "first_order_day": "2026-04-07",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-58522",
+    "orders": 3,
+    "revenue_rial": 7730000,
+    "last_order_day": "2026-06-15",
+    "first_order_day": "2026-04-15",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-329248",
+    "orders": 5,
+    "revenue_rial": 7710000,
+    "last_order_day": "2026-06-22",
+    "first_order_day": "2026-01-06",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-293643",
+    "orders": 5,
+    "revenue_rial": 7690000,
+    "last_order_day": "2026-05-05",
+    "first_order_day": "2026-01-01",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-209949",
+    "orders": 4,
+    "revenue_rial": 7600000,
+    "last_order_day": "2026-05-26",
+    "first_order_day": "2026-01-28",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-208436",
+    "orders": 6,
+    "revenue_rial": 7570000,
+    "last_order_day": "2026-06-11",
+    "first_order_day": "2026-01-04",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-153707",
+    "orders": 2,
+    "revenue_rial": 7560000,
+    "last_order_day": "2026-06-24",
+    "first_order_day": "2026-01-23",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-15393",
+    "orders": 3,
+    "revenue_rial": 7560000,
+    "last_order_day": "2026-06-26",
+    "first_order_day": "2026-01-24",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-207560",
+    "orders": 2,
+    "revenue_rial": 7560000,
+    "last_order_day": "2026-06-22",
+    "first_order_day": "2026-02-07",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-217384",
+    "orders": 2,
+    "revenue_rial": 7560000,
+    "last_order_day": "2026-04-08",
+    "first_order_day": "2026-01-26",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-280944",
+    "orders": 2,
+    "revenue_rial": 7560000,
+    "last_order_day": "2026-03-29",
+    "first_order_day": "2026-01-24",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-60019",
+    "orders": 2,
+    "revenue_rial": 7560000,
+    "last_order_day": "2026-04-06",
+    "first_order_day": "2026-01-12",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-65395",
+    "orders": 3,
+    "revenue_rial": 7560000,
+    "last_order_day": "2026-05-31",
+    "first_order_day": "2026-01-15",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-69262",
+    "orders": 2,
+    "revenue_rial": 7560000,
+    "last_order_day": "2026-06-20",
+    "first_order_day": "2026-01-28",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-103474",
+    "orders": 3,
+    "revenue_rial": 7530000,
+    "last_order_day": "2026-06-08",
+    "first_order_day": "2026-03-21",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-151987",
+    "orders": 3,
+    "revenue_rial": 7530000,
+    "last_order_day": "2026-04-26",
+    "first_order_day": "2026-02-22",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-168045",
+    "orders": 3,
+    "revenue_rial": 7530000,
+    "last_order_day": "2026-05-27",
+    "first_order_day": "2026-02-17",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-173496",
+    "orders": 3,
+    "revenue_rial": 7530000,
+    "last_order_day": "2026-05-19",
+    "first_order_day": "2026-03-15",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-242326",
+    "orders": 3,
+    "revenue_rial": 7530000,
+    "last_order_day": "2026-05-14",
+    "first_order_day": "2026-03-10",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-260177",
+    "orders": 3,
+    "revenue_rial": 7530000,
+    "last_order_day": "2026-05-23",
+    "first_order_day": "2026-02-27",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-317693",
+    "orders": 3,
+    "revenue_rial": 7530000,
+    "last_order_day": "2026-05-06",
+    "first_order_day": "2026-03-06",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-335532",
+    "orders": 3,
+    "revenue_rial": 7530000,
+    "last_order_day": "2026-06-13",
+    "first_order_day": "2026-03-14",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-353220",
+    "orders": 3,
+    "revenue_rial": 7530000,
+    "last_order_day": "2026-05-16",
+    "first_order_day": "2026-02-24",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-363771",
+    "orders": 3,
+    "revenue_rial": 7530000,
+    "last_order_day": "2026-05-25",
+    "first_order_day": "2026-03-13",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-395970",
+    "orders": 3,
+    "revenue_rial": 7530000,
+    "last_order_day": "2026-04-27",
+    "first_order_day": "2026-02-25",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-402016",
+    "orders": 3,
+    "revenue_rial": 7530000,
+    "last_order_day": "2026-05-08",
+    "first_order_day": "2026-03-08",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-57152",
+    "orders": 3,
+    "revenue_rial": 7530000,
+    "last_order_day": "2026-05-20",
+    "first_order_day": "2026-03-16",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-6650",
+    "orders": 3,
+    "revenue_rial": 7530000,
+    "last_order_day": "2026-05-03",
+    "first_order_day": "2026-02-24",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-90586",
+    "orders": 3,
+    "revenue_rial": 7530000,
+    "last_order_day": "2026-05-19",
+    "first_order_day": "2026-03-10",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-39543",
+    "orders": 4,
+    "revenue_rial": 7490000,
+    "last_order_day": "2026-05-29",
+    "first_order_day": "2026-01-15",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-111656",
+    "orders": 5,
+    "revenue_rial": 7410000,
+    "last_order_day": "2026-06-22",
+    "first_order_day": "2026-02-01",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-2663",
+    "orders": 5,
+    "revenue_rial": 7410000,
+    "last_order_day": "2026-06-27",
+    "first_order_day": "2026-02-04",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-52784",
+    "orders": 5,
+    "revenue_rial": 7410000,
+    "last_order_day": "2026-06-29",
+    "first_order_day": "2026-01-25",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-118133",
+    "orders": 3,
+    "revenue_rial": 7400000,
+    "last_order_day": "2026-06-18",
+    "first_order_day": "2026-01-23",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-121961",
+    "orders": 3,
+    "revenue_rial": 7400000,
+    "last_order_day": "2026-05-23",
+    "first_order_day": "2026-03-24",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-125811",
+    "orders": 3,
+    "revenue_rial": 7400000,
+    "last_order_day": "2026-06-04",
+    "first_order_day": "2026-04-01",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-210785",
+    "orders": 4,
+    "revenue_rial": 7400000,
+    "last_order_day": "2026-05-26",
+    "first_order_day": "2026-01-31",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-299677",
+    "orders": 4,
+    "revenue_rial": 7400000,
+    "last_order_day": "2026-05-22",
+    "first_order_day": "2026-01-20",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-323713",
+    "orders": 4,
+    "revenue_rial": 7400000,
+    "last_order_day": "2026-05-15",
+    "first_order_day": "2026-01-14",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-389126",
+    "orders": 4,
+    "revenue_rial": 7400000,
+    "last_order_day": "2026-05-19",
+    "first_order_day": "2026-01-20",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-73673",
+    "orders": 4,
+    "revenue_rial": 7400000,
+    "last_order_day": "2026-05-15",
+    "first_order_day": "2026-02-07",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-139858",
+    "orders": 3,
+    "revenue_rial": 7360000,
+    "last_order_day": "2026-03-23",
+    "first_order_day": "2026-01-19",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-167710",
+    "orders": 3,
+    "revenue_rial": 7360000,
+    "last_order_day": "2026-04-30",
+    "first_order_day": "2026-01-13",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-188779",
+    "orders": 3,
+    "revenue_rial": 7360000,
+    "last_order_day": "2026-05-23",
+    "first_order_day": "2026-02-02",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-190117",
+    "orders": 3,
+    "revenue_rial": 7360000,
+    "last_order_day": "2026-04-27",
+    "first_order_day": "2026-01-23",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-218374",
+    "orders": 3,
+    "revenue_rial": 7360000,
+    "last_order_day": "2026-05-30",
+    "first_order_day": "2026-01-14",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-228539",
+    "orders": 3,
+    "revenue_rial": 7360000,
+    "last_order_day": "2026-06-07",
+    "first_order_day": "2026-01-07",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-263611",
+    "orders": 3,
+    "revenue_rial": 7360000,
+    "last_order_day": "2026-05-23",
+    "first_order_day": "2026-01-26",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-72319",
+    "orders": 3,
+    "revenue_rial": 7360000,
+    "last_order_day": "2026-05-23",
+    "first_order_day": "2026-01-07",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-32221",
+    "orders": 4,
+    "revenue_rial": 7290000,
+    "last_order_day": "2026-03-21",
+    "first_order_day": "2026-01-17",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-106015",
+    "orders": 3,
+    "revenue_rial": 7230000,
+    "last_order_day": "2026-06-14",
+    "first_order_day": "2026-02-03",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-154211",
+    "orders": 3,
+    "revenue_rial": 7230000,
+    "last_order_day": "2026-05-18",
+    "first_order_day": "2026-02-03",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-157091",
+    "orders": 3,
+    "revenue_rial": 7230000,
+    "last_order_day": "2026-05-05",
+    "first_order_day": "2026-03-03",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-164083",
+    "orders": 3,
+    "revenue_rial": 7230000,
+    "last_order_day": "2026-05-03",
+    "first_order_day": "2026-02-28",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-16809",
+    "orders": 3,
+    "revenue_rial": 7230000,
+    "last_order_day": "2026-05-05",
+    "first_order_day": "2026-01-28",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-173894",
+    "orders": 3,
+    "revenue_rial": 7230000,
+    "last_order_day": "2026-05-09",
+    "first_order_day": "2026-02-28",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-179557",
+    "orders": 3,
+    "revenue_rial": 7230000,
+    "last_order_day": "2026-06-14",
+    "first_order_day": "2026-03-02",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-190711",
+    "orders": 3,
+    "revenue_rial": 7230000,
+    "last_order_day": "2026-05-04",
+    "first_order_day": "2026-02-02",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-244702",
+    "orders": 3,
+    "revenue_rial": 7230000,
+    "last_order_day": "2026-05-25",
+    "first_order_day": "2026-01-03",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-249615",
+    "orders": 3,
+    "revenue_rial": 7230000,
+    "last_order_day": "2026-05-23",
+    "first_order_day": "2026-03-03",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-293882",
+    "orders": 3,
+    "revenue_rial": 7230000,
+    "last_order_day": "2026-05-04",
+    "first_order_day": "2026-03-01",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-299841",
+    "orders": 3,
+    "revenue_rial": 7230000,
+    "last_order_day": "2026-05-11",
+    "first_order_day": "2026-03-01",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-304558",
+    "orders": 3,
+    "revenue_rial": 7230000,
+    "last_order_day": "2026-05-11",
+    "first_order_day": "2026-01-02",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-310473",
+    "orders": 3,
+    "revenue_rial": 7230000,
+    "last_order_day": "2026-05-18",
+    "first_order_day": "2026-03-06",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-357906",
+    "orders": 3,
+    "revenue_rial": 7230000,
+    "last_order_day": "2026-05-29",
+    "first_order_day": "2026-01-25",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-358332",
+    "orders": 3,
+    "revenue_rial": 7230000,
+    "last_order_day": "2026-05-24",
+    "first_order_day": "2026-01-22",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-383305",
+    "orders": 3,
+    "revenue_rial": 7230000,
+    "last_order_day": "2026-05-05",
+    "first_order_day": "2026-02-03",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-384375",
+    "orders": 3,
+    "revenue_rial": 7230000,
+    "last_order_day": "2026-05-04",
+    "first_order_day": "2026-01-31",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-46916",
+    "orders": 3,
+    "revenue_rial": 7230000,
+    "last_order_day": "2026-05-05",
+    "first_order_day": "2026-03-04",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-95611",
+    "orders": 3,
+    "revenue_rial": 7230000,
+    "last_order_day": "2026-05-06",
+    "first_order_day": "2026-02-08",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-153571",
+    "orders": 3,
+    "revenue_rial": 7100000,
+    "last_order_day": "2026-06-15",
+    "first_order_day": "2026-02-24",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-187490",
+    "orders": 4,
+    "revenue_rial": 7100000,
+    "last_order_day": "2026-05-13",
+    "first_order_day": "2026-02-02",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-116060",
+    "orders": 3,
+    "revenue_rial": 7060000,
+    "last_order_day": "2026-03-23",
+    "first_order_day": "2026-01-01",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-34309",
+    "orders": 3,
+    "revenue_rial": 7060000,
+    "last_order_day": "2026-04-26",
+    "first_order_day": "2026-01-15",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-90685",
+    "orders": 3,
+    "revenue_rial": 7060000,
+    "last_order_day": "2026-05-10",
+    "first_order_day": "2026-01-20",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-252386",
+    "orders": 4,
+    "revenue_rial": 7020000,
+    "last_order_day": "2026-06-29",
+    "first_order_day": "2026-04-22",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-327440",
+    "orders": 4,
+    "revenue_rial": 7020000,
+    "last_order_day": "2026-06-24",
+    "first_order_day": "2026-03-25",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-224339",
+    "orders": 3,
+    "revenue_rial": 7010000,
+    "last_order_day": "2026-06-16",
+    "first_order_day": "2026-04-19",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-344557",
+    "orders": 3,
+    "revenue_rial": 7010000,
+    "last_order_day": "2026-05-28",
+    "first_order_day": "2026-03-27",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-367063",
+    "orders": 3,
+    "revenue_rial": 7010000,
+    "last_order_day": "2026-06-14",
+    "first_order_day": "2026-04-02",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-102423",
+    "orders": 2,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-11",
+    "first_order_day": "2026-04-28",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-106793",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-30",
+    "first_order_day": "2026-06-30",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-109527",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-21",
+    "first_order_day": "2026-06-21",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-109750",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-28",
+    "first_order_day": "2026-06-28",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-114109",
+    "orders": 2,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-20",
+    "first_order_day": "2026-05-15",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-117353",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-30",
+    "first_order_day": "2026-06-30",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-123690",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-27",
+    "first_order_day": "2026-06-27",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-123768",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-23",
+    "first_order_day": "2026-06-23",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-129223",
+    "orders": 2,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-18",
+    "first_order_day": "2026-05-18",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-138254",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-27",
+    "first_order_day": "2026-06-27",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-138468",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-20",
+    "first_order_day": "2026-06-20",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-138653",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-30",
+    "first_order_day": "2026-06-30",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-139993",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-12",
+    "first_order_day": "2026-06-12",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-141904",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-23",
+    "first_order_day": "2026-06-23",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-142063",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-26",
+    "first_order_day": "2026-06-26",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-144753",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-25",
+    "first_order_day": "2026-06-25",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-14689",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-28",
+    "first_order_day": "2026-06-28",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-157461",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-27",
+    "first_order_day": "2026-06-27",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-170084",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-24",
+    "first_order_day": "2026-06-24",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-170337",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-26",
+    "first_order_day": "2026-06-26",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-175790",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-25",
+    "first_order_day": "2026-06-25",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-178696",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-27",
+    "first_order_day": "2026-06-27",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-186221",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-25",
+    "first_order_day": "2026-06-25",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-186704",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-28",
+    "first_order_day": "2026-06-28",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-190460",
+    "orders": 2,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-03",
+    "first_order_day": "2026-05-02",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-195103",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-25",
+    "first_order_day": "2026-06-25",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-195775",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-21",
+    "first_order_day": "2026-06-21",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-198063",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-22",
+    "first_order_day": "2026-06-22",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-200995",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-21",
+    "first_order_day": "2026-06-21",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-20597",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-25",
+    "first_order_day": "2026-06-25",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-20987",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-20",
+    "first_order_day": "2026-06-20",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-213506",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-26",
+    "first_order_day": "2026-06-26",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-218106",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-23",
+    "first_order_day": "2026-06-23",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-219612",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-28",
+    "first_order_day": "2026-06-28",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-220060",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-29",
+    "first_order_day": "2026-06-29",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-223324",
+    "orders": 2,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-08",
+    "first_order_day": "2026-04-24",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-226251",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-20",
+    "first_order_day": "2026-06-20",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-227395",
+    "orders": 2,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-05",
+    "first_order_day": "2026-05-05",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-227777",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-21",
+    "first_order_day": "2026-06-21",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-232618",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-24",
+    "first_order_day": "2026-06-24",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-233082",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-22",
+    "first_order_day": "2026-06-22",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-235579",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-24",
+    "first_order_day": "2026-06-24",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-24392",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-28",
+    "first_order_day": "2026-06-28",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-245735",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-24",
+    "first_order_day": "2026-06-24",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-248932",
+    "orders": 2,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-08",
+    "first_order_day": "2026-05-16",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-249338",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-21",
+    "first_order_day": "2026-06-21",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-250636",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-30",
+    "first_order_day": "2026-06-30",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-251402",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-21",
+    "first_order_day": "2026-06-21",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-251492",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-26",
+    "first_order_day": "2026-06-26",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-251978",
+    "orders": 2,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-09",
+    "first_order_day": "2026-05-04",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-252567",
+    "orders": 2,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-06",
+    "first_order_day": "2026-04-28",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-254110",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-30",
+    "first_order_day": "2026-06-30",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-256397",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-26",
+    "first_order_day": "2026-06-26",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-257625",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-24",
+    "first_order_day": "2026-06-24",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-258215",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-28",
+    "first_order_day": "2026-06-28",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-261345",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-27",
+    "first_order_day": "2026-06-27",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-262083",
+    "orders": 2,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-07",
+    "first_order_day": "2026-05-03",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-262136",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-22",
+    "first_order_day": "2026-06-22",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-263050",
+    "orders": 2,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-05-20",
+    "first_order_day": "2026-03-11",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-265614",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-23",
+    "first_order_day": "2026-06-23",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-270347",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-29",
+    "first_order_day": "2026-06-29",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-272146",
+    "orders": 2,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-09",
+    "first_order_day": "2026-05-03",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-274305",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-22",
+    "first_order_day": "2026-06-22",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-277135",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-22",
+    "first_order_day": "2026-06-22",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-277455",
+    "orders": 2,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-04",
+    "first_order_day": "2026-05-04",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-295071",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-30",
+    "first_order_day": "2026-06-30",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-295957",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-28",
+    "first_order_day": "2026-06-28",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-299216",
+    "orders": 2,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-06",
+    "first_order_day": "2026-05-11",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-299633",
+    "orders": 2,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-05-27",
+    "first_order_day": "2026-04-26",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-30050",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-21",
+    "first_order_day": "2026-06-21",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-301547",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-24",
+    "first_order_day": "2026-06-24",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-302503",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-25",
+    "first_order_day": "2026-06-25",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-302547",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-30",
+    "first_order_day": "2026-06-30",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-30471",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-25",
+    "first_order_day": "2026-06-25",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-306742",
+    "orders": 2,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-05-29",
+    "first_order_day": "2026-05-28",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-318320",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-21",
+    "first_order_day": "2026-06-21",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-323656",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-24",
+    "first_order_day": "2026-06-24",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-324507",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-29",
+    "first_order_day": "2026-06-29",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-325887",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-27",
+    "first_order_day": "2026-06-27",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-32608",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-28",
+    "first_order_day": "2026-06-28",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-327917",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-22",
+    "first_order_day": "2026-06-22",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-329103",
+    "orders": 2,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-03",
+    "first_order_day": "2026-05-05",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-329559",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-28",
+    "first_order_day": "2026-06-28",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-334476",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-24",
+    "first_order_day": "2026-06-24",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-336959",
+    "orders": 2,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-05-30",
+    "first_order_day": "2026-04-28",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-338857",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-20",
+    "first_order_day": "2026-06-20",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-340183",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-21",
+    "first_order_day": "2026-06-21",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-341062",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-23",
+    "first_order_day": "2026-06-23",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-341794",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-21",
+    "first_order_day": "2026-06-21",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-344006",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-30",
+    "first_order_day": "2026-06-30",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-348864",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-26",
+    "first_order_day": "2026-06-26",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-350048",
+    "orders": 2,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-11",
+    "first_order_day": "2026-05-06",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-350165",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-24",
+    "first_order_day": "2026-06-24",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-350307",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-20",
+    "first_order_day": "2026-06-20",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-351856",
+    "orders": 2,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-05-29",
+    "first_order_day": "2026-03-19",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-351983",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-28",
+    "first_order_day": "2026-06-28",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-352773",
+    "orders": 2,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-04-24",
+    "first_order_day": "2026-03-23",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-352856",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-22",
+    "first_order_day": "2026-06-22",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-353931",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-20",
+    "first_order_day": "2026-06-20",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-354798",
+    "orders": 2,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-13",
+    "first_order_day": "2026-05-10",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-354966",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-21",
+    "first_order_day": "2026-06-21",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-359300",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-24",
+    "first_order_day": "2026-06-24",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-361596",
+    "orders": 2,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-05-30",
+    "first_order_day": "2026-04-29",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-361763",
+    "orders": 2,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-01",
+    "first_order_day": "2026-04-30",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-372833",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-29",
+    "first_order_day": "2026-06-29",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-37414",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-20",
+    "first_order_day": "2026-06-20",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-374894",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-23",
+    "first_order_day": "2026-06-23",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-376595",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-29",
+    "first_order_day": "2026-06-29",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-380249",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-26",
+    "first_order_day": "2026-06-26",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-380585",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-28",
+    "first_order_day": "2026-06-28",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-381558",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-28",
+    "first_order_day": "2026-06-28",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-382319",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-30",
+    "first_order_day": "2026-06-30",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-385881",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-29",
+    "first_order_day": "2026-06-29",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-386629",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-24",
+    "first_order_day": "2026-06-24",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-387737",
+    "orders": 2,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-03-15",
+    "first_order_day": "2026-02-12",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-392642",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-30",
+    "first_order_day": "2026-06-30",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-393828",
+    "orders": 2,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-09",
+    "first_order_day": "2026-05-09",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-39514",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-28",
+    "first_order_day": "2026-06-28",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-39635",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-24",
+    "first_order_day": "2026-06-24",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-397180",
+    "orders": 2,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-05-26",
+    "first_order_day": "2026-04-25",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-401174",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-20",
+    "first_order_day": "2026-06-20",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-41804",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-25",
+    "first_order_day": "2026-06-25",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-45610",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-21",
+    "first_order_day": "2026-06-21",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-45698",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-27",
+    "first_order_day": "2026-06-27",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-46453",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-25",
+    "first_order_day": "2026-06-25",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-46524",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-25",
+    "first_order_day": "2026-06-25",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-50402",
+    "orders": 2,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-16",
+    "first_order_day": "2026-05-14",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-51393",
+    "orders": 2,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-02",
+    "first_order_day": "2026-04-25",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-517",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-29",
+    "first_order_day": "2026-06-29",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-52105",
+    "orders": 2,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-09",
+    "first_order_day": "2026-05-06",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-52719",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-21",
+    "first_order_day": "2026-06-21",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-52791",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-22",
+    "first_order_day": "2026-06-22",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-53479",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-26",
+    "first_order_day": "2026-06-26",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-5364",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-20",
+    "first_order_day": "2026-06-20",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-53670",
+    "orders": 2,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-11",
+    "first_order_day": "2026-05-11",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-5385",
+    "orders": 2,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-08",
+    "first_order_day": "2026-02-24",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-5504",
+    "orders": 2,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-19",
+    "first_order_day": "2026-05-18",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-56170",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-25",
+    "first_order_day": "2026-06-25",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-5707",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-29",
+    "first_order_day": "2026-06-29",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-58038",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-11",
+    "first_order_day": "2026-06-11",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-69501",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-25",
+    "first_order_day": "2026-06-25",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-70461",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-24",
+    "first_order_day": "2026-06-24",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-72275",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-27",
+    "first_order_day": "2026-06-27",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-72850",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-21",
+    "first_order_day": "2026-06-21",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-73173",
+    "orders": 2,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-08",
+    "first_order_day": "2026-05-07",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-73177",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-22",
+    "first_order_day": "2026-06-22",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-75825",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-23",
+    "first_order_day": "2026-06-23",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-79054",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-25",
+    "first_order_day": "2026-06-25",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-80183",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-20",
+    "first_order_day": "2026-06-20",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-8137",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-26",
+    "first_order_day": "2026-06-26",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-86367",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-26",
+    "first_order_day": "2026-06-26",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-89309",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-22",
+    "first_order_day": "2026-06-22",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-90973",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-21",
+    "first_order_day": "2026-06-21",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-92",
+    "orders": 2,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-13",
+    "first_order_day": "2026-05-13",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-92156",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-20",
+    "first_order_day": "2026-06-20",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-92906",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-28",
+    "first_order_day": "2026-06-28",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-94973",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-28",
+    "first_order_day": "2026-06-28",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-97430",
+    "orders": 1,
+    "revenue_rial": 6970000,
+    "last_order_day": "2026-06-24",
+    "first_order_day": "2026-06-24",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-184013",
+    "orders": 2,
+    "revenue_rial": 6960000,
+    "last_order_day": "2026-02-03",
+    "first_order_day": "2026-01-03",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-249792",
+    "orders": 2,
+    "revenue_rial": 6960000,
+    "last_order_day": "2026-01-29",
+    "first_order_day": "2026-01-29",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-268188",
+    "orders": 2,
+    "revenue_rial": 6960000,
+    "last_order_day": "2026-01-20",
+    "first_order_day": "2026-01-17",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-281920",
+    "orders": 2,
+    "revenue_rial": 6960000,
+    "last_order_day": "2026-02-08",
+    "first_order_day": "2026-01-24",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-320460",
+    "orders": 2,
+    "revenue_rial": 6960000,
+    "last_order_day": "2026-01-30",
+    "first_order_day": "2026-01-29",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-382549",
+    "orders": 2,
+    "revenue_rial": 6960000,
+    "last_order_day": "2026-01-30",
+    "first_order_day": "2026-01-25",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-394152",
+    "orders": 2,
+    "revenue_rial": 6960000,
+    "last_order_day": "2026-02-04",
+    "first_order_day": "2026-01-29",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-47045",
+    "orders": 4,
+    "revenue_rial": 6950000,
+    "last_order_day": "2026-06-22",
+    "first_order_day": "2026-02-13",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-23290",
+    "orders": 4,
+    "revenue_rial": 6850000,
+    "last_order_day": "2026-06-18",
+    "first_order_day": "2026-01-18",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-93949",
+    "orders": 4,
+    "revenue_rial": 6850000,
+    "last_order_day": "2026-04-21",
+    "first_order_day": "2026-01-20",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-122263",
+    "orders": 3,
+    "revenue_rial": 6810000,
+    "last_order_day": "2026-05-24",
+    "first_order_day": "2026-03-19",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-172283",
+    "orders": 3,
+    "revenue_rial": 6810000,
+    "last_order_day": "2026-05-09",
+    "first_order_day": "2026-02-24",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-265559",
+    "orders": 3,
+    "revenue_rial": 6810000,
+    "last_order_day": "2026-05-24",
+    "first_order_day": "2026-03-19",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-323906",
+    "orders": 3,
+    "revenue_rial": 6810000,
+    "last_order_day": "2026-04-25",
+    "first_order_day": "2026-02-22",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-349115",
+    "orders": 3,
+    "revenue_rial": 6810000,
+    "last_order_day": "2026-04-25",
+    "first_order_day": "2026-02-23",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-351609",
+    "orders": 3,
+    "revenue_rial": 6810000,
+    "last_order_day": "2026-05-28",
+    "first_order_day": "2026-02-17",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-369951",
+    "orders": 3,
+    "revenue_rial": 6810000,
+    "last_order_day": "2026-05-28",
+    "first_order_day": "2026-03-10",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-387424",
+    "orders": 3,
+    "revenue_rial": 6810000,
+    "last_order_day": "2026-04-27",
+    "first_order_day": "2026-02-14",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-122255",
+    "orders": 2,
+    "revenue_rial": 6770000,
+    "last_order_day": "2026-04-27",
+    "first_order_day": "2026-03-21",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-134459",
+    "orders": 2,
+    "revenue_rial": 6770000,
+    "last_order_day": "2026-04-24",
+    "first_order_day": "2026-03-15",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-152247",
+    "orders": 2,
+    "revenue_rial": 6770000,
+    "last_order_day": "2026-05-12",
+    "first_order_day": "2026-03-21",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-160138",
+    "orders": 2,
+    "revenue_rial": 6770000,
+    "last_order_day": "2026-03-23",
+    "first_order_day": "2026-02-18",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-168426",
+    "orders": 2,
+    "revenue_rial": 6770000,
+    "last_order_day": "2026-04-29",
+    "first_order_day": "2026-02-20",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-169347",
+    "orders": 2,
+    "revenue_rial": 6770000,
+    "last_order_day": "2026-06-12",
+    "first_order_day": "2026-02-11",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-179431",
+    "orders": 2,
+    "revenue_rial": 6770000,
+    "last_order_day": "2026-03-23",
+    "first_order_day": "2026-02-20",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-184351",
+    "orders": 2,
+    "revenue_rial": 6770000,
+    "last_order_day": "2026-04-26",
+    "first_order_day": "2026-02-22",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-192910",
+    "orders": 2,
+    "revenue_rial": 6770000,
+    "last_order_day": "2026-04-28",
+    "first_order_day": "2026-01-06",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-212975",
+    "orders": 2,
+    "revenue_rial": 6770000,
+    "last_order_day": "2026-05-06",
+    "first_order_day": "2026-02-21",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-227881",
+    "orders": 2,
+    "revenue_rial": 6770000,
+    "last_order_day": "2026-04-25",
+    "first_order_day": "2026-03-11",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-235711",
+    "orders": 2,
+    "revenue_rial": 6770000,
+    "last_order_day": "2026-05-03",
+    "first_order_day": "2026-03-07",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-252430",
+    "orders": 2,
+    "revenue_rial": 6770000,
+    "last_order_day": "2026-06-03",
+    "first_order_day": "2026-03-12",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-265190",
+    "orders": 2,
+    "revenue_rial": 6770000,
+    "last_order_day": "2026-04-26",
+    "first_order_day": "2026-02-21",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-286816",
+    "orders": 2,
+    "revenue_rial": 6770000,
+    "last_order_day": "2026-05-19",
+    "first_order_day": "2026-03-12",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-293337",
+    "orders": 2,
+    "revenue_rial": 6770000,
+    "last_order_day": "2026-05-23",
+    "first_order_day": "2026-03-12",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-311649",
+    "orders": 2,
+    "revenue_rial": 6770000,
+    "last_order_day": "2026-04-29",
+    "first_order_day": "2026-02-25",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-341975",
+    "orders": 2,
+    "revenue_rial": 6770000,
+    "last_order_day": "2026-04-26",
+    "first_order_day": "2026-02-15",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-346754",
+    "orders": 2,
+    "revenue_rial": 6770000,
+    "last_order_day": "2026-05-12",
+    "first_order_day": "2026-02-24",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-348075",
+    "orders": 2,
+    "revenue_rial": 6770000,
+    "last_order_day": "2026-05-04",
+    "first_order_day": "2026-03-15",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-367909",
+    "orders": 2,
+    "revenue_rial": 6770000,
+    "last_order_day": "2026-05-05",
+    "first_order_day": "2026-03-12",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-81190",
+    "orders": 2,
+    "revenue_rial": 6770000,
+    "last_order_day": "2026-05-16",
+    "first_order_day": "2026-03-18",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-97823",
+    "orders": 2,
+    "revenue_rial": 6770000,
+    "last_order_day": "2026-04-26",
+    "first_order_day": "2026-02-10",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-98503",
+    "orders": 2,
+    "revenue_rial": 6770000,
+    "last_order_day": "2026-04-29",
+    "first_order_day": "2026-02-13",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-72359",
+    "orders": 4,
+    "revenue_rial": 6690000,
+    "last_order_day": "2026-06-27",
+    "first_order_day": "2026-03-24",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-105228",
+    "orders": 3,
+    "revenue_rial": 6680000,
+    "last_order_day": "2026-05-26",
+    "first_order_day": "2026-03-05",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-118057",
+    "orders": 4,
+    "revenue_rial": 6650000,
+    "last_order_day": "2026-06-25",
+    "first_order_day": "2026-02-05",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-100461",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-06-02",
+    "first_order_day": "2026-04-30",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-10837",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-06-01",
+    "first_order_day": "2026-04-14",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-11003",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-05-26",
+    "first_order_day": "2026-04-09",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-111622",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-05-20",
+    "first_order_day": "2026-04-10",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-119254",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-05-25",
+    "first_order_day": "2026-04-01",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-126958",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-05-11",
+    "first_order_day": "2026-04-12",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-127886",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-06-02",
+    "first_order_day": "2026-04-03",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-128475",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-04-26",
+    "first_order_day": "2026-03-27",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-129332",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-05-09",
+    "first_order_day": "2026-03-29",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-14141",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-05-12",
+    "first_order_day": "2026-04-06",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-144864",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-05-16",
+    "first_order_day": "2026-04-04",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-145606",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-06-06",
+    "first_order_day": "2026-05-02",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-154155",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-05-18",
+    "first_order_day": "2026-04-17",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-15642",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-05-26",
+    "first_order_day": "2026-04-15",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-162467",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-05-07",
+    "first_order_day": "2026-04-02",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-162901",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-05-07",
+    "first_order_day": "2026-04-05",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-168787",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-05-25",
+    "first_order_day": "2026-04-08",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-172914",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-06-12",
+    "first_order_day": "2026-04-07",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-173272",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-06-01",
+    "first_order_day": "2026-04-01",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-173881",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-02-27",
+    "first_order_day": "2026-01-26",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-174109",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-05-03",
+    "first_order_day": "2026-04-02",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-181015",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-04-27",
+    "first_order_day": "2026-03-25",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-1852",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-05-17",
+    "first_order_day": "2026-04-04",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-187289",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-05-06",
+    "first_order_day": "2026-04-04",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-191311",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-05-18",
+    "first_order_day": "2026-04-02",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-19508",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-06-12",
+    "first_order_day": "2026-04-21",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-207161",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-05-17",
+    "first_order_day": "2026-04-19",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-209034",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-06-06",
+    "first_order_day": "2026-04-05",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-20909",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-06-26",
+    "first_order_day": "2026-04-06",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-209539",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-05-12",
+    "first_order_day": "2026-04-13",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-20963",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-04-27",
+    "first_order_day": "2026-03-23",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-211863",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-04-30",
+    "first_order_day": "2026-03-30",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-214216",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-05-06",
+    "first_order_day": "2026-04-06",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-223834",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-05-15",
+    "first_order_day": "2026-04-11",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-228115",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-06-16",
+    "first_order_day": "2026-04-18",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-230163",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-05-03",
+    "first_order_day": "2026-03-27",
+    "tier": "gold"
+  },
+  {
+    "payer_card_key": "CARD-231179",
+    "orders": 2,
+    "revenue_rial": 6640000,
+    "last_order_day": "2026-05-23",
+    "first_order_day": "2026-04-02",
+    "tier": "gold"
+  }
+]

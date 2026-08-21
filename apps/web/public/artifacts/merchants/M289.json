@@ -1246,5 +1246,88 @@
         "aov": 10126749.154411767
       }
     ]
+  },
+  "ops": {
+    "customer_tiers": {
+      "gold": {
+        "customers": 25,
+        "revenue_rial": 12730169750,
+        "share_of_revenue": 0.101194118258
+      },
+      "silver": {
+        "customers": 2080,
+        "revenue_rial": 39274061790,
+        "share_of_revenue": 0.312195684056
+      },
+      "bronze": {
+        "customers": 11261,
+        "revenue_rial": 73795271130,
+        "share_of_revenue": 0.586610197686
+      },
+      "at_risk": {
+        "customers": 1135,
+        "revenue_rial": 19112537750,
+        "share_of_revenue": 0.151928563662
+      }
+    },
+    "amount_bands": [
+      {
+        "id": "lt_0_5m",
+        "sessions": 4060,
+        "verified": 2680,
+        "success_rate": 0.660098522167,
+        "revenue_rial": 657877240
+      },
+      {
+        "id": "0_5_2m",
+        "sessions": 11896,
+        "verified": 7412,
+        "success_rate": 0.623066577001,
+        "revenue_rial": 8956580280
+      },
+      {
+        "id": "2_5m",
+        "sessions": 5005,
+        "verified": 3288,
+        "success_rate": 0.656943056943,
+        "revenue_rial": 11232872650
+      },
+      {
+        "id": "5_10m",
+        "sessions": 3426,
+        "verified": 1804,
+        "success_rate": 0.526561587858,
+        "revenue_rial": 13438963200
+      },
+      {
+        "id": "10m_plus",
+        "sessions": 4856,
+        "verified": 2908,
+        "success_rate": 0.598846787479,
+        "revenue_rial": 91513209300
+      }
+    ],
+    "sales_peaks": {
+      "top_days": [
+        {
+          "day": "2026-06-05",
+          "orders": 379,
+          "revenue_rial": 8536785470,
+          "sessions": 562
+        },
+        {
+          "day": "2026-06-04",
+          "orders": 261,
+          "revenue_rial": 5981639550,
+          "sessions": 374
+        },
+        {
+          "day": "2026-06-06",
+          "orders": 153,
+          "revenue_rial": 3930694950,
+          "sessions": 229
+        }
+      ]
+    }
   }
 }

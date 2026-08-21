@@ -198,5 +198,88 @@
         "aov": 0
       }
     ]
+  },
+  "ops": {
+    "customer_tiers": {
+      "gold": {
+        "customers": 1,
+        "revenue_rial": 34000000,
+        "share_of_revenue": 0.529191115815
+      },
+      "silver": {
+        "customers": 1,
+        "revenue_rial": 4629500,
+        "share_of_revenue": 0.072055596196
+      },
+      "bronze": {
+        "customers": 3,
+        "revenue_rial": 25619500,
+        "share_of_revenue": 0.398753287989
+      },
+      "at_risk": {
+        "customers": 1,
+        "revenue_rial": 4629500,
+        "share_of_revenue": 0.072055596196
+      }
+    },
+    "amount_bands": [
+      {
+        "id": "lt_0_5m",
+        "sessions": 4,
+        "verified": 1,
+        "success_rate": 0.25,
+        "revenue_rial": 10000
+      },
+      {
+        "id": "0_5_2m",
+        "sessions": 0,
+        "verified": 0,
+        "success_rate": 0,
+        "revenue_rial": 0
+      },
+      {
+        "id": "2_5m",
+        "sessions": 8,
+        "verified": 1,
+        "success_rate": 0.125,
+        "revenue_rial": 4619500
+      },
+      {
+        "id": "5_10m",
+        "sessions": 13,
+        "verified": 3,
+        "success_rate": 0.230769230769,
+        "revenue_rial": 25619500
+      },
+      {
+        "id": "10m_plus",
+        "sessions": 5,
+        "verified": 1,
+        "success_rate": 0.2,
+        "revenue_rial": 34000000
+      }
+    ],
+    "sales_peaks": {
+      "top_days": [
+        {
+          "day": "2026-06-03",
+          "orders": 1,
+          "revenue_rial": 34000000,
+          "sessions": 1
+        },
+        {
+          "day": "2026-06-08",
+          "orders": 1,
+          "revenue_rial": 9750000,
+          "sessions": 3
+        },
+        {
+          "day": "2026-06-21",
+          "orders": 1,
+          "revenue_rial": 9000000,
+          "sessions": 1
+        }
+      ]
+    }
   }
 }

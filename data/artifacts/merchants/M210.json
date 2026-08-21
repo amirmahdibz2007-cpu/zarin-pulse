@@ -610,5 +610,88 @@
         "aov": 1512855.4216867469
       }
     ]
+  },
+  "ops": {
+    "customer_tiers": {
+      "gold": {
+        "customers": 4,
+        "revenue_rial": 529030000,
+        "share_of_revenue": 0.122186435765
+      },
+      "silver": {
+        "customers": 532,
+        "revenue_rial": 2780985000,
+        "share_of_revenue": 0.642305058439
+      },
+      "bronze": {
+        "customers": 634,
+        "revenue_rial": 1019680000,
+        "share_of_revenue": 0.235508505795
+      },
+      "at_risk": {
+        "customers": 380,
+        "revenue_rial": 1749450000,
+        "share_of_revenue": 0.404058484489
+      }
+    },
+    "amount_bands": [
+      {
+        "id": "lt_0_5m",
+        "sessions": 307,
+        "verified": 213,
+        "success_rate": 0.693811074919,
+        "revenue_rial": 49640000
+      },
+      {
+        "id": "0_5_2m",
+        "sessions": 2909,
+        "verified": 1920,
+        "success_rate": 0.660020625645,
+        "revenue_rial": 2095970000
+      },
+      {
+        "id": "2_5m",
+        "sessions": 799,
+        "verified": 520,
+        "success_rate": 0.650813516896,
+        "revenue_rial": 1320875000
+      },
+      {
+        "id": "5_10m",
+        "sessions": 155,
+        "verified": 120,
+        "success_rate": 0.774193548387,
+        "revenue_rial": 659210000
+      },
+      {
+        "id": "10m_plus",
+        "sessions": 39,
+        "verified": 14,
+        "success_rate": 0.358974358974,
+        "revenue_rial": 204000000
+      }
+    ],
+    "sales_peaks": {
+      "top_days": [
+        {
+          "day": "2026-01-28",
+          "orders": 143,
+          "revenue_rial": 241130000,
+          "sessions": 183
+        },
+        {
+          "day": "2026-01-29",
+          "orders": 119,
+          "revenue_rial": 190650000,
+          "sessions": 154
+        },
+        {
+          "day": "2026-03-04",
+          "orders": 49,
+          "revenue_rial": 162700000,
+          "sessions": 63
+        }
+      ]
+    }
   }
 }

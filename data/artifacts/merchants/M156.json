@@ -1216,5 +1216,88 @@
         "aov": 64847780.78740157
       }
     ]
+  },
+  "ops": {
+    "customer_tiers": {
+      "gold": {
+        "customers": 211,
+        "revenue_rial": 195197941540,
+        "share_of_revenue": 0.100046007676
+      },
+      "silver": {
+        "customers": 4057,
+        "revenue_rial": 628062389690,
+        "share_of_revenue": 0.321904699219
+      },
+      "bronze": {
+        "customers": 19533,
+        "revenue_rial": 1127821436800,
+        "share_of_revenue": 0.578049293105
+      },
+      "at_risk": {
+        "customers": 1866,
+        "revenue_rial": 348290341390,
+        "share_of_revenue": 0.178511401776
+      }
+    },
+    "amount_bands": [
+      {
+        "id": "lt_0_5m",
+        "sessions": 121,
+        "verified": 71,
+        "success_rate": 0.586776859504,
+        "revenue_rial": 10605940
+      },
+      {
+        "id": "0_5_2m",
+        "sessions": 208,
+        "verified": 144,
+        "success_rate": 0.692307692308,
+        "revenue_rial": 162945090
+      },
+      {
+        "id": "2_5m",
+        "sessions": 655,
+        "verified": 350,
+        "success_rate": 0.534351145038,
+        "revenue_rial": 1234989560
+      },
+      {
+        "id": "5_10m",
+        "sessions": 1768,
+        "verified": 888,
+        "success_rate": 0.502262443439,
+        "revenue_rial": 6742825170
+      },
+      {
+        "id": "10m_plus",
+        "sessions": 53188,
+        "verified": 29055,
+        "success_rate": 0.546269835301,
+        "revenue_rial": 1942930402270
+      }
+    ],
+    "sales_peaks": {
+      "top_days": [
+        {
+          "day": "2026-06-16",
+          "orders": 467,
+          "revenue_rial": 28282291610,
+          "sessions": 836
+        },
+        {
+          "day": "2026-06-17",
+          "orders": 406,
+          "revenue_rial": 24936486710,
+          "sessions": 678
+        },
+        {
+          "day": "2026-04-18",
+          "orders": 447,
+          "revenue_rial": 24367127350,
+          "sessions": 1012
+        }
+      ]
+    }
   }
 }

@@ -4,10 +4,13 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { isoToJalali, jalaliWeekdayIso } from '@zarinpulse/contracts';
 import {
+  assignCustomerTiers,
   assignImpactFamily,
   classifyBusinessModel,
   recoverableSales,
   resolveAovBasis,
+  type AmountBandId,
+  type CardValue,
   wilsonInterval,
 } from '@zarinpulse/analytics';
 import { assertClose, assertEqual, GOLDEN } from './golden.ts';
@@ -671,6 +674,240 @@ export async function buildArtifacts(outDir = path.join(repoRoot, 'data', 'artif
     daysByMerchant[key]!.sort((a, b) => a.day.localeCompare(b.day));
   }
 
+  const DATA_END_ISO = '2026-06-30';
+  const EXPORT_MERCHANT = 'M31';
+  const BAND_ORDER: AmountBandId[] = ['lt_0_5m', '0_5_2m', '2_5m', '5_10m', '10m_plus'];
+
+  const cardRows = await q(`
+    SELECT
+      merchant_key,
+      CAST(payer_card_key AS VARCHAR) AS card_key,
+      COUNT(*) FILTER (WHERE session_status = 'Verified') AS orders,
+      COALESCE(SUM(CASE WHEN session_status = 'Verified' THEN amount ELSE 0 END), 0) AS revenue,
+      CAST(MAX(CASE WHEN session_status = 'Verified' THEN CAST(created_at AS DATE) END) AS VARCHAR) AS last_day,
+      CAST(MIN(CASE WHEN session_status = 'Verified' THEN CAST(created_at AS DATE) END) AS VARCHAR) AS first_day
+    FROM sessions
+    WHERE payer_card_key IS NOT NULL AND CAST(payer_card_key AS VARCHAR) <> ''
+    GROUP BY 1, 2
+    HAVING COUNT(*) FILTER (WHERE session_status = 'Verified') > 0
+  `);
+
+  const cardsByMerchant: Record<string, CardValue[]> = {};
+  for (const row of cardRows) {
+    const key = str(row.merchant_key);
+    cardsByMerchant[key] ??= [];
+    cardsByMerchant[key]!.push({
+      cardKey: str(row.card_key),
+      orders: num(row.orders),
+      revenueRial: num(row.revenue),
+      lastOrderIso: str(row.last_day).slice(0, 10),
+      firstOrderIso: str(row.first_day).slice(0, 10),
+    });
+  }
+
+  const bandRows = await q(`
+    SELECT
+      merchant_key,
+      CASE
+        WHEN amount < 500000 THEN 'lt_0_5m'
+        WHEN amount < 2000000 THEN '0_5_2m'
+        WHEN amount < 5000000 THEN '2_5m'
+        WHEN amount < 10000000 THEN '5_10m'
+        ELSE '10m_plus'
+      END AS band,
+      COUNT(*) AS sessions,
+      COUNT(*) FILTER (WHERE session_status = 'Verified') AS verified,
+      COALESCE(SUM(CASE WHEN session_status = 'Verified' THEN amount ELSE 0 END), 0) AS revenue
+    FROM sessions
+    GROUP BY 1, 2
+  `);
+
+  type BandAcc = { sessions: number; verified: number; revenue_rial: number };
+  const bandsByMerchant: Record<string, Record<string, BandAcc>> = {};
+  for (const row of bandRows) {
+    const key = str(row.merchant_key);
+    bandsByMerchant[key] ??= {};
+    bandsByMerchant[key]![str(row.band)] = {
+      sessions: num(row.sessions),
+      verified: num(row.verified),
+      revenue_rial: num(row.revenue),
+    };
+  }
+
+  type OpsPayload = {
+    customer_tiers: {
+      gold: { customers: number; revenue_rial: number; share_of_revenue: number };
+      silver: { customers: number; revenue_rial: number; share_of_revenue: number };
+      bronze: { customers: number; revenue_rial: number; share_of_revenue: number };
+      at_risk: { customers: number; revenue_rial: number; share_of_revenue: number };
+    };
+    amount_bands: {
+      id: AmountBandId;
+      sessions: number;
+      verified: number;
+      success_rate: number;
+      revenue_rial: number;
+    }[];
+    sales_peaks: {
+      top_days: { day: string; orders: number; revenue_rial: number; sessions: number }[];
+    };
+  };
+
+  const opsByMerchant: Record<string, OpsPayload> = {};
+  const tiersByMerchant: Record<string, ReturnType<typeof assignCustomerTiers>> = {};
+
+  for (const m of merchants) {
+    const tiers = assignCustomerTiers(cardsByMerchant[m.key] ?? [], DATA_END_ISO);
+    tiersByMerchant[m.key] = tiers;
+    const bandMap = bandsByMerchant[m.key] ?? {};
+    const amount_bands = BAND_ORDER.map((id) => {
+      const b = bandMap[id] ?? { sessions: 0, verified: 0, revenue_rial: 0 };
+      return {
+        id,
+        sessions: b.sessions,
+        verified: b.verified,
+        success_rate: b.sessions === 0 ? 0 : rate(b.verified / b.sessions),
+        revenue_rial: b.revenue_rial,
+      };
+    });
+    const daily = daysByMerchant[m.key] ?? [];
+    const top_days = [...daily]
+      .filter((d) => d.orders > 0)
+      .sort((a, b) => b.revenue_rial - a.revenue_rial || b.orders - a.orders)
+      .slice(0, 3)
+      .map((d) => ({
+        day: d.day,
+        orders: d.orders,
+        revenue_rial: d.revenue_rial,
+        sessions: d.sessions,
+      }));
+    opsByMerchant[m.key] = {
+      customer_tiers: {
+        gold: {
+          customers: tiers.summary.gold.customers,
+          revenue_rial: tiers.summary.gold.revenue_rial,
+          share_of_revenue: rate(tiers.summary.gold.share_of_revenue),
+        },
+        silver: {
+          customers: tiers.summary.silver.customers,
+          revenue_rial: tiers.summary.silver.revenue_rial,
+          share_of_revenue: rate(tiers.summary.silver.share_of_revenue),
+        },
+        bronze: {
+          customers: tiers.summary.bronze.customers,
+          revenue_rial: tiers.summary.bronze.revenue_rial,
+          share_of_revenue: rate(tiers.summary.bronze.share_of_revenue),
+        },
+        at_risk: {
+          customers: tiers.summary.at_risk.customers,
+          revenue_rial: tiers.summary.at_risk.revenue_rial,
+          share_of_revenue: rate(tiers.summary.at_risk.share_of_revenue),
+        },
+      },
+      amount_bands,
+      sales_peaks: { top_days },
+    };
+  }
+
+  // Capped row exports for the demo merchant only (keeps artifact size bounded).
+  {
+    const mKey = EXPORT_MERCHANT;
+    const tiers = tiersByMerchant[mKey];
+    const peaks = opsByMerchant[mKey]?.sales_peaks.top_days.map((d) => d.day) ?? [];
+    const exportDir = path.join(outDir, 'exports', mKey);
+    fs.mkdirSync(exportDir, { recursive: true });
+
+    const goldExport = (tiers?.gold ?? [])
+      .slice(0, 500)
+      .map((c) => ({
+        payer_card_key: c.cardKey,
+        orders: c.orders,
+        revenue_rial: c.revenueRial,
+        last_order_day: c.lastOrderIso,
+        first_order_day: c.firstOrderIso,
+        tier: 'gold',
+      }));
+    files[`exports/${mKey}/gold-customers.json`] = writeJson(
+      path.join(exportDir, 'gold-customers.json'),
+      goldExport,
+    );
+
+    const atRiskExport = (tiers?.at_risk ?? [])
+      .slice(0, 500)
+      .map((c) => ({
+        payer_card_key: c.cardKey,
+        orders: c.orders,
+        revenue_rial: c.revenueRial,
+        last_order_day: c.lastOrderIso,
+        first_order_day: c.firstOrderIso,
+        tier: 'at_risk',
+      }));
+    files[`exports/${mKey}/at-risk-customers.json`] = writeJson(
+      path.join(exportDir, 'at-risk-customers.json'),
+      atRiskExport,
+    );
+
+    const inbankRows = await q(`
+      SELECT
+        session_key,
+        amount,
+        CAST(CAST(created_at AS DATE) AS VARCHAR) AS day,
+        COALESCE(CAST(payer_card_key AS VARCHAR), '') AS payer_card_key,
+        COALESCE(psp_code_last, '') AS psp_code
+      FROM terminal_state
+      WHERE merchant_key = '${EXPORT_MERCHANT}' AND terminal_state = 'InBank'
+      ORDER BY amount DESC, session_key
+      LIMIT 1000
+    `);
+    files[`exports/${mKey}/inbank-sessions.json`] = writeJson(
+      path.join(exportDir, 'inbank-sessions.json'),
+      inbankRows.map((r) => ({
+        session_key: str(r.session_key),
+        amount_rial: num(r.amount),
+        day: str(r.day).slice(0, 10),
+        payer_card_key: str(r.payer_card_key),
+        psp_code: str(r.psp_code),
+        terminal_state: 'InBank',
+      })),
+    );
+
+    let peakExport: {
+      session_key: string;
+      amount_rial: number;
+      day: string;
+      payer_card_key: string;
+      session_status: string;
+    }[] = [];
+    if (peaks.length > 0) {
+      const peakList = peaks.map((d) => `'${d}'`).join(',');
+      const peakRows = await q(`
+        SELECT
+          session_key,
+          amount,
+          CAST(CAST(created_at AS DATE) AS VARCHAR) AS day,
+          COALESCE(CAST(payer_card_key AS VARCHAR), '') AS payer_card_key,
+          session_status
+        FROM sessions
+        WHERE merchant_key = '${EXPORT_MERCHANT}'
+          AND session_status = 'Verified'
+          AND CAST(created_at AS DATE) IN (${peakList})
+        ORDER BY day, amount DESC
+        LIMIT 1000
+      `);
+      peakExport = peakRows.map((r) => ({
+        session_key: str(r.session_key),
+        amount_rial: num(r.amount),
+        day: str(r.day).slice(0, 10),
+        payer_card_key: str(r.payer_card_key),
+        session_status: str(r.session_status),
+      }));
+    }
+    files[`exports/${mKey}/peak-days-sessions.json`] = writeJson(
+      path.join(exportDir, 'peak-days-sessions.json'),
+      peakExport,
+    );
+  }
+
   function merchantSeries(daily: MerchantDayPoint[]) {
     const monthBuckets: Record<
       string,
@@ -733,6 +970,7 @@ export async function buildArtifacts(outDir = path.join(repoRoot, 'data', 'artif
       pending: { currency: 'pending_reconciliation', rial: m.paid_amount_rial },
       case_family: cases.find((c) => c.key === m.key)?.family ?? null,
       series: merchantSeries(daysByMerchant[m.key] ?? []),
+      ops: opsByMerchant[m.key] ?? null,
     };
     files[`merchants/${m.key}.json`] = writeJson(path.join(outDir, 'merchants', `${m.key}.json`), payload);
   }

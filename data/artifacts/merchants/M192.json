@@ -496,5 +496,88 @@
         "aov": 3289661.0169491526
       }
     ]
+  },
+  "ops": {
+    "customer_tiers": {
+      "gold": {
+        "customers": 11,
+        "revenue_rial": 2399500000,
+        "share_of_revenue": 0.10444542721
+      },
+      "silver": {
+        "customers": 1326,
+        "revenue_rial": 15441040000,
+        "share_of_revenue": 0.672117532555
+      },
+      "bronze": {
+        "customers": 1429,
+        "revenue_rial": 5133180000,
+        "share_of_revenue": 0.223437040236
+      },
+      "at_risk": {
+        "customers": 1294,
+        "revenue_rial": 17482340000,
+        "share_of_revenue": 0.760971231477
+      }
+    },
+    "amount_bands": [
+      {
+        "id": "lt_0_5m",
+        "sessions": 138,
+        "verified": 57,
+        "success_rate": 0.413043478261,
+        "revenue_rial": 24950000
+      },
+      {
+        "id": "0_5_2m",
+        "sessions": 8160,
+        "verified": 4553,
+        "success_rate": 0.557965686275,
+        "revenue_rial": 8629920000
+      },
+      {
+        "id": "2_5m",
+        "sessions": 1911,
+        "verified": 1203,
+        "success_rate": 0.629513343799,
+        "revenue_rial": 4620750000
+      },
+      {
+        "id": "5_10m",
+        "sessions": 1446,
+        "verified": 885,
+        "success_rate": 0.612033195021,
+        "revenue_rial": 6827900000
+      },
+      {
+        "id": "10m_plus",
+        "sessions": 251,
+        "verified": 146,
+        "success_rate": 0.581673306773,
+        "revenue_rial": 2870200000
+      }
+    ],
+    "sales_peaks": {
+      "top_days": [
+        {
+          "day": "2026-05-24",
+          "orders": 912,
+          "revenue_rial": 3155060000,
+          "sessions": 1617
+        },
+        {
+          "day": "2026-05-25",
+          "orders": 880,
+          "revenue_rial": 2882360000,
+          "sessions": 1343
+        },
+        {
+          "day": "2026-05-21",
+          "orders": 728,
+          "revenue_rial": 2627460000,
+          "sessions": 1297
+        }
+      ]
+    }
   }
 }
