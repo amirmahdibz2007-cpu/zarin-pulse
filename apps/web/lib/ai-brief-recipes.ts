@@ -30,6 +30,82 @@ function monthLabel(key: string): string {
   return MONTHS_FA[idx] ?? key;
 }
 
+/** Precomputed peaks so chat can answer day/weekday questions without inventing. */
+export function buildSalesPeaks(m: MerchantArtifact): {
+  top_days: {
+    day: string;
+    revenue_rial_billions: string;
+    revenue_full: string;
+    orders_label: string;
+    sessions_label: string;
+  }[];
+  top_day_of_month: {
+    day_of_month: number;
+    day_of_month_fa: string;
+    avg_revenue_rial_billions: string;
+    sample_days: number;
+  }[];
+  top_weekdays_by_revenue: {
+    weekday_label: string;
+    revenue_rial_billions: string;
+    sessions_label: string;
+  }[];
+  note: string;
+} {
+  const daily = m.series?.daily ?? [];
+  const topDays = [...daily]
+    .sort((a, b) => b.revenue_rial - a.revenue_rial)
+    .slice(0, 5)
+    .map((row) => ({
+      day: row.day,
+      revenue_rial_billions: formatBillionsFigure(row.revenue_rial),
+      revenue_full: formatBillionsRial(row.revenue_rial),
+      orders_label: formatCount(count(Math.max(0, row.orders))),
+      sessions_label: formatCount(count(Math.max(0, row.sessions ?? 0))),
+    }));
+
+  const byDom = new Map<number, { sum: number; n: number }>();
+  for (const row of daily) {
+    const dom = Number(row.day.slice(8, 10));
+    if (!Number.isFinite(dom) || dom < 1) continue;
+    const cur = byDom.get(dom) ?? { sum: 0, n: 0 };
+    cur.sum += row.revenue_rial;
+    cur.n += 1;
+    byDom.set(dom, cur);
+  }
+  const topDomRaw = [...byDom.entries()]
+    .map(([day_of_month, v]) => ({
+      day_of_month,
+      day_of_month_fa: formatCount(count(day_of_month)),
+      avg: v.sum / Math.max(1, v.n),
+      sample_days: v.n,
+    }))
+    .sort((a, b) => b.avg - a.avg)
+    .slice(0, 5)
+    .map((row) => ({
+      day_of_month: row.day_of_month,
+      day_of_month_fa: row.day_of_month_fa,
+      avg_revenue_rial_billions: formatBillionsFigure(row.avg),
+      sample_days: row.sample_days,
+    }));
+
+  const topWeekdays = [...(m.series?.weekdays ?? [])]
+    .sort((a, b) => b.revenue_rial - a.revenue_rial)
+    .slice(0, 3)
+    .map((row) => ({
+      weekday_label: WEEKDAYS_FA[row.weekday] ?? String(row.weekday),
+      revenue_rial_billions: formatBillionsFigure(row.revenue_rial),
+      sessions_label: formatCount(count(Math.max(0, row.sessions))),
+    }));
+
+  return {
+    top_days: topDays,
+    top_day_of_month: topDomRaw,
+    top_weekdays_by_revenue: topWeekdays,
+    note: 'قله‌های فروش از series.daily و weekdays همین پذیرنده؛ جمع تازه حساب نکن.',
+  };
+}
+
 function impactBillions(actions: ReturnType<typeof buildMerchantActions>): (string | null)[] {
   return actions.map((a) => (a.impactRial > 0 ? formatBillionsFigure(a.impactRial) : null));
 }
@@ -180,6 +256,7 @@ export function buildLockedMetrics(m: MerchantArtifact): Record<string, string |
  */
 export function buildMerchantDossier(m: MerchantArtifact): Record<string, unknown> {
   const metrics = buildLockedMetrics(m);
+  const salesPeaks = buildSalesPeaks(m);
   const months = (m.series?.jalali_months ?? []).map((row) => ({
     key: row.key,
     label: monthLabel(row.key),
@@ -299,7 +376,10 @@ export function buildMerchantDossier(m: MerchantArtifact): Record<string, unknow
           ? `last_${DAILY_WINDOW}_of_${dailyAll.length}`
           : 'all',
       month_count: months.length,
+      sales_peaks: salesPeaks,
     },
+    /** Always present at root so day questions stay grounded even if daily window is trimmed. */
+    sales_peaks: salesPeaks,
   };
 }
 
@@ -328,6 +408,19 @@ export function buildStoryBeats(m: MerchantArtifact): string[] {
   if (metrics.peak_weekday) {
     beats.push(
       `اوج ترافیک هفتگی در ${metrics.peak_weekday} با حدود ${metrics.peak_weekday_sessions} جلسه است.`,
+    );
+  }
+  const peaks = buildSalesPeaks(m);
+  if (peaks.top_days[0]) {
+    const d0 = peaks.top_days[0];
+    beats.push(
+      `پرفروش‌ترین روز قفل‌شده ${d0.day} با حدود ${d0.revenue_full} است.`,
+    );
+  }
+  if (peaks.top_day_of_month[0]) {
+    const dom = peaks.top_day_of_month[0];
+    beats.push(
+      `بین روزهای ماه، میانگین فروش روز ${dom.day_of_month_fa} بالاتر است (حدود ${dom.avg_revenue_rial_billions} میلیارد ریال).`,
     );
   }
   if (primary) {
@@ -517,12 +610,18 @@ export function groundedChatAnswer(
   const followUp = /بعد|چیکار|چی\s*کار|قدم\s*بعد|خب\s*پس/.test(q);
   const secondary = locked.ranked_actions[1];
   const focus = followUp && secondary ? secondary : primary;
+  const daySalesQ = isDaySalesQuestion(q);
+  const peaks = (locked.merchant_dossier.sales_peaks ?? null) as ReturnType<
+    typeof buildSalesPeaks
+  > | null;
 
   let summary: string;
   if (followUp && focus) {
     summary = `قدم بعدی روی «${focus.title}» است. ${focus.body} کار عملی: ${focus.next_step}${
       focus.impact_rial_billions ? ` اثر تقریبی حدود ${focus.impact_rial_billions} میلیارد ریال.` : ''
     }`;
+  } else if (daySalesQ) {
+    summary = formatDaySalesAnswer(peaks, metrics);
   } else if (/اینستا|تلگرام|تبلیغ|مارکتینگ|بازاریابی|شبکه\s*اجتماع|تولید\s*محتوا/.test(q)) {
     summary = primary
       ? `برای رشد اینستاگرام یا تبلیغات کانال در این صفحه دادهٔ قفل نداریم؛ فقط قیف پرداخت و فروش درگاه را می‌بینیم. اگر بخواهید روی درگاه کار کنید، اولویت «${primary.title}» است: ${primary.next_step}`
@@ -559,7 +658,10 @@ export function groundedChatAnswer(
         : `فاصله با هم‌صنف‌های خوب حدود ${gap} است (مرجع خوب حدود ${metrics.peer_p75_success}). ${
             primary ? primary.body : ''
           } ${primary ? `قدم بعدی: ${primary.next_step}` : ''}`.trim();
-  } else if (/ماه|فروش|درآمد|revenue|month/.test(q)) {
+  } else if (
+    (/ماه|درآمد|revenue|month/.test(q) || /فروش\s*(این\s*)?ماه|فروش\s*تیر|فروش\s*کل/.test(q)) &&
+    !/روز/.test(q)
+  ) {
     const month = String(metrics.month_label || copy.aiStage.monthFallback);
     summary = `فروش ${month} حدود ${metrics.month_revenue_rial_billions} میلیارد ریال است (${metrics.month_orders_label} سفارش) و ${metrics.month_trend}.${
       primary ? ` برای رشد، روی «${primary.title}» تمرکز کنید: ${primary.next_step}` : ''
@@ -614,9 +716,47 @@ export function groundedChatAnswer(
     merchant_key: locked.merchant_key,
     prompt_id: 'chat',
     summary: summary.trim(),
-    actions: followUp && focusActions.length > 0 ? focusActions : actions,
+    actions: daySalesQ ? [] : followUp && focusActions.length > 0 ? focusActions : actions,
     source: 'deterministic',
   };
+}
+
+export function isDaySalesQuestion(q: string): boolean {
+  const t = q.trim();
+  if (/روز.?هفته|weekday/.test(t)) return false;
+  return (
+    /چه روز|روزهایی|روزهای|کدام روز|روز\s*از\s*ماه|اوج\s*(فروش|روز)/.test(t) ||
+    (/روز/.test(t) && /فروش|درآمد/.test(t))
+  );
+}
+
+function formatDaySalesAnswer(
+  peaks: ReturnType<typeof buildSalesPeaks> | null,
+  metrics: Record<string, string | number>,
+): string {
+  if (!peaks || peaks.top_days.length === 0) {
+    return metrics.peak_weekday
+      ? `سری روزانه خالی است؛ اوج هفته‌ای قفل‌شده در ${metrics.peak_weekday} با حدود ${metrics.peak_weekday_sessions} جلسه است.`
+      : 'برای روزهای پرترافیک فروش، سری روزانه در artifact این پذیرنده قفل نشده.';
+  }
+  const top3 = peaks.top_days
+    .slice(0, 3)
+    .map((d) => `${d.day} (حدود ${d.revenue_full})`)
+    .join('؛ ');
+  const dom = peaks.top_day_of_month[0];
+  const wd = peaks.top_weekdays_by_revenue[0];
+  const parts = [`پرفروش‌ترین روزها در دادهٔ قفل: ${top3}.`];
+  if (dom) {
+    parts.push(
+      `اگر منظورتان روزهای ماه باشد، میانگین فروش روز ${dom.day_of_month_fa} بالاتر است (حدود ${dom.avg_revenue_rial_billions} میلیارد ریال).`,
+    );
+  }
+  if (wd) {
+    parts.push(
+      `بین روزهای هفته، ${wd.weekday_label} با حدود ${wd.revenue_rial_billions} میلیارد ریال جلوتر است.`,
+    );
+  }
+  return parts.join(' ');
 }
 
 export function hashLocked(locked: AiBriefLockedInput): string {

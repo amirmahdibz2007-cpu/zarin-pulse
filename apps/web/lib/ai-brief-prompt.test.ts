@@ -285,4 +285,24 @@ describe('ai-brief-prompt', () => {
     expect(v.ok).toBe(false);
     expect(v.notes).toContain('pending_confused_with_recoverable');
   });
+
+  it('rejects day-sales answers that dump funnel brief instead', () => {
+    const locked = buildAiBriefLockedInput({
+      key: 'M31',
+      promptId: 'chat',
+      category: 'x',
+      metrics: { success_rate: '۱۹٫۶٪' },
+      actions: sampleActions.slice(0, 1),
+      userMessage: 'در چه روزهایی از ماه فروش بیشتری داشتم؟',
+    });
+    const raw = JSON.stringify({
+      merchant_key: 'M31',
+      reply:
+        'فروش تیر حدود ۶٫۳۳ میلیارد ریال است. برای رشد، روی رهاشدن روی صفحه بانک تمرکز کنید.',
+      actions: [],
+    });
+    const v = validateAiBriefResponse(raw, locked);
+    expect(v.ok).toBe(false);
+    expect(v.notes).toContain('misses_day_sales_answer');
+  });
 });

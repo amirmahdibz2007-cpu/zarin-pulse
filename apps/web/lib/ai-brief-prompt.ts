@@ -130,6 +130,7 @@ export const AI_CHAT_SYSTEM_PROMPT = `تو تحلیل‌گر زرین‌پالس
 رفتار گفتگو:
 - به همان چیزی جواب بده که کاربر پرسیده؛ اندازهٔ جواب را با سؤال هماهنگ کن.
 - اگر فقط سلام/احوال‌پرسی است، کوتاه سلام کن و بپرس روی چه چیزی کمک می‌خواهد — گزارش کامل و کارت اقدام نریز.
+- اگر سؤال دربارهٔ روز/تاریخ/اوج فروش روزانه است، از sales_peaks (و در صورت نیاز daily/weekdays) جواب بده؛ به قیف یا کارت اقدام نپر.
 - اگر سؤال تحلیلی است، عمیق و مشخص باش و از داده استفاده کن.
 - اگر خارج از داده بود صادق باش؛ می‌توانی با دادهٔ درگاه پل بزنی بدون اینکه وانمود کنی همه‌چیز را می‌دانی.
 - تاریخچه را در نظر بگیر؛ طوطی‌وار تکرار نکن.
@@ -353,6 +354,26 @@ function confusesPendingWithRecoverable(
   return false;
 }
 
+function isDaySalesQuestion(q: string): boolean {
+  const t = q.trim();
+  if (/روز.?هفته|weekday/.test(t)) return false;
+  return (
+    /چه روز|روزهایی|روزهای|کدام روز|روز\s*از\s*ماه|اوج\s*(فروش|روز)/.test(t) ||
+    (/روز/.test(t) && /فروش|درآمد/.test(t))
+  );
+}
+
+/** Day/sales-peak questions must not be answered with a funnel brief. */
+function missesDaySalesAnswer(reply: string, userMessage: string): boolean {
+  if (!isDaySalesQuestion(userMessage)) return false;
+  const hasDaySignal =
+    /۲۰\d{2}-\d{2}-\d{2}|روز\s*[۰-۹0-9]+|شنبه|یکشنبه|دوشنبه|سه‌?شنبه|چهارشنبه|پنج‌?شنبه|جمعه|تاریخ|پرفروش/.test(
+      reply,
+    );
+  const dumpsFunnel = /رهاشدن|صفحه بانک|هم‌صنف|شکاف با/.test(reply);
+  return !hasDaySignal || (dumpsFunnel && !/پرفروش|۲۰\d{2}-/.test(reply));
+}
+
 export function validateAiChatResponse(
   raw: string,
   locked: AiBriefLockedInput,
@@ -381,8 +402,9 @@ export function validateAiChatResponse(
     notes.push('invented_number');
   }
 
-  const actions: AiBriefModelAction[] = [];
-  if (Array.isArray(obj.actions)) {
+  const q = locked.user_message ?? '';
+  let actions: AiBriefModelAction[] = [];
+  if (!isDaySalesQuestion(q) && Array.isArray(obj.actions)) {
     const byTitle = new Map(locked.ranked_actions.map((a) => [a.title, a]));
     for (const item of obj.actions.slice(0, locked.ranked_actions.length)) {
       if (!item || typeof item !== 'object') continue;
@@ -409,9 +431,11 @@ export function validateAiChatResponse(
 
   if (/۱۶۳.?۳۳۴|163334/.test(reply)) notes.push('hallucinated_derived_count');
 
-  const q = locked.user_message ?? '';
   if (confusesPendingWithRecoverable(reply, locked, q)) {
     return { ok: false, notes: ['pending_confused_with_recoverable'], value: null };
+  }
+  if (missesDaySalesAnswer(reply, q)) {
+    return { ok: false, notes: ['misses_day_sales_answer'], value: null };
   }
 
   const fatal = notes.filter((n) => n === 'invented_number' || n === 'reply_too_long' || n === 'hallucinated_derived_count');

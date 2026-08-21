@@ -85,10 +85,28 @@ describe('ai-brief-recipes', () => {
     expect(answer.summary).toContain(String(locked.locked_metrics.reached_bank_ratio));
   });
 
-  it('answers free chat from locked metrics without inventing titles', () => {
-    const locked = buildLockedForMerchant(sampleMerchant, 'chat', 'نرخ موفقیتم چند است؟');
-    const answer = groundedChatAnswer(locked, sampleMerchant);
-    expect(answer.summary).toContain(String(locked.locked_metrics.success_rate));
-    expect(answer.prompt_id).toBe('chat');
+  it('answers day-of-month sales questions from peaks, not month funnel dump', () => {
+    const m = {
+      ...sampleMerchant,
+      series: {
+        ...sampleMerchant.series!,
+        daily: [
+          { day: '2026-01-04', sessions: 10, revenue_rial: 500_000_000, orders: 2 },
+          { day: '2026-01-29', sessions: 20, revenue_rial: 1_100_000_000, orders: 5 },
+          { day: '2026-02-04', sessions: 12, revenue_rial: 600_000_000, orders: 3 },
+        ],
+        weekdays: [
+          { weekday: 1, sessions: 50, revenue_rial: 2_000_000_000, orders: 10, aov: 1 },
+          { weekday: 0, sessions: 40, revenue_rial: 1_500_000_000, orders: 8, aov: 1 },
+        ],
+      },
+    } as MerchantArtifact;
+    const q = 'در چه روزهایی از ماه فروش بیشتری داشتم؟';
+    const locked = buildLockedForMerchant(m, 'chat', q);
+    expect(locked.merchant_dossier.sales_peaks).toBeTruthy();
+    const answer = groundedChatAnswer(locked, m);
+    expect(answer.summary).toContain('2026-01-29');
+    expect(answer.summary).not.toContain('رهاشدن روی صفحه بانک');
+    expect(answer.actions).toHaveLength(0);
   });
 });
