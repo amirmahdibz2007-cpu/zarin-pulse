@@ -7,7 +7,7 @@ export default defineConfig({
       'scripts/**/*.test.ts',
       'apps/**/*.test.ts',
     ],
-    exclude: ['v2/**', '**/node_modules/**'],
+    exclude: ['v2/**', '**/node_modules/**', '**/.next/**'],
     reporters: ['default'],
   },
 });
