@@ -146,56 +146,23 @@ export function AiStage(props: {
     let cancelled = false;
     const gen = ++reqGenRef.current;
 
-    async function bootstrap() {
-      setStatus('boot');
-      setError(null);
-      setDraft('');
-      setLastSource(null);
-      setThread([]);
-      setRevealActionsFor({});
-      try {
-        abortRef.current?.abort();
-        const ac = new AbortController();
-        abortRef.current = ac;
-        const res = await fetch('/api/ai-brief', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            merchantKey: props.merchantKey,
-            promptId: 'overview',
-          }),
-          signal: ac.signal,
-        });
-        if (cancelled || gen !== reqGenRef.current) return;
-        const data = (await res.json()) as ApiOk;
-        if (!res.ok) {
-          setThread([
-            {
-              id: uid(),
-              role: 'assistant',
-              content: copy.aiStage.bootFailed,
-            },
-          ]);
-          setStatus('error');
-          setError(copy.aiStage.error);
-          return;
-        }
-        setThread([
-          {
-            id: uid(),
-            role: 'system',
-            content: copy.aiStage.readDone.replace('{key}', props.merchantKey),
-          },
-        ]);
-        pushAssistant(data);
-      } catch (err) {
-        if (cancelled || gen !== reqGenRef.current || (err as Error).name === 'AbortError') return;
-        setStatus('error');
-        setError(copy.aiStage.error);
-      }
+    // Ready without auto-overview: no default dump until the user asks or taps a chip.
+    setStatus('boot');
+    setError(null);
+    setDraft('');
+    setLastSource(null);
+    setRevealActionsFor({});
+    setThread([
+      {
+        id: uid(),
+        role: 'system',
+        content: copy.aiStage.readDone.replace('{key}', props.merchantKey),
+      },
+    ]);
+    if (!cancelled && gen === reqGenRef.current) {
+      setStatus('ok');
     }
 
-    void bootstrap();
     return () => {
       cancelled = true;
       abortRef.current?.abort();
