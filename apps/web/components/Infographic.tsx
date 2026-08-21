@@ -5,6 +5,11 @@ import { createContext, useContext, useEffect, useId, useRef } from 'react';
 import { DetailDisclosure } from './DetailDisclosure';
 import { EvidenceLink } from './EvidenceLink';
 import { vialFillPercent } from '../lib/chart-scale';
+import { useInViewOnce } from '../lib/use-in-view';
+
+function easeOutCubic(t: number): number {
+  return 1 - (1 - t) ** 3;
+}
 
 function preferReducedMotion(): boolean {
   if (typeof window === 'undefined') return true;
@@ -165,33 +170,59 @@ export function RingMeter(props: {
 
 type SeriesTone = 'muted' | 'positive' | 'negative' | 'accent' | 'warm';
 
+const VIAL_FILL_MS = 980;
+const VIAL_STAGGER_MS = 78;
+
 export function LiquidCylinders(props: {
   series: readonly { label: string; value: number; caption?: string; title?: string; tone?: SeriesTone }[];
 }) {
   const max = Math.max(1, ...props.series.map((s) => s.value));
-  const wave = useLiquidWave(props.series.length > 0);
+  const { ref, active } = useInViewOnce<HTMLUListElement>({
+    threshold: 0.14,
+    rootMargin: '0px',
+  });
+  const wave = useLiquidWave(active && props.series.length > 0);
   const paths = useRef<Array<SVGPathElement | null>>([]);
+  const fillStart = useRef<number | null>(null);
   const uid = useId().replace(/:/g, '');
 
   useEffect(() => {
+    if (!active) {
+      fillStart.current = null;
+      return undefined;
+    }
+
     let raf = 0;
     const reduced = preferReducedMotion();
-    function paint() {
+    if (reduced) {
+      fillStart.current = performance.now() - VIAL_FILL_MS;
+    } else if (fillStart.current == null) {
+      fillStart.current = performance.now();
+    }
+
+    function paint(now: number) {
       const { t, amp } = wave.current;
+      const started = fillStart.current ?? now;
       props.series.forEach((row, i) => {
         const el = paths.current[i];
         if (!el) return;
-        const pct = vialFillPercent(row.value, max);
-        el.setAttribute('d', vialPath(pct, t, reduced ? 0 : amp));
+        const target = vialFillPercent(row.value, max);
+        const local = reduced
+          ? 1
+          : Math.min(1, Math.max(0, (now - started - i * VIAL_STAGGER_MS) / VIAL_FILL_MS));
+        const pct = target * easeOutCubic(local);
+        // Soft wave only after the column has mostly filled — keeps the rise clean.
+        const waveAmp = reduced ? 0 : amp * easeOutCubic(Math.min(1, local / 0.72));
+        el.setAttribute('d', vialPath(pct, t, waveAmp));
       });
       raf = window.requestAnimationFrame(paint);
     }
-    paint();
+    raf = window.requestAnimationFrame(paint);
     return () => window.cancelAnimationFrame(raf);
-  }, [max, props.series, wave]);
+  }, [active, max, props.series, wave]);
 
   return (
-    <ul className="surface-well liquid-cyl-row">
+    <ul ref={ref} className="surface-well liquid-cyl-row" data-live={active ? 'true' : 'false'}>
       {props.series.map((row, i) => {
         const tone = row.tone ?? 'muted';
         const clip = `vial-${uid}-${String(i)}`;
@@ -210,7 +241,7 @@ export function LiquidCylinders(props: {
                 }}
                 className="vial-liquid"
                 clipPath={`url(#${clip})`}
-                d={vialPath(vialFillPercent(row.value, max), 0, 0)}
+                d={vialPath(0, 0, 0)}
               />
               <path className="vial-shine" d="M18 22 C16 50 16 90 18 138" />
             </svg>

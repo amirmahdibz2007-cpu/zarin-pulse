@@ -22,7 +22,18 @@ import {
 } from '../lib/merchant-periods';
 import { ActionBrief } from './ActionBrief';
 import { AreaLine, Columns, FunnelStack, MiniRing, Sparkline } from './Charts';
+import { LiquidCylinders } from './Infographic';
 import { StatusPill } from './StatusPill';
+
+const TERMINAL_SPLIT = ['Verified', 'InBank', 'NoAttempt', 'Failed', 'Paid'] as const;
+
+function cylinderTone(state: (typeof TERMINAL_SPLIT)[number]) {
+  if (state === 'Verified') return 'positive' as const;
+  if (state === 'InBank') return 'accent' as const;
+  if (state === 'Failed') return 'negative' as const;
+  if (state === 'Paid') return 'warm' as const;
+  return 'muted' as const;
+}
 
 function monthLabel(key: string): string {
   const part = key.split('-')[1];
@@ -103,6 +114,13 @@ export function HomeMerchantDash(props: { merchant: MerchantArtifact }) {
   });
   const sparkSessions = (series?.daily ?? []).slice(-40).map((d) => d.sessions ?? 0);
   const peerGap = m.peers && m.peers.gap > 0 ? m.peers.gap : 0;
+  const terminalCounts: Record<(typeof TERMINAL_SPLIT)[number], number> = {
+    Verified: m.verified,
+    InBank: m.in_bank,
+    NoAttempt: m.no_attempt,
+    Failed: m.failed,
+    Paid: m.paid_pending,
+  };
 
   return (
     <>
@@ -250,6 +268,24 @@ export function HomeMerchantDash(props: { merchant: MerchantArtifact }) {
             <p className="stat-hint">{copy.product.skeletonNote}</p>
           )}
         </article>
+        <article className="chart-card">
+          <h2 className="chart-title">{copy.dash.split}</h2>
+          <LiquidCylinders
+            series={TERMINAL_SPLIT.map((state) => {
+              const n = terminalCounts[state];
+              return {
+                label: copy.terminalShort[state],
+                value: n,
+                caption: formatRatioAsPercent(m.sessions > 0 ? n / m.sessions : 0),
+                title: copy.terminal[state],
+                tone: cylinderTone(state),
+              };
+            })}
+          />
+        </article>
+      </section>
+
+      <section className="dash-pair">
         <article className="chart-card chart-card-actions">
           <ActionBrief merchantKey={m.key} actions={actions} />
         </article>
