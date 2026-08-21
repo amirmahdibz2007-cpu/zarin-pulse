@@ -176,7 +176,7 @@ export function OpsSuite(props: { merchant: MerchantArtifact }) {
         <ol className="ops-ladder">
           {tiers.map((t, index) => (
             <li key={t.id} className="ops-ladder-row" data-tone={t.tone}>
-              <MedalWatermark tone={t.tone} />
+              {t.tone !== 'risk' ? <MedalWatermark tone={t.tone} /> : null}
               <span className="ops-ladder-rank" aria-hidden="true">
                 {String(index + 1).padStart(2, '0')}
               </span>
