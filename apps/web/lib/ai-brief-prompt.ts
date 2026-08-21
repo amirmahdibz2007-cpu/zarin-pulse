@@ -18,6 +18,19 @@ export const AI_BRIEF_FORBIDDEN_TOKENS = [
   'PSP',
 ] as const;
 
+/** English JSON keys that must never appear in user-facing Persian prose. */
+export const AI_BRIEF_PROSE_SCRUB_TOKENS = [
+  'paid_pending',
+  'success_rate',
+  'in_bank',
+  'no_attempt',
+  'merchant_dossier',
+  'ranked_actions',
+  'story_beats',
+  'locked_metrics',
+  'impact_rial',
+] as const;
+
 /** Ready chips only (not free chat). */
 export const AI_PROMPT_IDS = [
   'overview',
@@ -107,11 +120,19 @@ JSON قفل‌شده را خوانده‌ای — شامل merchant_dossier با
 
 ===== خط قرمز =====
 1) هیچ عدد تازه‌ای نساز؛ فقط از locked_metrics / merchant_dossier / ranked_actions / story_beats.
-2) اولویت یا تشخیص جدید نساز. اگر سؤال خارج از داده بود صادقانه بگو.
+2) اولویت یا تشخیص جدید نساز. اگر سؤال خارج از داده بود صادقانه بگو و به نزدیک‌ترین سیگنال درگاه برگرد.
 3) علیت قطعی، تعرفه واقعی، توصیه حقوقی ممنوع.
-4) واژه‌های ممنوع: صدک، بوت‌استرپ، بازه اطمینان، p-value، Wilson، KPI، funnel، AOV، PSP.
-5) جواب کلیشه‌ای نده.
+4) واژه‌های ممنوع: صدک، بوت‌استرپ، بازه اطمینان، p-value، Wilson، KPI، funnel، AOV، PSP و هر کلید انگلیسی JSON (مثل paid_pending).
+5) جواب کلیشه‌ای نده؛ عین جملهٔ next_step را کپی نکن مگر کاربر صریح بخواهد «متن آماده».
 6) برای سؤال دربارهٔ ماه، روز هفته، روند روزانه، کارمزد، مشتری تکراری، سبد، یا فاصلهٔ هم‌صنف از merchant_dossier استفاده کن؛ جمع تازه نساز.
+
+===== گفتگو =====
+- فقط سؤال فعلی را جواب بده.
+- اگر تاریخچه داری، متن جواب قبلی را تکرار نکن و همان عدد/جمله را دوباره طوطی‌وار نگو.
+- اگر کاربر «بعدش / خب چیکار کنم / قدم بعدی» می‌پرسد: برو سراغ اولویت بعدی ranked_actions (معمولاً rank=2) یا همان اولویت را با زاویهٔ اجرایی تازه بگو — نه کپی جواب قبل.
+- نام فیلد انگلیسی ننویس؛ فقط فارسی کسب‌وکار.
+- تعاریف قفل: «پول معلق» فقط pending_money / pending_rial است؛ «فرصت قابل‌بازیابی» جداست (impact). این دو را قاطی نکن.
+- سؤال خارج از درگاه (اینستاگرام، تبلیغات، تولید محتوا، مارکتینگ کانال): بگو در این داده قفل نیست؛ از شمارندهٔ مشتری برای نسخهٔ محتوایی استفاده نکن؛ در یک جمله به اولویت پرداخت برگرد.
 
 ${QUALITY_VOICE}
 
@@ -224,7 +245,7 @@ function focusActionsForPrompt(
 
 function buildRewriteInstruction(promptId: AiPromptId, primaryTitle?: string): string {
   if (promptId === AI_CHAT_PROMPT_ID) {
-    return 'به سؤال فقط از داده و story_beats جواب بده؛ قالب آماده نساز.';
+    return 'فقط سؤال فعلی را از داده قفل جواب بده؛ تکرار جواب قبلی، کپی عین next_step، و کلید انگلیسی ممنوع.';
   }
   const titleBit = primaryTitle ? ` («${primaryTitle}»)` : '';
   switch (promptId) {
@@ -306,7 +327,41 @@ function scrubForbiddenTokens(text: string): string {
   for (const tok of AI_BRIEF_FORBIDDEN_TOKENS) {
     if (out.includes(tok)) out = out.split(tok).join('');
   }
-  return out.replace(/\s{2,}/g, ' ').trim();
+  for (const tok of AI_BRIEF_PROSE_SCRUB_TOKENS) {
+    if (out.includes(tok)) out = out.split(tok).join('');
+  }
+  // Drop snake_case JSON keys the model sometimes leaks into Persian prose.
+  out = out.replace(/\s*\([a-z][a-zA-Z0-9_]{2,}\)/g, '');
+  out = out.replace(/\b[a-z]+(?:_[a-z0-9]+)+\b/gi, '');
+  return out.replace(/\s{2,}/g, ' ').replace(/\s+([،.؛:])/g, '$1').trim();
+}
+
+function confusesPendingWithRecoverable(
+  reply: string,
+  locked: AiBriefLockedInput,
+  userMessage: string,
+): boolean {
+  if (!/معلق|pending/i.test(userMessage)) return false;
+  const pendingZero =
+    String(locked.locked_metrics.pending_rial_billions ?? '0') === '0' &&
+    Number(locked.locked_metrics.paid_pending ?? 0) === 0;
+  if (!pendingZero) return false;
+  const recoverable = String(locked.locked_metrics.recoverable_rial_billions ?? '0');
+  if (recoverable !== '0' && reply.includes(recoverable)) return true;
+  // Claims a non-zero pending money without saying صفر/۰
+  if (/پول\s*معلق/.test(reply) && /میلیارد/.test(reply) && !/(?:صفر|۰)/.test(reply)) return true;
+  return false;
+}
+
+function offTopicMarketingAdvice(reply: string, userMessage: string): boolean {
+  if (!/اینستا|تلگرام|تبلیغ|مارکتینگ|بازاریابی|شبکه\s*اجتماع|تولید\s*محتوا/.test(userMessage)) {
+    return false;
+  }
+  const refuses = /قفل نیست|قفل نشده|داده.{0,12}(نیست|ندارد|نداریم)|در دسترس نیست|خارج از|فقط.{0,20}(درگاه|پرداخت|قیف)/.test(
+    reply,
+  );
+  const pitches = /پست|محتوا|هشتگ|فالو|استوری|کمپین|ریلز/.test(reply);
+  return pitches && !refuses;
 }
 
 export function validateAiChatResponse(
@@ -364,6 +419,14 @@ export function validateAiChatResponse(
   }
 
   if (/۱۶۳.?۳۳۴|163334/.test(reply)) notes.push('hallucinated_derived_count');
+
+  const q = locked.user_message ?? '';
+  if (confusesPendingWithRecoverable(reply, locked, q)) {
+    return { ok: false, notes: ['pending_confused_with_recoverable'], value: null };
+  }
+  if (offTopicMarketingAdvice(reply, q)) {
+    return { ok: false, notes: ['offtopic_marketing'], value: null };
+  }
 
   const fatal = notes.filter((n) => n === 'invented_number' || n === 'reply_too_long' || n === 'hallucinated_derived_count');
   if (fatal.length > 0) {

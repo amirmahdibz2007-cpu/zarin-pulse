@@ -16,7 +16,8 @@ import {
 } from './ai-brief-prompt';
 
 const OPENROUTER_URL = 'https://openrouter.ai/api/v1/chat/completions';
-const MODEL_TIMEOUT_MS = 9_000;
+/** Free models often queue; too-short timeout forces canned fallback and feels repetitive. */
+const MODEL_TIMEOUT_MS = 14_000;
 
 export type AiChatTurn = { role: 'user' | 'assistant'; content: string };
 
@@ -78,9 +79,17 @@ async function callModel(
     for (const turn of history.slice(-4)) {
       messages.push({ role: turn.role, content: turn.content });
     }
+    const hasHistory = history.length > 0;
     messages.push({
       role: 'user',
-      content: `سؤال:\n${wire.user_message ?? ''}\n\nفقط JSON: {"merchant_key","reply","actions"}`,
+      content: [
+        `سؤال فعلی:\n${wire.user_message ?? ''}`,
+        hasHistory
+          ? 'این ادامهٔ گفتگوست: جواب قبلی را تکرار نکن. اگر «بعدش/چیکار کنم» است برو سراغ اولویت بعدی یا زاویهٔ اجرایی تازه.'
+          : 'مستقیم و مشخص جواب بده؛ کلی‌گویی نکن.',
+        'کلید انگلیسی JSON در متن ممنوع.',
+        'فقط JSON: {"merchant_key","reply","actions"}',
+      ].join('\n\n'),
     });
   } else {
     messages.push({ role: 'user', content: buildAiBriefUserPrompt(wire) });
@@ -103,7 +112,7 @@ async function callModel(
     },
     body: JSON.stringify({
       model,
-      temperature: isChat ? 0.35 : 0.22,
+      temperature: isChat ? 0.42 : 0.22,
       top_p: 0.9,
       max_tokens: isChat ? 700 : 1100,
       messages,

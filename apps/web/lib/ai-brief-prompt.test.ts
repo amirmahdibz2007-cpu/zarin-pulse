@@ -241,4 +241,67 @@ describe('ai-brief-prompt', () => {
     expect(v.value?.actions).toHaveLength(1);
     expect(v.value?.actions[0]?.title).toBe(sampleActions[0]!.title);
   });
+
+  it('scrubs English field leaks from chat replies', () => {
+    const locked = buildAiBriefLockedInput({
+      key: 'M31',
+      promptId: 'chat',
+      category: 'x',
+      metrics: { success_rate: '۲۰٪', paid_pending: 0 },
+      actions: sampleActions.slice(0, 1),
+      userMessage: 'پول معلق؟',
+    });
+    const raw = JSON.stringify({
+      merchant_key: 'M31',
+      reply: 'پول معلق (paid_pending) صفر است و نرخ ۲۰٪.',
+      actions: [],
+    });
+    const v = validateAiBriefResponse(raw, locked);
+    expect(v.ok).toBe(true);
+    expect(v.value?.summary.includes('paid_pending')).toBe(false);
+    expect(v.value?.summary).toContain('۲۰٪');
+  });
+
+  it('rejects chat that confuses pending money with recoverable impact', () => {
+    const locked = buildAiBriefLockedInput({
+      key: 'M31',
+      promptId: 'chat',
+      category: 'x',
+      metrics: {
+        success_rate: '۱۹٫۶٪',
+        paid_pending: 0,
+        pending_rial_billions: '0',
+        recoverable_rial_billions: '۸۳٫۷۵',
+      },
+      actions: sampleActions.slice(0, 1),
+      userMessage: 'پول معلقم چقدر است؟',
+    });
+    const raw = JSON.stringify({
+      merchant_key: 'M31',
+      reply: 'پول معلق روی بانک حدود ۸۳٫۷۵ میلیارد ریال است.',
+      actions: [],
+    });
+    const v = validateAiBriefResponse(raw, locked);
+    expect(v.ok).toBe(false);
+    expect(v.notes).toContain('pending_confused_with_recoverable');
+  });
+
+  it('rejects Instagram growth advice that ignores missing channel data', () => {
+    const locked = buildAiBriefLockedInput({
+      key: 'M31',
+      promptId: 'chat',
+      category: 'x',
+      metrics: { customers_label: '۴۵٬۲۵۵', success_rate: '۱۹٫۶٪' },
+      actions: sampleActions.slice(0, 1),
+      userMessage: 'اینستاگرامم را چطور رشد بدم؟',
+    });
+    const raw = JSON.stringify({
+      merchant_key: 'M31',
+      reply: 'هر هفته یک پست آموزشی بگذار تا مشتری‌هایت برگردند.',
+      actions: [],
+    });
+    const v = validateAiBriefResponse(raw, locked);
+    expect(v.ok).toBe(false);
+    expect(v.notes).toContain('offtopic_marketing');
+  });
 });

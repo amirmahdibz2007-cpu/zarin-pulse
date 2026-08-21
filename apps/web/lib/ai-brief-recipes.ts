@@ -131,8 +131,15 @@ export function buildLockedMetrics(m: MerchantArtifact): Record<string, string |
     peak_weekday_sessions: peakWeek ? formatCount(count(peakWeek.sessions)) : '',
     pending_rial_billions:
       m.paid_amount_rial > 0 ? formatBillionsFigure(m.paid_amount_rial) : '0',
+    pending_money_full:
+      m.paid_amount_rial > 0 ? formatBillionsRial(m.paid_amount_rial) : '۰٫۰۰ میلیارد ریال',
     pending_recon_rial_billions:
       m.pending?.rial > 0 ? formatBillionsFigure(m.pending.rial) : '0',
+    /** Glossary for the model — not to be invented past. */
+    def_pending_money:
+      'پول معلق = فقط مبلغ پرداخت‌شدهٔ بدون تأیید (pending_rial). با فرصت قابل‌بازیابی یکی نیست.',
+    def_recoverable:
+      'فرصت قابل‌بازیابی = برآورد اثر بستن سوراخ قیف (impact). پول معلق نیست.',
     median_ticket_rial: medianTicket != null ? formatRial(medianTicket) : '',
     avg_ticket_rial: avgTicket != null ? formatRial(avgTicket) : '',
     unique_prices: m.unique_prices ?? 0,
@@ -507,8 +514,34 @@ export function groundedChatAnswer(
       : null,
   }));
 
+  const followUp = /بعد|چیکار|چی\s*کار|قدم\s*بعد|خب\s*پس/.test(q);
+  const secondary = locked.ranked_actions[1];
+  const focus = followUp && secondary ? secondary : primary;
+
   let summary: string;
-  if (/موفق|نرخ|تبدیل|success/.test(q)) {
+  if (followUp && focus) {
+    summary = `قدم بعدی روی «${focus.title}» است. ${focus.body} کار عملی: ${focus.next_step}${
+      focus.impact_rial_billions ? ` اثر تقریبی حدود ${focus.impact_rial_billions} میلیارد ریال.` : ''
+    }`;
+  } else if (/اینستا|تلگرام|تبلیغ|مارکتینگ|بازاریابی|شبکه\s*اجتماع|تولید\s*محتوا/.test(q)) {
+    summary = primary
+      ? `برای رشد اینستاگرام یا تبلیغات کانال در این صفحه دادهٔ قفل نداریم؛ فقط قیف پرداخت و فروش درگاه را می‌بینیم. اگر بخواهید روی درگاه کار کنید، اولویت «${primary.title}» است: ${primary.next_step}`
+      : `برای رشد شبکه‌های اجتماعی در این artifact دادهٔ قفل نداریم؛ فقط وضعیت پرداخت درگاه را پوشش می‌دهیم.`;
+  } else if (/معلق|pending/.test(q) && /موفق|نرخ|تبدیل/.test(q)) {
+    const pendingFull = String(metrics.pending_money_full || '۰٫۰۰ میلیارد ریال');
+    summary = `نرخ موفقیت درگاه شما ${metrics.success_rate} است. پول معلق قفل‌شده ${pendingFull} است و با فرصت قابل‌بازیابی یکی نیست.`;
+  } else if (/معلق|pending/.test(q)) {
+    const pendingFull = String(metrics.pending_money_full || '۰٫۰۰ میلیارد ریال');
+    const recoverable = String(metrics.recoverable_rial_billions ?? '0');
+    summary =
+      `پول معلق قفل‌شده ${pendingFull} است` +
+      (Number(metrics.paid_pending) > 0
+        ? ` (${metrics.paid_pending_label} جلسه).`
+        : '.') +
+      (recoverable !== '0'
+        ? ` این را با فرصت قابل‌بازیابی (${metrics.recoverable_full || `${recoverable} میلیارد ریال`}) اشتباه نگیرید؛ آن برآورد بستن سوراخ قیف است.`
+        : '');
+  } else if (/موفق|نرخ|تبدیل|success/.test(q)) {
     summary = `نرخ موفقیت درگاه شما ${metrics.success_rate} است؛ از ${metrics.sessions_label} جلسه، ${metrics.verified_label} موفق شده‌اند. ${
       primary
         ? `اولویت هم‌راستا «${primary.title}» است: ${primary.next_step}`
@@ -564,7 +597,7 @@ export function groundedChatAnswer(
         : `عدد کارمزد معناداری در artifact این پذیرنده قفل نشده.`;
   } else if (/هفته|weekday|روز.?هفته/.test(q)) {
     summary = metrics.peak_weekday
-      ? `اوج ترافیک هفتگی در ${metrics.peak_weekday} با حدود ${metrics.peak_weekday_sessions} جلسه است. جزئیات همهٔ روزها در merchant_dossier.series.weekdays قفل است.`
+      ? `اوج ترافیک هفتگی در ${metrics.peak_weekday} با حدود ${metrics.peak_weekday_sessions} جلسه است. جزئیات روزهای هفته در دادهٔ همین پذیرنده قفل است.`
       : `سری روزهای هفته در artifact این پذیرنده خالی است.`;
   } else {
     const beat = locked.story_beats.slice(0, 2).join(' ');
@@ -573,11 +606,15 @@ export function groundedChatAnswer(
       : beat || copy.aiStage.fallbackEmpty;
   }
 
+  const focusActions = focus
+    ? actions.filter((a) => a.title === focus.title).slice(0, 1)
+    : actions;
+
   return {
     merchant_key: locked.merchant_key,
     prompt_id: 'chat',
     summary: summary.trim(),
-    actions,
+    actions: followUp && focusActions.length > 0 ? focusActions : actions,
     source: 'deterministic',
   };
 }
