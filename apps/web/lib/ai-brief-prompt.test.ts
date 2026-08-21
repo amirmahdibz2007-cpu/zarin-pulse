@@ -285,23 +285,4 @@ describe('ai-brief-prompt', () => {
     expect(v.ok).toBe(false);
     expect(v.notes).toContain('pending_confused_with_recoverable');
   });
-
-  it('rejects Instagram growth advice that ignores missing channel data', () => {
-    const locked = buildAiBriefLockedInput({
-      key: 'M31',
-      promptId: 'chat',
-      category: 'x',
-      metrics: { customers_label: '۴۵٬۲۵۵', success_rate: '۱۹٫۶٪' },
-      actions: sampleActions.slice(0, 1),
-      userMessage: 'اینستاگرامم را چطور رشد بدم؟',
-    });
-    const raw = JSON.stringify({
-      merchant_key: 'M31',
-      reply: 'هر هفته یک پست آموزشی بگذار تا مشتری‌هایت برگردند.',
-      actions: [],
-    });
-    const v = validateAiBriefResponse(raw, locked);
-    expect(v.ok).toBe(false);
-    expect(v.notes).toContain('offtopic_marketing');
-  });
 });

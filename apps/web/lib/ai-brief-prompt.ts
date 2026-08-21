@@ -56,11 +56,9 @@ export function isAiPromptId(value: string): value is AiPromptId {
   return isAiRecipeId(value) || value === AI_CHAT_PROMPT_ID;
 }
 
-const QUALITY_VOICE = `===== کیفیت لحن =====
-مثل مشاور ارشد فروش درگاه حرف بزن: روشن، مشخص، بدون شعار.
-ساختار ذهنی هر جواب: (۱) وضعیت با عدد قفل (۲) معنی برای فروش (۳) یک کار امروز.
-جمله‌ها کوتاه و طبیعیِ فارسیِ کسب‌وکار باشند؛ از ترجمه‌ی ماشینی و کلیشه («در دنیای امروز…») پرهیز کن.
-عدد را داخل جمله بگذار، نه در پرانتز خشک.`;
+const QUALITY_VOICE = `===== لحن =====
+مثل مشاور باتجربهٔ درگاه حرف بزن: طبیعی، دقیق، بدون شعار و ترجمه‌ی ماشینی.
+عدد قفل را داخل جمله بیاور؛ طول جواب را با سؤال هماهنگ کن (سلام کوتاه، سؤال تحلیلی عمیق‌تر).`;
 
 /** System prompt with absolute product red lines (Persian). */
 export const AI_BRIEF_SYSTEM_PROMPT = `نقش تو: مشاور کسب‌وکار «زرین‌پالس» برای همین پذیرنده.
@@ -114,32 +112,34 @@ summary باید next_step را روشن کند و اگر impact هست اثر �
 لحن رسمی پشتیبانی داخلی: خلاصه برای تیکت. اعداد و title ثابت؛ مناسب کپی به همکار پشتیبانی.`,
 };
 
-/** Chat system — grounded Q&A, never a canned template. */
-export const AI_CHAT_SYSTEM_PROMPT = `نقش تو: چت‌بات تحلیل‌گر پذیرنده در «زرین‌پالس».
-JSON قفل‌شده را خوانده‌ای — شامل merchant_dossier با تمام فیلدهای موجود همین پذیرنده. مثل کسی جواب بده که داشبورد کامل را جلو چشمش دارد.
+/**
+ * Free chat: real model + full merchant data.
+ * Prefer natural helpful answers over rigid recipe templates.
+ */
+export const AI_CHAT_SYSTEM_PROMPT = `تو تحلیل‌گر زرین‌پالس برای همین پذیرنده هستی.
+دادهٔ کامل پذیرنده را در JSON قفل‌شده داری (locked_metrics، merchant_dossier، ranked_actions، story_beats).
+از این داده مثل یک هوش مصنوعی قوی که داشبورد را دیده استفاده کن؛ بهتر و دقیق‌تر از چت عمومی جواب بده چون عددها را داری.
 
-===== خط قرمز =====
-1) هیچ عدد تازه‌ای نساز؛ فقط از locked_metrics / merchant_dossier / ranked_actions / story_beats.
-2) اولویت یا تشخیص جدید نساز. اگر سؤال خارج از داده بود صادقانه بگو و به نزدیک‌ترین سیگنال درگاه برگرد.
-3) علیت قطعی، تعرفه واقعی، توصیه حقوقی ممنوع.
-4) واژه‌های ممنوع: صدک، بوت‌استرپ، بازه اطمینان، p-value، Wilson، KPI، funnel، AOV، PSP و هر کلید انگلیسی JSON (مثل paid_pending).
-5) جواب کلیشه‌ای نده؛ عین جملهٔ next_step را کپی نکن مگر کاربر صریح بخواهد «متن آماده».
-6) برای سؤال دربارهٔ ماه، روز هفته، روند روزانه، کارمزد، مشتری تکراری، سبد، یا فاصلهٔ هم‌صنف از merchant_dossier استفاده کن؛ جمع تازه نساز.
+قیدهای سخت (فقط این‌ها):
+- عدد تازه نساز و جمع/میانگین اختراع نکن؛ فقط از همان JSON.
+- عنوان/ترتیب اولویت ranked_actions را عوض نکن.
+- علیت قطعی، تعرفهٔ واقعی زرین‌پال، و توصیهٔ حقوقی نگو.
+- کلید انگلیسی JSON را در متن فارسی ننویس.
+- «پول معلق» را با «فرصت قابل‌بازیابی» قاطی نکن.
 
-===== گفتگو =====
-- فقط سؤال فعلی را جواب بده.
-- اگر تاریخچه داری، متن جواب قبلی را تکرار نکن و همان عدد/جمله را دوباره طوطی‌وار نگو.
-- اگر کاربر «بعدش / خب چیکار کنم / قدم بعدی» می‌پرسد: برو سراغ اولویت بعدی ranked_actions (معمولاً rank=2) یا همان اولویت را با زاویهٔ اجرایی تازه بگو — نه کپی جواب قبل.
-- نام فیلد انگلیسی ننویس؛ فقط فارسی کسب‌وکار.
-- تعاریف قفل: «پول معلق» فقط pending_money / pending_rial است؛ «فرصت قابل‌بازیابی» جداست (impact). این دو را قاطی نکن.
-- سؤال خارج از درگاه (اینستاگرام، تبلیغات، تولید محتوا، مارکتینگ کانال): بگو در این داده قفل نیست؛ از شمارندهٔ مشتری برای نسخهٔ محتوایی استفاده نکن؛ در یک جمله به اولویت پرداخت برگرد.
+رفتار گفتگو:
+- به همان چیزی جواب بده که کاربر پرسیده؛ اندازهٔ جواب را با سؤال هماهنگ کن.
+- اگر فقط سلام/احوال‌پرسی است، کوتاه سلام کن و بپرس روی چه چیزی کمک می‌خواهد — گزارش کامل و کارت اقدام نریز.
+- اگر سؤال تحلیلی است، عمیق و مشخص باش و از داده استفاده کن.
+- اگر خارج از داده بود صادق باش؛ می‌توانی با دادهٔ درگاه پل بزنی بدون اینکه وانمود کنی همه‌چیز را می‌دانی.
+- تاریخچه را در نظر بگیر؛ طوطی‌وار تکرار نکن.
 
 ${QUALITY_VOICE}
 
-===== خروجی =====
-فقط JSON بدون markdown:
-{"merchant_key":"...","reply":"۳ تا ۶ جملهٔ مشخص به فارسی","actions":[]}
-اگر سؤال به اقدام‌ها مربوط است حداکثر ۳ مورد از ranked_actions با همان title در actions بیاور؛ وگرنه [].`;
+خروجی فقط JSON بدون markdown:
+{"merchant_key":"...","reply":"...","actions":[]}
+actions را فقط وقتی پر کن که واقعاً به اقدام مربوط است؛ وگرنه [].
+حداکثر ۳ action با همان titleهای ranked_actions.`;
 
 export type AiBriefLockedAction = {
   rank: number;
@@ -245,7 +245,7 @@ function focusActionsForPrompt(
 
 function buildRewriteInstruction(promptId: AiPromptId, primaryTitle?: string): string {
   if (promptId === AI_CHAT_PROMPT_ID) {
-    return 'فقط سؤال فعلی را از داده قفل جواب بده؛ تکرار جواب قبلی، کپی عین next_step، و کلید انگلیسی ممنوع.';
+    return 'با دادهٔ قفل جواب بده؛ لحن طبیعی؛ اندازهٔ جواب با سؤال یکی باشد.';
   }
   const titleBit = primaryTitle ? ` («${primaryTitle}»)` : '';
   switch (promptId) {
@@ -353,17 +353,6 @@ function confusesPendingWithRecoverable(
   return false;
 }
 
-function offTopicMarketingAdvice(reply: string, userMessage: string): boolean {
-  if (!/اینستا|تلگرام|تبلیغ|مارکتینگ|بازاریابی|شبکه\s*اجتماع|تولید\s*محتوا/.test(userMessage)) {
-    return false;
-  }
-  const refuses = /قفل نیست|قفل نشده|داده.{0,12}(نیست|ندارد|نداریم)|در دسترس نیست|خارج از|فقط.{0,20}(درگاه|پرداخت|قیف)/.test(
-    reply,
-  );
-  const pitches = /پست|محتوا|هشتگ|فالو|استوری|کمپین|ریلز/.test(reply);
-  return pitches && !refuses;
-}
-
 export function validateAiChatResponse(
   raw: string,
   locked: AiBriefLockedInput,
@@ -423,9 +412,6 @@ export function validateAiChatResponse(
   const q = locked.user_message ?? '';
   if (confusesPendingWithRecoverable(reply, locked, q)) {
     return { ok: false, notes: ['pending_confused_with_recoverable'], value: null };
-  }
-  if (offTopicMarketingAdvice(reply, q)) {
-    return { ok: false, notes: ['offtopic_marketing'], value: null };
   }
 
   const fatal = notes.filter((n) => n === 'invented_number' || n === 'reply_too_long' || n === 'hallucinated_derived_count');

@@ -74,7 +74,7 @@ async function callModel(
     const { user_message: _um, ...context } = wire;
     messages.push({
       role: 'user',
-      content: `زمینهٔ قفل‌شده:\n${JSON.stringify(context)}\n\nعدد تازه نساز؛ از merchant_dossier و ranked_actions استفاده کن.`,
+      content: `دادهٔ قفل‌شدهٔ همین پذیرنده:\n${JSON.stringify(context)}\n\nاز این داده کمک بگیر؛ عدد تازه نساز.`,
     });
     for (const turn of history.slice(-4)) {
       messages.push({ role: turn.role, content: turn.content });
@@ -83,11 +83,10 @@ async function callModel(
     messages.push({
       role: 'user',
       content: [
-        `سؤال فعلی:\n${wire.user_message ?? ''}`,
+        `سؤال:\n${wire.user_message ?? ''}`,
         hasHistory
-          ? 'این ادامهٔ گفتگوست: جواب قبلی را تکرار نکن. اگر «بعدش/چیکار کنم» است برو سراغ اولویت بعدی یا زاویهٔ اجرایی تازه.'
-          : 'مستقیم و مشخص جواب بده؛ کلی‌گویی نکن.',
-        'کلید انگلیسی JSON در متن ممنوع.',
+          ? 'ادامهٔ گفتگوست؛ تکرار طوطی‌وار نکن و مستقیم به سؤال فعلی جواب بده.'
+          : 'اندازهٔ جواب را با سؤال هماهنگ کن.',
         'فقط JSON: {"merchant_key","reply","actions"}',
       ].join('\n\n'),
     });
@@ -112,9 +111,9 @@ async function callModel(
     },
     body: JSON.stringify({
       model,
-      temperature: isChat ? 0.42 : 0.22,
-      top_p: 0.9,
-      max_tokens: isChat ? 700 : 1100,
+      temperature: isChat ? 0.55 : 0.22,
+      top_p: 0.92,
+      max_tokens: isChat ? 900 : 1100,
       messages,
     }),
     signal,
