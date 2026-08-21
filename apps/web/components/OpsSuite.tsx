@@ -104,31 +104,77 @@ export function OpsSuite(props: { merchant: MerchantArtifact }) {
         </div>
       </header>
 
-      <div className="ops-block">
+      <div className="ops-block ops-tiers">
         <div className="ops-block-head">
           <h3 className="ops-block-title">{copy.ops.tiersTitle}</h3>
           <p className="ops-block-hint">{copy.ops.tiersHint}</p>
         </div>
-        <ul className="ops-tier-grid">
-          {tiers.map((t) => (
-            <li key={t.id} className="ops-tier-card" data-tone={t.tone}>
-              <p className="ops-tier-label">{t.label}</p>
-              <p className="ops-tier-value">{formatCount(count(t.bucket.customers))}</p>
-              <p className="ops-tier-meta">
-                {copy.ops.customers}
-                {' · '}
-                {copy.ops.revenueShare} {formatRatioAsPercent(t.bucket.share_of_revenue)}
-              </p>
-              <p className="ops-tier-revenue">{formatBillionsRial(t.bucket.revenue_rial)}</p>
-              {t.href && t.downloadLabel ? (
-                <a className="ops-download control-neuro" href={t.href}>
-                  {t.downloadLabel}
-                </a>
-              ) : null}
-              {t.filter ? <p className="ops-filter">{t.filter}</p> : null}
+
+        <div
+          className="ops-share"
+          role="img"
+          aria-label={`${copy.ops.revenueShare}: ${copy.ops.gold} ${formatRatioAsPercent(ops.customer_tiers.gold.share_of_revenue)}, ${copy.ops.silver} ${formatRatioAsPercent(ops.customer_tiers.silver.share_of_revenue)}, ${copy.ops.bronze} ${formatRatioAsPercent(ops.customer_tiers.bronze.share_of_revenue)}`}
+        >
+          <div className="ops-share-track">
+            <span
+              className="ops-share-seg"
+              data-tone="gold"
+              style={{ flexGrow: Math.max(ops.customer_tiers.gold.share_of_revenue, 0.02) }}
+            />
+            <span
+              className="ops-share-seg"
+              data-tone="silver"
+              style={{ flexGrow: Math.max(ops.customer_tiers.silver.share_of_revenue, 0.02) }}
+            />
+            <span
+              className="ops-share-seg"
+              data-tone="bronze"
+              style={{ flexGrow: Math.max(ops.customer_tiers.bronze.share_of_revenue, 0.02) }}
+            />
+          </div>
+          <ul className="ops-share-legend">
+            <li data-tone="gold">
+              <span className="ops-share-dot" aria-hidden="true" />
+              {copy.ops.gold} {formatRatioAsPercent(ops.customer_tiers.gold.share_of_revenue)}
+            </li>
+            <li data-tone="silver">
+              <span className="ops-share-dot" aria-hidden="true" />
+              {copy.ops.silver} {formatRatioAsPercent(ops.customer_tiers.silver.share_of_revenue)}
+            </li>
+            <li data-tone="bronze">
+              <span className="ops-share-dot" aria-hidden="true" />
+              {copy.ops.bronze} {formatRatioAsPercent(ops.customer_tiers.bronze.share_of_revenue)}
+            </li>
+          </ul>
+        </div>
+
+        <ol className="ops-ladder">
+          {tiers.map((t, index) => (
+            <li key={t.id} className="ops-ladder-row" data-tone={t.tone}>
+              <span className="ops-ladder-rank" aria-hidden="true">
+                {String(index + 1).padStart(2, '0')}
+              </span>
+              <div className="ops-ladder-main">
+                <p className="ops-ladder-label">{t.label}</p>
+                <p className="ops-ladder-body">
+                  {formatCount(count(t.bucket.customers))} {copy.ops.customers}
+                  {' · '}
+                  {copy.ops.revenueShare} {formatRatioAsPercent(t.bucket.share_of_revenue)}
+                </p>
+                {t.filter ? <p className="ops-ladder-filter">{t.filter}</p> : null}
+                {t.href && t.downloadLabel ? (
+                  <a className="ops-ladder-link" href={t.href}>
+                    {t.downloadLabel}
+                  </a>
+                ) : null}
+              </div>
+              <div className="ops-ladder-impact">
+                <p className="ops-ladder-impact-label">{copy.actionBrief.impactLabel}</p>
+                <p className="ops-ladder-impact-value">{formatBillionsRial(t.bucket.revenue_rial)}</p>
+              </div>
             </li>
           ))}
-        </ul>
+        </ol>
       </div>
 
       {m.impact && scaled ? (
