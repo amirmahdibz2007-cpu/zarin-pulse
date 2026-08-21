@@ -34,6 +34,31 @@ function bandLabel(id: string): string {
   return id;
 }
 
+/** Faint line-art medal used as row watermark (decorative only). */
+function MedalWatermark(props: { tone: string }) {
+  return (
+    <svg
+      className="ops-medal-mark"
+      viewBox="0 0 80 96"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <path
+        className="ops-medal-ribbon"
+        d="M28 8 L40 34 L52 8 L62 8 L46 40 L34 40 L18 8 Z"
+        data-tone={props.tone}
+      />
+      <circle className="ops-medal-disc" cx="40" cy="62" r="26" data-tone={props.tone} />
+      <circle className="ops-medal-ring" cx="40" cy="62" r="20" data-tone={props.tone} />
+      <path
+        className="ops-medal-star"
+        d="M40 48 L43.2 56.2 L52 56.8 L45.2 62.4 L47.2 71 L40 66.2 L32.8 71 L34.8 62.4 L28 56.8 L36.8 56.2 Z"
+        data-tone={props.tone}
+      />
+    </svg>
+  );
+}
+
 export function OpsSuite(props: { merchant: MerchantArtifact }) {
   const m = props.merchant;
   const ops = m.ops as Ops | null | undefined;
@@ -151,6 +176,7 @@ export function OpsSuite(props: { merchant: MerchantArtifact }) {
         <ol className="ops-ladder">
           {tiers.map((t, index) => (
             <li key={t.id} className="ops-ladder-row" data-tone={t.tone}>
+              <MedalWatermark tone={t.tone} />
               <span className="ops-ladder-rank" aria-hidden="true">
                 {String(index + 1).padStart(2, '0')}
               </span>
