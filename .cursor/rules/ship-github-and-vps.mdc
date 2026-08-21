@@ -1,0 +1,46 @@
+---
+description: After product changes, push GitHub and deploy VPS
+alwaysApply: true
+---
+
+# Ship to GitHub + VPS (always)
+
+After finishing **product-affecting** code changes in this repo (web app, AI, CSS, deploy config, artifacts wiring — not pure docs/rules-only unless the user asks):
+
+1. **Commit + push to GitHub** (unless the user said not to commit). Follow `.cursor/rules/github-token-ops.mdc`. Remote: `origin` → `master:main`. Never print tokens.
+2. **Deploy the same revision to the VPS** so http://216.146.26.224 serves the new build. Do not leave GitHub ahead of the server.
+
+## VPS deploy (standalone)
+
+Credentials: gitignored file `.vps-ssh` at repo root (same idea as `.github-token`). Format:
+
+```
+HOST=216.146.26.224
+PORT=22
+USER=root
+PASSWORD=...
+```
+
+Never print, quote, or commit `.vps-ssh` / passwords. If the file is missing, ask the user — do not invent credentials.
+
+Preferred deploy path:
+
+1. Ensure `apps/web/next.config.ts` has `output: 'standalone'`.
+2. `npm run build` at repo root.
+3. Stage under `/tmp/zarinpulse-deploy`:
+   - copy `apps/web/.next/standalone/.`
+   - copy `apps/web/.next/static` → `apps/web/.next/static`
+   - copy `apps/web/public` → `apps/web/public`
+   - copy `data/artifacts` → `data/artifacts`
+   - write `.env` with `NODE_ENV=production`, `PORT=3000`, `HOSTNAME=0.0.0.0`, `ARTIFACTS_ROOT=/opt/zarinpulse/data/artifacts`, `OPENROUTER_API_KEY` from local `apps/web/.env.local` (never echo it), optional `OPENROUTER_HTTP_REFERER=http://216.146.26.224`
+   - `start.sh` that sources `.env` and runs `node apps/web/server.js` from `apps/web`
+4. Upload (no local `rsync` on some machines): `tar -C /tmp/zarinpulse-deploy -czf - . | sshpass -e ssh ... 'systemctl stop zarinpulse; rm -rf /opt/zarinpulse; mkdir -p /opt/zarinpulse; tar -C /opt/zarinpulse -xzf -; chmod +x start.sh; chmod 600 .env; systemctl start zarinpulse'`
+5. Confirm: `systemctl is-active zarinpulse`, curl `http://127.0.0.1:3000/` and `http://216.146.26.224/` → 200; for AI changes also hit `/api/ai-brief`.
+
+Nginx should already proxy `:80` → `127.0.0.1:3000` via site `zarinpulse`. Do not wipe unrelated VPS services (xray, postgres, etc.).
+
+## Exceptions
+
+- User explicitly says skip GitHub or skip VPS for that change.
+- Trivial chat-only answers with no file edits: no ship.
+- Pure `.cursor/rules` or docs with no runtime impact: GitHub only unless user wants VPS too.
